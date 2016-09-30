@@ -1,0 +1,24 @@
+diff -ru json-c-0.9-orig/Makefile.am json-c-0.9/Makefile.am
+--- json-c-0.9-orig/Makefile.am
++++ json-c-0.9/Makefile.am
+@@ -20,7 +20,7 @@
+         json_object_private.h \
+ 	json_tokener.h
+ 
+-libjson_la_LDFLAGS = -version-info 0:1:0
++libjson_la_LDFLAGS = -avoid-version
+ 
+ libjson_la_SOURCES = \
+ 	arraylist.c \
+diff -ru json-c-0.9-orig/Makefile.in json-c-0.9/Makefile.in
+--- json-c-0.9-orig/Makefile.in
++++ json-c-0.9/Makefile.in
+@@ -238,7 +238,7 @@
+         json_object_private.h \
+ 	json_tokener.h
+ 
+-libjson_la_LDFLAGS = -version-info 0:1:0
++libjson_la_LDFLAGS = -avoid-version
+ libjson_la_SOURCES = \
+ 	arraylist.c \
+ 	debug.c \
