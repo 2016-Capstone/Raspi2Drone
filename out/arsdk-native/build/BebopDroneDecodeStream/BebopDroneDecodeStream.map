@@ -1,0 +1,835 @@
+Archive member included to satisfy reference by file (symbol)
+
+/usr/lib/arm-linux-gnueabihf/libc_nonshared.a(elf-init.oS)
+                              /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o (__libc_csu_init)
+
+As-needed library included to satisfy reference by file (symbol)
+
+libarsal.so                   /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o (ARSAL_Mutex_Destroy)
+libarcommands.so              /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o (ARCOMMANDS_Decoder_DescribeBuffer)
+libarnetwork.so               /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o (ARNETWORK_Manager_ReceivingThreadRun)
+libarnetworkal.so             /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o (ARNETWORKAL_Error_ToString)
+libardiscovery.so             /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o (ARDISCOVERY_Connection_Delete)
+libarstream.so                /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o (ARSTREAM_Reader_New)
+libncurses.so.5               /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/ihm.c.o (delwin@@NCURSES_5.0.19991023)
+libtinfo.so.5                 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/ihm.c.o (wtimeout@@NCURSES_TINFO_5.0.19991023)
+libavcodec-ffmpeg.so.56       /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/DecoderManager.c.o (avcodec_open2@@LIBAVCODEC_FFMPEG_56)
+libavutil-ffmpeg.so.54        /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/DecoderManager.c.o (av_frame_free@@LIBAVUTIL_FFMPEG_54)
+libgcc_s.so.1                 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/DecoderManager.c.o (__aeabi_idiv@@GCC_3.5)
+libpthread.so.0               /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o (close@@GLIBC_2.4)
+libc.so.6                     /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o (mkdtemp@@GLIBC_2.4)
+ld-linux-armhf.so.3           /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/DecoderManager.c.o (__stack_chk_guard@@GLIBC_2.4)
+
+Allocating common symbols
+Common symbol       size              file
+
+gErrorStr           0x800             /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+
+Discarded input sections
+
+ .rodata.cst4   0x00000000        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o
+ .ARM.extab     0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o
+ .data          0x00000000        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o
+ .note.GNU-stack
+                0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ .note.GNU-stack
+                0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ .data          0x00000000        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbegin.o
+ .note.GNU-stack
+                0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbegin.o
+ .text          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/DecoderManager.c.o
+ .data          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/DecoderManager.c.o
+ .bss           0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/DecoderManager.c.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/DecoderManager.c.o
+ .text          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+ .text.unregisterARCommandsCallbacks
+                0x00000000       0x16 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+ .text          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/ihm.c.o
+ .data          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/ihm.c.o
+ .bss           0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/ihm.c.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/ihm.c.o
+ .data          0x00000000        0x0 /usr/lib/arm-linux-gnueabihf/libc_nonshared.a(elf-init.oS)
+ .bss           0x00000000        0x0 /usr/lib/arm-linux-gnueabihf/libc_nonshared.a(elf-init.oS)
+ .note.GNU-stack
+                0x00000000        0x0 /usr/lib/arm-linux-gnueabihf/libc_nonshared.a(elf-init.oS)
+ .text          0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtend.o
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtend.o
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtend.o
+ .note.GNU-stack
+                0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtend.o
+ .text          0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+ .note.GNU-stack
+                0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/crtbegin.o
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/DecoderManager.c.o
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/ihm.c.o
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/staging/usr/lib/libarsal.so
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/staging/usr/lib/libarcommands.so
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/staging/usr/lib/libarnetwork.so
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/staging/usr/lib/libarnetworkal.so
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/staging/usr/lib/libardiscovery.so
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/staging/usr/lib/libarstream.so
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/libncurses.so
+LOAD /lib/arm-linux-gnueabihf/libncurses.so.5
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/libtinfo.so
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/libavcodec-ffmpeg.so
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/libavformat-ffmpeg.so
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/libswscale-ffmpeg.so
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/libavutil-ffmpeg.so
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/librt.so
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/libstdc++.so
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/libm.so
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/libgcc_s.so
+START GROUP
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/libgcc_s.so.1
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/libgcc.a
+END GROUP
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/libgcc.a
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/libpthread.so
+START GROUP
+LOAD /lib/arm-linux-gnueabihf/libpthread.so.0
+LOAD /usr/lib/arm-linux-gnueabihf/libpthread_nonshared.a
+END GROUP
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/libc.so
+START GROUP
+LOAD /lib/arm-linux-gnueabihf/libc.so.6
+LOAD /usr/lib/arm-linux-gnueabihf/libc_nonshared.a
+LOAD /lib/arm-linux-gnueabihf/ld-linux-armhf.so.3
+END GROUP
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/libgcc_s.so
+START GROUP
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/libgcc_s.so.1
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/libgcc.a
+END GROUP
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/libgcc.a
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/crtend.o
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+                [!provide]                PROVIDE (__executable_start, 0x10000)
+                0x00010154                . = (0x10000 + SIZEOF_HEADERS)
+
+.interp         0x00010154       0x19
+ *(.interp)
+ .interp        0x00010154       0x19 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o
+
+.note.ABI-tag   0x00010170       0x20
+ .note.ABI-tag  0x00010170       0x20 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o
+
+.note.gnu.build-id
+                0x00010190       0x24
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x00010190       0x24 linker stubs
+
+.hash
+ *(.hash)
+
+.gnu.hash       0x000101b4      0x3f8
+ *(.gnu.hash)
+ .gnu.hash      0x000101b4      0x3f8 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o
+
+.dynsym         0x000105ac      0x8b0
+ *(.dynsym)
+ .dynsym        0x000105ac      0x8b0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o
+
+.dynstr         0x00010e5c      0xc54
+ *(.dynstr)
+ .dynstr        0x00010e5c      0xc54 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o
+
+.gnu.version    0x00011ab0      0x116
+ *(.gnu.version)
+ .gnu.version   0x00011ab0      0x116 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o
+
+.gnu.version_d  0x00011bc8        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x00011bc8        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o
+
+.gnu.version_r  0x00011bc8      0x100
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x00011bc8      0x100 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o
+
+.rel.dyn        0x00011cc8       0x38
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro .rel.data.rel.ro.* .rel.gnu.linkonce.d.rel.ro.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ .rel.got       0x00011cc8       0x38 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ .rel.bss       0x00011d00        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o
+                [!provide]                PROVIDE (__rel_iplt_start, .)
+ *(.rel.iplt)
+ .rel.iplt      0x00011d00        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o
+                [!provide]                PROVIDE (__rel_iplt_end, .)
+
+.rela.dyn       0x00011d00        0x0
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+                [!provide]                PROVIDE (__rela_iplt_start, .)
+ *(.rela.iplt)
+                [!provide]                PROVIDE (__rela_iplt_end, .)
+
+.rel.plt        0x00011d00      0x350
+ *(.rel.plt)
+ .rel.plt       0x00011d00      0x350 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o
+
+.rela.plt
+ *(.rela.plt)
+
+.init           0x00012050        0xc
+ *(SORT(.init))
+ .init          0x00012050        0x8 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+                0x00012050                _init
+ .init          0x00012058        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+
+.plt            0x0001205c      0x518
+ *(.plt)
+ .plt           0x0001205c      0x518 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o
+                0x00012070                ARSAL_Thread_Destroy
+                0x0001207c                ARNETWORKAL_Manager_Delete
+                0x00012088                ARNETWORK_Manager_New
+                0x00012094                ARNETWORKAL_Manager_Unlock
+                0x000120a0                ARSAL_Time_GetLocalTime
+                0x000120ac                ARCOMMANDS_Generator_GenerateARDrone3MediaStreamingVideoEnable
+                0x000120b8                ARSAL_Print_SetCallback
+                0x000120c4                free@@GLIBC_2.4
+                0x000120d0                cbreak@@NCURSES_TINFO_5.0.19991023
+                0x000120dc                av_log_set_level@@LIBAVUTIL_FFMPEG_54
+                0x000120e8                noecho@@NCURSES_5.0.19991023
+                0x000120f4                keypad@@NCURSES_TINFO_5.0.19991023
+                0x00012100                ARCOMMANDS_Generator_GenerateARDrone3PilotingLanding
+                0x0001210c                wgetch@@NCURSES_5.0.19991023
+                0x00012118                ARCOMMANDS_Decoder_DecodeBuffer
+                0x00012124                ARNETWORKAL_Manager_New
+                0x00012130                ARNETWORKAL_Manager_InitWifiNetwork
+                0x0001213c                ARSTREAM_Reader_Delete
+                0x00012148                ARCOMMANDS_Generator_GenerateARDrone3CameraOrientation
+                0x00012154                ARCOMMANDS_Generator_GenerateCommonSettingsAllSettings
+                0x00012160                strerror@@GLIBC_2.4
+                0x0001216c                avcodec_alloc_context3@@LIBAVCODEC_FFMPEG_56
+                0x00012178                ARDISCOVERY_Error_ToString
+                0x00012184                __vsnprintf_chk@@GLIBC_2.4
+                0x00012190                av_free@@LIBAVUTIL_FFMPEG_54
+                0x0001219c                ARSAL_Thread_Create
+                0x000121ac                ARCOMMANDS_Decoder_SetARDrone3PilotingStateFlyingStateChangedCallback
+                0x000121b8                strftime@@GLIBC_2.4
+                0x000121c4                memset@@GLIBC_2.4
+                0x000121d0                avcodec_decode_video2@@LIBAVCODEC_FFMPEG_56
+                0x000121dc                close@@GLIBC_2.4
+                0x000121e8                fopen@@GLIBC_2.4
+                0x000121f4                ARSTREAM_Error_ToString
+                0x00012200                ARSAL_Mutex_Init
+                0x0001220c                abort@@GLIBC_2.4
+                0x00012218                ARNETWORK_Error_ToString
+                0x00012224                mkfifo@@GLIBC_2.4
+                0x00012230                ARDISCOVERY_Connection_New
+                0x0001223c                rmdir@@GLIBC_2.4
+                0x00012248                unlink@@GLIBC_2.4
+                0x00012254                kill@@GLIBC_2.4
+                0x00012260                dup2@@GLIBC_2.4
+                0x0001226c                realloc@@GLIBC_2.4
+                0x0001227c                mvprintw@@NCURSES_5.0.19991023
+                0x00012288                ARNETWORK_Manager_ReadDataWithTimeout
+                0x00012294                open@@GLIBC_2.4
+                0x000122a0                ARSTREAM_Reader_StopReader
+                0x000122ac                ARCOMMANDS_Decoder_SetCommonCommonStateBatteryStateChangedCallback
+                0x000122b8                avcodec_register_all@@LIBAVCODEC_FFMPEG_56
+                0x000122c4                ARNETWORK_Manager_Delete
+                0x000122d0                __stack_chk_fail@@GLIBC_2.4
+                0x000122dc                fork@@GLIBC_2.4
+                0x000122e8                endwin@@NCURSES_5.0.19991023
+                0x000122f4                wmove@@NCURSES_5.0.19991023
+                0x00012300                ARNETWORKAL_Error_ToString
+                0x0001230c                ARDISCOVERY_Connection_Delete
+                0x00012318                ARSAL_Thread_Join
+                0x00012324                avcodec_close@@LIBAVCODEC_FFMPEG_56
+                0x00012330                ARCOMMANDS_Generator_GenerateARDrone3PilotingEmergency
+                0x0001233c                av_frame_alloc@@LIBAVUTIL_FFMPEG_54
+                0x00012348                ARSTREAM_Reader_InitStreamAckBuffer
+                0x00012354                av_init_packet@@LIBAVCODEC_FFMPEG_56
+                0x00012360                __aeabi_idivmod@@GCC_3.5
+                0x0001236c                ARCOMMANDS_Generator_GenerateCommonCommonCurrentTime
+                0x00012378                execlp@@GLIBC_2.4
+                0x00012384                sigaction@@GLIBC_2.4
+                0x00012390                calloc@@GLIBC_2.4
+                0x0001239c                mkdtemp@@GLIBC_2.4
+                0x000123a8                __aeabi_idiv@@GCC_3.5
+                0x000123b4                initscr@@NCURSES_5.0.19991023
+                0x000123c0                ARCOMMANDS_Decoder_DescribeBuffer
+                0x000123cc                av_frame_free@@LIBAVUTIL_FFMPEG_54
+                0x000123d8                fwrite@@GLIBC_2.4
+                0x000123e4                malloc@@GLIBC_2.4
+                0x000123f0                __snprintf_chk@@GLIBC_2.4
+                0x00012400                ARSAL_Mutex_Unlock
+                0x0001240c                usleep@@GLIBC_2.4
+                0x00012418                fclose@@GLIBC_2.4
+                0x00012424                wclrtoeol@@NCURSES_5.0.19991023
+                0x00012430                ARSAL_Mutex_Destroy
+                0x0001243c                wtimeout@@NCURSES_TINFO_5.0.19991023
+                0x00012448                ARSAL_Print_PrintRaw
+                0x00012454                ARCOMMANDS_Generator_GenerateCommonCommonAllStates
+                0x00012460                delwin@@NCURSES_5.0.19991023
+                0x0001246c                avpicture_layout@@LIBAVCODEC_FFMPEG_56
+                0x00012478                ARNETWORK_Manager_SendData
+                0x00012484                ARDISCOVERY_Connection_ControllerConnection
+                0x00012490                strcmp@@GLIBC_2.4
+                0x0001249c                ARSAL_Mutex_Lock
+                0x000124a8                avpicture_get_size@@LIBAVCODEC_FFMPEG_56
+                0x000124b4                ARNETWORKAL_Manager_CloseWifiNetwork
+                0x000124c0                ARCOMMANDS_Generator_GenerateCommonCommonCurrentDate
+                0x000124cc                __errno_location@@GLIBC_2.4
+                0x000124d8                strncpy@@GLIBC_2.4
+                0x000124e4                avcodec_open2@@LIBAVCODEC_FFMPEG_56
+                0x000124f0                ARSTREAM_Reader_InitStreamDataBuffer
+                0x000124fc                __sprintf_chk@@GLIBC_2.4
+                0x00012508                avcodec_find_decoder@@LIBAVCODEC_FFMPEG_56
+                0x00012514                wrefresh@@NCURSES_5.0.19991023
+                0x00012520                __libc_start_main@@GLIBC_2.4
+                0x0001252c                ARCOMMANDS_Generator_GenerateARDrone3PilotingPCMD
+                0x00012538                ARNETWORK_Manager_Stop
+                0x00012550                ARCOMMANDS_Generator_GenerateARDrone3PilotingTakeOff
+                0x0001255c                avpicture_fill@@LIBAVCODEC_FFMPEG_56
+                0x00012568                ARSTREAM_Reader_New
+
+.iplt           0x00012574        0x0
+ *(.iplt)
+ .iplt          0x00012574        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o
+
+.text           0x00012574     0x2ea8
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ .text.startup.main
+                0x00012574      0x88c /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                0x00012574                main
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x00012e00       0x30 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o
+                0x00012e00                _start
+ .text          0x00012e30       0x24 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ .text          0x00012e54       0x8c /usr/lib/gcc/arm-linux-gnueabihf/5/crtbegin.o
+ .text.ARCODECS_Manager_InitOutputFrame
+                0x00012ee0       0x34 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/DecoderManager.c.o
+                0x00012ee0                ARCODECS_Manager_InitOutputFrame
+ .text.ARCODECS_Manager_NewFFMPEGDecoder
+                0x00012f14       0xa4 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/DecoderManager.c.o
+                0x00012f14                ARCODECS_Manager_NewFFMPEGDecoder
+ .text.ARCODECS_Manager_DeleteFFMPEGDecoder
+                0x00012fb8       0x50 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/DecoderManager.c.o
+                0x00012fb8                ARCODECS_Manager_DeleteFFMPEGDecoder
+ .text.ARCODECS_Manager_Delete
+                0x00013008       0x44 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/DecoderManager.c.o
+                0x00013008                ARCODECS_Manager_Delete
+ .text.ARCODECS_Manager_New
+                0x0001304c       0xe8 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/DecoderManager.c.o
+                0x0001304c                ARCODECS_Manager_New
+ .text.ARCODECS_Manager_FFMPEGDecode
+                0x00013134      0x188 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/DecoderManager.c.o
+                0x00013134                ARCODECS_Manager_FFMPEGDecode
+ .text.ARCODECS_Manager_Decode
+                0x000132bc       0x60 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/DecoderManager.c.o
+                0x000132bc                ARCODECS_Manager_Decode
+ .text.signal_handler
+                0x0001331c       0x18 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+ .text.getNextDataCallback
+                0x00013334       0x32 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                0x00013334                getNextDataCallback
+ *fill*         0x00013366        0x2 
+ .text.onDisconnectNetwork
+                0x00013368       0x88 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                0x00013368                onDisconnectNetwork
+ .text.arnetworkCmdCallback
+                0x000133f0       0x88 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                0x000133f0                arnetworkCmdCallback
+ .text.flyingStateChangedCallback
+                0x00013478       0x5c /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                0x00013478                flyingStateChangedCallback
+ .text.readerRun
+                0x000134d4      0x164 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+ .text.ARDISCOVERY_Connection_SendJsonCallback
+                0x00013638       0x64 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                0x00013638                ARDISCOVERY_Connection_SendJsonCallback
+ .text.ARDISCOVERY_Connection_ReceiveJsonCallback
+                0x0001369c       0xac /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                0x0001369c                ARDISCOVERY_Connection_ReceiveJsonCallback
+ .text.batteryStateChangedCallback
+                0x00013748       0x12 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                0x00013748                batteryStateChangedCallback
+ *fill*         0x0001375a        0x2 
+ .text.customPrintCallback
+                0x0001375c       0x50 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                0x0001375c                customPrintCallback
+ .text.ardiscoveryConnect
+                0x000137ac      0x178 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                0x000137ac                ardiscoveryConnect
+ .text.startNetwork
+                0x00013924      0x28c /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                0x00013924                startNetwork
+ .text.stopNetwork
+                0x00013bb0       0xd0 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                0x00013bb0                stopNetwork
+ .text.startVideo
+                0x00013c80      0x1f4 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                0x00013c80                startVideo
+ .text.stopVideo
+                0x00013e74       0xc4 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                0x00013e74                stopVideo
+ .text.sendPCMD
+                0x00013f38       0x88 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                0x00013f38                sendPCMD
+ .text.sendCameraOrientation
+                0x00013fc0       0x74 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                0x00013fc0                sendCameraOrientation
+ .text.looperRun
+                0x00014034       0x26 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+ *fill*         0x0001405a        0x2 
+ .text.sendDate
+                0x0001405c      0x1c8 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                0x0001405c                sendDate
+ .text.sendAllSettings
+                0x00014224      0x130 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                0x00014224                sendAllSettings
+ .text.sendAllStates
+                0x00014354      0x130 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                0x00014354                sendAllStates
+ .text.sendBeginStream
+                0x00014484      0x130 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                0x00014484                sendBeginStream
+ .text.sendTakeoff
+                0x000145b4      0x130 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                0x000145b4                sendTakeoff
+ .text.sendLanding
+                0x000146e4      0x130 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                0x000146e4                sendLanding
+ .text.sendEmergency
+                0x00014814      0x130 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                0x00014814                sendEmergency
+ .text.onInputEvent
+                0x00014944      0x104 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                0x00014944                onInputEvent
+ .text.registerARCommandsCallbacks
+                0x00014a48       0x38 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                0x00014a48                registerARCommandsCallbacks
+ .text.startDecoder
+                0x00014a80      0x1e8 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                0x00014a80                startDecoder
+ .text.getFreeRawFrame
+                0x00014c68      0x12c /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                0x00014c68                getFreeRawFrame
+ .text.getFrameFromData
+                0x00014d94       0x38 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                0x00014d94                getFrameFromData
+ .text.putRawFrameBackToPool
+                0x00014dcc       0x16 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                0x00014dcc                putRawFrameBackToPool
+ *fill*         0x00014de2        0x2 
+ .text.Decode_RunDataThread
+                0x00014de4      0x12c /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                0x00014de4                Decode_RunDataThread
+ .text.addFreeRawFrameToFifo
+                0x00014f10       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                0x00014f10                addFreeRawFrameToFifo
+ .text.flushFifo
+                0x00014f4c       0x3a /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                0x00014f4c                flushFifo
+ .text.frameCompleteCallback
+                0x00014f86       0x5c /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                0x00014f86                frameCompleteCallback
+ *fill*         0x00014fe2        0x2 
+ .text.stopDecoder
+                0x00014fe4      0x108 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                0x00014fe4                stopDecoder
+ .text.IHM_InputProcessing
+                0x000150ec      0x108 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/ihm.c.o
+                0x000150ec                IHM_InputProcessing
+ .text.IHM_Delete
+                0x000151f4       0x58 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/ihm.c.o
+                0x000151f4                IHM_Delete
+ .text.IHM_New  0x0001524c       0xa0 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/ihm.c.o
+                0x0001524c                IHM_New
+ .text.IHM_setCustomData
+                0x000152ec        0x6 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/ihm.c.o
+                0x000152ec                IHM_setCustomData
+ *fill*         0x000152f2        0x2 
+ .text.IHM_PrintHeader
+                0x000152f4       0x38 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/ihm.c.o
+                0x000152f4                IHM_PrintHeader
+ .text.IHM_PrintInstruction
+                0x0001532c       0x38 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/ihm.c.o
+                0x0001532c                IHM_PrintInstruction
+ .text.IHM_PrintInfo
+                0x00015364       0x38 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/ihm.c.o
+                0x00015364                IHM_PrintInfo
+ .text.IHM_PrintBattery
+                0x0001539c       0x40 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/ihm.c.o
+                0x0001539c                IHM_PrintBattery
+ .text          0x000153dc       0x40 /usr/lib/arm-linux-gnueabihf/libc_nonshared.a(elf-init.oS)
+                0x000153dc                __libc_csu_init
+                0x00015418                __libc_csu_fini
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x0001541c        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x0001541c        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x0001541c        0x0 linker stubs
+ *(.v4_bx)
+ .v4_bx         0x0001541c        0x0 linker stubs
+
+.fini           0x0001541c        0x8
+ *(SORT(.fini))
+ .fini          0x0001541c        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+                0x0001541c                _fini
+ .fini          0x00015420        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+                [!provide]                PROVIDE (__etext, .)
+                [!provide]                PROVIDE (_etext, .)
+                [!provide]                PROVIDE (etext, .)
+
+.rodata         0x00015424      0xedf
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x00015424       0x33 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/DecoderManager.c.o
+ .rodata.str1.1
+                0x00015457       0x71 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/DecoderManager.c.o
+ .rodata        0x000154c8      0x134 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+ .rodata.str1.1
+                0x000155fc      0xcfb /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                                0xd22 (size before relaxing)
+ .rodata.str1.1
+                0x000162f7        0xc /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/ihm.c.o
+
+.rodata1
+ *(.rodata1)
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                [!provide]                PROVIDE (__exidx_start, .)
+
+.ARM.exidx      0x00016304        0x8
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+ .ARM.exidx     0x00016304        0x8 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o
+                [!provide]                PROVIDE (__exidx_end, .)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x0001630c        0x4
+ *(.eh_frame)
+ .eh_frame      0x0001630c        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/crtend.o
+ *(.eh_frame.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+                0x00026ea4                . = DATA_SEGMENT_ALIGN (0x10000, 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x00026ea4        0x0
+                [!provide]                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                [!provide]                PROVIDE (__preinit_array_end, .)
+
+.init_array     0x00026ea4        0x4
+                0x00026ea4                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*) SORT(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+ .init_array    0x00026ea4        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbegin.o
+                0x00026ea8                PROVIDE (__init_array_end, .)
+
+.fini_array     0x00026ea8        0x4
+                [!provide]                PROVIDE (__fini_array_start, .)
+ *(SORT(.fini_array.*) SORT(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+ .fini_array    0x00026ea8        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbegin.o
+                [!provide]                PROVIDE (__fini_array_end, .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+
+.jcr            0x00026eac        0x4
+ *(.jcr)
+ .jcr           0x00026eac        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbegin.o
+ .jcr           0x00026eac        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/crtend.o
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic        0x00026eb0      0x150
+ *(.dynamic)
+ .dynamic       0x00026eb0      0x150 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o
+                0x00026eb0                _DYNAMIC
+                0x00027000                . = DATA_SEGMENT_RELRO_END (., 0x0)
+
+.got            0x00027000      0x208
+ *(.got.plt)
+ .got.plt       0x00027000      0x1b4 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o
+                0x00027000                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x000271b4        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o
+ *(.got)
+ .got           0x000271b4       0x54 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o
+ *(.igot)
+
+.data           0x00027208       0xf2
+                [!provide]                PROVIDE (__data_start, .)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x00027208       0xf2 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+
+.tm_clone_table
+                0x000272fc        0x0
+ .tm_clone_table
+                0x000272fc        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbegin.o
+ .tm_clone_table
+                0x000272fc        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtend.o
+
+.data1
+ *(.data1)
+                0x000272fc                _edata = .
+                [!provide]                PROVIDE (edata, .)
+                0x000272fc                . = .
+                0x000272fc                __bss_start = .
+                0x000272fc                __bss_start__ = .
+
+.bss            0x000272fc      0x888
+ *(.dynbss)
+ .dynbss        0x000272fc        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x000272fc        0x1 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbegin.o
+ *fill*         0x000272fd        0x3 
+ .bss           0x00027300       0x84 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                0x00027380                gIHMRun
+ *(COMMON)
+ COMMON         0x00027384      0x800 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                0x00027384                gErrorStr
+                0x00027b84                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x00027b84                _bss_end__ = .
+                0x00027b84                __bss_end__ = .
+                0x00027b84                . = ALIGN (0x4)
+                0x00027b84                . = SEGMENT_START ("ldata-segment", .)
+                0x00027b84                . = ALIGN (0x4)
+                0x00027b84                __end__ = .
+                0x00027b84                _end = .
+                [!provide]                PROVIDE (end, .)
+                0x00027b84                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x3b
+ *(.comment)
+ .comment       0x00000000       0x3b /usr/lib/gcc/arm-linux-gnueabihf/5/crtbegin.o
+                                 0x3c (size before relaxing)
+ .comment       0x0000003b       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/DecoderManager.c.o
+ .comment       0x0000003b       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+ .comment       0x0000003b       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/ihm.c.o
+ .comment       0x0000003b       0x3c /usr/lib/gcc/arm-linux-gnueabihf/5/crtend.o
+
+.ARM.attributes
+                0x00000000       0x33
+ .ARM.attributes
+                0x00000000       0x33 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crt1.o
+ .ARM.attributes
+                0x00000033       0x27 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ .ARM.attributes
+                0x0000005a       0x33 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbegin.o
+ .ARM.attributes
+                0x0000008d       0x33 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/DecoderManager.c.o
+ .ARM.attributes
+                0x000000c0       0x33 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+ .ARM.attributes
+                0x000000f3       0x33 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/ihm.c.o
+ .ARM.attributes
+                0x00000126       0x35 /usr/lib/arm-linux-gnueabihf/libc_nonshared.a(elf-init.oS)
+ .ARM.attributes
+                0x0000015b       0x33 /usr/lib/gcc/arm-linux-gnueabihf/5/crtend.o
+ .ARM.attributes
+                0x0000018e       0x27 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x1f0
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x50 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/DecoderManager.c.o
+ .debug_aranges
+                0x00000050      0x148 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+ .debug_aranges
+                0x00000198       0x58 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/ihm.c.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0xef10
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000     0x48b0 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/DecoderManager.c.o
+ .debug_info    0x000048b0     0x9dea /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+ .debug_info    0x0000e69a      0x876 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/ihm.c.o
+
+.debug_abbrev   0x00000000      0xb6a
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x394 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/DecoderManager.c.o
+ .debug_abbrev  0x00000394      0x53a /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+ .debug_abbrev  0x000008ce      0x29c /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/ihm.c.o
+
+.debug_line     0x00000000     0x1396
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000      0x3c1 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/DecoderManager.c.o
+ .debug_line    0x000003c1      0xdc1 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+ .debug_line    0x00001182      0x214 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/ihm.c.o
+
+.debug_frame    0x00000000      0x7b8
+ *(.debug_frame)
+ .debug_frame   0x00000000      0x100 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/DecoderManager.c.o
+ .debug_frame   0x00000100      0x594 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+ .debug_frame   0x00000694      0x124 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/ihm.c.o
+
+.debug_str      0x00000000     0x848a
+ *(.debug_str)
+ .debug_str     0x00000000     0x5628 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/DecoderManager.c.o
+                               0x75c7 (size before relaxing)
+ .debug_str     0x00005628     0x2d8b /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+                               0xa1ad (size before relaxing)
+ .debug_str     0x000083b3       0xd7 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/ihm.c.o
+                                0x69b (size before relaxing)
+
+.debug_loc      0x00000000     0x2474
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x539 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/DecoderManager.c.o
+ .debug_loc     0x00000539     0x1c11 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+ .debug_loc     0x0000214a      0x32a /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/ihm.c.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000      0x6c8
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x68 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/DecoderManager.c.o
+ .debug_ranges  0x00000068      0x618 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/BebopDroneDecodeStream.c.o
+ .debug_ranges  0x00000680       0x48 /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream/obj/ihm.c.o
+
+.debug_macro
+ *(.debug_macro)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(out/arsdk-native/build/BebopDroneDecodeStream/BebopDroneDecodeStream elf32-littlearm)

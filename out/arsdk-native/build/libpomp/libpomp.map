@@ -1,0 +1,1296 @@
+
+As-needed library included to satisfy reference by file (symbol)
+
+librt.so.1                    /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o (timer_create@@GLIBC_2.4)
+libgcc_s.so.1                 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o (__aeabi_llsl@@GCC_3.5)
+libpthread.so.0               /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o (close@@GLIBC_2.4)
+libc.so.6                     /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o (epoll_create@@GLIBC_2.4)
+ld-linux-armhf.so.3           /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_addr.c.o (__stack_chk_guard@@GLIBC_2.4)
+
+Discarded input sections
+
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ .note.GNU-stack
+                0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+ .note.GNU-stack
+                0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+ .text          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_addr.c.o
+ .data          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_addr.c.o
+ .bss           0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_addr.c.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_addr.c.o
+ .text          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+ .data          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+ .bss           0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+ .text          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+ .data          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+ .bss           0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+ .text          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+ .data          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+ .bss           0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+ .text          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+ .data          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+ .bss           0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+ .text          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+ .data          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+ .bss           0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+ .text          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_log.c.o
+ .data          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_log.c.o
+ .bss           0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_log.c.o
+ .debug_info    0x00000000      0x605 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_log.c.o
+ .debug_abbrev  0x00000000       0xcf /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_log.c.o
+ .debug_aranges
+                0x00000000       0x18 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_log.c.o
+ .debug_line    0x00000000      0x118 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_log.c.o
+ .debug_str     0x00000000      0x51f /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_log.c.o
+ .comment       0x00000000       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_log.c.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_log.c.o
+ .ARM.attributes
+                0x00000000       0x33 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_log.c.o
+ .text          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+ .data          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+ .bss           0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+ .text.pomp_loop_set_ops
+                0x00000000       0x10 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+ .text          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_msg.c.o
+ .data          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_msg.c.o
+ .bss           0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_msg.c.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_msg.c.o
+ .text          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_prot.c.o
+ .data          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_prot.c.o
+ .bss           0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_prot.c.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_prot.c.o
+ .text          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o
+ .data          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o
+ .bss           0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o
+ .text.pomp_timer_set_ops
+                0x00000000       0x10 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o
+ .text          0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+ .note.GNU-stack
+                0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+ .text          0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+ .note.GNU-stack
+                0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_addr.c.o
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_log.c.o
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_msg.c.o
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_prot.c.o
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/librt.so
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/libstdc++.so
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/libm.so
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/libgcc_s.so
+START GROUP
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/libgcc_s.so.1
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/libgcc.a
+END GROUP
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/libpthread.so
+START GROUP
+LOAD /lib/arm-linux-gnueabihf/libpthread.so.0
+LOAD /usr/lib/arm-linux-gnueabihf/libpthread_nonshared.a
+END GROUP
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/libc.so
+START GROUP
+LOAD /lib/arm-linux-gnueabihf/libc.so.6
+LOAD /usr/lib/arm-linux-gnueabihf/libc_nonshared.a
+LOAD /lib/arm-linux-gnueabihf/ld-linux-armhf.so.3
+END GROUP
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/libgcc_s.so
+START GROUP
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/libgcc_s.so.1
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/libgcc.a
+END GROUP
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+                0x000000f4                . = (0x0 + SIZEOF_HEADERS)
+
+.note.gnu.build-id
+                0x000000f4       0x24
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x000000f4       0x24 linker stubs
+
+.hash
+ *(.hash)
+
+.gnu.hash       0x00000118      0x4c4
+ *(.gnu.hash)
+ .gnu.hash      0x00000118      0x4c4 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.dynsym         0x000005dc      0xd50
+ *(.dynsym)
+ .dynsym        0x000005dc      0xd50 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.dynstr         0x0000132c      0xd64
+ *(.dynstr)
+ .dynstr        0x0000132c      0xd64 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.gnu.version    0x00002090      0x1aa
+ *(.gnu.version)
+ .gnu.version   0x00002090      0x1aa /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.gnu.version_d  0x0000223c        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000223c        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.gnu.version_r  0x0000223c       0xc0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000223c       0xc0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.rel.dyn        0x000022fc      0x120
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ .rel.text      0x000022fc        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro .rel.data.rel.ro.* .rel.gnu.linkonce.d.rel.ro.*)
+ .rel.data.rel.ro.local
+                0x000022fc       0xc0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ .rel.data.rel.local
+                0x000023bc       0x18 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ .rel.got       0x000023d4       0x38 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rel.iplt)
+ .rel.iplt      0x0000240c        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ .rel.fini_array
+                0x0000240c        0x8 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ .rel.init_array
+                0x00002414        0x8 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.rela.dyn
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rela.iplt)
+
+.rel.plt        0x0000241c      0x430
+ *(.rel.plt)
+ .rel.plt       0x0000241c      0x430 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.rela.plt
+ *(.rela.plt)
+
+.init           0x0000284c        0xc
+ *(SORT(.init))
+ .init          0x0000284c        0x8 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+                0x0000284c                _init
+ .init          0x00002854        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+
+.plt            0x00002858      0x680
+ *(.plt)
+ .plt           0x00002858      0x680 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.iplt           0x00002ed8        0x0
+ *(.iplt)
+ .iplt          0x00002ed8        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.text           0x00002ed8     0x5c98
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x00002ed8       0x24 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ .text          0x00002efc       0xd0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+ .text.pomp_addr_parse_inet
+                0x00002fcc       0xd4 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_addr.c.o
+ .text.pomp_addr_parse
+                0x000030a0       0x98 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_addr.c.o
+                0x000030a0                pomp_addr_parse
+ .text.pomp_addr_format
+                0x00003138      0x140 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_addr.c.o
+                0x00003138                pomp_addr_format
+ .text.pomp_addr_is_unix
+                0x00003278       0x14 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_addr.c.o
+                0x00003278                pomp_addr_is_unix
+ .text.pomp_buffer_get_fd
+                0x0000328c       0x40 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+                0x0000328c                pomp_buffer_get_fd
+ .text.pomp_buffer_register_fd
+                0x000032cc       0x7c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+                0x000032cc                pomp_buffer_register_fd
+ .text.pomp_buffer_clear
+                0x00003348       0xd4 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+                0x00003348                pomp_buffer_clear
+ .text.pomp_buffer_new_copy
+                0x0000341c       0xd8 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+                0x0000341c                pomp_buffer_new_copy
+ .text.pomp_buffer_ref
+                0x000034f4       0x18 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+                0x000034f4                pomp_buffer_ref
+ .text.pomp_buffer_unref
+                0x0000350c       0x2c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+                0x0000350c                pomp_buffer_unref
+ .text.pomp_buffer_set_capacity
+                0x00003538       0x36 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+                0x00003538                pomp_buffer_set_capacity
+ .text.pomp_buffer_new
+                0x0000356e       0x30 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+                0x0000356e                pomp_buffer_new
+ .text.pomp_buffer_new_with_data
+                0x0000359e       0x20 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+                0x0000359e                pomp_buffer_new_with_data
+ .text.pomp_buffer_new_get_data
+                0x000035be       0x12 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+                0x000035be                pomp_buffer_new_get_data
+ .text.pomp_buffer_set_len
+                0x000035d0       0x20 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+                0x000035d0                pomp_buffer_set_len
+ .text.pomp_buffer_get_data
+                0x000035f0       0x2c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+                0x000035f0                pomp_buffer_get_data
+ .text.pomp_buffer_get_cdata
+                0x0000361c       0x20 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+                0x0000361c                pomp_buffer_get_cdata
+ .text.pomp_buffer_ensure_capacity
+                0x0000363c       0x28 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+                0x0000363c                pomp_buffer_ensure_capacity
+ .text.pomp_buffer_write
+                0x00003664       0x50 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+                0x00003664                pomp_buffer_write
+ .text.pomp_buffer_append_data
+                0x000036b4       0x44 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+                0x000036b4                pomp_buffer_append_data
+ .text.pomp_buffer_writeb
+                0x000036f8       0x14 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+                0x000036f8                pomp_buffer_writeb
+ .text.pomp_buffer_write_fd
+                0x0000370c       0xc8 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+                0x0000370c                pomp_buffer_write_fd
+ .text.pomp_buffer_read
+                0x000037d4       0x34 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+                0x000037d4                pomp_buffer_read
+ .text.pomp_buffer_cread
+                0x00003808       0x28 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+                0x00003808                pomp_buffer_cread
+ .text.pomp_buffer_readb
+                0x00003830        0x6 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+                0x00003830                pomp_buffer_readb
+ *fill*         0x00003836        0x2 
+ .text.pomp_buffer_read_fd
+                0x00003838       0x60 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+                0x00003838                pomp_buffer_read_fd
+ .text.pomp_conn_clear_rx_fds
+                0x00003898       0x94 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+ .text.pomp_conn_fixup_rx_fds_cb
+                0x0000392c       0xbc /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+ .text.pomp_io_buffer_write
+                0x000039e8      0x1e4 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+ .text.pomp_conn_cb
+                0x00003bcc      0x40c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+ .text.pomp_conn_send_buf_internal
+                0x00003fd8      0x164 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+ .text.pomp_conn_new
+                0x0000413c      0x1d0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+                0x0000413c                pomp_conn_new
+ .text.pomp_conn_destroy
+                0x0000430c       0x32 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+                0x0000430c                pomp_conn_destroy
+ *fill*         0x0000433e        0x2 
+ .text.pomp_conn_close
+                0x00004340       0xb0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+                0x00004340                pomp_conn_close
+ .text.pomp_conn_get_next
+                0x000043f0        0x6 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+                0x000043f0                pomp_conn_get_next
+ .text.pomp_conn_set_next
+                0x000043f6        0xe /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+                0x000043f6                pomp_conn_set_next
+ .text.pomp_conn_disconnect
+                0x00004404       0x70 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+                0x00004404                pomp_conn_disconnect
+ .text.pomp_conn_get_local_addr
+                0x00004474       0x12 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+                0x00004474                pomp_conn_get_local_addr
+ .text.pomp_conn_get_peer_addr
+                0x00004486       0x12 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+                0x00004486                pomp_conn_get_peer_addr
+ .text.pomp_conn_get_peer_cred
+                0x00004498       0x14 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+                0x00004498                pomp_conn_get_peer_cred
+ .text.pomp_conn_get_fd
+                0x000044ac        0xc /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+                0x000044ac                pomp_conn_get_fd
+ .text.pomp_conn_suspend_read
+                0x000044b8       0x22 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+                0x000044b8                pomp_conn_suspend_read
+ .text.pomp_conn_resume_read
+                0x000044da       0x20 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+                0x000044da                pomp_conn_resume_read
+ .text.pomp_conn_send_msg_to
+                0x000044fa        0xe /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+                0x000044fa                pomp_conn_send_msg_to
+ .text.pomp_conn_send_msg
+                0x00004508       0x12 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+                0x00004508                pomp_conn_send_msg
+ *fill*         0x0000451a        0x2 
+ .text.pomp_conn_sendv
+                0x0000451c       0x50 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+                0x0000451c                pomp_conn_sendv
+ .text.pomp_conn_send
+                0x0000456c       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+                0x0000456c                pomp_conn_send
+ .text.pomp_conn_send_raw_buf_to
+                0x000045a8        0x4 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+                0x000045a8                pomp_conn_send_raw_buf_to
+ .text.pomp_conn_send_raw_buf
+                0x000045ac        0x8 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+                0x000045ac                pomp_conn_send_raw_buf
+ .text.fd_socket_setup_keepalive
+                0x000045b4      0x160 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+ .text.fd_setup_flags
+                0x00004714      0x11c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+ .text.server_start
+                0x00004830      0x240 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+ .text.dgram_start
+                0x00004a70      0x204 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+ .text.pomp_event_str
+                0x00004c74       0x34 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+                0x00004c74                pomp_event_str
+ .text.pomp_socket_kind_str
+                0x00004ca8       0x40 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+                0x00004ca8                pomp_socket_kind_str
+ .text.pomp_ctx_set_raw
+                0x00004ce8       0x1e /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+                0x00004ce8                pomp_ctx_set_raw
+ .text.pomp_ctx_set_socket_cb
+                0x00004d06       0x1a /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+                0x00004d06                pomp_ctx_set_socket_cb
+ .text.pomp_ctx_set_send_cb
+                0x00004d20       0x1a /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+                0x00004d20                pomp_ctx_set_send_cb
+ .text.pomp_ctx_setup_keepalive
+                0x00004d3a       0x16 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+                0x00004d3a                pomp_ctx_setup_keepalive
+ .text.pomp_ctx_destroy
+                0x00004d50       0x34 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+                0x00004d50                pomp_ctx_destroy
+ .text.pomp_ctx_new_with_loop
+                0x00004d84       0x5c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+                0x00004d84                pomp_ctx_new_with_loop
+ .text.pomp_ctx_new
+                0x00004de0       0x30 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+                0x00004de0                pomp_ctx_new
+ .text.pomp_ctx_get_fd
+                0x00004e10        0xe /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+                0x00004e10                pomp_ctx_get_fd
+ .text.pomp_ctx_process_fd
+                0x00004e1e       0x10 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+                0x00004e1e                pomp_ctx_process_fd
+ .text.pomp_ctx_wait_and_process
+                0x00004e2e        0xe /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+                0x00004e2e                pomp_ctx_wait_and_process
+ .text.pomp_ctx_wakeup
+                0x00004e3c        0xe /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+                0x00004e3c                pomp_ctx_wakeup
+ .text.pomp_ctx_get_loop
+                0x00004e4a        0x6 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+                0x00004e4a                pomp_ctx_get_loop
+ .text.pomp_ctx_get_next_conn
+                0x00004e50       0x16 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+                0x00004e50                pomp_ctx_get_next_conn
+ .text.pomp_ctx_get_conn
+                0x00004e66       0x10 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+                0x00004e66                pomp_ctx_get_conn
+ .text.pomp_ctx_get_local_addr
+                0x00004e76       0x28 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+                0x00004e76                pomp_ctx_get_local_addr
+ .text.pomp_ctx_send_msg
+                0x00004e9e       0x4e /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+                0x00004e9e                pomp_ctx_send_msg
+ .text.pomp_ctx_send_msg_to
+                0x00004eec       0x20 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+                0x00004eec                pomp_ctx_send_msg_to
+ .text.pomp_ctx_sendv
+                0x00004f0c       0x50 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+                0x00004f0c                pomp_ctx_sendv
+ .text.pomp_ctx_send
+                0x00004f5c       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+                0x00004f5c                pomp_ctx_send
+ .text.pomp_ctx_send_raw_buf
+                0x00004f98       0x52 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+                0x00004f98                pomp_ctx_send_raw_buf
+ .text.pomp_ctx_send_raw_buf_to
+                0x00004fea       0x24 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+                0x00004fea                pomp_ctx_send_raw_buf_to
+ .text.pomp_ctx_notify_event
+                0x0000500e       0x22 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+                0x0000500e                pomp_ctx_notify_event
+ .text.server_cb
+                0x00005030       0xdc /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+ .text.client_complete_conn
+                0x0000510c      0x124 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+ .text.client_start
+                0x00005230      0x130 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+ .text.timer_cb
+                0x00005360       0x36 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+ .text.pomp_ctx_start
+                0x00005396       0xaa /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+ .text.pomp_ctx_listen
+                0x00005440        0xa /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+                0x00005440                pomp_ctx_listen
+ .text.pomp_ctx_connect
+                0x0000544a        0xa /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+                0x0000544a                pomp_ctx_connect
+ .text.pomp_ctx_bind
+                0x00005454        0xa /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+                0x00005454                pomp_ctx_bind
+ .text.client_cb
+                0x0000545e        0x6 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+ .text.pomp_ctx_remove_conn
+                0x00005464       0xd8 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+                0x00005464                pomp_ctx_remove_conn
+ .text.pomp_ctx_stop
+                0x0000553c       0xd4 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+                0x0000553c                pomp_ctx_stop
+ .text.pomp_ctx_notify_msg
+                0x00005610       0x24 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+                0x00005610                pomp_ctx_notify_msg
+ .text.pomp_ctx_notify_raw_buf
+                0x00005634       0x1a /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+                0x00005634                pomp_ctx_notify_raw_buf
+ .text.pomp_ctx_notify_send
+                0x0000564e       0x26 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+                0x0000564e                pomp_ctx_notify_send
+ .text.dump_append
+                0x00005674       0xb8 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+ .text.decoder_dump_cb
+                0x0000572c      0x148 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+ .text.decoder_read_varint
+                0x00005874       0xd0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+ .text.decoder_read_data
+                0x00005944       0x8c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+ .text.pomp_decoder_new
+                0x000059d0        0x8 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+                0x000059d0                pomp_decoder_new
+ .text.pomp_decoder_destroy
+                0x000059d8       0x12 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+                0x000059d8                pomp_decoder_destroy
+ .text.pomp_decoder_init
+                0x000059ea       0x14 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+                0x000059ea                pomp_decoder_init
+ .text.pomp_decoder_clear
+                0x000059fe       0x12 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+                0x000059fe                pomp_decoder_clear
+ .text.pomp_decoder_read_i8
+                0x00005a10       0x50 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+                0x00005a10                pomp_decoder_read_i8
+ .text.pomp_decoder_read_u8
+                0x00005a60       0x50 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+                0x00005a60                pomp_decoder_read_u8
+ .text.pomp_decoder_read_i16
+                0x00005ab0       0x50 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+                0x00005ab0                pomp_decoder_read_i16
+ .text.pomp_decoder_read_u16
+                0x00005b00       0x50 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+                0x00005b00                pomp_decoder_read_u16
+ .text.pomp_decoder_read_i32
+                0x00005b50       0x5c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+                0x00005b50                pomp_decoder_read_i32
+ .text.pomp_decoder_read_u32
+                0x00005bac       0x4c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+                0x00005bac                pomp_decoder_read_u32
+ .text.pomp_decoder_read_i64
+                0x00005bf8       0x68 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+                0x00005bf8                pomp_decoder_read_i64
+ .text.pomp_decoder_read_u64
+                0x00005c60       0x50 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+                0x00005c60                pomp_decoder_read_u64
+ .text.pomp_decoder_read_cstr
+                0x00005cb0       0xfc /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+                0x00005cb0                pomp_decoder_read_cstr
+ .text.pomp_decoder_read_str
+                0x00005dac       0x58 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+                0x00005dac                pomp_decoder_read_str
+ .text.pomp_decoder_read_cbuf
+                0x00005e04       0xd0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+                0x00005e04                pomp_decoder_read_cbuf
+ .text.pomp_decoder_read_buf
+                0x00005ed4       0x64 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+                0x00005ed4                pomp_decoder_read_buf
+ .text.pomp_decoder_read_f32
+                0x00005f38       0x44 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+                0x00005f38                pomp_decoder_read_f32
+ .text.pomp_decoder_read_f64
+                0x00005f7c       0x4c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+                0x00005f7c                pomp_decoder_read_f64
+ .text.pomp_decoder_read_fd
+                0x00005fc8       0x94 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+                0x00005fc8                pomp_decoder_read_fd
+ .text.pomp_decoder_readv
+                0x0000605c      0x300 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+                0x0000605c                pomp_decoder_readv
+ .text.pomp_decoder_read
+                0x0000635c       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+                0x0000635c                pomp_decoder_read
+ .text.pomp_decoder_walk
+                0x00006398      0x194 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+                0x00006398                pomp_decoder_walk
+ .text.decoder_dump
+                0x0000652c       0x90 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+ .text.pomp_decoder_dump
+                0x000065bc       0x60 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+                0x000065bc                pomp_decoder_dump
+ .text.pomp_decoder_adump
+                0x0000661c       0x6c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+                0x0000661c                pomp_decoder_adump
+ .text.encoder_write_data
+                0x00006688       0x2e /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+ *fill*         0x000066b6        0x2 
+ .text.encoder_write_varint
+                0x000066b8       0x78 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+ .text.pomp_encoder_new
+                0x00006730        0x8 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+                0x00006730                pomp_encoder_new
+ .text.pomp_encoder_destroy
+                0x00006738       0x12 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+                0x00006738                pomp_encoder_destroy
+ .text.pomp_encoder_init
+                0x0000674a       0x14 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+                0x0000674a                pomp_encoder_init
+ .text.pomp_encoder_clear
+                0x0000675e       0x12 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+                0x0000675e                pomp_encoder_clear
+ .text.pomp_encoder_write_i8
+                0x00006770       0x4c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+                0x00006770                pomp_encoder_write_i8
+ .text.pomp_encoder_write_u8
+                0x000067bc       0x4c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+                0x000067bc                pomp_encoder_write_u8
+ .text.pomp_encoder_write_i16
+                0x00006808       0x4c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+                0x00006808                pomp_encoder_write_i16
+ .text.pomp_encoder_write_u16
+                0x00006854       0x4c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+                0x00006854                pomp_encoder_write_u16
+ .text.pomp_encoder_write_i32
+                0x000068a0       0x22 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+                0x000068a0                pomp_encoder_write_i32
+ .text.pomp_encoder_write_u32
+                0x000068c2       0x1e /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+                0x000068c2                pomp_encoder_write_u32
+ .text.pomp_encoder_write_i64
+                0x000068e0       0x34 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+                0x000068e0                pomp_encoder_write_i64
+ .text.pomp_encoder_write_u64
+                0x00006914       0x1c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+                0x00006914                pomp_encoder_write_u64
+ .text.pomp_encoder_write_str
+                0x00006930       0x98 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+                0x00006930                pomp_encoder_write_str
+ .text.pomp_encoder_write_buf
+                0x000069c8       0x5e /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+                0x000069c8                pomp_encoder_write_buf
+ *fill*         0x00006a26        0x2 
+ .text.pomp_encoder_write_f32
+                0x00006a28       0x50 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+                0x00006a28                pomp_encoder_write_f32
+ .text.pomp_encoder_write_f64
+                0x00006a78       0x50 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+                0x00006a78                pomp_encoder_write_f64
+ .text.pomp_encoder_write_fd
+                0x00006ac8       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+                0x00006ac8                pomp_encoder_write_fd
+ .text.encoder_writev_internal
+                0x00006b04      0x518 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+ .text.pomp_encoder_write
+                0x0000701c       0x44 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+                0x0000701c                pomp_encoder_write
+ .text.pomp_encoder_writev
+                0x00007060       0x12 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+                0x00007060                pomp_encoder_writev
+ *fill*         0x00007072        0x2 
+ .text.encoder_write_internal
+                0x00007074       0x40 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+ .text.pomp_encoder_write_argv
+                0x000070b4       0x18 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+                0x000070b4                pomp_encoder_write_argv
+ .text.fd_events_to_epoll
+                0x000070cc       0x28 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+ .text.pomp_loop_epoll_do_get_fd
+                0x000070f4        0x4 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+ .text.pomp_loop_poll_do_remove
+                0x000070f8        0x4 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+ .text.pomp_loop_poll_do_get_fd
+                0x000070fc        0x6 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+ .text.pomp_loop_epoll_do_destroy
+                0x00007102       0x34 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+ .text.pomp_loop_poll_do_destroy
+                0x00007136       0x36 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+ .text.pomp_loop_epoll_do_wakeup
+                0x0000716c       0x90 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+ .text.pomp_loop_poll_do_wakeup
+                0x000071fc       0x8c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+ .text.pomp_loop_epoll_ctl.isra.4
+                0x00007288       0x94 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+ .text.pomp_loop_epoll_do_remove
+                0x0000731c        0xa /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+ .text.pomp_loop_epoll_do_update
+                0x00007326        0xa /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+ .text.pomp_loop_epoll_do_add
+                0x00007330        0xa /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+ *fill*         0x0000733a        0x2 
+ .text.pomp_loop_poll_do_new
+                0x0000733c       0x60 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+ .text.pomp_loop_epoll_do_new
+                0x0000739c      0x254 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+ .text.pomp_loop_poll_do_update
+                0x000075f0        0x4 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+ .text.pomp_loop_poll_do_add
+                0x000075f4        0x4 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+ .text.pomp_loop_find_pfd
+                0x000075f8       0x10 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+                0x000075f8                pomp_loop_find_pfd
+ .text.pomp_loop_epoll_do_wait_and_process
+                0x00007608      0x12c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+ .text.pomp_loop_poll_do_wait_and_process
+                0x00007734      0x204 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+ .text.pomp_loop_add_pfd
+                0x00007938       0x30 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+                0x00007938                pomp_loop_add_pfd
+ .text.pomp_loop_remove_pfd
+                0x00007968       0x60 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+                0x00007968                pomp_loop_remove_pfd
+ .text.pomp_loop_new
+                0x000079c8       0x2c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+                0x000079c8                pomp_loop_new
+ .text.pomp_loop_destroy
+                0x000079f4       0x38 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+                0x000079f4                pomp_loop_destroy
+ .text.pomp_loop_add
+                0x00007a2c       0x88 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+                0x00007a2c                pomp_loop_add
+ .text.pomp_loop_update
+                0x00007ab4       0x64 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+                0x00007ab4                pomp_loop_update
+ .text.pomp_loop_update2
+                0x00007b18       0x70 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+                0x00007b18                pomp_loop_update2
+ .text.pomp_loop_remove
+                0x00007b88       0x70 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+                0x00007b88                pomp_loop_remove
+ .text.pomp_loop_has_fd
+                0x00007bf8       0x12 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+                0x00007bf8                pomp_loop_has_fd
+ *fill*         0x00007c0a        0x2 
+ .text.pomp_loop_get_fd
+                0x00007c0c       0x18 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+                0x00007c0c                pomp_loop_get_fd
+ .text.pomp_loop_wait_and_process
+                0x00007c24       0x58 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+                0x00007c24                pomp_loop_wait_and_process
+ .text.pomp_loop_process_fd
+                0x00007c7c        0x6 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+                0x00007c7c                pomp_loop_process_fd
+ *fill*         0x00007c82        0x2 
+ .text.pomp_loop_wakeup
+                0x00007c84       0x18 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+                0x00007c84                pomp_loop_wakeup
+ .text.pomp_loop_idle_add
+                0x00007c9c       0x5e /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+                0x00007c9c                pomp_loop_idle_add
+ .text.pomp_loop_idle_remove
+                0x00007cfa       0x38 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+                0x00007cfa                pomp_loop_idle_remove
+ .text.pomp_msg_new
+                0x00007d32        0x8 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_msg.c.o
+                0x00007d32                pomp_msg_new
+ .text.pomp_msg_new_copy
+                0x00007d3a       0x38 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_msg.c.o
+                0x00007d3a                pomp_msg_new_copy
+ *fill*         0x00007d72        0x2 
+ .text.pomp_msg_new_with_buffer
+                0x00007d74       0xf8 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_msg.c.o
+                0x00007d74                pomp_msg_new_with_buffer
+ .text.pomp_msg_init
+                0x00007e6c       0x2c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_msg.c.o
+                0x00007e6c                pomp_msg_init
+ .text.pomp_msg_finish
+                0x00007e98       0xac /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_msg.c.o
+                0x00007e98                pomp_msg_finish
+ .text.pomp_msg_clear
+                0x00007f44       0x22 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_msg.c.o
+                0x00007f44                pomp_msg_clear
+ .text.pomp_msg_destroy
+                0x00007f66       0x1a /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_msg.c.o
+                0x00007f66                pomp_msg_destroy
+ .text.pomp_msg_get_id
+                0x00007f80        0x6 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_msg.c.o
+                0x00007f80                pomp_msg_get_id
+ .text.pomp_msg_get_buffer
+                0x00007f86        0x6 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_msg.c.o
+                0x00007f86                pomp_msg_get_buffer
+ .text.pomp_msg_writev
+                0x00007f8c       0x74 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_msg.c.o
+                0x00007f8c                pomp_msg_writev
+ .text.pomp_msg_write
+                0x00008000       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_msg.c.o
+                0x00008000                pomp_msg_write
+ .text.pomp_msg_write_argv
+                0x0000803c       0x78 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_msg.c.o
+                0x0000803c                pomp_msg_write_argv
+ .text.pomp_msg_readv
+                0x000080b4       0x60 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_msg.c.o
+                0x000080b4                pomp_msg_readv
+ .text.pomp_msg_read
+                0x00008114       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_msg.c.o
+                0x00008114                pomp_msg_read
+ .text.pomp_msg_dump
+                0x00008150       0x60 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_msg.c.o
+                0x00008150                pomp_msg_dump
+ .text.pomp_msg_adump
+                0x000081b0       0x5c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_msg.c.o
+                0x000081b0                pomp_msg_adump
+ .text.pomp_prot_reset_state
+                0x0000820c       0x1a /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_prot.c.o
+ *fill*         0x00008226        0x2 
+ .text.pomp_prot_check_magic
+                0x00008228       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_prot.c.o
+ .text.copy_header_magic.isra.0
+                0x00008264       0x1e /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_prot.c.o
+ .text.pomp_prot_new
+                0x00008282       0x16 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_prot.c.o
+                0x00008282                pomp_prot_new
+ .text.pomp_prot_destroy
+                0x00008298       0x24 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_prot.c.o
+                0x00008298                pomp_prot_destroy
+ .text.pomp_prot_decode_msg
+                0x000082bc      0x1fc /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_prot.c.o
+                0x000082bc                pomp_prot_decode_msg
+ .text.pomp_prot_release_msg
+                0x000084b8       0x24 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_prot.c.o
+                0x000084b8                pomp_prot_release_msg
+ .text.pomp_timer_fd_destroy
+                0x000084dc       0x28 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o
+ .text.pomp_timer_fd_new
+                0x00008504       0xa8 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o
+ .text.pomp_timer_fd_cb
+                0x000085ac       0x54 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o
+ .text.pomp_timer_posix_cb
+                0x00008600       0x50 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o
+ .text.pomp_timer_posix_destroy
+                0x00008650       0x3a /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o
+ *fill*         0x0000868a        0x2 
+ .text.pomp_timer_posix_sighandler
+                0x0000868c       0x54 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o
+ .text.fd_set_close_on_exec
+                0x000086e0       0x94 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o
+ .text.pomp_timer_fd_set
+                0x00008774       0xb4 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o
+ .text.pomp_timer_fd_clear
+                0x00008828       0x10 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o
+ .text.pomp_timer_posix_set
+                0x00008838       0xb4 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o
+ .text.pomp_timer_posix_clear
+                0x000088ec       0x10 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o
+ .text.fd_add_flags.constprop.3
+                0x000088fc       0x94 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o
+ .text.pomp_timer_posix_new
+                0x00008990      0x190 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o
+ .text.pomp_timer_new
+                0x00008b20       0x10 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o
+                0x00008b20                pomp_timer_new
+ .text.pomp_timer_destroy
+                0x00008b30       0x10 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o
+                0x00008b30                pomp_timer_destroy
+ .text.pomp_timer_set
+                0x00008b40       0x10 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o
+                0x00008b40                pomp_timer_set
+ .text.pomp_timer_set_periodic
+                0x00008b50       0x10 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o
+                0x00008b50                pomp_timer_set_periodic
+ .text.pomp_timer_clear
+                0x00008b60       0x10 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o
+                0x00008b60                pomp_timer_clear
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x00008b70        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00008b70        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00008b70        0x0 linker stubs
+ *(.v4_bx)
+ .v4_bx         0x00008b70        0x0 linker stubs
+
+.fini           0x00008b70        0x8
+ *(SORT(.fini))
+ .fini          0x00008b70        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+                0x00008b70                _fini
+ .fini          0x00008b74        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+                [!provide]                PROVIDE (__etext, .)
+                [!provide]                PROVIDE (_etext, .)
+                [!provide]                PROVIDE (etext, .)
+
+.rodata         0x00008b78      0x8c5
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.str1.1
+                0x00008b78       0x6d /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_addr.c.o
+ .rodata.str1.1
+                0x00008be5       0x94 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+ .rodata.str1.1
+                0x00008c79      0x129 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+                                0x148 (size before relaxing)
+ .rodata.str1.1
+                0x00008da2      0x191 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+                                0x1c0 (size before relaxing)
+ .rodata.str1.1
+                0x00008f33      0x218 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+ .rodata.str1.1
+                0x0000914b      0x144 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+                                0x147 (size before relaxing)
+ .rodata.str1.1
+                0x0000928f       0xb9 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+                                0x11f (size before relaxing)
+ .rodata.str1.1
+                0x00009348       0x5a /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_msg.c.o
+ .rodata.str1.1
+                0x000093a2       0x57 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_prot.c.o
+ .rodata.str1.1
+                0x000093f9       0x44 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o
+                                 0xa4 (size before relaxing)
+
+.rodata1
+ *(.rodata1)
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                [!provide]                PROVIDE (__exidx_start, .)
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                [!provide]                PROVIDE (__exidx_end, .)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x00009440        0x4
+ *(.eh_frame)
+ .eh_frame      0x00009440        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+ *(.eh_frame.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+                0x00019e8c                . = DATA_SEGMENT_ALIGN (0x10000, 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array
+ *(.preinit_array)
+
+.init_array     0x00019e8c        0x4
+ *(SORT(.init_array.*) SORT(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+ .init_array    0x00019e8c        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+
+.fini_array     0x00019e90        0x4
+ *(SORT(.fini_array.*) SORT(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+ .fini_array    0x00019e90        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+
+.jcr            0x00019e94        0x4
+ *(.jcr)
+ .jcr           0x00019e94        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+ .jcr           0x00019e94        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+
+.data.rel.ro    0x00019e98       0x60
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ .data.rel.ro.local
+                0x00019e98       0x40 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+                0x00019e98                pomp_loop_poll_ops
+                0x00019eb8                pomp_loop_epoll_ops
+ .data.rel.ro.local
+                0x00019ed8       0x20 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o
+                0x00019ed8                pomp_timer_posix_ops
+                0x00019ee8                pomp_timer_fd_ops
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic        0x00019ef8      0x108
+ *(.dynamic)
+ .dynamic       0x00019ef8      0x108 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+                0x00019ef8                _DYNAMIC
+                0x0001a000                . = DATA_SEGMENT_RELRO_END (., 0x0)
+
+.got            0x0001a000      0x240
+ *(.got.plt)
+ .got.plt       0x0001a000      0x224 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+                0x0001a000                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x0001a224        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ *(.got)
+ .got           0x0001a224       0x1c /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ *(.igot)
+
+.data           0x0001a240        0xc
+                [!provide]                PROVIDE (__data_start, .)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.rel.local
+                0x0001a240        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+                0x0001a240                __dso_handle
+ .data.rel.local
+                0x0001a244        0x4 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+ .data.rel.local
+                0x0001a248        0x4 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o
+
+.tm_clone_table
+                0x0001a24c        0x0
+ .tm_clone_table
+                0x0001a24c        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+ .tm_clone_table
+                0x0001a24c        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+
+.data1
+ *(.data1)
+                0x0001a24c                _edata = .
+                [!provide]                PROVIDE (edata, .)
+                0x0001a24c                . = .
+                0x0001a24c                __bss_start = .
+                0x0001a24c                __bss_start__ = .
+
+.bss            0x0001a24c        0x4
+ *(.dynbss)
+ .dynbss        0x0001a24c        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0001a24c        0x1 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+ *(COMMON)
+                0x0001a250                . = ALIGN ((. != 0x0)?0x4:0x1)
+ *fill*         0x0001a24d        0x3 
+                0x0001a250                _bss_end__ = .
+                0x0001a250                __bss_end__ = .
+                0x0001a250                . = ALIGN (0x4)
+                0x0001a250                . = SEGMENT_START ("ldata-segment", .)
+                0x0001a250                . = ALIGN (0x4)
+                0x0001a250                __end__ = .
+                0x0001a250                _end = .
+                [!provide]                PROVIDE (end, .)
+                0x0001a250                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x3b
+ *(.comment)
+ .comment       0x00000000       0x3b /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+                                 0x3c (size before relaxing)
+ .comment       0x0000003b       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_addr.c.o
+ .comment       0x0000003b       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+ .comment       0x0000003b       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+ .comment       0x0000003b       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+ .comment       0x0000003b       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+ .comment       0x0000003b       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+ .comment       0x0000003b       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+ .comment       0x0000003b       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_msg.c.o
+ .comment       0x0000003b       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_prot.c.o
+ .comment       0x0000003b       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o
+ .comment       0x0000003b       0x3c /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+
+.ARM.attributes
+                0x00000000       0x31
+ .ARM.attributes
+                0x00000000       0x27 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ .ARM.attributes
+                0x00000027       0x33 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+ .ARM.attributes
+                0x0000005a       0x33 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_addr.c.o
+ .ARM.attributes
+                0x0000008d       0x33 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+ .ARM.attributes
+                0x000000c0       0x33 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+ .ARM.attributes
+                0x000000f3       0x33 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+ .ARM.attributes
+                0x00000126       0x33 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+ .ARM.attributes
+                0x00000159       0x33 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+ .ARM.attributes
+                0x0000018c       0x33 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+ .ARM.attributes
+                0x000001bf       0x33 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_msg.c.o
+ .ARM.attributes
+                0x000001f2       0x33 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_prot.c.o
+ .ARM.attributes
+                0x00000225       0x33 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o
+ .ARM.attributes
+                0x00000258       0x33 /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+ .ARM.attributes
+                0x0000028b       0x27 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x7c8
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x38 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_addr.c.o
+ .debug_aranges
+                0x00000038       0xc8 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+ .debug_aranges
+                0x00000100       0xd0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+ .debug_aranges
+                0x000001d0      0x168 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+ .debug_aranges
+                0x00000338      0x100 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+ .debug_aranges
+                0x00000438       0xd8 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+ .debug_aranges
+                0x00000510      0x120 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+ .debug_aranges
+                0x00000630       0x98 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_msg.c.o
+ .debug_aranges
+                0x000006c8       0x50 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_prot.c.o
+ .debug_aranges
+                0x00000718       0xb0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000    0x1303c
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0xe83 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_addr.c.o
+ .debug_info    0x00000e83     0x15dd /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+ .debug_info    0x00002460     0x2ebc /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+ .debug_info    0x0000531c     0x3353 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+ .debug_info    0x0000866f     0x23b5 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+ .debug_info    0x0000aa24     0x19ed /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+ .debug_info    0x0000c411     0x28ea /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+ .debug_info    0x0000ecfb     0x1298 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_msg.c.o
+ .debug_info    0x0000ff93     0x112e /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_prot.c.o
+ .debug_info    0x000110c1     0x1f7b /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o
+
+.debug_abbrev   0x00000000     0x2789
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x27d /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_addr.c.o
+ .debug_abbrev  0x0000027d      0x420 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+ .debug_abbrev  0x0000069d      0x473 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+ .debug_abbrev  0x00000b10      0x4b2 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+ .debug_abbrev  0x00000fc2      0x460 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+ .debug_abbrev  0x00001422      0x3c4 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+ .debug_abbrev  0x000017e6      0x51b /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+ .debug_abbrev  0x00001d01      0x2e8 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_msg.c.o
+ .debug_abbrev  0x00001fe9      0x347 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_prot.c.o
+ .debug_abbrev  0x00002330      0x459 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o
+
+.debug_line     0x00000000     0x3fd7
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000      0x28a /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_addr.c.o
+ .debug_line    0x0000028a      0x541 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+ .debug_line    0x000007cb      0x833 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+ .debug_line    0x00000ffe      0x9ee /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+ .debug_line    0x000019ec      0x82a /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+ .debug_line    0x00002216      0x7d7 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+ .debug_line    0x000029ed      0x952 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+ .debug_line    0x0000333f      0x3b2 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_msg.c.o
+ .debug_line    0x000036f1      0x347 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_prot.c.o
+ .debug_line    0x00003a38      0x59f /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o
+
+.debug_frame    0x00000000     0x19e8
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x98 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_addr.c.o
+ .debug_frame   0x00000098      0x27c /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+ .debug_frame   0x00000314      0x2a0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+ .debug_frame   0x000005b4      0x4cc /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+ .debug_frame   0x00000a80      0x3d8 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+ .debug_frame   0x00000e58      0x2fc /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+ .debug_frame   0x00001154      0x3b0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+ .debug_frame   0x00001504      0x214 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_msg.c.o
+ .debug_frame   0x00001718       0xc8 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_prot.c.o
+ .debug_frame   0x000017e0      0x208 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o
+
+.debug_str      0x00000000     0x2bcc
+ *(.debug_str)
+ .debug_str     0x00000000      0x643 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_addr.c.o
+                                0x6fb (size before relaxing)
+ .debug_str     0x00000643      0x24f /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+                                0x7f3 (size before relaxing)
+ .debug_str     0x00000892      0xa41 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+                               0x1174 (size before relaxing)
+ .debug_str     0x000012d3      0x665 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+                               0x101c (size before relaxing)
+ .debug_str     0x00001938      0x30e /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+                                0xa2a (size before relaxing)
+ .debug_str     0x00001c46      0x2a7 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+                                0x90c (size before relaxing)
+ .debug_str     0x00001eed      0x526 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+                                0xdc0 (size before relaxing)
+ .debug_str     0x00002413      0x10f /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_msg.c.o
+                                0x861 (size before relaxing)
+ .debug_str     0x00002522      0x1d7 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_prot.c.o
+                                0x87f (size before relaxing)
+ .debug_str     0x000026f9      0x4d3 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o
+                                0xd2f (size before relaxing)
+
+.debug_loc      0x00000000     0xc959
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x673 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_addr.c.o
+ .debug_loc     0x00000673     0x11d5 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+ .debug_loc     0x00001848     0x1b6b /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+ .debug_loc     0x000033b3     0x254d /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+ .debug_loc     0x00005900     0x1e2e /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+ .debug_loc     0x0000772e     0x1a19 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+ .debug_loc     0x00009147     0x1bcd /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+ .debug_loc     0x0000ad14      0x8ab /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_msg.c.o
+ .debug_loc     0x0000b5bf      0x6d3 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_prot.c.o
+ .debug_loc     0x0000bc92      0xcc7 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000     0x1220
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x60 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_addr.c.o
+ .debug_ranges  0x00000060      0x178 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_buffer.c.o
+ .debug_ranges  0x000001d8      0x360 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_conn.c.o
+ .debug_ranges  0x00000538      0x2a8 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_ctx.c.o
+ .debug_ranges  0x000007e0      0x2a8 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_decoder.c.o
+ .debug_ranges  0x00000a88      0x248 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_encoder.c.o
+ .debug_ranges  0x00000cd0      0x2e0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_loop.c.o
+ .debug_ranges  0x00000fb0       0xa0 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_msg.c.o
+ .debug_ranges  0x00001050      0x108 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_prot.c.o
+ .debug_ranges  0x00001158       0xc8 /home/ncs/CAPSTONE/out/arsdk-native/build/libpomp/obj/src/pomp_timer.c.o
+
+.debug_macro
+ *(.debug_macro)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(out/arsdk-native/build/libpomp/libpomp.so elf32-littlearm)

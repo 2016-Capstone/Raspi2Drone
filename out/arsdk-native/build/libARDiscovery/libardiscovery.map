@@ -1,0 +1,927 @@
+
+As-needed library included to satisfy reference by file (symbol)
+
+libarsal.so                   /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Connection.c.o (ARSAL_Socket_Create)
+libarnetworkal.so             /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o (ARNETWORKAL_Manager_SetRecvClassSelector)
+libmux.so                     /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_MuxDiscovery.c.o (mux_ref)
+libpomp.so                    /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_MuxDiscovery.c.o (pomp_msg_get_id)
+libjson.so                    /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o (json_tokener_parse)
+libavahi-common.so.3          /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_AvahiDiscovery.c.o (avahi_simple_poll_get)
+libavahi-client.so.3          /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_AvahiDiscovery.c.o (avahi_service_resolver_new)
+libgcc_s.so.1                 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Connection.c.o (__aeabi_idiv@@GCC_3.5)
+libpthread.so.0               /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Connection.c.o (close@@GLIBC_2.4)
+libc.so.6                     /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_AvahiDiscovery.c.o (strcpy@@GLIBC_2.4)
+ld-linux-armhf.so.3           /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Connection.c.o (__stack_chk_guard@@GLIBC_2.4)
+
+Discarded input sections
+
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ .note.GNU-stack
+                0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+ .note.GNU-stack
+                0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+ .text          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Connection.c.o
+ .data          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Connection.c.o
+ .bss           0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Connection.c.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Connection.c.o
+ .text          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Discovery.c.o
+ .data          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Discovery.c.o
+ .bss           0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Discovery.c.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Discovery.c.o
+ .text          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Device.c.o
+ .data          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Device.c.o
+ .bss           0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Device.c.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Device.c.o
+ .text          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_MuxDiscovery.c.o
+ .data          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_MuxDiscovery.c.o
+ .bss           0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_MuxDiscovery.c.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_MuxDiscovery.c.o
+ .text          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o
+ .bss           0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o
+ .text          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/BLE/ARDISCOVERY_DEVICE_Ble.c.o
+ .bss           0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/BLE/ARDISCOVERY_DEVICE_Ble.c.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/BLE/ARDISCOVERY_DEVICE_Ble.c.o
+ .text          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Usb/ARDISCOVERY_DEVICE_Usb.c.o
+ .bss           0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Usb/ARDISCOVERY_DEVICE_Usb.c.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Usb/ARDISCOVERY_DEVICE_Usb.c.o
+ .text          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/gen/Sources/ARDISCOVERY_Error.c.o
+ .data          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/gen/Sources/ARDISCOVERY_Error.c.o
+ .bss           0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/gen/Sources/ARDISCOVERY_Error.c.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/gen/Sources/ARDISCOVERY_Error.c.o
+ .text          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_AvahiDiscovery.c.o
+ .data          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_AvahiDiscovery.c.o
+ .bss           0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_AvahiDiscovery.c.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_AvahiDiscovery.c.o
+ .text          0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+ .note.GNU-stack
+                0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+ .text          0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+ .note.GNU-stack
+                0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Connection.c.o
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Discovery.c.o
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Device.c.o
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_MuxDiscovery.c.o
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/BLE/ARDISCOVERY_DEVICE_Ble.c.o
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Usb/ARDISCOVERY_DEVICE_Usb.c.o
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/gen/Sources/ARDISCOVERY_Error.c.o
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_AvahiDiscovery.c.o
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/staging/usr/lib/libarsal.so
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/staging/usr/lib/libarnetwork.so
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/staging/usr/lib/libarnetworkal.so
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/staging/usr/lib/libmux.so
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/staging/usr/lib/libpomp.so
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/staging/usr/lib/libjson.so
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/libavahi-common.so
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/libavahi-client.so
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/librt.so
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/libstdc++.so
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/libm.so
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/libgcc_s.so
+START GROUP
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/libgcc_s.so.1
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/libgcc.a
+END GROUP
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/libpthread.so
+START GROUP
+LOAD /lib/arm-linux-gnueabihf/libpthread.so.0
+LOAD /usr/lib/arm-linux-gnueabihf/libpthread_nonshared.a
+END GROUP
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/libc.so
+START GROUP
+LOAD /lib/arm-linux-gnueabihf/libc.so.6
+LOAD /usr/lib/arm-linux-gnueabihf/libc_nonshared.a
+LOAD /lib/arm-linux-gnueabihf/ld-linux-armhf.so.3
+END GROUP
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/libgcc_s.so
+START GROUP
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/libgcc_s.so.1
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/libgcc.a
+END GROUP
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+                0x000000f4                . = (0x0 + SIZEOF_HEADERS)
+
+.note.gnu.build-id
+                0x000000f4       0x24
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x000000f4       0x24 linker stubs
+
+.hash
+ *(.hash)
+
+.gnu.hash       0x00000118      0x2a0
+ *(.gnu.hash)
+ .gnu.hash      0x00000118      0x2a0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.dynsym         0x000003b8      0xcb0
+ *(.dynsym)
+ .dynsym        0x000003b8      0xcb0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.dynstr         0x00001068     0x15ac
+ *(.dynstr)
+ .dynstr        0x00001068     0x15ac /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.gnu.version    0x00002614      0x196
+ *(.gnu.version)
+ .gnu.version   0x00002614      0x196 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.gnu.version_d  0x000027ac        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x000027ac        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.gnu.version_r  0x000027ac       0x90
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x000027ac       0x90 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.rel.dyn        0x0000283c      0x190
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ .rel.text      0x0000283c        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro .rel.data.rel.ro.* .rel.gnu.linkonce.d.rel.ro.*)
+ .rel.data.rel.ro.local
+                0x0000283c       0x88 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ .rel.data.rel.local
+                0x000028c4        0x8 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ .rel.got       0x000028cc       0xf0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rel.iplt)
+ .rel.iplt      0x000029bc        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ .rel.fini_array
+                0x000029bc        0x8 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ .rel.init_array
+                0x000029c4        0x8 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.rela.dyn
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rela.iplt)
+
+.rel.plt        0x000029cc      0x478
+ *(.rel.plt)
+ .rel.plt       0x000029cc      0x478 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.rela.plt
+ *(.rela.plt)
+
+.init           0x00002e44        0xc
+ *(SORT(.init))
+ .init          0x00002e44        0x8 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+                0x00002e44                _init
+ .init          0x00002e4c        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+
+.plt            0x00002e50      0x6f4
+ *(.plt)
+ .plt           0x00002e50      0x6f4 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.iplt           0x00003544        0x0
+ *(.iplt)
+ .iplt          0x00003544        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.text           0x00003544     0x4518
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x00003544       0x24 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ .text          0x00003568       0xd0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+ .text.ARDISCOVERY_Connection_RxPending
+                0x00003638      0x418 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Connection.c.o
+ .text.ARDISCOVERY_Connection_TxPending
+                0x00003a50      0x284 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Connection.c.o
+ .text.ARDISCOVERY_Connection_CreateSocket
+                0x00003cd4       0x70 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Connection.c.o
+ .text.ARDISCOVERY_Connection_ControllerInitSocket
+                0x00003d44      0x5a4 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Connection.c.o
+ .text.ARDISCOVERY_Connection_Delete
+                0x000042e8       0x94 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Connection.c.o
+                0x000042e8                ARDISCOVERY_Connection_Delete
+ .text.ARDISCOVERY_Connection_New
+                0x0000437c       0xec /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Connection.c.o
+                0x0000437c                ARDISCOVERY_Connection_New
+ .text.ARDISCOVERY_Connection_DeviceListeningLoop
+                0x00004468      0x44c /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Connection.c.o
+                0x00004468                ARDISCOVERY_Connection_DeviceListeningLoop
+ .text.ARDISCOVERY_Connection_Device_StopListening
+                0x000048b4       0x34 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Connection.c.o
+                0x000048b4                ARDISCOVERY_Connection_Device_StopListening
+ .text.ARDISCOVERY_Connection_ControllerConnection
+                0x000048e8       0x60 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Connection.c.o
+                0x000048e8                ARDISCOVERY_Connection_ControllerConnection
+ .text.ARDISCOVERY_Connection_getControllerIP
+                0x00004948       0x18 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Connection.c.o
+                0x00004948                ARDISCOVERY_Connection_getControllerIP
+ .text.ARDISCOVERY_getProductService
+                0x00004960       0x22 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Discovery.c.o
+                0x00004960                ARDISCOVERY_getProductService
+ *fill*         0x00004982        0x2 
+ .text.ARDISCOVERY_getProductID
+                0x00004984       0x10 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Discovery.c.o
+                0x00004984                ARDISCOVERY_getProductID
+ .text.ARDISCOVERY_getProductName
+                0x00004994       0x1c /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Discovery.c.o
+                0x00004994                ARDISCOVERY_getProductName
+ .text.ARDISCOVERY_getProductPathName
+                0x000049b0       0x40 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Discovery.c.o
+                0x000049b0                ARDISCOVERY_getProductPathName
+ .text.ARDISCOVERY_getProductFromName
+                0x000049f0       0x38 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Discovery.c.o
+                0x000049f0                ARDISCOVERY_getProductFromName
+ .text.ARDISCOVERY_getProductFromPathName
+                0x00004a28       0x74 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Discovery.c.o
+                0x00004a28                ARDISCOVERY_getProductFromPathName
+ .text.ARDISCOVERY_getProductFromProductID
+                0x00004a9c       0x2c /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Discovery.c.o
+                0x00004a9c                ARDISCOVERY_getProductFromProductID
+ .text.ARDISCOVERY_getProductFamily
+                0x00004ac8       0x18 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Discovery.c.o
+                0x00004ac8                ARDISCOVERY_getProductFamily
+ .text.ARDISCOVERY_Device_Delete
+                0x00004ae0       0x2c /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Device.c.o
+                0x00004ae0                ARDISCOVERY_Device_Delete
+ .text.ARDISCOVERY_Device_New
+                0x00004b0c       0x5c /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Device.c.o
+                0x00004b0c                ARDISCOVERY_Device_New
+ .text.ARDISCOVERY_Device_NewByCopy
+                0x00004b68       0xa0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Device.c.o
+                0x00004b68                ARDISCOVERY_Device_NewByCopy
+ .text.ARDISCOVERY_Device_NewARNetworkAL
+                0x00004c08       0xe8 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Device.c.o
+                0x00004c08                ARDISCOVERY_Device_NewARNetworkAL
+ .text.ARDISCOVERY_Device_DeleteARNetworkAL
+                0x00004cf0       0x18 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Device.c.o
+                0x00004cf0                ARDISCOVERY_Device_DeleteARNetworkAL
+ .text.ARDISCOVERY_Device_InitNetworkConfiguration
+                0x00004d08       0x20 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Device.c.o
+                0x00004d08                ARDISCOVERY_Device_InitNetworkConfiguration
+ .text.ARDISCOVERY_Device_InitWifi
+                0x00004d28      0x158 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Device.c.o
+                0x00004d28                ARDISCOVERY_Device_InitWifi
+ .text.ARDISCOVERY_Device_WifiAddConnectionCallbacks
+                0x00004e80        0x4 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Device.c.o
+                0x00004e80                ARDISCOVERY_Device_WifiAddConnectionCallbacks
+ .text.ARDISCOVERY_DEVICE_WifiGetIpAddress
+                0x00004e84        0x4 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Device.c.o
+                0x00004e84                ARDISCOVERY_DEVICE_WifiGetIpAddress
+ .text.ARDISCOVERY_DEVICE_WifiSetQoSLevel
+                0x00004e88        0x4 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Device.c.o
+                0x00004e88                ARDISCOVERY_DEVICE_WifiSetQoSLevel
+ .text.ARDISCOVERY_Device_WifiSetDeviceToControllerPort
+                0x00004e8c        0x4 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Device.c.o
+                0x00004e8c                ARDISCOVERY_Device_WifiSetDeviceToControllerPort
+ .text.ARDISCOVERY_Device_InitBLE
+                0x00004e90      0x104 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Device.c.o
+                0x00004e90                ARDISCOVERY_Device_InitBLE
+ .text.ARDISCOVERY_Device_InitUSB
+                0x00004f94       0xf8 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Device.c.o
+                0x00004f94                ARDISCOVERY_Device_InitUSB
+ .text.ARDISCOVERY_Device_UsbAddConnectionCallbacks
+                0x0000508c        0x4 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Device.c.o
+                0x0000508c                ARDISCOVERY_Device_UsbAddConnectionCallbacks
+ .text.ARDISCOVERY_Device_UsbGetMux
+                0x00005090        0x4 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Device.c.o
+                0x00005090                ARDISCOVERY_Device_UsbGetMux
+ .text.mux_discovery_channel_cb
+                0x00005094      0x270 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_MuxDiscovery.c.o
+ .text.mux_backend_channel_cb
+                0x00005304      0x1dc /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_MuxDiscovery.c.o
+ .text.discovery_cleanup
+                0x000054e0       0x20 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_MuxDiscovery.c.o
+ .text.connection_cleanup
+                0x00005500       0x20 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_MuxDiscovery.c.o
+ .text.mux_write_msg.constprop.0
+                0x00005520      0x124 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_MuxDiscovery.c.o
+ .text.ARDiscovery_MuxDiscovery_new
+                0x00005644      0x134 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_MuxDiscovery.c.o
+                0x00005644                ARDiscovery_MuxDiscovery_new
+ .text.ARDiscovery_MuxConnection_new
+                0x00005778       0xc8 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_MuxDiscovery.c.o
+                0x00005778                ARDiscovery_MuxConnection_new
+ .text.ARDiscovery_MuxConnection_sendConnReq
+                0x00005840      0x158 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_MuxDiscovery.c.o
+                0x00005840                ARDiscovery_MuxConnection_sendConnReq
+ .text.ARDiscovery_MuxDiscovery_dispose
+                0x00005998        0x4 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_MuxDiscovery.c.o
+                0x00005998                ARDiscovery_MuxDiscovery_dispose
+ .text.ARDiscovery_MuxConnection_dispose
+                0x0000599c        0x4 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_MuxDiscovery.c.o
+                0x0000599c                ARDiscovery_MuxConnection_dispose
+ .text.ARDISCOVERY_DEVICE_Wifi_SendJsonCallback
+                0x000059a0       0x90 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o
+                0x000059a0                ARDISCOVERY_DEVICE_Wifi_SendJsonCallback
+ .text.ARDISCOVERY_DEVICE_Wifi_ReceiveJsonCallback
+                0x00005a30       0x84 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o
+                0x00005a30                ARDISCOVERY_DEVICE_Wifi_ReceiveJsonCallback
+ .text.ARDISCOVERY_DEVICE_Wifi_SetDeviceToControllerPort
+                0x00005ab4       0x24 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o
+                0x00005ab4                ARDISCOVERY_DEVICE_Wifi_SetDeviceToControllerPort
+ .text.ARDISCOVERY_DEVICE_Wifi_DeleteSpecificParameters
+                0x00005ad8       0x38 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o
+                0x00005ad8                ARDISCOVERY_DEVICE_Wifi_DeleteSpecificParameters
+ .text.ARDISCOVERY_DEVICE_Wifi_CreateSpecificParameters
+                0x00005b10       0x64 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o
+                0x00005b10                ARDISCOVERY_DEVICE_Wifi_CreateSpecificParameters
+ .text.ARDISCOVERY_DEVICE_Wifi_GetCopyOfSpecificParameters
+                0x00005b74       0x84 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o
+                0x00005b74                ARDISCOVERY_DEVICE_Wifi_GetCopyOfSpecificParameters
+ .text.ARDISCOVERY_DEVICE_Wifi_AddConnectionCallbacks
+                0x00005bf8       0x28 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o
+                0x00005bf8                ARDISCOVERY_DEVICE_Wifi_AddConnectionCallbacks
+ .text.ARDISCOVERY_DEVICE_Wifi_DeleteARNetworkAL
+                0x00005c20       0x38 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o
+                0x00005c20                ARDISCOVERY_DEVICE_Wifi_DeleteARNetworkAL
+ .text.ARDISCOVERY_DEVICE_Wifi_GetIpAddress
+                0x00005c58       0x4c /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o
+                0x00005c58                ARDISCOVERY_DEVICE_Wifi_GetIpAddress
+ .text.ARDISCOVERY_DEVICE_Wifi_SetQoSLevel
+                0x00005ca4       0x24 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o
+                0x00005ca4                ARDISCOVERY_DEVICE_Wifi_SetQoSLevel
+ .text.ARDISCOVERY_DEVICE_Wifi_InitBebopNetworkConfiguration
+                0x00005cc8       0x70 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o
+                0x00005cc8                ARDISCOVERY_DEVICE_Wifi_InitBebopNetworkConfiguration
+ .text.ARDISCOVERY_DEVICE_Wifi_InitSkyControllerNetworkConfiguration
+                0x00005d38        0x4 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o
+                0x00005d38                ARDISCOVERY_DEVICE_Wifi_InitSkyControllerNetworkConfiguration
+ .text.ARDISCOVERY_DEVICE_Wifi_InitBebop2NetworkConfiguration
+                0x00005d3c        0x4 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o
+                0x00005d3c                ARDISCOVERY_DEVICE_Wifi_InitBebop2NetworkConfiguration
+ .text.ARDISCOVERY_DEVICE_Wifi_InitUnknownproduct_4NetworkConfiguration
+                0x00005d40        0x4 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o
+                0x00005d40                ARDISCOVERY_DEVICE_Wifi_InitUnknownproduct_4NetworkConfiguration
+ .text.ARDISCOVERY_DEVICE_Wifi_InitJumpingSumoNetworkConfiguration
+                0x00005d44       0x64 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o
+                0x00005d44                ARDISCOVERY_DEVICE_Wifi_InitJumpingSumoNetworkConfiguration
+ .text.ARDISCOVERY_DEVICE_Wifi_InitJumpingSumoEvoNetworkConfiguration
+                0x00005da8       0x6c /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o
+                0x00005da8                ARDISCOVERY_DEVICE_Wifi_InitJumpingSumoEvoNetworkConfiguration
+ .text.ARDISCOVERY_DEVICE_Wifi_InitPowerUpNetworkConfiguration
+                0x00005e14       0x68 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o
+                0x00005e14                ARDISCOVERY_DEVICE_Wifi_InitPowerUpNetworkConfiguration
+ .text.ARDISCOVERY_DEVICE_Wifi_InitEvinrudeNetworkConfiguration
+                0x00005e7c        0x4 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o
+                0x00005e7c                ARDISCOVERY_DEVICE_Wifi_InitEvinrudeNetworkConfiguration
+ .text.ARDISCOVERY_DEVICE_Wifi_DiscoveryConnect
+                0x00005e80       0x90 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o
+                0x00005e80                ARDISCOVERY_DEVICE_Wifi_DiscoveryConnect
+ .text.ARDISCOVERY_DEVICE_Wifi_NewARNetworkAL
+                0x00005f10       0xc8 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o
+                0x00005f10                ARDISCOVERY_DEVICE_Wifi_NewARNetworkAL
+ .text.ARDISCOVERY_DEVICE_Ble_DeleteSpecificParameters
+                0x00005fd8       0x2c /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/BLE/ARDISCOVERY_DEVICE_Ble.c.o
+                0x00005fd8                ARDISCOVERY_DEVICE_Ble_DeleteSpecificParameters
+ .text.ARDISCOVERY_DEVICE_Ble_CreateSpecificParameters
+                0x00006004       0x40 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/BLE/ARDISCOVERY_DEVICE_Ble.c.o
+                0x00006004                ARDISCOVERY_DEVICE_Ble_CreateSpecificParameters
+ .text.ARDISCOVERY_DEVICE_Ble_GetCopyOfSpecificParameters
+                0x00006044       0x50 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/BLE/ARDISCOVERY_DEVICE_Ble.c.o
+                0x00006044                ARDISCOVERY_DEVICE_Ble_GetCopyOfSpecificParameters
+ .text.ARDISCOVERY_DEVICE_Ble_DeleteARNetworkAL
+                0x00006094       0x38 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/BLE/ARDISCOVERY_DEVICE_Ble.c.o
+                0x00006094                ARDISCOVERY_DEVICE_Ble_DeleteARNetworkAL
+ .text.ARDISCOVERY_DEVICE_Ble_NewARNetworkAL
+                0x000060cc       0xb4 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/BLE/ARDISCOVERY_DEVICE_Ble.c.o
+                0x000060cc                ARDISCOVERY_DEVICE_Ble_NewARNetworkAL
+ .text.ARDISCOVERY_DEVICE_Ble_InitRollingSpiderNetworkConfiguration
+                0x00006180       0x60 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/BLE/ARDISCOVERY_DEVICE_Ble.c.o
+                0x00006180                ARDISCOVERY_DEVICE_Ble_InitRollingSpiderNetworkConfiguration
+ .text.device_conn_resp_cb
+                0x000061e0       0x3a /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Usb/ARDISCOVERY_DEVICE_Usb.c.o
+ *fill*         0x0000621a        0x2 
+ .text.ARDISCOVERY_DEVICE_Usb_DeleteSpecificParameters
+                0x0000621c       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Usb/ARDISCOVERY_DEVICE_Usb.c.o
+                0x0000621c                ARDISCOVERY_DEVICE_Usb_DeleteSpecificParameters
+ .text.ARDISCOVERY_DEVICE_Usb_CreateSpecificParameters
+                0x00006258       0x58 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Usb/ARDISCOVERY_DEVICE_Usb.c.o
+                0x00006258                ARDISCOVERY_DEVICE_Usb_CreateSpecificParameters
+ .text.ARDISCOVERY_DEVICE_Usb_GetCopyOfSpecificParameters
+                0x000062b0       0xac /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Usb/ARDISCOVERY_DEVICE_Usb.c.o
+                0x000062b0                ARDISCOVERY_DEVICE_Usb_GetCopyOfSpecificParameters
+ .text.ARDISCOVERY_DEVICE_Usb_AddConnectionCallbacks
+                0x0000635c       0x2c /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Usb/ARDISCOVERY_DEVICE_Usb.c.o
+                0x0000635c                ARDISCOVERY_DEVICE_Usb_AddConnectionCallbacks
+ .text.ARDISCOVERY_DEVICE_Usb_DeleteARNetworkAL
+                0x00006388       0x38 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Usb/ARDISCOVERY_DEVICE_Usb.c.o
+                0x00006388                ARDISCOVERY_DEVICE_Usb_DeleteARNetworkAL
+ .text.ARDISCOVERY_DEVICE_Usb_InitSkyController2NetworkConfiguration
+                0x000063c0       0x60 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Usb/ARDISCOVERY_DEVICE_Usb.c.o
+                0x000063c0                ARDISCOVERY_DEVICE_Usb_InitSkyController2NetworkConfiguration
+ .text.ARDISCOVERY_DEVICE_Usb_DiscoveryConnect
+                0x00006420      0x138 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Usb/ARDISCOVERY_DEVICE_Usb.c.o
+                0x00006420                ARDISCOVERY_DEVICE_Usb_DiscoveryConnect
+ .text.ARDISCOVERY_DEVICE_Usb_NewARNetworkAL
+                0x00006558       0x98 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Usb/ARDISCOVERY_DEVICE_Usb.c.o
+                0x00006558                ARDISCOVERY_DEVICE_Usb_NewARNetworkAL
+ .text.ARDISCOVERY_DEVICE_Usb_GetMux
+                0x000065f0       0x2c /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Usb/ARDISCOVERY_DEVICE_Usb.c.o
+                0x000065f0                ARDISCOVERY_DEVICE_Usb_GetMux
+ .text.ARDISCOVERY_Error_ToString
+                0x0000661c      0x308 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/gen/Sources/ARDISCOVERY_Error.c.o
+                0x0000661c                ARDISCOVERY_Error_ToString
+ .text.ARDISCOVERY_AvahiDiscovery_CreateService
+                0x00006924      0x154 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_AvahiDiscovery.c.o
+ .text.ARDISCOVERY_AvahiDiscovery_EntryGroupCb
+                0x00006a78      0x1c8 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_AvahiDiscovery.c.o
+ .text.ARDISCOVERY_AvahiDiscovery_Publisher_ClientCb
+                0x00006c40      0x11c /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_AvahiDiscovery.c.o
+ .text.ARDISCOVERY_AvahiDiscovery_Browser_BrowseCb
+                0x00006d5c      0x1d4 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_AvahiDiscovery.c.o
+ .text.ARDISCOVERY_AvahiDiscovery_Browser_ResolveCb
+                0x00006f30      0x13c /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_AvahiDiscovery.c.o
+ .text.ARDISCOVERY_AvahiDiscovery_Browser_ClientCb
+                0x0000706c       0xfc /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_AvahiDiscovery.c.o
+ .text.ARDISCOVERY_AvahiDiscovery_ResetService
+                0x00007168      0x164 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_AvahiDiscovery.c.o
+                0x00007168                ARDISCOVERY_AvahiDiscovery_ResetService
+ .text.ARDISCOVERY_AvahiDiscovery_Publish
+                0x000072cc      0x1c8 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_AvahiDiscovery.c.o
+                0x000072cc                ARDISCOVERY_AvahiDiscovery_Publish
+ .text.ARDISCOVERY_AvahiDiscovery_StopPublishing
+                0x00007494        0xc /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_AvahiDiscovery.c.o
+                0x00007494                ARDISCOVERY_AvahiDiscovery_StopPublishing
+ .text.ARDISCOVERY_AvahiDiscovery_Publisher_Delete
+                0x000074a0       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_AvahiDiscovery.c.o
+                0x000074a0                ARDISCOVERY_AvahiDiscovery_Publisher_Delete
+ .text.ARDISCOVERY_AvahiDiscovery_Publisher_New
+                0x000074dc      0x164 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_AvahiDiscovery.c.o
+                0x000074dc                ARDISCOVERY_AvahiDiscovery_Publisher_New
+ .text.ARDISCOVERY_AvahiDiscovery_Browse
+                0x00007640      0x298 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_AvahiDiscovery.c.o
+                0x00007640                ARDISCOVERY_AvahiDiscovery_Browse
+ .text.ARDISCOVERY_AvahiDiscovery_StopBrowsing
+                0x000078d8        0xc /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_AvahiDiscovery.c.o
+                0x000078d8                ARDISCOVERY_AvahiDiscovery_StopBrowsing
+ .text.ARDISCOVERY_AvahiDiscovery_Browser_Delete
+                0x000078e4       0x38 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_AvahiDiscovery.c.o
+                0x000078e4                ARDISCOVERY_AvahiDiscovery_Browser_Delete
+ .text.ARDISCOVERY_AvahiDiscovery_Browser_New
+                0x0000791c      0x140 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_AvahiDiscovery.c.o
+                0x0000791c                ARDISCOVERY_AvahiDiscovery_Browser_New
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x00007a5c        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00007a5c        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00007a5c        0x0 linker stubs
+ *(.v4_bx)
+ .v4_bx         0x00007a5c        0x0 linker stubs
+
+.fini           0x00007a5c        0x8
+ *(SORT(.fini))
+ .fini          0x00007a5c        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+                0x00007a5c                _fini
+ .fini          0x00007a60        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+                [!provide]                PROVIDE (__etext, .)
+                [!provide]                PROVIDE (_etext, .)
+                [!provide]                PROVIDE (etext, .)
+
+.rodata         0x00007a64     0x13b7
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x00007a64      0x100 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Connection.c.o
+ .rodata.str1.1
+                0x00007b64      0x39a /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Connection.c.o
+ .rodata        0x00007efe       0x33 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Discovery.c.o
+ .rodata.str1.1
+                0x00007f31       0xc4 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Discovery.c.o
+                                 0xc5 (size before relaxing)
+ .rodata        0x00007ff5       0x74 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Device.c.o
+ .rodata.str1.1
+                0x00008069       0x3b /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Device.c.o
+                                 0x61 (size before relaxing)
+ .rodata        0x000080a4       0xd2 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_MuxDiscovery.c.o
+ .rodata.str1.1
+                0x00008176      0x33e /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_MuxDiscovery.c.o
+                                0x347 (size before relaxing)
+ .rodata.str1.1
+                0x000084b4       0x22 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o
+                                 0x25 (size before relaxing)
+ *fill*         0x000084d6        0x2 
+ .rodata        0x000084d8       0x10 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/BLE/ARDISCOVERY_DEVICE_Ble.c.o
+ .rodata.str1.1
+                0x000084e8       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Usb/ARDISCOVERY_DEVICE_Usb.c.o
+                                 0x3d (size before relaxing)
+ .rodata.str1.1
+                0x00008524      0x469 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/gen/Sources/ARDISCOVERY_Error.c.o
+ .rodata        0x0000898d      0x1c1 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_AvahiDiscovery.c.o
+ .rodata.str1.1
+                0x00008b4e      0x2cd /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_AvahiDiscovery.c.o
+                                0x2f3 (size before relaxing)
+
+.rodata1
+ *(.rodata1)
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                [!provide]                PROVIDE (__exidx_start, .)
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                [!provide]                PROVIDE (__exidx_end, .)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x00008e1c        0x4
+ *(.eh_frame)
+ .eh_frame      0x00008e1c        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+ *(.eh_frame.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+                0x00018e78                . = DATA_SEGMENT_ALIGN (0x10000, 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array
+ *(.preinit_array)
+
+.init_array     0x00018e78        0x4
+ *(SORT(.init_array.*) SORT(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+ .init_array    0x00018e78        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+
+.fini_array     0x00018e7c        0x4
+ *(SORT(.fini_array.*) SORT(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+ .fini_array    0x00018e7c        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+
+.jcr            0x00018e80        0x4
+ *(.jcr)
+ .jcr           0x00018e80        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+ .jcr           0x00018e80        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+
+.data.rel.ro    0x00018e84       0x44
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ .data.rel.ro.local
+                0x00018e84       0x44 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Discovery.c.o
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic        0x00018ec8      0x138
+ *(.dynamic)
+ .dynamic       0x00018ec8      0x138 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+                0x00018ec8                _DYNAMIC
+                0x00019000                . = DATA_SEGMENT_RELRO_END (., 0x0)
+
+.got            0x00019000      0x2c0
+ *(.got.plt)
+ .got.plt       0x00019000      0x248 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+                0x00019000                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x00019248        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ *(.got)
+ .got           0x00019248       0x78 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ *(.igot)
+
+.data           0x000192c0      0x554
+                [!provide]                PROVIDE (__data_start, .)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.rel.local
+                0x000192c0        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+                0x000192c0                __dso_handle
+ .data          0x000192c4      0x400 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o
+ .data          0x000196c4       0xa8 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/BLE/ARDISCOVERY_DEVICE_Ble.c.o
+ .data          0x0001976c       0xa8 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Usb/ARDISCOVERY_DEVICE_Usb.c.o
+
+.tm_clone_table
+                0x00019814        0x0
+ .tm_clone_table
+                0x00019814        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+ .tm_clone_table
+                0x00019814        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+
+.data1
+ *(.data1)
+                0x00019814                _edata = .
+                [!provide]                PROVIDE (edata, .)
+                0x00019814                . = .
+                0x00019814                __bss_start = .
+                0x00019814                __bss_start__ = .
+
+.bss            0x00019814        0x4
+ *(.dynbss)
+ .dynbss        0x00019814        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x00019814        0x1 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+ *(COMMON)
+                0x00019818                . = ALIGN ((. != 0x0)?0x4:0x1)
+ *fill*         0x00019815        0x3 
+                0x00019818                _bss_end__ = .
+                0x00019818                __bss_end__ = .
+                0x00019818                . = ALIGN (0x4)
+                0x00019818                . = SEGMENT_START ("ldata-segment", .)
+                0x00019818                . = ALIGN (0x4)
+                0x00019818                __end__ = .
+                0x00019818                _end = .
+                [!provide]                PROVIDE (end, .)
+                0x00019818                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x3b
+ *(.comment)
+ .comment       0x00000000       0x3b /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+                                 0x3c (size before relaxing)
+ .comment       0x0000003b       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Connection.c.o
+ .comment       0x0000003b       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Discovery.c.o
+ .comment       0x0000003b       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Device.c.o
+ .comment       0x0000003b       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_MuxDiscovery.c.o
+ .comment       0x0000003b       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o
+ .comment       0x0000003b       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/BLE/ARDISCOVERY_DEVICE_Ble.c.o
+ .comment       0x0000003b       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Usb/ARDISCOVERY_DEVICE_Usb.c.o
+ .comment       0x0000003b       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/gen/Sources/ARDISCOVERY_Error.c.o
+ .comment       0x0000003b       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_AvahiDiscovery.c.o
+ .comment       0x0000003b       0x3c /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+
+.ARM.attributes
+                0x00000000       0x31
+ .ARM.attributes
+                0x00000000       0x27 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ .ARM.attributes
+                0x00000027       0x33 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+ .ARM.attributes
+                0x0000005a       0x33 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Connection.c.o
+ .ARM.attributes
+                0x0000008d       0x33 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Discovery.c.o
+ .ARM.attributes
+                0x000000c0       0x33 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Device.c.o
+ .ARM.attributes
+                0x000000f3       0x33 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_MuxDiscovery.c.o
+ .ARM.attributes
+                0x00000126       0x33 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o
+ .ARM.attributes
+                0x00000159       0x33 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/BLE/ARDISCOVERY_DEVICE_Ble.c.o
+ .ARM.attributes
+                0x0000018c       0x33 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Usb/ARDISCOVERY_DEVICE_Usb.c.o
+ .ARM.attributes
+                0x000001bf       0x33 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/gen/Sources/ARDISCOVERY_Error.c.o
+ .ARM.attributes
+                0x000001f2       0x33 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_AvahiDiscovery.c.o
+ .ARM.attributes
+                0x00000225       0x33 /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+ .ARM.attributes
+                0x00000258       0x27 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x3b8
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x68 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Connection.c.o
+ .debug_aranges
+                0x00000068       0x58 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Discovery.c.o
+ .debug_aranges
+                0x000000c0       0x90 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Device.c.o
+ .debug_aranges
+                0x00000150       0x68 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_MuxDiscovery.c.o
+ .debug_aranges
+                0x000001b8       0xa0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o
+ .debug_aranges
+                0x00000258       0x48 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/BLE/ARDISCOVERY_DEVICE_Ble.c.o
+ .debug_aranges
+                0x000002a0       0x68 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Usb/ARDISCOVERY_DEVICE_Usb.c.o
+ .debug_aranges
+                0x00000308       0x20 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/gen/Sources/ARDISCOVERY_Error.c.o
+ .debug_aranges
+                0x00000328       0x90 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_AvahiDiscovery.c.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0xd1b7
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000     0x2b1f /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Connection.c.o
+ .debug_info    0x00002b1f      0x5cf /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Discovery.c.o
+ .debug_info    0x000030ee     0x1880 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Device.c.o
+ .debug_info    0x0000496e     0x1801 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_MuxDiscovery.c.o
+ .debug_info    0x0000616f     0x1bd9 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o
+ .debug_info    0x00007d48     0x1183 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/BLE/ARDISCOVERY_DEVICE_Ble.c.o
+ .debug_info    0x00008ecb     0x1787 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Usb/ARDISCOVERY_DEVICE_Usb.c.o
+ .debug_info    0x0000a652      0x19d /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/gen/Sources/ARDISCOVERY_Error.c.o
+ .debug_info    0x0000a7ef     0x29c8 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_AvahiDiscovery.c.o
+
+.debug_abbrev   0x00000000     0x19bd
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x413 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Connection.c.o
+ .debug_abbrev  0x00000413      0x1cf /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Discovery.c.o
+ .debug_abbrev  0x000005e2      0x2b5 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Device.c.o
+ .debug_abbrev  0x00000897      0x35a /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_MuxDiscovery.c.o
+ .debug_abbrev  0x00000bf1      0x33d /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o
+ .debug_abbrev  0x00000f2e      0x26a /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/BLE/ARDISCOVERY_DEVICE_Ble.c.o
+ .debug_abbrev  0x00001198      0x32b /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Usb/ARDISCOVERY_DEVICE_Usb.c.o
+ .debug_abbrev  0x000014c3       0x93 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/gen/Sources/ARDISCOVERY_Error.c.o
+ .debug_abbrev  0x00001556      0x467 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_AvahiDiscovery.c.o
+
+.debug_line     0x00000000     0x2b38
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000      0x6cc /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Connection.c.o
+ .debug_line    0x000006cc      0x22c /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Discovery.c.o
+ .debug_line    0x000008f8      0x62c /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Device.c.o
+ .debug_line    0x00000f24      0x38a /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_MuxDiscovery.c.o
+ .debug_line    0x000012ae      0x747 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o
+ .debug_line    0x000019f5      0x448 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/BLE/ARDISCOVERY_DEVICE_Ble.c.o
+ .debug_line    0x00001e3d      0x5d0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Usb/ARDISCOVERY_DEVICE_Usb.c.o
+ .debug_line    0x0000240d      0x126 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/gen/Sources/ARDISCOVERY_Error.c.o
+ .debug_line    0x00002533      0x605 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_AvahiDiscovery.c.o
+
+.debug_frame    0x00000000      0xbd0
+ *(.debug_frame)
+ .debug_frame   0x00000000      0x18c /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Connection.c.o
+ .debug_frame   0x0000018c       0xc8 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Discovery.c.o
+ .debug_frame   0x00000254      0x194 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Device.c.o
+ .debug_frame   0x000003e8      0x17c /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_MuxDiscovery.c.o
+ .debug_frame   0x00000564      0x208 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o
+ .debug_frame   0x0000076c       0xbc /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/BLE/ARDISCOVERY_DEVICE_Ble.c.o
+ .debug_frame   0x00000828      0x148 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Usb/ARDISCOVERY_DEVICE_Usb.c.o
+ .debug_frame   0x00000970       0x20 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/gen/Sources/ARDISCOVERY_Error.c.o
+ .debug_frame   0x00000990      0x240 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_AvahiDiscovery.c.o
+
+.debug_str      0x00000000     0x41ef
+ *(.debug_str)
+ .debug_str     0x00000000      0xf70 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Connection.c.o
+                               0x1022 (size before relaxing)
+ .debug_str     0x00000f70      0x5df /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Discovery.c.o
+                                0x7db (size before relaxing)
+ .debug_str     0x0000154f     0x13df /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Device.c.o
+                               0x1fdc (size before relaxing)
+ .debug_str     0x0000292e      0x395 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_MuxDiscovery.c.o
+                                0x70e (size before relaxing)
+ .debug_str     0x00002cc3      0x5c2 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o
+                               0x2165 (size before relaxing)
+ .debug_str     0x00003285      0x1ec /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/BLE/ARDISCOVERY_DEVICE_Ble.c.o
+                               0x1dc5 (size before relaxing)
+ .debug_str     0x00003471      0x25b /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Usb/ARDISCOVERY_DEVICE_Usb.c.o
+                               0x1f07 (size before relaxing)
+ .debug_str     0x000036cc       0x38 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/gen/Sources/ARDISCOVERY_Error.c.o
+                                0x64b (size before relaxing)
+ .debug_str     0x00003704      0xaeb /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_AvahiDiscovery.c.o
+                               0x13dd (size before relaxing)
+
+.debug_loc      0x00000000     0x59f7
+ *(.debug_loc)
+ .debug_loc     0x00000000     0x11c6 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Connection.c.o
+ .debug_loc     0x000011c6      0x4a9 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Discovery.c.o
+ .debug_loc     0x0000166f      0x784 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Device.c.o
+ .debug_loc     0x00001df3      0xa8b /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_MuxDiscovery.c.o
+ .debug_loc     0x0000287e      0xccb /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o
+ .debug_loc     0x00003549      0x4b5 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/BLE/ARDISCOVERY_DEVICE_Ble.c.o
+ .debug_loc     0x000039fe      0x990 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Usb/ARDISCOVERY_DEVICE_Usb.c.o
+ .debug_loc     0x0000438e      0x420 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/gen/Sources/ARDISCOVERY_Error.c.o
+ .debug_loc     0x000047ae     0x1249 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_AvahiDiscovery.c.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000      0x7b0
+ *(.debug_ranges)
+ .debug_ranges  0x00000000      0x3a0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Connection.c.o
+ .debug_ranges  0x000003a0       0x48 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Discovery.c.o
+ .debug_ranges  0x000003e8       0x80 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_Device.c.o
+ .debug_ranges  0x00000468       0xb0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_MuxDiscovery.c.o
+ .debug_ranges  0x00000518       0x90 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Wifi/ARDISCOVERY_DEVICE_Wifi.c.o
+ .debug_ranges  0x000005a8       0x38 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/BLE/ARDISCOVERY_DEVICE_Ble.c.o
+ .debug_ranges  0x000005e0       0x58 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/Usb/ARDISCOVERY_DEVICE_Usb.c.o
+ .debug_ranges  0x00000638       0x10 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/gen/Sources/ARDISCOVERY_Error.c.o
+ .debug_ranges  0x00000648      0x168 /home/ncs/CAPSTONE/out/arsdk-native/build/libARDiscovery/obj/Sources/ARDISCOVERY_AvahiDiscovery.c.o
+
+.debug_macro
+ *(.debug_macro)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(out/arsdk-native/build/libARDiscovery/libardiscovery.so elf32-littlearm)

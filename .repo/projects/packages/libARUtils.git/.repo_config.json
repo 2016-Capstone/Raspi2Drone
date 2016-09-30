@@ -1,0 +1,20 @@
+{
+  "core.filemode": [
+    "true"
+  ], 
+  "core.repositoryformatversion": [
+    "0"
+  ], 
+  "remote.github.projectname": [
+    "libARUtils"
+  ], 
+  "filter.lfs.smudge": [
+    "git-lfs smudge --skip -- %f"
+  ], 
+  "remote.github.fetch": [
+    "+refs/heads/*:refs/remotes/github/*"
+  ], 
+  "remote.github.url": [
+    "https://github.com/Parrot-Developers/libARUtils"
+  ]
+}

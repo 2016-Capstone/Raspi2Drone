@@ -1,0 +1,680 @@
+
+As-needed library included to satisfy reference by file (symbol)
+
+libpomp.so                    /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o (pomp_loop_remove)
+librt.so.1                    /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_queue.c.o (clock_gettime@@GLIBC_2.4)
+libgcc_s.so.1                 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o (__aeabi_idivmod@@GCC_3.5)
+libpthread.so.0               /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o (pthread_equal@@GLIBC_2.4)
+libc.so.6                     /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o (strncmp@@GLIBC_2.4)
+ld-linux-armhf.so.3           /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o (__stack_chk_guard@@GLIBC_2.4)
+
+Discarded input sections
+
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ .note.GNU-stack
+                0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+ .note.GNU-stack
+                0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+ .text          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+ .data          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+ .bss           0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+ .text          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o
+ .data          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o
+ .bss           0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o
+ .text          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_log.c.o
+ .data          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_log.c.o
+ .bss           0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_log.c.o
+ .debug_info    0x00000000       0x72 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_log.c.o
+ .debug_abbrev  0x00000000       0x26 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_log.c.o
+ .debug_aranges
+                0x00000000       0x18 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_log.c.o
+ .debug_line    0x00000000       0x1d /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_log.c.o
+ .debug_str     0x00000000      0x1e0 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_log.c.o
+ .comment       0x00000000       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_log.c.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_log.c.o
+ .ARM.attributes
+                0x00000000       0x33 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_log.c.o
+ .text          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_queue.c.o
+ .data          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_queue.c.o
+ .bss           0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_queue.c.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_queue.c.o
+ .text          0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+ .note.GNU-stack
+                0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+ .text          0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+ .note.GNU-stack
+                0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_log.c.o
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_queue.c.o
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/staging/usr/lib/libpomp.so
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/librt.so
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/libstdc++.so
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/libm.so
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/libgcc_s.so
+START GROUP
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/libgcc_s.so.1
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/libgcc.a
+END GROUP
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/libpthread.so
+START GROUP
+LOAD /lib/arm-linux-gnueabihf/libpthread.so.0
+LOAD /usr/lib/arm-linux-gnueabihf/libpthread_nonshared.a
+END GROUP
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/libc.so
+START GROUP
+LOAD /lib/arm-linux-gnueabihf/libc.so.6
+LOAD /usr/lib/arm-linux-gnueabihf/libc_nonshared.a
+LOAD /lib/arm-linux-gnueabihf/ld-linux-armhf.so.3
+END GROUP
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/libgcc_s.so
+START GROUP
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/libgcc_s.so.1
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/libgcc.a
+END GROUP
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+                0x000000f4                . = (0x0 + SIZEOF_HEADERS)
+
+.note.gnu.build-id
+                0x000000f4       0x24
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x000000f4       0x24 linker stubs
+
+.hash
+ *(.hash)
+
+.gnu.hash       0x00000118       0xb4
+ *(.gnu.hash)
+ .gnu.hash      0x00000118       0xb4 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.dynsym         0x000001cc      0x6e0
+ *(.dynsym)
+ .dynsym        0x000001cc      0x6e0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.dynstr         0x000008ac      0x6a2
+ *(.dynstr)
+ .dynstr        0x000008ac      0x6a2 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.gnu.version    0x00000f4e       0xdc
+ *(.gnu.version)
+ .gnu.version   0x00000f4e       0xdc /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.gnu.version_d  0x0000102c        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000102c        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.gnu.version_r  0x0000102c       0xa0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000102c       0xa0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.rel.dyn        0x000010cc       0x50
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ .rel.text      0x000010cc        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro .rel.data.rel.ro.* .rel.gnu.linkonce.d.rel.ro.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ .rel.data.rel.local
+                0x000010cc        0x8 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ .rel.got       0x000010d4       0x38 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rel.iplt)
+ .rel.iplt      0x0000110c        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ .rel.fini_array
+                0x0000110c        0x8 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ .rel.init_array
+                0x00001114        0x8 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.rela.dyn
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rela.iplt)
+
+.rel.plt        0x0000111c      0x298
+ *(.rel.plt)
+ .rel.plt       0x0000111c      0x298 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.rela.plt
+ *(.rela.plt)
+
+.init           0x000013b4        0xc
+ *(SORT(.init))
+ .init          0x000013b4        0x8 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+                0x000013b4                _init
+ .init          0x000013bc        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+
+.plt            0x000013c0      0x408
+ *(.plt)
+ .plt           0x000013c0      0x408 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.iplt           0x000017c8        0x0
+ *(.iplt)
+ .iplt          0x000017c8        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.text           0x000017c8     0x2a58
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x000017c8       0x24 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ .text          0x000017ec       0xd0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+ .text.reset_decode
+                0x000018bc       0x3e /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+ .text.xwrite   0x000018fa       0x24 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+ .text.xread    0x0000191e       0x24 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+ *fill*         0x00001942        0x2 
+ .text.check_magic
+                0x00001944       0x40 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+ .text.do_fd_write_buf
+                0x00001984       0xc4 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+ .text.do_fd_read
+                0x00001a48       0xe4 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+ .text.rx_thread
+                0x00001b2c       0x60 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+ .text.do_fd_write
+                0x00001b8c       0x6a /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+ *fill*         0x00001bf6        0x2 
+ .text.tx_thread
+                0x00001bf8       0x68 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+ .text.do_fdeof.part.3
+                0x00001c60       0x2c /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+ .text.mux_destroy
+                0x00001c8c      0x144 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+ .text.do_tx    0x00001dd0       0xac /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+ .text.process_header_magic.isra.0
+                0x00001e7c       0x26 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+ *fill*         0x00001ea2        0x2 
+ .text.mux_new  0x00001ea4      0x288 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+                0x00001ea4                mux_new
+ .text.mux_ref  0x0000212c       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+                0x0000212c                mux_ref
+ .text.mux_unref
+                0x00002168       0x4c /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+                0x00002168                mux_unref
+ .text.mux_get_host_address
+                0x000021b4       0x48 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+                0x000021b4                mux_get_host_address
+ .text.mux_remove_host
+                0x000021fc       0x62 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+                0x000021fc                mux_remove_host
+ .text.mux_add_host
+                0x0000225e       0x84 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+                0x0000225e                mux_add_host
+ .text.mux_find_channel
+                0x000022e2       0x2c /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+                0x000022e2                mux_find_channel
+ .text.mux_add_channel
+                0x0000230e       0x56 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+                0x0000230e                mux_add_channel
+ .text.mux_remove_channel
+                0x00002364       0x58 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+                0x00002364                mux_remove_channel
+ .text.mux_remove_channels
+                0x000023bc       0x2a /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+                0x000023bc                mux_remove_channels
+ .text.mux_get_loop
+                0x000023e6        0x6 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+                0x000023e6                mux_get_loop
+ .text.mux_loop_acquire
+                0x000023ec       0xa6 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+                0x000023ec                mux_loop_acquire
+ *fill*         0x00002492        0x2 
+ .text.mux_loop_release
+                0x00002494       0x74 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+                0x00002494                mux_loop_release
+ .text.mux_stop
+                0x00002508       0xb4 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+                0x00002508                mux_stop
+ .text.mux_run  0x000025bc       0x4a /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+                0x000025bc                mux_run
+ *fill*         0x00002606        0x2 
+ .text.mux_encode
+                0x00002608       0xf0 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+                0x00002608                mux_encode
+ .text.mux_decode
+                0x000026f8      0x358 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+                0x000026f8                mux_decode
+ .text.rx_pipe_cb
+                0x00002a50       0x78 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+ .text.fd_cb    0x00002ac8       0x80 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+ .text.mux_send_ctrl_msg_with_payload
+                0x00002b48       0xe8 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+                0x00002b48                mux_send_ctrl_msg_with_payload
+ .text.mux_send_ctrl_msg
+                0x00002c30        0x8 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+                0x00002c30                mux_send_ctrl_msg
+ .text.mux_reset
+                0x00002c38       0x7c /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+                0x00002c38                mux_reset
+ .text.mux_notify_buf
+                0x00002cb4       0x48 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+                0x00002cb4                mux_notify_buf
+ .text.slave_tcp_socket_cb
+                0x00002cfc        0x4 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o
+ .text.mux_channel_destroy
+                0x00002d00       0x40 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o
+ .text.slave_raw_cb
+                0x00002d40       0x48 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o
+ .text.mux_channel_disconnect_tcp_slave
+                0x00002d88       0x84 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o
+ .text.slave_disconnect_idle_cb
+                0x00002e0c       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o
+ .text.tcp_slave_queue_timer_cb
+                0x00002e48       0xac /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o
+ .text.master_raw_cb
+                0x00002ef4      0x110 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o
+ .text.slave_event_cb
+                0x00003004      0x144 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o
+ .text.slave_send_cb
+                0x00003148       0x84 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o
+ .text.mux_channel_alloc_queue
+                0x000031cc       0x40 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o
+                0x000031cc                mux_channel_alloc_queue
+ .text.mux_channel_stop
+                0x0000320c       0x70 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o
+                0x0000320c                mux_channel_stop
+ .text.mux_channel_open_internal
+                0x0000327c      0x138 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o
+ .text.mux_channel_open
+                0x000033b4       0x5c /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o
+                0x000033b4                mux_channel_open
+ .text.mux_channel_close_internal
+                0x00003410       0xa8 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o
+ .text.mux_channel_close
+                0x000034b8       0x38 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o
+                0x000034b8                mux_channel_close
+ .text.mux_channel_open_tcp
+                0x000034f0      0x1f4 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o
+                0x000034f0                mux_channel_open_tcp
+ .text.mux_channel_open_ftp
+                0x000036e4       0x50 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o
+                0x000036e4                mux_channel_open_ftp
+ .text.master_event_cb
+                0x00003734      0x15c /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o
+ .text.mux_channel_put_buf
+                0x00003890      0x224 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o
+                0x00003890                mux_channel_put_buf
+ .text.mux_channel_recv_ctrl_msg
+                0x00003ab4      0x458 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o
+                0x00003ab4                mux_channel_recv_ctrl_msg
+ .text.mux_queue_get_buf_internal
+                0x00003f0c      0x104 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_queue.c.o
+ .text.mux_queue_new
+                0x00004010       0x58 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_queue.c.o
+                0x00004010                mux_queue_new
+ .text.mux_queue_stop
+                0x00004068       0x26 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_queue.c.o
+                0x00004068                mux_queue_stop
+ .text.mux_queue_destroy
+                0x0000408e       0x5a /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_queue.c.o
+                0x0000408e                mux_queue_destroy
+ .text.mux_queue_put_buf
+                0x000040e8       0xcc /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_queue.c.o
+                0x000040e8                mux_queue_put_buf
+ .text.mux_queue_get_buf
+                0x000041b4        0x6 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_queue.c.o
+                0x000041b4                mux_queue_get_buf
+ .text.mux_queue_try_get_buf
+                0x000041ba       0x5a /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_queue.c.o
+                0x000041ba                mux_queue_try_get_buf
+ .text.mux_queue_timed_get_buf
+                0x00004214        0xc /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_queue.c.o
+                0x00004214                mux_queue_timed_get_buf
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x00004220        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00004220        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00004220        0x0 linker stubs
+ *(.v4_bx)
+ .v4_bx         0x00004220        0x0 linker stubs
+
+.fini           0x00004220        0x8
+ *(SORT(.fini))
+ .fini          0x00004220        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+                0x00004220                _fini
+ .fini          0x00004224        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+                [!provide]                PROVIDE (__etext, .)
+                [!provide]                PROVIDE (_etext, .)
+                [!provide]                PROVIDE (etext, .)
+
+.rodata         0x00004228      0x7a6
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.str1.1
+                0x00004228      0x25d /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+ .rodata        0x00004485       0x12 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o
+ .rodata.str1.1
+                0x00004497      0x537 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o
+                                0x549 (size before relaxing)
+
+.rodata1
+ *(.rodata1)
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                [!provide]                PROVIDE (__exidx_start, .)
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                [!provide]                PROVIDE (__exidx_end, .)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x000049d0        0x4
+ *(.eh_frame)
+ .eh_frame      0x000049d0        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+ *(.eh_frame.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+                0x00014ee4                . = DATA_SEGMENT_ALIGN (0x10000, 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array
+ *(.preinit_array)
+
+.init_array     0x00014ee4        0x4
+ *(SORT(.init_array.*) SORT(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+ .init_array    0x00014ee4        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+
+.fini_array     0x00014ee8        0x4
+ *(SORT(.fini_array.*) SORT(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+ .fini_array    0x00014ee8        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+
+.jcr            0x00014eec        0x4
+ *(.jcr)
+ .jcr           0x00014eec        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+ .jcr           0x00014eec        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic        0x00014ef0      0x110
+ *(.dynamic)
+ .dynamic       0x00014ef0      0x110 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+                0x00014ef0                _DYNAMIC
+                0x00015000                . = DATA_SEGMENT_RELRO_END (., 0x0)
+
+.got            0x00015000      0x174
+ *(.got.plt)
+ .got.plt       0x00015000      0x158 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+                0x00015000                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x00015158        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ *(.got)
+ .got           0x00015158       0x1c /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ *(.igot)
+
+.data           0x00015174        0x4
+                [!provide]                PROVIDE (__data_start, .)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.rel.local
+                0x00015174        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+                0x00015174                __dso_handle
+
+.tm_clone_table
+                0x00015178        0x0
+ .tm_clone_table
+                0x00015178        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+ .tm_clone_table
+                0x00015178        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+
+.data1
+ *(.data1)
+                0x00015178                _edata = .
+                [!provide]                PROVIDE (edata, .)
+                0x00015178                . = .
+                0x00015178                __bss_start = .
+                0x00015178                __bss_start__ = .
+
+.bss            0x00015178        0x4
+ *(.dynbss)
+ .dynbss        0x00015178        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x00015178        0x1 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+ *(COMMON)
+                0x0001517c                . = ALIGN ((. != 0x0)?0x4:0x1)
+ *fill*         0x00015179        0x3 
+                0x0001517c                _bss_end__ = .
+                0x0001517c                __bss_end__ = .
+                0x0001517c                . = ALIGN (0x4)
+                0x0001517c                . = SEGMENT_START ("ldata-segment", .)
+                0x0001517c                . = ALIGN (0x4)
+                0x0001517c                __end__ = .
+                0x0001517c                _end = .
+                [!provide]                PROVIDE (end, .)
+                0x0001517c                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x3b
+ *(.comment)
+ .comment       0x00000000       0x3b /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+                                 0x3c (size before relaxing)
+ .comment       0x0000003b       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+ .comment       0x0000003b       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o
+ .comment       0x0000003b       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_queue.c.o
+ .comment       0x0000003b       0x3c /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+
+.ARM.attributes
+                0x00000000       0x31
+ .ARM.attributes
+                0x00000000       0x27 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ .ARM.attributes
+                0x00000027       0x33 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+ .ARM.attributes
+                0x0000005a       0x33 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+ .ARM.attributes
+                0x0000008d       0x33 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o
+ .ARM.attributes
+                0x000000c0       0x33 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_queue.c.o
+ .ARM.attributes
+                0x000000f3       0x33 /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+ .ARM.attributes
+                0x00000126       0x27 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x248
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000      0x138 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+ .debug_aranges
+                0x00000138       0xb8 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o
+ .debug_aranges
+                0x000001f0       0x58 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_queue.c.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x742b
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000     0x37f9 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+ .debug_info    0x000037f9     0x329e /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o
+ .debug_info    0x00006a97      0x994 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_queue.c.o
+
+.debug_abbrev   0x00000000      0xc5a
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x512 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+ .debug_abbrev  0x00000512      0x506 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o
+ .debug_abbrev  0x00000a18      0x242 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_queue.c.o
+
+.debug_line     0x00000000     0x1743
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000      0xad5 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+ .debug_line    0x00000ad5      0x9bb /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o
+ .debug_line    0x00001490      0x2b3 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_queue.c.o
+
+.debug_frame    0x00000000      0x888
+ *(.debug_frame)
+ .debug_frame   0x00000000      0x4c4 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+ .debug_frame   0x000004c4      0x2d8 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o
+ .debug_frame   0x0000079c       0xec /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_queue.c.o
+
+.debug_str      0x00000000     0x17dc
+ *(.debug_str)
+ .debug_str     0x00000000     0x1000 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+                               0x1120 (size before relaxing)
+ .debug_str     0x00001000      0x6d7 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o
+                               0x1098 (size before relaxing)
+ .debug_str     0x000016d7      0x105 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_queue.c.o
+                                0x576 (size before relaxing)
+
+.debug_loc      0x00000000     0x512b
+ *(.debug_loc)
+ .debug_loc     0x00000000     0x24ac /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+ .debug_loc     0x000024ac     0x25e7 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o
+ .debug_loc     0x00004a93      0x698 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_queue.c.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000      0x788
+ *(.debug_ranges)
+ .debug_ranges  0x00000000      0x400 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux.c.o
+ .debug_ranges  0x00000400      0x328 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_channel.c.o
+ .debug_ranges  0x00000728       0x60 /home/ncs/CAPSTONE/out/arsdk-native/build/libmux/obj/src/mux_queue.c.o
+
+.debug_macro
+ *(.debug_macro)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(out/arsdk-native/build/libmux/libmux.so elf32-littlearm)

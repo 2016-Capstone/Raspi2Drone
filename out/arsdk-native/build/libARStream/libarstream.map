@@ -1,0 +1,681 @@
+
+As-needed library included to satisfy reference by file (symbol)
+
+libarsal.so                   /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Reader.c.o (ARSAL_Mutex_Destroy)
+libarnetwork.so               /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Sender.c.o (ARNETWORK_Manager_FlushInputBuffer)
+libgcc_s.so.1                 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_NetworkHeaders.c.o (__aeabi_idiv@@GCC_3.5)
+libpthread.so.0               /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Reader.c.o (__errno_location@@GLIBC_2.4)
+libc.so.6                     /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_NetworkHeaders.c.o (__stack_chk_fail@@GLIBC_2.4)
+ld-linux-armhf.so.3           /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_NetworkHeaders.c.o (__stack_chk_guard@@GLIBC_2.4)
+
+Discarded input sections
+
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ .note.GNU-stack
+                0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+ .note.GNU-stack
+                0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+ .text          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Buffers.c.o
+ .data          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Buffers.c.o
+ .bss           0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Buffers.c.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Buffers.c.o
+ .text          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_NetworkHeaders.c.o
+ .data          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_NetworkHeaders.c.o
+ .bss           0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_NetworkHeaders.c.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_NetworkHeaders.c.o
+ .text          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Reader.c.o
+ .data          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Reader.c.o
+ .bss           0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Reader.c.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Reader.c.o
+ .text          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Sender.c.o
+ .data          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Sender.c.o
+ .bss           0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Sender.c.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Sender.c.o
+ .text          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/gen/Sources/ARSTREAM_Error.c.o
+ .data          0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/gen/Sources/ARSTREAM_Error.c.o
+ .bss           0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/gen/Sources/ARSTREAM_Error.c.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/gen/Sources/ARSTREAM_Error.c.o
+ .text          0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+ .note.GNU-stack
+                0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+ .text          0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+ .note.GNU-stack
+                0x00000000        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Buffers.c.o
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_NetworkHeaders.c.o
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Reader.c.o
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Sender.c.o
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/gen/Sources/ARSTREAM_Error.c.o
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/staging/usr/lib/libarsal.so
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/staging/usr/lib/libarnetworkal.so
+LOAD /home/ncs/CAPSTONE/out/arsdk-native/staging/usr/lib/libarnetwork.so
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/librt.so
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/libstdc++.so
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/libm.so
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/libgcc_s.so
+START GROUP
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/libgcc_s.so.1
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/libgcc.a
+END GROUP
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/libpthread.so
+START GROUP
+LOAD /lib/arm-linux-gnueabihf/libpthread.so.0
+LOAD /usr/lib/arm-linux-gnueabihf/libpthread_nonshared.a
+END GROUP
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/libc.so
+START GROUP
+LOAD /lib/arm-linux-gnueabihf/libc.so.6
+LOAD /usr/lib/arm-linux-gnueabihf/libc_nonshared.a
+LOAD /lib/arm-linux-gnueabihf/ld-linux-armhf.so.3
+END GROUP
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/libgcc_s.so
+START GROUP
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/libgcc_s.so.1
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/libgcc.a
+END GROUP
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+LOAD /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+                0x000000f4                . = (0x0 + SIZEOF_HEADERS)
+
+.note.gnu.build-id
+                0x000000f4       0x24
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x000000f4       0x24 linker stubs
+
+.hash
+ *(.hash)
+
+.gnu.hash       0x00000118      0x16c
+ *(.gnu.hash)
+ .gnu.hash      0x00000118      0x16c /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.dynsym         0x00000284      0x5b0
+ *(.dynsym)
+ .dynsym        0x00000284      0x5b0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.dynstr         0x00000834      0x8f0
+ *(.dynstr)
+ .dynstr        0x00000834      0x8f0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.gnu.version    0x00001124       0xb6
+ *(.gnu.version)
+ .gnu.version   0x00001124       0xb6 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.gnu.version_d  0x000011dc        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x000011dc        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.gnu.version_r  0x000011dc       0x80
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x000011dc       0x80 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.rel.dyn        0x0000125c       0x58
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ .rel.text      0x0000125c        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro .rel.data.rel.ro.* .rel.gnu.linkonce.d.rel.ro.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ .rel.data.rel.local
+                0x0000125c        0x8 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ .rel.got       0x00001264       0x40 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rel.iplt)
+ .rel.iplt      0x000012a4        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ .rel.fini_array
+                0x000012a4        0x8 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ .rel.init_array
+                0x000012ac        0x8 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.rela.dyn
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rela.iplt)
+
+.rel.plt        0x000012b4      0x170
+ *(.rel.plt)
+ .rel.plt       0x000012b4      0x170 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.rela.plt
+ *(.rela.plt)
+
+.init           0x00001424        0xc
+ *(SORT(.init))
+ .init          0x00001424        0x8 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+                0x00001424                _init
+ .init          0x0000142c        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+
+.plt            0x00001430      0x244
+ *(.plt)
+ .plt           0x00001430      0x244 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.iplt           0x00001674        0x0
+ *(.iplt)
+ .iplt          0x00001674        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+
+.text           0x00001674     0x2184
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x00001674       0x24 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ .text          0x00001698       0xd0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+ .text.ARSTREAM_Buffers_InitStreamDataBuffer
+                0x00001768       0x28 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Buffers.c.o
+                0x00001768                ARSTREAM_Buffers_InitStreamDataBuffer
+ .text.ARSTREAM_Buffers_InitStreamAckBuffer
+                0x00001790       0x26 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Buffers.c.o
+                0x00001790                ARSTREAM_Buffers_InitStreamAckBuffer
+ *fill*         0x000017b6        0x2 
+ .text.ARSTREAM_NetworkHeaders_InternalAckPacketDump.constprop.0
+                0x000017b8      0x1a0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_NetworkHeaders.c.o
+ .text.ARSTREAM_NetworkHeaders_HammingWeight32
+                0x00001958       0x26 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_NetworkHeaders.c.o
+                0x00001958                ARSTREAM_NetworkHeaders_HammingWeight32
+ .text.ARSTREAM_NetworkHeaders_AckPacketAllFlagsSet
+                0x0000197e       0x7a /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_NetworkHeaders.c.o
+                0x0000197e                ARSTREAM_NetworkHeaders_AckPacketAllFlagsSet
+ .text.ARSTREAM_NetworkHeaders_AckPacketFlagIsSet
+                0x000019f8       0x3e /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_NetworkHeaders.c.o
+                0x000019f8                ARSTREAM_NetworkHeaders_AckPacketFlagIsSet
+ .text.ARSTREAM_NetworkHeaders_AckPacketReset
+                0x00001a36       0x24 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_NetworkHeaders.c.o
+                0x00001a36                ARSTREAM_NetworkHeaders_AckPacketReset
+ .text.ARSTREAM_NetworkHeaders_AckPacketResetUpTo
+                0x00001a5a       0x7c /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_NetworkHeaders.c.o
+                0x00001a5a                ARSTREAM_NetworkHeaders_AckPacketResetUpTo
+ .text.ARSTREAM_NetworkHeaders_AckPacketSetFlag
+                0x00001ad6       0x4e /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_NetworkHeaders.c.o
+                0x00001ad6                ARSTREAM_NetworkHeaders_AckPacketSetFlag
+ .text.ARSTREAM_NetworkHeaders_AckPacketSetFlags
+                0x00001b24       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_NetworkHeaders.c.o
+                0x00001b24                ARSTREAM_NetworkHeaders_AckPacketSetFlags
+ .text.ARSTREAM_NetworkHeaders_AckPacketUnsetFlag
+                0x00001b60       0x76 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_NetworkHeaders.c.o
+                0x00001b60                ARSTREAM_NetworkHeaders_AckPacketUnsetFlag
+ .text.ARSTREAM_NetworkHeaders_AckPacketUnsetFlags
+                0x00001bd6       0x56 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_NetworkHeaders.c.o
+                0x00001bd6                ARSTREAM_NetworkHeaders_AckPacketUnsetFlags
+ .text.ARSTREAM_NetworkHeaders_AckPacketCountSet
+                0x00001c2c       0x80 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_NetworkHeaders.c.o
+                0x00001c2c                ARSTREAM_NetworkHeaders_AckPacketCountSet
+ .text.ARSTREAM_NetworkHeaders_AckPacketCountNotSet
+                0x00001cac       0x9a /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_NetworkHeaders.c.o
+                0x00001cac                ARSTREAM_NetworkHeaders_AckPacketCountNotSet
+ .text.ARSTREAM_NetworkHeaders_AckPacketDump
+                0x00001d46        0x4 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_NetworkHeaders.c.o
+                0x00001d46                ARSTREAM_NetworkHeaders_AckPacketDump
+ .text.ARSTREAM_Reader_NetworkCallback
+                0x00001d4a        0x4 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Reader.c.o
+                0x00001d4a                ARSTREAM_Reader_NetworkCallback
+ .text.ARSTREAM_Reader_InitStreamDataBuffer
+                0x00001d4e       0x12 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Reader.c.o
+                0x00001d4e                ARSTREAM_Reader_InitStreamDataBuffer
+ .text.ARSTREAM_Reader_InitStreamAckBuffer
+                0x00001d60        0x4 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Reader.c.o
+                0x00001d60                ARSTREAM_Reader_InitStreamAckBuffer
+ .text.ARSTREAM_Reader_New
+                0x00001d64       0xdc /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Reader.c.o
+                0x00001d64                ARSTREAM_Reader_New
+ .text.ARSTREAM_Reader_StopReader
+                0x00001e40       0x2e /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Reader.c.o
+                0x00001e40                ARSTREAM_Reader_StopReader
+ *fill*         0x00001e6e        0x2 
+ .text.ARSTREAM_Reader_Delete
+                0x00001e70       0xc0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Reader.c.o
+                0x00001e70                ARSTREAM_Reader_Delete
+ .text.ARSTREAM_Reader_RunDataThread
+                0x00001f30      0x678 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Reader.c.o
+                0x00001f30                ARSTREAM_Reader_RunDataThread
+ .text.ARSTREAM_Reader_RunAckThread
+                0x000025a8      0x198 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Reader.c.o
+                0x000025a8                ARSTREAM_Reader_RunAckThread
+ .text.ARSTREAM_Reader_GetEstimatedEfficiency
+                0x00002740       0xe0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Reader.c.o
+                0x00002740                ARSTREAM_Reader_GetEstimatedEfficiency
+ .text.ARSTREAM_Reader_GetCustom
+                0x00002820        0x6 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Reader.c.o
+                0x00002820                ARSTREAM_Reader_GetCustom
+ .text.ARSTREAM_Reader_AddFilter
+                0x00002826       0x4a /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Reader.c.o
+                0x00002826                ARSTREAM_Reader_AddFilter
+ .text.ARSTREAM_Sender_NetworkCallback
+                0x00002870      0x164 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Sender.c.o
+                0x00002870                ARSTREAM_Sender_NetworkCallback
+ .text.ARSTREAM_Sender_CallCallback
+                0x000029d4       0x42 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Sender.c.o
+ .text.ARSTREAM_Sender_FlushQueue
+                0x00002a16       0x46 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Sender.c.o
+ .text.ARSTREAM_Sender_AddToQueue
+                0x00002a5c       0x80 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Sender.c.o
+ .text.ARSTREAM_Sender_InitStreamDataBuffer
+                0x00002adc       0x12 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Sender.c.o
+                0x00002adc                ARSTREAM_Sender_InitStreamDataBuffer
+ .text.ARSTREAM_Sender_InitStreamAckBuffer
+                0x00002aee        0x4 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Sender.c.o
+                0x00002aee                ARSTREAM_Sender_InitStreamAckBuffer
+ .text.ARSTREAM_Sender_New
+                0x00002af2      0x17e /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Sender.c.o
+                0x00002af2                ARSTREAM_Sender_New
+ .text.ARSTREAM_Sender_SetTimeBetweenRetries
+                0x00002c70       0x16 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Sender.c.o
+                0x00002c70                ARSTREAM_Sender_SetTimeBetweenRetries
+ .text.ARSTREAM_Sender_StopSender
+                0x00002c86       0x12 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Sender.c.o
+                0x00002c86                ARSTREAM_Sender_StopSender
+ .text.ARSTREAM_Sender_Delete
+                0x00002c98      0x100 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Sender.c.o
+                0x00002c98                ARSTREAM_Sender_Delete
+ .text.ARSTREAM_Sender_SendNewFrame
+                0x00002d98       0x3a /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Sender.c.o
+                0x00002d98                ARSTREAM_Sender_SendNewFrame
+ .text.ARSTREAM_Sender_FlushFramesQueue
+                0x00002dd2       0x24 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Sender.c.o
+                0x00002dd2                ARSTREAM_Sender_FlushFramesQueue
+ *fill*         0x00002df6        0x2 
+ .text.ARSTREAM_Sender_RunDataThread
+                0x00002df8      0x5f8 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Sender.c.o
+                0x00002df8                ARSTREAM_Sender_RunDataThread
+ .text.ARSTREAM_Sender_RunAckThread
+                0x000033f0      0x288 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Sender.c.o
+                0x000033f0                ARSTREAM_Sender_RunAckThread
+ .text.ARSTREAM_Sender_GetEstimatedEfficiency
+                0x00003678       0xd8 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Sender.c.o
+                0x00003678                ARSTREAM_Sender_GetEstimatedEfficiency
+ .text.ARSTREAM_Sender_GetCustom
+                0x00003750        0x6 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Sender.c.o
+                0x00003750                ARSTREAM_Sender_GetCustom
+ .text.ARSTREAM_Sender_AddFilter
+                0x00003756       0x4e /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Sender.c.o
+                0x00003756                ARSTREAM_Sender_AddFilter
+ .text.ARSTREAM_Error_ToString
+                0x000037a4       0x54 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/gen/Sources/ARSTREAM_Error.c.o
+                0x000037a4                ARSTREAM_Error_ToString
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x000037f8        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x000037f8        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x000037f8        0x0 linker stubs
+ *(.v4_bx)
+ .v4_bx         0x000037f8        0x0 linker stubs
+
+.fini           0x000037f8        0x8
+ *(SORT(.fini))
+ .fini          0x000037f8        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+                0x000037f8                _fini
+ .fini          0x000037fc        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+                [!provide]                PROVIDE (__etext, .)
+                [!provide]                PROVIDE (_etext, .)
+                [!provide]                PROVIDE (etext, .)
+
+.rodata         0x00003800      0x851
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x00003800       0x2e /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_NetworkHeaders.c.o
+ .rodata.str1.1
+                0x0000382e       0xe4 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_NetworkHeaders.c.o
+ .rodata        0x00003912       0x79 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Reader.c.o
+ .rodata.str1.1
+                0x0000398b      0x264 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Reader.c.o
+                                0x26d (size before relaxing)
+ .rodata        0x00003bef       0x99 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Sender.c.o
+ .rodata.str1.1
+                0x00003c88      0x310 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Sender.c.o
+                                0x399 (size before relaxing)
+ .rodata.str1.1
+                0x00003f98       0xb9 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/gen/Sources/ARSTREAM_Error.c.o
+
+.rodata1
+ *(.rodata1)
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                [!provide]                PROVIDE (__exidx_start, .)
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                [!provide]                PROVIDE (__exidx_end, .)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x00004054        0x4
+ *(.eh_frame)
+ .eh_frame      0x00004054        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+ *(.eh_frame.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+                0x00014ee4                . = DATA_SEGMENT_ALIGN (0x10000, 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array
+ *(.preinit_array)
+
+.init_array     0x00014ee4        0x4
+ *(SORT(.init_array.*) SORT(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+ .init_array    0x00014ee4        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+
+.fini_array     0x00014ee8        0x4
+ *(SORT(.fini_array.*) SORT(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+ .fini_array    0x00014ee8        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+
+.jcr            0x00014eec        0x4
+ *(.jcr)
+ .jcr           0x00014eec        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+ .jcr           0x00014eec        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic        0x00014ef0      0x110
+ *(.dynamic)
+ .dynamic       0x00014ef0      0x110 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+                0x00014ef0                _DYNAMIC
+                0x00015000                . = DATA_SEGMENT_RELRO_END (., 0x0)
+
+.got            0x00015000       0xe4
+ *(.got.plt)
+ .got.plt       0x00015000       0xc4 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+                0x00015000                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x000150c4        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ *(.got)
+ .got           0x000150c4       0x20 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ *(.igot)
+
+.data           0x000150e4        0x4
+                [!provide]                PROVIDE (__data_start, .)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.rel.local
+                0x000150e4        0x4 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+                0x000150e4                __dso_handle
+
+.tm_clone_table
+                0x000150e8        0x0
+ .tm_clone_table
+                0x000150e8        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+ .tm_clone_table
+                0x000150e8        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+
+.data1
+ *(.data1)
+                0x000150e8                _edata = .
+                [!provide]                PROVIDE (edata, .)
+                0x000150e8                . = .
+                0x000150e8                __bss_start = .
+                0x000150e8                __bss_start__ = .
+
+.bss            0x000150e8        0x4
+ *(.dynbss)
+ .dynbss        0x000150e8        0x0 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x000150e8        0x1 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+ *(COMMON)
+                0x000150ec                . = ALIGN ((. != 0x0)?0x4:0x1)
+ *fill*         0x000150e9        0x3 
+                0x000150ec                _bss_end__ = .
+                0x000150ec                __bss_end__ = .
+                0x000150ec                . = ALIGN (0x4)
+                0x000150ec                . = SEGMENT_START ("ldata-segment", .)
+                0x000150ec                . = ALIGN (0x4)
+                0x000150ec                __end__ = .
+                0x000150ec                _end = .
+                [!provide]                PROVIDE (end, .)
+                0x000150ec                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x3b
+ *(.comment)
+ .comment       0x00000000       0x3b /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+                                 0x3c (size before relaxing)
+ .comment       0x0000003b       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Buffers.c.o
+ .comment       0x0000003b       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_NetworkHeaders.c.o
+ .comment       0x0000003b       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Reader.c.o
+ .comment       0x0000003b       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Sender.c.o
+ .comment       0x0000003b       0x3c /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/gen/Sources/ARSTREAM_Error.c.o
+ .comment       0x0000003b       0x3c /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+
+.ARM.attributes
+                0x00000000       0x31
+ .ARM.attributes
+                0x00000000       0x27 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crti.o
+ .ARM.attributes
+                0x00000027       0x33 /usr/lib/gcc/arm-linux-gnueabihf/5/crtbeginS.o
+ .ARM.attributes
+                0x0000005a       0x33 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Buffers.c.o
+ .ARM.attributes
+                0x0000008d       0x33 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_NetworkHeaders.c.o
+ .ARM.attributes
+                0x000000c0       0x33 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Reader.c.o
+ .ARM.attributes
+                0x000000f3       0x33 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Sender.c.o
+ .ARM.attributes
+                0x00000126       0x33 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/gen/Sources/ARSTREAM_Error.c.o
+ .ARM.attributes
+                0x00000159       0x33 /usr/lib/gcc/arm-linux-gnueabihf/5/crtendS.o
+ .ARM.attributes
+                0x0000018c       0x27 /usr/lib/gcc/arm-linux-gnueabihf/5/../../../arm-linux-gnueabihf/crtn.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x1d8
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x28 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Buffers.c.o
+ .debug_aranges
+                0x00000028       0x80 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_NetworkHeaders.c.o
+ .debug_aranges
+                0x000000a8       0x70 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Reader.c.o
+ .debug_aranges
+                0x00000118       0xa0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Sender.c.o
+ .debug_aranges
+                0x000001b8       0x20 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/gen/Sources/ARSTREAM_Error.c.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x51c5
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x204 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Buffers.c.o
+ .debug_info    0x00000204      0xa28 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_NetworkHeaders.c.o
+ .debug_info    0x00000c2c     0x1d7a /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Reader.c.o
+ .debug_info    0x000029a6     0x277b /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Sender.c.o
+ .debug_info    0x00005121       0xa4 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/gen/Sources/ARSTREAM_Error.c.o
+
+.debug_abbrev   0x00000000      0xaad
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0xe3 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Buffers.c.o
+ .debug_abbrev  0x000000e3      0x295 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_NetworkHeaders.c.o
+ .debug_abbrev  0x00000378      0x318 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Reader.c.o
+ .debug_abbrev  0x00000690      0x39e /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Sender.c.o
+ .debug_abbrev  0x00000a2e       0x7f /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/gen/Sources/ARSTREAM_Error.c.o
+
+.debug_line     0x00000000     0x1347
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000      0x168 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Buffers.c.o
+ .debug_line    0x00000168      0x321 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_NetworkHeaders.c.o
+ .debug_line    0x00000489      0x67e /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Reader.c.o
+ .debug_line    0x00000b07      0x794 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Sender.c.o
+ .debug_line    0x0000129b       0xac /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/gen/Sources/ARSTREAM_Error.c.o
+
+.debug_frame    0x00000000      0x57c
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x4c /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Buffers.c.o
+ .debug_frame   0x0000004c      0x170 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_NetworkHeaders.c.o
+ .debug_frame   0x000001bc      0x16c /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Reader.c.o
+ .debug_frame   0x00000328      0x234 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Sender.c.o
+ .debug_frame   0x0000055c       0x20 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/gen/Sources/ARSTREAM_Error.c.o
+
+.debug_str      0x00000000     0x1e16
+ *(.debug_str)
+ .debug_str     0x00000000      0x3b9 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Buffers.c.o
+                                0x3fa (size before relaxing)
+ .debug_str     0x000003b9      0x4cb /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_NetworkHeaders.c.o
+                                0x682 (size before relaxing)
+ .debug_str     0x00000884      0xd31 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Reader.c.o
+                               0x139f (size before relaxing)
+ .debug_str     0x000015b5      0x817 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Sender.c.o
+                               0x16fa (size before relaxing)
+ .debug_str     0x00001dcc       0x4a /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/gen/Sources/ARSTREAM_Error.c.o
+                                0x21a (size before relaxing)
+
+.debug_loc      0x00000000     0x2db8
+ *(.debug_loc)
+ .debug_loc     0x00000000       0xc2 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Buffers.c.o
+ .debug_loc     0x000000c2      0x743 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_NetworkHeaders.c.o
+ .debug_loc     0x00000805      0xeb3 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Reader.c.o
+ .debug_loc     0x000016b8     0x1649 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Sender.c.o
+ .debug_loc     0x00002d01       0xb7 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/gen/Sources/ARSTREAM_Error.c.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000      0x6d0
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x18 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Buffers.c.o
+ .debug_ranges  0x00000018       0xe0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_NetworkHeaders.c.o
+ .debug_ranges  0x000000f8      0x1f8 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Reader.c.o
+ .debug_ranges  0x000002f0      0x3d0 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/Sources/ARSTREAM_Sender.c.o
+ .debug_ranges  0x000006c0       0x10 /home/ncs/CAPSTONE/out/arsdk-native/build/libARStream/obj/gen/Sources/ARSTREAM_Error.c.o
+
+.debug_macro
+ *(.debug_macro)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(out/arsdk-native/build/libARStream/libarstream.so elf32-littlearm)

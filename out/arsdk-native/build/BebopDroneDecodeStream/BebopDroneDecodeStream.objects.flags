@@ -1,0 +1,21 @@
+GLOBAL_C_INCLUDES := /home/ncs/CAPSTONE/out/arsdk-native/staging/usr/include/arm-linux-gnueabihf /home/ncs/CAPSTONE/out/arsdk-native/staging/usr/include 
+GLOBAL_ASFLAGS := 
+GLOBAL_CFLAGS := -std=gnu99 -pipe -g -O2 -fno-short-enums -ffunction-sections -DALCHEMY_BUILD -fPIC
+GLOBAL_CFLAGS_gcc :=  -mthumb-interwork
+GLOBAL_CFLAGS_thumb := -mthumb -Os -fomit-frame-pointer -fno-strict-aliasing
+GLOBAL_CFLAGS_thumb_gcc := -finline-limit=64
+GLOBAL_CXXFLAGS :=  -D__STDC_LIMIT_MACROS -Wno-psabi
+GLOBAL_CXXFLAGS_gcc := 
+GLOBAL_OBJCFLAGS := 
+GLOBAL_VALAFLAGS :=  --vapidir=/home/ncs/CAPSTONE/out/arsdk-native/staging-host/usr/share/vala-0.20/vapi  --vapidir=/home/ncs/CAPSTONE/out/arsdk-native/staging/usr/share/vala/vapi  --target-glib=2.36
+WARNINGS_CFLAGS :=  -Wmissing-prototypes -Wno-strict-prototypes  -Wall -Wextra -Wno-unused -Wno-unused-parameter -Wunused-value -Wunused-variable -Wunused-label -Wpointer-arith -Wformat-nonliteral -Wformat-security -Winit-self 
+WARNINGS_CFLAGS_gcc :=  -Wjump-misses-init -fdiagnostics-show-option -fdiagnostics-color -Wstrict-aliasing=3 -Wunreachable-code -Wlogical-op
+WARNINGS_CXXFLAGS :=  -Wno-ctor-dtor-privacy -Wno-non-virtual-dtor -Wreorder -Woverloaded-virtual  -Wall -Wextra -Wno-unused -Wno-unused-parameter -Wunused-value -Wunused-variable -Wunused-label -Wpointer-arith -Wformat-nonliteral -Wformat-security -Winit-self 
+WARNINGS_CXXFLAGS_gcc :=  -fdiagnostics-show-option -fdiagnostics-color -Wstrict-aliasing=3 -Wunreachable-code -Wlogical-op
+PRIVATE_C_INCLUDES := /home/ncs/CAPSTONE/out/arsdk-native/build/BebopDroneDecodeStream /home/ncs/CAPSTONE/packages/Samples/Unix/BebopDroneDecodeStream -I/usr/include/arm-linux-gnueabihf /home/ncs/CAPSTONE/packages/libARSAL/Config/linux /home/ncs/CAPSTONE/packages/libmux/include/ /home/ncs/CAPSTONE/packages/libpomp/include
+PRIVATE_ASFLAGS := 
+PRIVATE_CFLAGS := -D_REENTRANT -include /home/ncs/CAPSTONE/out/arsdk-native/build/libARNetwork/autoconf-libARNetwork.h  -DBUILD_LIBARCOMMANDS  -DBUILD_LIBARDISCOVERY  -DBUILD_LIBARSTREAM  -DBUILD_NCURSES  -DBUILD_FFMPEG  -DBUILD_JSON  -DBUILD_AVAHI  -DBUILD_LIBARNETWORK  -DBUILD_LIBARNETWORKAL  -DBUILD_LIBARSAL  -DBUILD_LIBMUX  -DBUILD_LIBPOMP
+PRIVATE_CXXFLAGS := 
+PRIVATE_OBJCFLAGS := 
+PRIVATE_VALAFLAGS :=   --define BUILD_LIBARCOMMANDS  --define BUILD_LIBARDISCOVERY  --define BUILD_LIBARSTREAM  --define BUILD_NCURSES  --define BUILD_FFMPEG  --define BUILD_AVAHI  --define BUILD_LIBARNETWORK  --define BUILD_LIBARNETWORKAL  --define BUILD_LIBARSAL  --define BUILD_LIBMUX  --define BUILD_LIBPOMP
+

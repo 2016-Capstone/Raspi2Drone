@@ -1,0 +1,1 @@
+0000000000000000000000000000000000000000 149b0e0fe374c12db48c8beaed167a4a5555a370 jumpsnack <kir0302@gmail.com> 1475220112 +0900	fetch --progress origin --tags +refs/heads/*:refs/remotes/origin/* +refs/heads/master:refs/remotes/origin/master: storing head

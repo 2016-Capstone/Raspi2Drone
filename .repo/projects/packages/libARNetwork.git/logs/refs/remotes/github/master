@@ -1,0 +1,1 @@
+0000000000000000000000000000000000000000 ae81092ee0ee0022dc5e064c28987d9361ab2ef9 jumpsnack <kir0302@gmail.com> 1475220164 +0900	fetch --progress github --tags +refs/heads/*:refs/remotes/github/* +refs/heads/master:refs/remotes/github/master: storing head
