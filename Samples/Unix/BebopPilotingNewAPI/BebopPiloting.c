@@ -250,31 +250,46 @@ int main (int argc, char *argv[])
     if (!failed)    //  초기에는 무조건 0
     {
         ARSAL_PRINT(ARSAL_PRINT_INFO, TAG, "- init discovey device ... ");
-        eARDISCOVERY_ERROR errorDiscovery = ARDISCOVERY_OK;
+        eARDISCOVERY_ERROR errorDiscovery = ARDISCOVERY_OK; //  ARDISCOVERY_OK : No error
 
+        /**
+         * Create a new Discovery device
+         * @post : ARDISCOVERY_Device_Delete() must be called to delete the Discovery Device and free the memory allc
+         * @arg[out] : executing error
+         * @return : ARDISCOVERY_Device_t / the new Discovery Device
+         * */
         device = ARDISCOVERY_Device_New (&errorDiscovery);
 
-        if (errorDiscovery == ARDISCOVERY_OK)
+        if (errorDiscovery == ARDISCOVERY_OK)   //  No error
         {
             ARSAL_PRINT(ARSAL_PRINT_INFO, TAG, "    - ARDISCOVERY_Device_InitWifi ...");
             // create a Bebop drone discovery device (ARDISCOVERY_PRODUCT_ARDRONE)
 
-            if(isBebop2)
+            if(isBebop2)    //  Bebop2
             {
+                /**
+                 * Initialize the Discovery Device with a wifi device
+                 * @arg1 : ARDISCOVERY_Device_t
+                 * @arg2 : eARDISCOVERY_PRODUCT
+                 * @arg3 : Device name; must be Null - terminated
+                 * @arg4 : char*; IP addr; must be Null - terminated
+                 * @arg5 : int; port number
+                 * @return : eARDISCOVERY_ERROR; executing error
+                 * */
                 errorDiscovery = ARDISCOVERY_Device_InitWifi (device, ARDISCOVERY_PRODUCT_BEBOP_2, "bebop2", BEBOP_IP_ADDRESS, BEBOP_DISCOVERY_PORT);
             }
-            else
+            else    //  Bebop1
             {
                 errorDiscovery = ARDISCOVERY_Device_InitWifi (device, ARDISCOVERY_PRODUCT_ARDRONE, "bebop", BEBOP_IP_ADDRESS, BEBOP_DISCOVERY_PORT);
             }
 
-            if (errorDiscovery != ARDISCOVERY_OK)
+            if (errorDiscovery != ARDISCOVERY_OK)   //  ARDISCOVERY_Device_InitWifi Failure
             {
                 failed = 1;
                 ARSAL_PRINT(ARSAL_PRINT_ERROR, TAG, "Discovery error :%s", ARDISCOVERY_Error_ToString(errorDiscovery));
             }
         }
-        else
+        else    //  occur error
         {
             ARSAL_PRINT(ARSAL_PRINT_ERROR, TAG, "Discovery error :%s", ARDISCOVERY_Error_ToString(errorDiscovery));
             failed = 1;
@@ -282,16 +297,16 @@ int main (int argc, char *argv[])
     }
 
     // create a device controller
-    if (!failed)
+    if (!failed)       //  Can be FALSE by IHM_New Failure, ARDISCOVERY_Device_New Failure, ARDISCOVERY_Device_InitWifi Failure
     {
         deviceController = ARCONTROLLER_Device_New (device, &error);
 
-        if (error != ARCONTROLLER_OK)
+        if (error != ARCONTROLLER_OK)   //  occur error
         {
             ARSAL_PRINT (ARSAL_PRINT_ERROR, TAG, "Creation of deviceController failed.");
             failed = 1;
         }
-        else
+        else    //  succeed
         {
             IHM_setCustomData(ihm, deviceController);
         }
