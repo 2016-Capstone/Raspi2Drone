@@ -438,7 +438,7 @@ int main (int argc, char *argv[])
     rmdir(fifo_dir);
 
     ARSAL_PRINT(ARSAL_PRINT_INFO, TAG, "-- END --");
-`
+
     return EXIT_SUCCESS;
 }
 // end of main
