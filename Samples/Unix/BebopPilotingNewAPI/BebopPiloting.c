@@ -41,13 +41,13 @@
  *****************************************/
 
 #include <stdlib.h>
-#include <curses.h>
+#include <curses.h> //  유닉스 계열 OS를 위한 터미널 제어 라이브러리
 #include <string.h>
 #include <unistd.h>
 #include <signal.h>
 #include <errno.h>
 
-#include <libARSAL/ARSAL.h>
+#include <libARSAL/ARSAL.h> // AR Socket Absraction Layer
 #include <libARController/ARController.h>
 #include <libARDiscovery/ARDiscovery.h>
 
@@ -63,10 +63,10 @@
 
 #define ERROR_STR_LENGTH 2048
 
-#define BEBOP_IP_ADDRESS "192.168.42.1"
+#define BEBOP_IP_ADDRESS "192.168.42.1" // 드론 IP
 #define BEBOP_DISCOVERY_PORT 44444
 
-#define DISPLAY_WITH_MPLAYER 1
+#define DISPLAY_WITH_MPLAYER 1 // Boolean
 
 #define FIFO_DIR_PATTERN "/tmp/arsdk_XXXXXX"
 #define FIFO_NAME "arsdk_fifo"
@@ -102,6 +102,9 @@ static void signal_handler(int signal)
     gIHMRun = 0;
 }
 
+/*
+main Method
+*/
 int main (int argc, char *argv[])
 {
     // local declarations
@@ -117,70 +120,101 @@ int main (int argc, char *argv[])
         .sa_handler = signal_handler,
     };
 
+    /*
+    Ctrk + C에 대한 시그널 처리
+    @arg1 : Ctrl + C
+    @Return : 0(성공), -1(실패)
+    */
     int ret = sigaction(SIGINT, &sig_action, NULL);
-    if (ret < 0)
+    if (ret < 0) // 시그널 처리 실패
     {
         ARSAL_PRINT(ARSAL_PRINT_ERROR, "ERROR", "Unable to set SIGINT handler : %d(%s)",
                     errno, strerror(errno));
         return 1;
     }
+
+    /*
+    사용하려는 파이프 상태에 대한 시그널 처리
+    @arg1 : 파이프 시그널
+    @Return : 0(성공), -1(실패)
+    */
     ret = sigaction(SIGPIPE, &sig_action, NULL);
-    if (ret < 0)
+    if (ret < 0)  //  시그널 처리 실패
     {
         ARSAL_PRINT(ARSAL_PRINT_ERROR, "ERROR", "Unable to set SIGPIPE handler : %d(%s)",
                     errno, strerror(errno));
         return 1;
     }
 
-
-    if (mkdtemp(fifo_dir) == NULL)
+    /*
+    mkdtemp : Make directory temporarily
+    */
+    if (mkdtemp(fifo_dir) == NULL)  //  임시 디렉토리 생성 실패
     {
         ARSAL_PRINT(ARSAL_PRINT_ERROR, "ERROR", "Mkdtemp failed.");
         return 1;
     }
+    /*
+    snprintf : arg1버퍼로 arg2사이즈 만큼 arg3형식화된 args 저장
+    */
     snprintf(fifo_name, sizeof(fifo_name), "%s/%s", fifo_dir, FIFO_NAME);
 
-    if(mkfifo(fifo_name, 0666) < 0)
+    /*
+    fifo생성
+    @arg1 : fifo 이름
+    @arg2 : fifo의 접근권한
+    @Return : 0(성공), -1(실패)
+    */
+    if(mkfifo(fifo_name, 0666) < 0) // fifo 생성 실패
     {
         ARSAL_PRINT(ARSAL_PRINT_ERROR, "ERROR", "Mkfifo failed: %d, %s", errno, strerror(errno));
         return 1;
     }
 
+    /*
+    세마포어 초기화
+    @arg1 : 초기화할 세마포어
+    @arg2 : Flag asking for a multi-process shared semaphore
+    @arg3 : Initial value of the semaphore
+    @Return : 0(성공), -1(실패)
+    */
     ARSAL_Sem_Init (&(stateSem), 0, 0);
 
-    //ARSAL_PRINT(ARSAL_PRINT_INFO, TAG, "Select your Bebop : Bebop (1) ; Bebop2 (2)");
-    char answer = '2';
-//    scanf(" %c", &answer);
+    ARSAL_PRINT(ARSAL_PRINT_INFO, TAG, "Select your Bebop : Bebop (1) ; Bebop2 (2)");
+    char answer = '1';
+    scanf(" %c", &answer);  //  User input
     if (answer == '2')
     {
-        isBebop2 = 1;
+        isBebop2 = 1; //  true
     }
 
-    if(isBebop2)
+    if(isBebop2)  //  If Bebop2
     {
         ARSAL_PRINT(ARSAL_PRINT_INFO, TAG, "-- Bebop 2 Piloting --");
     }
-    else
+    else  //  If Bebop1
     {
         ARSAL_PRINT(ARSAL_PRINT_INFO, TAG, "-- Bebop Piloting --");
     }
 
-    if (!failed)
+    if (!failed)  //  failed Dfl->0, If did not failure
     {
-        if (DISPLAY_WITH_MPLAYER)
+        if (DISPLAY_WITH_MPLAYER) // Dfl->1
         {
             // fork the process to launch mplayer
-            if ((child = fork()) == 0)
+            if ((child = fork()) == 0)  //  자식 프로세스
             {
+                // 파일 이름 : xterm, 인수 : xterm -e mplayer -demuxer h264es "fifo" -benchmark -really-quiet
                 execlp("xterm", "xterm", "-e", "mplayer", "-demuxer",  "h264es", fifo_name, "-benchmark", "-really-quiet", NULL);
-                ARSAL_PRINT(ARSAL_PRINT_ERROR, TAG, "Missing mplayer, you will not see the video. Please install mplayer and xterm.");
+                ARSAL_PRINT(ARSAL_PRINT_ERROR, TAG, "Missing mplayer, you will not see the video. Please install mplayer and xterm.");  // 프로세스 실행 실패
                 return -1;
             }
+            //  부모 프로세스
         }
 
-        if (DISPLAY_WITH_MPLAYER)
+        if (DISPLAY_WITH_MPLAYER) //  Dfl->1
         {
-            videoOut = fopen(fifo_name, "w");
+            videoOut = fopen(fifo_name, "w"); //  fifo 오픈
         }
     }
 
@@ -404,9 +438,10 @@ int main (int argc, char *argv[])
     rmdir(fifo_dir);
 
     ARSAL_PRINT(ARSAL_PRINT_INFO, TAG, "-- END --");
-
+`
     return EXIT_SUCCESS;
 }
+// end of main
 
 /*****************************************
  *
@@ -415,6 +450,9 @@ int main (int argc, char *argv[])
  ****************************************/
 
 // called when the state of the device controller has changed
+/*
+changed as input
+*/
 void stateChanged (eARCONTROLLER_DEVICE_STATE newState, eARCONTROLLER_ERROR error, void *customData)
 {
     ARSAL_PRINT(ARSAL_PRINT_INFO, TAG, "    - stateChanged newState: %d .....", newState);
