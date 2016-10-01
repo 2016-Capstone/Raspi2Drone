@@ -29,19 +29,28 @@
     SUCH DAMAGE.
 */
 
+/**
+ *@descript : This is an util class that will catch inputs from console and send these events to BebopPilotingNewAPI.
+ *          It will also display some pieces of information about the drone, like its battery level and its flying state.
+ * */
+
 #ifndef _BEBOP_PILOTING_IHM_H_
 #define _BEBOP_PILOTING_IHM_H_
 
 #include <curses.h>
 #include <libARSAL/ARSAL.h>
 
+/**
+ * Types of event codes from console defined as enum
+ * ==eIHM_INPUT_EVENT==
+ * */
 typedef enum
 {
     IHM_INPUT_EVENT_NONE,
     IHM_INPUT_EVENT_EXIT,
     IHM_INPUT_EVENT_EMERGENCY,
-    IHM_INPUT_EVENT_TAKEOFF,
-    IHM_INPUT_EVENT_LAND,
+    IHM_INPUT_EVENT_TAKEOFF,    //  Keyboard : t
+    IHM_INPUT_EVENT_LAND,   //  Keyboard : spacebar
     IHM_INPUT_EVENT_UP,
     IHM_INPUT_EVENT_DOWN,
     IHM_INPUT_EVENT_RIGHT,
@@ -54,6 +63,9 @@ typedef enum
 
 typedef void (*IHM_onInputEvent_t) (eIHM_INPUT_EVENT event, void *customData);
 
+/**
+ *
+ * */
 typedef struct
 {
     WINDOW *mainWindow;

@@ -66,7 +66,7 @@
 #define BEBOP_IP_ADDRESS "192.168.42.1" // 드론 IP
 #define BEBOP_DISCOVERY_PORT 44444
 
-#define DISPLAY_WITH_MPLAYER 1 // Boolean
+#define DISPLAY_WITH_MPLAYER 0 // Boolean, to run Mplayer, 1(run), 0(without)
 
 #define FIFO_DIR_PATTERN "/tmp/arsdk_XXXXXX"
 #define FIFO_NAME "arsdk_fifo"
@@ -219,22 +219,27 @@ int main (int argc, char *argv[])
     }
 
 #ifdef IHM
+    /**
+     * IHM 구조체 생성
+     * @arg : 해당 코드 하단에 정의된 콜백 메소드
+     * @Return : IHM 객체
+     * */
     ihm = IHM_New (&onInputEvent);
-    if (ihm != NULL)
+    if (ihm != NULL)    // IHM 객체 생성 성공
     {
-        gErrorStr[0] = '\0';
+        gErrorStr[0] = '\0';    //  첫째 자리에 널 캐릭터 삽입
         ARSAL_Print_SetCallback (customPrintCallback); //use a custom callback to print, for not disturb ncurses IHM
 
         if(isBebop2)
         {
-            IHM_PrintHeader (ihm, "-- Bebop 2 Piloting --");
+            IHM_PrintHeader (ihm, "-- Bebop 2 Piloting -- >>IHM Message");
         }
         else
         {
-            IHM_PrintHeader (ihm, "-- Bebop Piloting --");
+            IHM_PrintHeader (ihm, "-- Bebop Piloting -- >>IHM Message");
         }
     }
-    else
+    else    //  IHM 객체 생성 실패
     {
         ARSAL_PRINT (ARSAL_PRINT_ERROR, TAG, "Creation of IHM failed.");
         failed = 1;
@@ -242,7 +247,7 @@ int main (int argc, char *argv[])
 #endif
 
     // create a discovery device
-    if (!failed)
+    if (!failed)    //  초기에는 무조건 0
     {
         ARSAL_PRINT(ARSAL_PRINT_INFO, TAG, "- init discovey device ... ");
         eARDISCOVERY_ERROR errorDiscovery = ARDISCOVERY_OK;
