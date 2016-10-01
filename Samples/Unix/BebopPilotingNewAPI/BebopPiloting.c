@@ -104,6 +104,7 @@ static void signal_handler(int signal)
 
 /*
 main Method
+ Preprocessing Task -> Take a loop to take a keyboard input (=>Input~>IHM) -> Postprocessing Task
 */
 int main (int argc, char *argv[])
 {
@@ -395,44 +396,57 @@ int main (int argc, char *argv[])
         }
     }
 
+    /********************************
+     * -- Main routine start here --
+     * ******************************/
     if (!failed)
     {
-        IHM_PrintInfo(ihm, "Running ... ('t' to takeoff ; Spacebar to land ; 'e' for emergency ; Arrow keys and ('r','f','d','g') to move ; 'q' to quit)");
+        IHM_PrintInfo(ihm, "Running ... \n(t)take-off \n(space)land \n(e)emergency \n(up)up (down)down (left)turn-left (right)turn-right \n(r)go (f)reverse (d)move-left (g)move-right \n(q)quit");
 
 #ifdef IHM
-        while (gIHMRun)
+        while (gIHMRun) // var in signal handler; Keep doing before SIGINT OR SIGPIPE
         {
-            usleep(50);
+            usleep(50); //  usleep : micro-sec sleep; 1000*1000=1s
         }
 #else
+        /**
+        * IF IHM did not work
+        */
         int i = 20;
-        ARSAL_PRINT(ARSAL_PRINT_INFO, TAG, "- sleep 20 ... ");
+        ARSAL_PRINT(ARSAL_PRINT_INFO, TAG, "- sleep 20 ... ");  //  only sleep in 20sec
         while (gIHMRun && i--)
             sleep(1);
 #endif
     }
 
+    /**
+     * -- END routine start here --
+     */
 #ifdef IHM
-    IHM_Delete (&ihm);
+    IHM_Delete (&ihm);  //  delete IHM
 #endif
 
     // we are here because of a disconnection or user has quit IHM, so safely delete everything
     if (deviceController != NULL)
     {
-
-
+        /**
+         * Get device state through device controller
+         * @arg1[in] : deviceController
+         * @arg2[out] : error data
+         * @return : eARCONTROLLER_DEVICE_STATE
+         */
         deviceState = ARCONTROLLER_Device_GetState (deviceController, &error);
-        if ((error == ARCONTROLLER_OK) && (deviceState != ARCONTROLLER_DEVICE_STATE_STOPPED))
+        if ((error == ARCONTROLLER_OK) && (deviceState != ARCONTROLLER_DEVICE_STATE_STOPPED))   //  No error AND device running
         {
             IHM_PrintInfo(ihm, "Disconnecting ...");
             ARSAL_PRINT(ARSAL_PRINT_INFO, TAG, "Disconnecting ...");
 
-            error = ARCONTROLLER_Device_Stop (deviceController);
+            error = ARCONTROLLER_Device_Stop (deviceController);    //  Take a stop process
 
-            if (error == ARCONTROLLER_OK)
+            if (error == ARCONTROLLER_OK)   //  No error
             {
                 // wait state update update
-                ARSAL_Sem_Wait (&(stateSem));
+                ARSAL_Sem_Wait (&(stateSem));   //  Make a Semaphore to wait
             }
         }
 
@@ -440,6 +454,9 @@ int main (int argc, char *argv[])
         ARSAL_PRINT(ARSAL_PRINT_INFO, TAG, "ARCONTROLLER_Device_Delete ...");
         ARCONTROLLER_Device_Delete (&deviceController);
 
+        /**
+         * Close Mplayer
+         */
         if (DISPLAY_WITH_MPLAYER)
         {
             fflush (videoOut);
@@ -452,8 +469,14 @@ int main (int argc, char *argv[])
         }
     }
 
+    /**
+     * Destroy the semaphore
+     */
     ARSAL_Sem_Destroy (&(stateSem));
 
+    /**
+     * Destroy the FIFO
+     */
     unlink(fifo_name);
     rmdir(fifo_dir);
 
@@ -479,15 +502,15 @@ void stateChanged (eARCONTROLLER_DEVICE_STATE newState, eARCONTROLLER_ERROR erro
 
     switch (newState)
     {
-    case ARCONTROLLER_DEVICE_STATE_STOPPED:
-        ARSAL_Sem_Post (&(stateSem));
+    case ARCONTROLLER_DEVICE_STATE_STOPPED: //  Device stop
+        ARSAL_Sem_Post (&(stateSem));   //  Increment a semaphore
         //stop
-        gIHMRun = 0;
+        gIHMRun = 0;    //  Same as SIGINT and SIGPIPE; Stop the loop
 
         break;
 
     case ARCONTROLLER_DEVICE_STATE_RUNNING:
-        ARSAL_Sem_Post (&(stateSem));
+        ARSAL_Sem_Post (&(stateSem));   //  Increment a semaphore
         break;
 
     default:
@@ -496,6 +519,7 @@ void stateChanged (eARCONTROLLER_DEVICE_STATE newState, eARCONTROLLER_ERROR erro
 }
 
 // called when a command has been received from the drone
+// DRONE -> Raspi
 void commandReceived (eARCONTROLLER_DICTIONARY_KEY commandKey, ARCONTROLLER_DICTIONARY_ELEMENT_t *elementDictionary, void *customData)
 {
     ARCONTROLLER_Device_t *deviceController = customData;
