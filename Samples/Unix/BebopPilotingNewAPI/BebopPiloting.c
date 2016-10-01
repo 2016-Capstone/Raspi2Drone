@@ -180,9 +180,9 @@ int main (int argc, char *argv[])
     */
     ARSAL_Sem_Init (&(stateSem), 0, 0);
 
-    ARSAL_PRINT(ARSAL_PRINT_INFO, TAG, "Select your Bebop : Bebop (1) ; Bebop2 (2)");
-    char answer = '1';
-    scanf(" %c", &answer);  //  User input
+//    ARSAL_PRINT(ARSAL_PRINT_INFO, TAG, "Select your Bebop : Bebop (1) ; Bebop2 (2)");
+    char answer = '2';
+//    scanf(" %c", &answer);  //  User input
     if (answer == '2')
     {
         isBebop2 = 1; //  true
