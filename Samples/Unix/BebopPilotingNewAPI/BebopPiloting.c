@@ -419,9 +419,9 @@ int main (int argc, char *argv[])
 #endif
     }
 
-    /**
-     * -- END routine start here --
-     */
+    /******************************************
+     * -- Postprocessing routine start here --
+     ******************************************/
 #ifdef IHM
     IHM_Delete (&ihm);  //  delete IHM
 #endif
@@ -526,6 +526,30 @@ void commandReceived (eARCONTROLLER_DICTIONARY_KEY commandKey, ARCONTROLLER_DICT
 
     if (deviceController != NULL)
     {
+        /******
+         * MY PLAYGROUND
+         */
+        if((commandKey == ARCONTROLLER_DICTIONARY_KEY_COMMON_SETTINGSSTATE_AUTOCONTRYCHANGED) && (elementDictionary != NULL)){
+            ARCONTROLLER_DICTIONARY_ARG_t *arg = NULL;
+            ARCONTROLLER_DICTIONARY_ELEMENT_t *element = NULL;
+            HASH_FIND_STR (elementDictionary, ARCONTROLLER_DICTIONARY_SINGLE_KEY, element);
+            if (element != NULL)
+            {
+                HASH_FIND_STR (element->arguments, ARCONTROLLER_DICTIONARY_KEY_COMMON_SETTINGSSTATE_AUTOCOUNTRYCHANGED_AUTOMATIC, arg);
+                if (arg != NULL)
+                {
+                    uint8_t automatic = arg->value.U8;
+                    deviceController->common->sendSettingsAutoCountry(deviceController->common, (uint8_t)automatic);
+                } else {
+                    ARSAL_PRINT(ARSAL_PRINT_ERROR, TAG, "arg is NULL");
+                }
+            } else {
+                ARSAL_PRINT(ARSAL_PRINT_ERROR, TAG, "element is NULL");
+            }
+        }
+        /****
+         * END of PLAYGROUND
+         */
         // if the command received is a battery state changed
         if (commandKey == ARCONTROLLER_DICTIONARY_KEY_COMMON_COMMONSTATE_BATTERYSTATECHANGED)
         {
@@ -674,7 +698,12 @@ eARCONTROLLER_ERROR didReceiveFrameCallback (ARCONTROLLER_Frame_t *frame, void *
 
 
 // IHM callbacks:
-
+/***
+ * Key 이벤트 발생시 IHM.c의 IHM_InputProcessing FUNC에서 해당 키에 맞는 파라미터를
+ * 이 FUNC의 arg1으로 전달
+ * 이 FUNC에서는 해당 키에 맞는 FUNC호출
+ * 결과적으로 이 FUNC에서 Drone으로 이벤트 전달 수행
+ */
 void onInputEvent (eIHM_INPUT_EVENT event, void *customData)
 {
     // Manage IHM input events
