@@ -35,8 +35,8 @@
       <file leaf-file-name="BebopPiloting.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Samples/Unix/BebopPilotingNewAPI/BebopPiloting.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="534" column="62" selection-start-line="534" selection-start-column="62" selection-end-line="534" selection-end-column="62" />
+            <state relative-caret-position="645">
+              <caret line="560" column="42" selection-start-line="560" selection-start-column="42" selection-end-line="560" selection-end-column="42" />
               <folding>
                 <element signature="e#13319#13524#0" expanded="true" />
               </folding>
@@ -679,7 +679,14 @@
       <option name="project" value="LOCAL" />
       <updated>1475385997686</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="[add] BebopPiloting.c; experimental autocountrychanged feature at commandReceived">
+      <created>1475386133083</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1475386133083</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1107,8 +1114,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Samples/Unix/BebopPilotingNewAPI/BebopPiloting.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="534" column="62" selection-start-line="534" selection-start-column="62" selection-end-line="534" selection-end-column="62" />
+        <state relative-caret-position="645">
+          <caret line="560" column="42" selection-start-line="560" selection-start-column="42" selection-end-line="560" selection-end-column="42" />
           <folding>
             <element signature="e#13319#13524#0" expanded="true" />
           </folding>

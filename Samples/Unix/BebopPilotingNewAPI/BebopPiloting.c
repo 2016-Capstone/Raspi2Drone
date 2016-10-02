@@ -541,6 +541,7 @@ void commandReceived (eARCONTROLLER_DICTIONARY_KEY commandKey, ARCONTROLLER_DICT
                 {
                     uint8_t automatic = arg->value.U8;
                     deviceController->common->sendSettingsAutoCountry(deviceController->common, (uint8_t)automatic);
+                    IHM_PrintInfo(ihm, automatic);
                 } else {
                     ARSAL_PRINT(ARSAL_PRINT_ERROR, TAG, "arg is NULL");
                 }
