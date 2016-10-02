@@ -588,6 +588,24 @@ void commandReceived (eARCONTROLLER_DICTIONARY_KEY commandKey, ARCONTROLLER_DICT
                 ARSAL_PRINT(ARSAL_PRINT_ERROR, TAG, "elements is NULL");
             }
         }
+
+        if ((commandKey == ARCONTROLLER_DICTIONARY_KEY_COMMON_WIFISETTINGSSTATE_OUTDOORSETTINGSCHANGED) && (elementDictionary != NULL))
+        {
+            ARCONTROLLER_DICTIONARY_ARG_t *arg = NULL;
+            ARCONTROLLER_DICTIONARY_ELEMENT_t *element = NULL;
+            HASH_FIND_STR (elementDictionary, ARCONTROLLER_DICTIONARY_SINGLE_KEY, element);
+            if (element != NULL)
+            {
+                HASH_FIND_STR (element->arguments, ARCONTROLLER_DICTIONARY_KEY_COMMON_WIFISETTINGSSTATE_OUTDOORSETTINGSCHANGED_OUTDOOR, arg);
+                if (arg != NULL)
+                {
+                    uint8_t outdoor = arg->value.U8;
+                    if(outdoor != 1){
+                        deviceController->common->sendWifiSettingsOutdoorSetting(deviceController->common, (uint8_t)outdoor);
+                    }
+                }
+            }
+        }
     }
 
     if (commandKey == ARCONTROLLER_DICTIONARY_KEY_COMMON_COMMONSTATE_SENSORSSTATESLISTCHANGED)
