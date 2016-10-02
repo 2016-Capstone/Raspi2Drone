@@ -61,7 +61,7 @@
 #define INFO_Y 2
 
 #define BATTERY_X 0
-#define BATTERY_Y 4
+#define BATTERY_Y 9
 
 /*****************************************
  *

@@ -528,7 +528,7 @@ void commandReceived (eARCONTROLLER_DICTIONARY_KEY commandKey, ARCONTROLLER_DICT
     {
         /******
          * MY PLAYGROUND
-         */
+         *//*
         if ((commandKey == ARCONTROLLER_DICTIONARY_KEY_COMMON_SETTINGSSTATE_AUTOCOUNTRYCHANGED) && (elementDictionary != NULL))
         {
             ARCONTROLLER_DICTIONARY_ARG_t *arg = NULL;
@@ -548,7 +548,7 @@ void commandReceived (eARCONTROLLER_DICTIONARY_KEY commandKey, ARCONTROLLER_DICT
             } else {
                 ARSAL_PRINT(ARSAL_PRINT_ERROR, TAG, "element is NULL");
             }
-        }
+        }*/
         /****
          * END of PLAYGROUND
          */
