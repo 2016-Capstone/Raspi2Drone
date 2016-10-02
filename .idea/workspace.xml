@@ -35,8 +35,8 @@
       <file leaf-file-name="BebopPiloting.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Samples/Unix/BebopPilotingNewAPI/BebopPiloting.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="560" column="42" selection-start-line="560" selection-start-column="42" selection-end-line="560" selection-end-column="42" />
+            <state relative-caret-position="525">
+              <caret line="544" column="19" selection-start-line="544" selection-start-column="19" selection-end-line="544" selection-end-column="19" />
               <folding>
                 <element signature="e#13319#13524#0" expanded="true" />
               </folding>
@@ -686,7 +686,14 @@
       <option name="project" value="LOCAL" />
       <updated>1475386133083</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[add] BebopPiloting.c; autocountrychanged; print on the IHM">
+      <created>1475386282134</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1475386282134</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -725,7 +732,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[add] BebopPiloting.c; experimental autocountrychanged feature at commandReceived" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add] BebopPiloting.c; experimental autocountrychanged feature at commandReceived" />
+    <MESSAGE value="[add] BebopPiloting.c; autocountrychanged; print on the IHM" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add] BebopPiloting.c; autocountrychanged; print on the IHM" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1114,8 +1122,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Samples/Unix/BebopPilotingNewAPI/BebopPiloting.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="560" column="42" selection-start-line="560" selection-start-column="42" selection-end-line="560" selection-end-column="42" />
+        <state relative-caret-position="525">
+          <caret line="544" column="19" selection-start-line="544" selection-start-column="19" selection-end-line="544" selection-end-column="19" />
           <folding>
             <element signature="e#13319#13524#0" expanded="true" />
           </folding>
