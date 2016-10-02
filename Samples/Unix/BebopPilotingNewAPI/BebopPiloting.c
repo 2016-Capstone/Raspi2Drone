@@ -529,7 +529,8 @@ void commandReceived (eARCONTROLLER_DICTIONARY_KEY commandKey, ARCONTROLLER_DICT
         /******
          * MY PLAYGROUND
          */
-        if((commandKey == ARCONTROLLER_DICTIONARY_KEY_COMMON_SETTINGSSTATE_AUTOCONTRYCHANGED) && (elementDictionary != NULL)){
+        if ((commandKey == ARCONTROLLER_DICTIONARY_KEY_COMMON_SETTINGSSTATE_AUTOCOUNTRYCHANGED) && (elementDictionary != NULL))
+        {
             ARCONTROLLER_DICTIONARY_ARG_t *arg = NULL;
             ARCONTROLLER_DICTIONARY_ELEMENT_t *element = NULL;
             HASH_FIND_STR (elementDictionary, ARCONTROLLER_DICTIONARY_SINGLE_KEY, element);

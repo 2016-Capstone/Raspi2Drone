@@ -35,8 +35,8 @@
       <file leaf-file-name="BebopPiloting.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Samples/Unix/BebopPilotingNewAPI/BebopPiloting.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="552" column="61" selection-start-line="552" selection-start-column="61" selection-end-line="552" selection-end-column="61" />
+            <state relative-caret-position="435">
+              <caret line="534" column="62" selection-start-line="534" selection-start-column="62" selection-end-line="534" selection-end-column="62" />
               <folding>
                 <element signature="e#13319#13524#0" expanded="true" />
               </folding>
@@ -672,6 +672,14 @@
       <option name="presentableId" value="Default" />
       <updated>1475293472856</updated>
     </task>
+    <task id="LOCAL-00001" summary="[add] BebopPiloting.c; experimental autocountrychanged feature at commandReceived">
+      <created>1475385997686</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1475385997686</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -707,6 +715,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[add] BebopPiloting.c; experimental autocountrychanged feature at commandReceived" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add] BebopPiloting.c; experimental autocountrychanged feature at commandReceived" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1095,8 +1107,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Samples/Unix/BebopPilotingNewAPI/BebopPiloting.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="552" column="61" selection-start-line="552" selection-start-column="61" selection-end-line="552" selection-end-column="61" />
+        <state relative-caret-position="435">
+          <caret line="534" column="62" selection-start-line="534" selection-start-column="62" selection-end-line="534" selection-end-column="62" />
           <folding>
             <element signature="e#13319#13524#0" expanded="true" />
           </folding>
