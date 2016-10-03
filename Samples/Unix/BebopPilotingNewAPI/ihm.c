@@ -58,10 +58,13 @@
 #define HEADER_Y 0
 
 #define INFO_X 0
-#define INFO_Y 2
+#define INFO_Y 11
 
 #define BATTERY_X 0
 #define BATTERY_Y 9
+
+#define VALUE_X 0
+#define VALUE_Y 3
 
 /*****************************************
  *
@@ -310,4 +313,15 @@ void IHM_PrintBattery(IHM_t *ihm, uint8_t percent)
 }
 
 
-
+/**
+ * JUMPSNACK's CODE :D
+ */
+void IHM_PrintValue(IHM_t *ihm, char* TAG, uint8_t value)
+{
+	if(ihm != NULL)
+	{
+		move(VALUE_Y, 0);
+		clrtoeol();
+		mvprintw(VALUE_Y, VALUE_X, "[VALUE] %s :: %d", TAG, value);
+	}
+}
