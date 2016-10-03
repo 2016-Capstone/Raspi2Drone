@@ -603,6 +603,7 @@ void commandReceived (eARCONTROLLER_DICTIONARY_KEY commandKey, ARCONTROLLER_DICT
                     if(outdoor != 1){
                         deviceController->common->sendWifiSettingsOutdoorSetting(deviceController->common, (uint8_t)outdoor);
                     }
+                    IHM_PrintInfo(ihm, outdoor);
                 }
             }
         }

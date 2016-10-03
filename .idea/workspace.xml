@@ -35,8 +35,8 @@
       <file leaf-file-name="BebopPiloting.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Samples/Unix/BebopPilotingNewAPI/BebopPiloting.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="604" column="21" selection-start-line="604" selection-start-column="21" selection-end-line="604" selection-end-column="21" />
+            <state relative-caret-position="915">
+              <caret line="605" column="48" selection-start-line="605" selection-start-column="48" selection-end-line="605" selection-end-column="48" />
               <folding>
                 <element signature="e#13319#13524#0" expanded="true" />
               </folding>
@@ -643,7 +643,14 @@
       <option name="project" value="LOCAL" />
       <updated>1475387558046</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="[edit] wifi outdoor mode">
+      <created>1475394723738</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1475394723738</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -684,7 +691,8 @@
     <MESSAGE value="[add] BebopPiloting.c; experimental autocountrychanged feature at commandReceived" />
     <MESSAGE value="[add] BebopPiloting.c; autocountrychanged; print on the IHM" />
     <MESSAGE value="[debug]" />
-    <option name="LAST_COMMIT_MESSAGE" value="[debug]" />
+    <MESSAGE value="[edit] wifi outdoor mode" />
+    <option name="LAST_COMMIT_MESSAGE" value="[edit] wifi outdoor mode" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1073,8 +1081,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Samples/Unix/BebopPilotingNewAPI/BebopPiloting.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="604" column="21" selection-start-line="604" selection-start-column="21" selection-end-line="604" selection-end-column="21" />
+        <state relative-caret-position="915">
+          <caret line="605" column="48" selection-start-line="605" selection-start-column="48" selection-end-line="605" selection-end-column="48" />
           <folding>
             <element signature="e#13319#13524#0" expanded="true" />
           </folding>
