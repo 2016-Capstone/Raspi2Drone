@@ -180,18 +180,20 @@ int main (int argc, char *argv[])
     @Return : 0(성공), -1(실패)
     */
     ARSAL_Sem_Init (&(stateSem), 0, 0);
-
+    
 //    ARSAL_PRINT(ARSAL_PRINT_INFO, TAG, "Select your Bebop : Bebop (1) ; Bebop2 (2)");
-    char answer = '2';
-//    scanf(" %c", &answer);  //  User input
-    if (answer == '2')
+//    Bebop(1)과 (2)선택사항을 주석처리
+    char answer = '2'; //항상 Bebop(2)를 선택
+//    scanf(" %c", &answer);  //  User input을 주석처리
+    if (answer == '2') //Bebop2
     {
         isBebop2 = 1; //  true
     }
 
     if(isBebop2)  //  If Bebop2
+
     {
-        ARSAL_PRINT(ARSAL_PRINT_INFO, TAG, "-- Bebop 2 Piloting --");
+        ARSAL_PRINT(ARSAL_PRINT_INFO, TAG, "-- Bebop 2 Piloting --"); //Bebop2일 경우 Piloting Message 출력
     }
     else  //  If Bebop1
     {

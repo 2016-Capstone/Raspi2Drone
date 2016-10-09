@@ -400,9 +400,9 @@ int main (int argc, char *argv[])
      * -- Main routine start here --
      * ******************************/
     if (!failed)
-    {
+    {   //control key code
         IHM_PrintInfo(ihm, "Running ... \n(t)take-off \n(space)land \n(e)emergency \n(up)up (down)down (left)turn-left (right)turn-right \n(r)go (f)reverse (d)move-left (g)move-right \n(q)quit");
-
+ 
 #ifdef IHM
         while (gIHMRun) // var in signal handler; Keep doing before SIGINT OR SIGPIPE
         {
