@@ -1,0 +1,77 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BATTERY_X	./ihm.c	63;"	d	file:
+BATTERY_Y	./ihm.c	64;"	d	file:
+BEBOP_DISCOVERY_PORT	./BebopPiloting.c	67;"	d	file:
+BEBOP_IP_ADDRESS	./BebopPiloting.c	66;"	d	file:
+DISPLAY_WITH_MPLAYER	./BebopPiloting.c	69;"	d	file:
+ERROR_STR_LENGTH	./BebopPiloting.c	64;"	d	file:
+FIFO_DIR_PATTERN	./BebopPiloting.c	71;"	d	file:
+FIFO_NAME	./BebopPiloting.c	72;"	d	file:
+HEADER_X	./ihm.c	57;"	d	file:
+HEADER_Y	./ihm.c	58;"	d	file:
+IHM	./BebopPiloting.c	74;"	d	file:
+IHM_Delete	./ihm.c	/^void IHM_Delete (IHM_t **ihm)$/;"	f
+IHM_INPUT_EVENT_BACK	./ihm.h	/^    IHM_INPUT_EVENT_BACK,$/;"	e	enum:__anon1
+IHM_INPUT_EVENT_DOWN	./ihm.h	/^    IHM_INPUT_EVENT_DOWN,$/;"	e	enum:__anon1
+IHM_INPUT_EVENT_EMERGENCY	./ihm.h	/^    IHM_INPUT_EVENT_EMERGENCY,$/;"	e	enum:__anon1
+IHM_INPUT_EVENT_EXIT	./ihm.h	/^    IHM_INPUT_EVENT_EXIT,$/;"	e	enum:__anon1
+IHM_INPUT_EVENT_FORWARD	./ihm.h	/^    IHM_INPUT_EVENT_FORWARD,$/;"	e	enum:__anon1
+IHM_INPUT_EVENT_LAND	./ihm.h	/^    IHM_INPUT_EVENT_LAND,   \/\/  Keyboard : spacebar$/;"	e	enum:__anon1
+IHM_INPUT_EVENT_LEFT	./ihm.h	/^    IHM_INPUT_EVENT_LEFT,$/;"	e	enum:__anon1
+IHM_INPUT_EVENT_NONE	./ihm.h	/^    IHM_INPUT_EVENT_NONE,$/;"	e	enum:__anon1
+IHM_INPUT_EVENT_RIGHT	./ihm.h	/^    IHM_INPUT_EVENT_RIGHT,$/;"	e	enum:__anon1
+IHM_INPUT_EVENT_ROLL_LEFT	./ihm.h	/^    IHM_INPUT_EVENT_ROLL_LEFT,$/;"	e	enum:__anon1
+IHM_INPUT_EVENT_ROLL_RIGHT	./ihm.h	/^    IHM_INPUT_EVENT_ROLL_RIGHT,$/;"	e	enum:__anon1
+IHM_INPUT_EVENT_TAKEOFF	./ihm.h	/^    IHM_INPUT_EVENT_TAKEOFF,    \/\/  Keyboard : t$/;"	e	enum:__anon1
+IHM_INPUT_EVENT_UP	./ihm.h	/^    IHM_INPUT_EVENT_UP,$/;"	e	enum:__anon1
+IHM_InputProcessing	./ihm.c	/^void *IHM_InputProcessing(void *data)$/;"	f
+IHM_New	./ihm.c	/^IHM_t *IHM_New (IHM_onInputEvent_t onInputEventCallback)$/;"	f
+IHM_PrintBattery	./ihm.c	/^void IHM_PrintBattery(IHM_t *ihm, uint8_t percent)$/;"	f
+IHM_PrintHeader	./ihm.c	/^void IHM_PrintHeader(IHM_t *ihm, char *headerStr)$/;"	f
+IHM_PrintInfo	./ihm.c	/^void IHM_PrintInfo(IHM_t *ihm, char *infoStr)$/;"	f
+IHM_PrintValue	./ihm.c	/^void IHM_PrintValue(IHM_t *ihm, char* TAG, uint8_t value)$/;"	f
+IHM_onInputEvent_t	./ihm.h	/^typedef void (*IHM_onInputEvent_t) (eIHM_INPUT_EVENT event, void *customData);$/;"	t
+IHM_setCustomData	./ihm.c	/^void IHM_setCustomData(IHM_t *ihm, void *customData)$/;"	f
+IHM_t	./ihm.h	/^}IHM_t;$/;"	t	typeref:struct:__anon2
+INFO_X	./ihm.c	60;"	d	file:
+INFO_Y	./ihm.c	61;"	d	file:
+LOCAL_CATEGORY_PATH	./atom.mk	/^LOCAL_CATEGORY_PATH := samples$/;"	m
+LOCAL_DESCRIPTION	./atom.mk	/^LOCAL_DESCRIPTION := Bebop Piloting Using ARDeviceController$/;"	m
+LOCAL_LIBRARIES	./atom.mk	/^LOCAL_LIBRARIES := \\$/;"	m
+LOCAL_MODULE	./atom.mk	/^LOCAL_MODULE := BebopPilotingNewAPI$/;"	m
+LOCAL_PATH	./atom.mk	/^LOCAL_PATH := $(call my-dir)$/;"	m
+LOCAL_SRC_FILES	./atom.mk	/^LOCAL_SRC_FILES := \\$/;"	m
+TAG	./BebopPiloting.c	62;"	d	file:
+VALUE_X	./ihm.c	66;"	d	file:
+VALUE_Y	./ihm.c	67;"	d	file:
+_BEBOP_PILOTING_IHM_H_	./ihm.h	38;"	d
+_JUMPINGSUMO_PILOTING_H_	./BebopPiloting.h	33;"	d
+batteryStateChanged	./BebopPiloting.c	/^void batteryStateChanged (uint8_t percent)$/;"	f
+commandReceived	./BebopPiloting.c	/^void commandReceived (eARCONTROLLER_DICTIONARY_KEY commandKey, ARCONTROLLER_DICTIONARY_ELEMENT_t *elementDictionary, void *customData)$/;"	f
+customData	./ihm.h	/^    void *customData;$/;"	m	struct:__anon2
+customPrintCallback	./BebopPiloting.c	/^int customPrintCallback (eARSAL_PRINT_LEVEL level, const char *tag, const char *format, va_list va)$/;"	f
+decoderConfigCallback	./BebopPiloting.c	/^eARCONTROLLER_ERROR decoderConfigCallback (ARCONTROLLER_Stream_Codec_t codec, void *customData)$/;"	f
+didReceiveFrameCallback	./BebopPiloting.c	/^eARCONTROLLER_ERROR didReceiveFrameCallback (ARCONTROLLER_Frame_t *frame, void *customData)$/;"	f
+eIHM_INPUT_EVENT	./ihm.h	/^}eIHM_INPUT_EVENT;$/;"	t	typeref:enum:__anon1
+fifo_dir	./BebopPiloting.c	/^static char fifo_dir[] = FIFO_DIR_PATTERN;$/;"	v	file:
+fifo_name	./BebopPiloting.c	/^static char fifo_name[128] = "";$/;"	v	file:
+frameNb	./BebopPiloting.c	/^int frameNb = 0;$/;"	v
+gErrorStr	./BebopPiloting.c	/^char gErrorStr[ERROR_STR_LENGTH];$/;"	v
+gIHMRun	./BebopPiloting.c	/^int gIHMRun = 1;$/;"	v
+ihm	./BebopPiloting.c	/^IHM_t *ihm = NULL;$/;"	v
+inputThread	./ihm.h	/^    ARSAL_Thread_t inputThread;$/;"	m	struct:__anon2
+isBebop2	./BebopPiloting.c	/^int isBebop2 = 0;$/;"	v
+main	./BebopPiloting.c	/^int main (int argc, char *argv[])$/;"	f
+mainWindow	./ihm.h	/^    WINDOW *mainWindow;$/;"	m	struct:__anon2
+onInputEvent	./BebopPiloting.c	/^void onInputEvent (eIHM_INPUT_EVENT event, void *customData)$/;"	f
+onInputEventCallback	./ihm.h	/^    IHM_onInputEvent_t onInputEventCallback;$/;"	m	struct:__anon2
+run	./ihm.h	/^    int run;$/;"	m	struct:__anon2
+signal_handler	./BebopPiloting.c	/^static void signal_handler(int signal)$/;"	f	file:
+stateChanged	./BebopPiloting.c	/^void stateChanged (eARCONTROLLER_DEVICE_STATE newState, eARCONTROLLER_ERROR error, void *customData)$/;"	f
+stateSem	./BebopPiloting.c	/^ARSAL_Sem_t stateSem;$/;"	v
+videoOut	./BebopPiloting.c	/^FILE *videoOut = NULL;$/;"	v

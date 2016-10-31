@@ -148,11 +148,11 @@ eARDISCOVERY_ERROR ARDISCOVERY_Device_InitNetworkConfiguration (ARDISCOVERY_Devi
 
 /**
  * @brief Initialize the Discovery Device with a wifi device.
- * @param device The Discovery Device to Initialize.
- * @param[in] product Parrot's product to initialized
- * @param[in] name Device Name ; must be Null-terminated.
- * @param[in] address Device Address ; must be Null-terminated.
- * @param[in] discovery_port Device discovery Port.
+ * @param device The Discovery Device to Initialize.            ==> device: *ARDISCOVERY_Device_t
+ * @param[in] product Parrot's product to initialized           ==> product: eARDISCOVERY_PRODUCT
+ * @param[in] name Device Name ; must be Null-terminated.       ==> name: *char
+ * @param[in] address Device Address ; must be Null-terminated. ==> address: *char
+ * @param[in] discovery_port Device discovery Port.             ==> discovery_port: *char
  * @return executing error.
  */
 eARDISCOVERY_ERROR ARDISCOVERY_Device_InitWifi (ARDISCOVERY_Device_t *device, eARDISCOVERY_PRODUCT product, const char *name, const char *address, int discovery_port);

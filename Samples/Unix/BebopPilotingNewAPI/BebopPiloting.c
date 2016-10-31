@@ -235,10 +235,11 @@ int main (int argc, char *argv[])
 
         if(isBebop2)
         {
-            IHM_PrintHeader (ihm, "-- Bebop 2 Piloting -- >>IHM Message");
+            IHM_PrintHeader (ihm, "-- Bebop 2 Piloting --\nNice connexion :D");
         }
         else
         {
+            /* NEVER CALL THIS PART */
             IHM_PrintHeader (ihm, "-- Bebop Piloting -- >>IHM Message");
         }
     }
