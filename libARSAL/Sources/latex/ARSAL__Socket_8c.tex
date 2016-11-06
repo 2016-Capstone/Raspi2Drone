@@ -1,0 +1,190 @@
+\hypertarget{ARSAL__Socket_8c}{}\section{A\+R\+S\+A\+L\+\_\+\+Socket.\+c File Reference}
+\label{ARSAL__Socket_8c}\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}}
+{\ttfamily \#include $<$config.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$lib\+A\+R\+S\+A\+L/\+A\+R\+S\+A\+L\+\_\+\+Socket.\+h$>$}\newline
+{\ttfamily \#include $<$errno.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structiovec}{iovec}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{ARSAL__Socket_8c_a25080e819a36fcf9aede01a6e7298ea4}{I\+O\+V\+\_\+\+M\+AX}~1024
+\item 
+\#define \hyperlink{ARSAL__Socket_8c_a2d6569aa794c2f23e90691e60d2f3ad2}{S\+S\+I\+Z\+E\+\_\+\+M\+AX}~(\+\_\+\+\_\+\+S\+I\+Z\+E\+\_\+\+M\+A\+X\+\_\+\+\_\+ $>$$>$ 1)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structiovec}{iovec} \hyperlink{ARSAL__Socket_8c_aafbd8214a77af54abc3d3c60f742a720}{writev} (int sockfd, const struct \hyperlink{structiovec}{iovec} $\ast$iov, int iovcnt)
+\item 
+int \hyperlink{ARSAL__Socket_8c_ad9532f98f64eaec58788a6a37675cb0c}{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Create} (int domain, int type, int protocol)
+\item 
+int \hyperlink{ARSAL__Socket_8c_a8d5f5fa26d0ee0cf59dc47fdb4065fdd}{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Connect} (int sockfd, const struct sockaddr $\ast$addr, socklen\+\_\+t addrlen)
+\item 
+ssize\+\_\+t \hyperlink{ARSAL__Socket_8c_a3fc7ef7d25487cdbc6fe81f9d0431a33}{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Sendto} (int sockfd, const void $\ast$buf, size\+\_\+t buflen, int flags, const struct sockaddr $\ast$dest\+\_\+addr, socklen\+\_\+t addrlen)
+\item 
+ssize\+\_\+t \hyperlink{ARSAL__Socket_8c_a35293aeb26644ca5f885a665728a7594}{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Send} (int sockfd, const void $\ast$buf, size\+\_\+t buflen, int flags)
+\item 
+ssize\+\_\+t \hyperlink{ARSAL__Socket_8c_a9bb477759e8ce12778c397946cde6b76}{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Recvfrom} (int sockfd, void $\ast$buf, size\+\_\+t buflen, int flags, struct sockaddr $\ast$src\+\_\+addr, socklen\+\_\+t $\ast$addrlen)
+\item 
+ssize\+\_\+t \hyperlink{ARSAL__Socket_8c_a163ef85a39b5459e316f8168f6810119}{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Recv} (int sockfd, void $\ast$buf, size\+\_\+t buflen, int flags)
+\item 
+ssize\+\_\+t \hyperlink{ARSAL__Socket_8c_a33c3d27532e01aa5c156c0a2565a313d}{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Writev} (int sockfd, const struct \hyperlink{structiovec}{iovec} $\ast$iov, int iovcnt)
+\item 
+ssize\+\_\+t \hyperlink{ARSAL__Socket_8c_a0cc7d31885dd325552d2745d1d660afd}{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Readv} (int sockfd, const struct \hyperlink{structiovec}{iovec} $\ast$iov, int iovcnt)
+\item 
+int \hyperlink{ARSAL__Socket_8c_ab4228ffc2dc06c8c31bf1af55ec8bd67}{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Bind} (int sockfd, const struct sockaddr $\ast$addr, socklen\+\_\+t addrlen)
+\item 
+int \hyperlink{ARSAL__Socket_8c_abff47f50470ffa31bee8e9215b7d45a9}{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Listen} (int sockfd, int backlog)
+\item 
+int \hyperlink{ARSAL__Socket_8c_a312cec6c5c18c7b6bf4b60188dc6e372}{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Accept} (int sockfd, struct sockaddr $\ast$addr, socklen\+\_\+t $\ast$addrlen)
+\item 
+int \hyperlink{ARSAL__Socket_8c_aa6a5622aaa72a57a1a89f4f259b9d8ca}{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Close} (int sockfd)
+\item 
+int \hyperlink{ARSAL__Socket_8c_a9bbace0fc8cfab34f989863da05f9809}{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Setsockopt} (int sockfd, int level, int optname, const void $\ast$optval, socklen\+\_\+t optlen)
+\item 
+int \hyperlink{ARSAL__Socket_8c_a810778d5d5b1e90dec948eba2096de95}{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Getsockopt} (int sockfd, int level, int optname, void $\ast$optval, socklen\+\_\+t $\ast$optlen)
+\item 
+int \hyperlink{ARSAL__Socket_8c_a2658c4a68ff90d76a81aaec41bdcad7c}{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Getsockname} (int sockfd, struct sockaddr $\ast$addr, socklen\+\_\+t $\ast$addrlen)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{ARSAL__Socket_8c_ae9880e88c5e12cf1ca9319f20782c8ea}{iov\+\_\+base}
+\item 
+size\+\_\+t \hyperlink{ARSAL__Socket_8c_afcd13900daf65022414ae14a8af166f6}{iov\+\_\+len}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{ARSAL__Socket_8c_a25080e819a36fcf9aede01a6e7298ea4}{}\label{ARSAL__Socket_8c_a25080e819a36fcf9aede01a6e7298ea4} 
+\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}!I\+O\+V\+\_\+\+M\+AX@{I\+O\+V\+\_\+\+M\+AX}}
+\index{I\+O\+V\+\_\+\+M\+AX@{I\+O\+V\+\_\+\+M\+AX}!A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}}
+\subsubsection{\texorpdfstring{I\+O\+V\+\_\+\+M\+AX}{IOV\_MAX}}
+{\footnotesize\ttfamily \#define I\+O\+V\+\_\+\+M\+AX~1024}
+
+\hypertarget{ARSAL__Socket_8c_a2d6569aa794c2f23e90691e60d2f3ad2}{}\label{ARSAL__Socket_8c_a2d6569aa794c2f23e90691e60d2f3ad2} 
+\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}!S\+S\+I\+Z\+E\+\_\+\+M\+AX@{S\+S\+I\+Z\+E\+\_\+\+M\+AX}}
+\index{S\+S\+I\+Z\+E\+\_\+\+M\+AX@{S\+S\+I\+Z\+E\+\_\+\+M\+AX}!A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}}
+\subsubsection{\texorpdfstring{S\+S\+I\+Z\+E\+\_\+\+M\+AX}{SSIZE\_MAX}}
+{\footnotesize\ttfamily \#define S\+S\+I\+Z\+E\+\_\+\+M\+AX~(\+\_\+\+\_\+\+S\+I\+Z\+E\+\_\+\+M\+A\+X\+\_\+\+\_\+ $>$$>$ 1)}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{ARSAL__Socket_8c_a312cec6c5c18c7b6bf4b60188dc6e372}{}\label{ARSAL__Socket_8c_a312cec6c5c18c7b6bf4b60188dc6e372} 
+\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}!A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Accept@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Accept}}
+\index{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Accept@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Accept}!A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Accept()}{ARSAL\_Socket\_Accept()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Accept (\begin{DoxyParamCaption}\item[{int}]{sockfd,  }\item[{struct sockaddr $\ast$}]{addr,  }\item[{socklen\+\_\+t $\ast$}]{addrlen }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Socket_8c_ab4228ffc2dc06c8c31bf1af55ec8bd67}{}\label{ARSAL__Socket_8c_ab4228ffc2dc06c8c31bf1af55ec8bd67} 
+\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}!A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Bind@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Bind}}
+\index{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Bind@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Bind}!A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Bind()}{ARSAL\_Socket\_Bind()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Bind (\begin{DoxyParamCaption}\item[{int}]{sockfd,  }\item[{const struct sockaddr $\ast$}]{addr,  }\item[{socklen\+\_\+t}]{addrlen }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Socket_8c_aa6a5622aaa72a57a1a89f4f259b9d8ca}{}\label{ARSAL__Socket_8c_aa6a5622aaa72a57a1a89f4f259b9d8ca} 
+\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}!A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Close@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Close}}
+\index{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Close@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Close}!A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Close()}{ARSAL\_Socket\_Close()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Close (\begin{DoxyParamCaption}\item[{int}]{sockfd }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Socket_8c_a8d5f5fa26d0ee0cf59dc47fdb4065fdd}{}\label{ARSAL__Socket_8c_a8d5f5fa26d0ee0cf59dc47fdb4065fdd} 
+\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}!A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Connect@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Connect}}
+\index{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Connect@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Connect}!A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Connect()}{ARSAL\_Socket\_Connect()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Connect (\begin{DoxyParamCaption}\item[{int}]{sockfd,  }\item[{const struct sockaddr $\ast$}]{addr,  }\item[{socklen\+\_\+t}]{addrlen }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Socket_8c_ad9532f98f64eaec58788a6a37675cb0c}{}\label{ARSAL__Socket_8c_ad9532f98f64eaec58788a6a37675cb0c} 
+\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}!A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Create@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Create}}
+\index{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Create@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Create}!A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Create()}{ARSAL\_Socket\_Create()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Create (\begin{DoxyParamCaption}\item[{int}]{domain,  }\item[{int}]{type,  }\item[{int}]{protocol }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Socket_8c_a2658c4a68ff90d76a81aaec41bdcad7c}{}\label{ARSAL__Socket_8c_a2658c4a68ff90d76a81aaec41bdcad7c} 
+\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}!A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Getsockname@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Getsockname}}
+\index{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Getsockname@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Getsockname}!A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Getsockname()}{ARSAL\_Socket\_Getsockname()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Getsockname (\begin{DoxyParamCaption}\item[{int}]{sockfd,  }\item[{struct sockaddr $\ast$}]{addr,  }\item[{socklen\+\_\+t $\ast$}]{addrlen }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Socket_8c_a810778d5d5b1e90dec948eba2096de95}{}\label{ARSAL__Socket_8c_a810778d5d5b1e90dec948eba2096de95} 
+\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}!A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Getsockopt@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Getsockopt}}
+\index{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Getsockopt@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Getsockopt}!A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Getsockopt()}{ARSAL\_Socket\_Getsockopt()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Getsockopt (\begin{DoxyParamCaption}\item[{int}]{sockfd,  }\item[{int}]{level,  }\item[{int}]{optname,  }\item[{void $\ast$}]{optval,  }\item[{socklen\+\_\+t $\ast$}]{optlen }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Socket_8c_abff47f50470ffa31bee8e9215b7d45a9}{}\label{ARSAL__Socket_8c_abff47f50470ffa31bee8e9215b7d45a9} 
+\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}!A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Listen@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Listen}}
+\index{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Listen@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Listen}!A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Listen()}{ARSAL\_Socket\_Listen()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Listen (\begin{DoxyParamCaption}\item[{int}]{sockfd,  }\item[{int}]{backlog }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Socket_8c_a0cc7d31885dd325552d2745d1d660afd}{}\label{ARSAL__Socket_8c_a0cc7d31885dd325552d2745d1d660afd} 
+\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}!A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Readv@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Readv}}
+\index{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Readv@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Readv}!A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Readv()}{ARSAL\_Socket\_Readv()}}
+{\footnotesize\ttfamily ssize\+\_\+t A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Readv (\begin{DoxyParamCaption}\item[{int}]{sockfd,  }\item[{const struct \hyperlink{structiovec}{iovec} $\ast$}]{iov,  }\item[{int}]{iovcnt }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Socket_8c_a163ef85a39b5459e316f8168f6810119}{}\label{ARSAL__Socket_8c_a163ef85a39b5459e316f8168f6810119} 
+\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}!A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Recv@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Recv}}
+\index{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Recv@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Recv}!A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Recv()}{ARSAL\_Socket\_Recv()}}
+{\footnotesize\ttfamily ssize\+\_\+t A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Recv (\begin{DoxyParamCaption}\item[{int}]{sockfd,  }\item[{void $\ast$}]{buf,  }\item[{size\+\_\+t}]{buflen,  }\item[{int}]{flags }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Socket_8c_a9bb477759e8ce12778c397946cde6b76}{}\label{ARSAL__Socket_8c_a9bb477759e8ce12778c397946cde6b76} 
+\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}!A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Recvfrom@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Recvfrom}}
+\index{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Recvfrom@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Recvfrom}!A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Recvfrom()}{ARSAL\_Socket\_Recvfrom()}}
+{\footnotesize\ttfamily ssize\+\_\+t A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Recvfrom (\begin{DoxyParamCaption}\item[{int}]{sockfd,  }\item[{void $\ast$}]{buf,  }\item[{size\+\_\+t}]{buflen,  }\item[{int}]{flags,  }\item[{struct sockaddr $\ast$}]{src\+\_\+addr,  }\item[{socklen\+\_\+t $\ast$}]{addrlen }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Socket_8c_a35293aeb26644ca5f885a665728a7594}{}\label{ARSAL__Socket_8c_a35293aeb26644ca5f885a665728a7594} 
+\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}!A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Send@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Send}}
+\index{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Send@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Send}!A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Send()}{ARSAL\_Socket\_Send()}}
+{\footnotesize\ttfamily ssize\+\_\+t A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Send (\begin{DoxyParamCaption}\item[{int}]{sockfd,  }\item[{const void $\ast$}]{buf,  }\item[{size\+\_\+t}]{buflen,  }\item[{int}]{flags }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Socket_8c_a3fc7ef7d25487cdbc6fe81f9d0431a33}{}\label{ARSAL__Socket_8c_a3fc7ef7d25487cdbc6fe81f9d0431a33} 
+\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}!A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Sendto@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Sendto}}
+\index{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Sendto@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Sendto}!A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Sendto()}{ARSAL\_Socket\_Sendto()}}
+{\footnotesize\ttfamily ssize\+\_\+t A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Sendto (\begin{DoxyParamCaption}\item[{int}]{sockfd,  }\item[{const void $\ast$}]{buf,  }\item[{size\+\_\+t}]{buflen,  }\item[{int}]{flags,  }\item[{const struct sockaddr $\ast$}]{dest\+\_\+addr,  }\item[{socklen\+\_\+t}]{addrlen }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Socket_8c_a9bbace0fc8cfab34f989863da05f9809}{}\label{ARSAL__Socket_8c_a9bbace0fc8cfab34f989863da05f9809} 
+\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}!A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Setsockopt@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Setsockopt}}
+\index{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Setsockopt@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Setsockopt}!A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Setsockopt()}{ARSAL\_Socket\_Setsockopt()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Setsockopt (\begin{DoxyParamCaption}\item[{int}]{sockfd,  }\item[{int}]{level,  }\item[{int}]{optname,  }\item[{const void $\ast$}]{optval,  }\item[{socklen\+\_\+t}]{optlen }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Socket_8c_a33c3d27532e01aa5c156c0a2565a313d}{}\label{ARSAL__Socket_8c_a33c3d27532e01aa5c156c0a2565a313d} 
+\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}!A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Writev@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Writev}}
+\index{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Writev@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Writev}!A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Writev()}{ARSAL\_Socket\_Writev()}}
+{\footnotesize\ttfamily ssize\+\_\+t A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Writev (\begin{DoxyParamCaption}\item[{int}]{sockfd,  }\item[{const struct \hyperlink{structiovec}{iovec} $\ast$}]{iov,  }\item[{int}]{iovcnt }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Socket_8c_aafbd8214a77af54abc3d3c60f742a720}{}\label{ARSAL__Socket_8c_aafbd8214a77af54abc3d3c60f742a720} 
+\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}!writev@{writev}}
+\index{writev@{writev}!A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}}
+\subsubsection{\texorpdfstring{writev()}{writev()}}
+{\footnotesize\ttfamily struct \hyperlink{structiovec}{iovec} writev (\begin{DoxyParamCaption}\item[{int}]{sockfd,  }\item[{const struct \hyperlink{structiovec}{iovec} $\ast$}]{iov,  }\item[{int}]{iovcnt }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{ARSAL__Socket_8c_ae9880e88c5e12cf1ca9319f20782c8ea}{}\label{ARSAL__Socket_8c_ae9880e88c5e12cf1ca9319f20782c8ea} 
+\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}!iov\+\_\+base@{iov\+\_\+base}}
+\index{iov\+\_\+base@{iov\+\_\+base}!A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}}
+\subsubsection{\texorpdfstring{iov\+\_\+base}{iov\_base}}
+{\footnotesize\ttfamily void$\ast$ iov\+\_\+base}
+
+\hypertarget{ARSAL__Socket_8c_afcd13900daf65022414ae14a8af166f6}{}\label{ARSAL__Socket_8c_afcd13900daf65022414ae14a8af166f6} 
+\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}!iov\+\_\+len@{iov\+\_\+len}}
+\index{iov\+\_\+len@{iov\+\_\+len}!A\+R\+S\+A\+L\+\_\+\+Socket.\+c@{A\+R\+S\+A\+L\+\_\+\+Socket.\+c}}
+\subsubsection{\texorpdfstring{iov\+\_\+len}{iov\_len}}
+{\footnotesize\ttfamily size\+\_\+t iov\+\_\+len}
+

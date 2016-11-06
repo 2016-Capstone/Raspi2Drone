@@ -1,0 +1,84 @@
+\hypertarget{ARSAL__MD5_8c}{}\section{A\+R\+S\+A\+L\+\_\+\+M\+D5.\+c File Reference}
+\label{ARSAL__MD5_8c}\index{A\+R\+S\+A\+L\+\_\+\+M\+D5.\+c@{A\+R\+S\+A\+L\+\_\+\+M\+D5.\+c}}
+
+
+M\+D5 manager allow compute and check md5.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}md5.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lib\+A\+R\+S\+A\+L/\+A\+R\+S\+A\+L\+\_\+\+Error.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lib\+A\+R\+S\+A\+L/\+A\+R\+S\+A\+L\+\_\+\+Print.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lib\+A\+R\+S\+A\+L/\+A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}A\+R\+S\+A\+L\+\_\+\+M\+D5.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{ARSAL__MD5_8c_a1f6c511e70ee202b0c50b5590053cd9c}{A\+R\+U\+T\+I\+L\+S\+\_\+\+M\+D5\+\_\+\+T\+AG}~\char`\"{}Md5\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR \hyperlink{ARSAL__MD5_8c_ad1dfea64c506a9687561d4086e78570a}{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Init} (A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+t $\ast$manager)
+\item 
+void \hyperlink{ARSAL__MD5_8c_a8f4ef6da24327f4032e7d24c934dfc8d}{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Close} (A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+t $\ast$manager)
+\item 
+e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR \hyperlink{ARSAL__MD5_8c_aa0475f921bce9e7cd23e10e4fac61d7d}{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Check} (void $\ast$md5\+Object, const char $\ast$file\+Path, const char $\ast$md5\+Txt)
+\item 
+e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR \hyperlink{ARSAL__MD5_8c_ae2453d3b0cfe51e5ec45f65dfbcb57fa}{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Compute} (void $\ast$md5\+Object, const char $\ast$file\+Path, uint8\+\_\+t $\ast$md5, int md5\+Len)
+\item 
+e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR \hyperlink{ARSAL__MD5_8c_a443e90b1f40f908d9f6ce3e532a84dcd}{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Get\+Md5\+As\+Txt} (const uint8\+\_\+t $\ast$md5, int md5\+Len, char $\ast$md5\+Txt, int md5\+Txt\+Len)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+M\+D5 manager allow compute and check md5. 
+
+\begin{DoxyDate}{Date}
+02/06/2014 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\href{mailto:david.flattin.ext@parrot.com}{\tt david.\+flattin.\+ext@parrot.\+com} 
+\end{DoxyAuthor}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{ARSAL__MD5_8c_a1f6c511e70ee202b0c50b5590053cd9c}{}\label{ARSAL__MD5_8c_a1f6c511e70ee202b0c50b5590053cd9c} 
+\index{A\+R\+S\+A\+L\+\_\+\+M\+D5.\+c@{A\+R\+S\+A\+L\+\_\+\+M\+D5.\+c}!A\+R\+U\+T\+I\+L\+S\+\_\+\+M\+D5\+\_\+\+T\+AG@{A\+R\+U\+T\+I\+L\+S\+\_\+\+M\+D5\+\_\+\+T\+AG}}
+\index{A\+R\+U\+T\+I\+L\+S\+\_\+\+M\+D5\+\_\+\+T\+AG@{A\+R\+U\+T\+I\+L\+S\+\_\+\+M\+D5\+\_\+\+T\+AG}!A\+R\+S\+A\+L\+\_\+\+M\+D5.\+c@{A\+R\+S\+A\+L\+\_\+\+M\+D5.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+U\+T\+I\+L\+S\+\_\+\+M\+D5\+\_\+\+T\+AG}{ARUTILS\_MD5\_TAG}}
+{\footnotesize\ttfamily \#define A\+R\+U\+T\+I\+L\+S\+\_\+\+M\+D5\+\_\+\+T\+AG~\char`\"{}Md5\char`\"{}}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{ARSAL__MD5_8c_aa0475f921bce9e7cd23e10e4fac61d7d}{}\label{ARSAL__MD5_8c_aa0475f921bce9e7cd23e10e4fac61d7d} 
+\index{A\+R\+S\+A\+L\+\_\+\+M\+D5.\+c@{A\+R\+S\+A\+L\+\_\+\+M\+D5.\+c}!A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Check@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Check}}
+\index{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Check@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Check}!A\+R\+S\+A\+L\+\_\+\+M\+D5.\+c@{A\+R\+S\+A\+L\+\_\+\+M\+D5.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Check()}{ARSAL\_MD5\_Check()}}
+{\footnotesize\ttfamily e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Check (\begin{DoxyParamCaption}\item[{void $\ast$}]{md5\+Object,  }\item[{const char $\ast$}]{file\+Path,  }\item[{const char $\ast$}]{md5\+Txt }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__MD5_8c_ae2453d3b0cfe51e5ec45f65dfbcb57fa}{}\label{ARSAL__MD5_8c_ae2453d3b0cfe51e5ec45f65dfbcb57fa} 
+\index{A\+R\+S\+A\+L\+\_\+\+M\+D5.\+c@{A\+R\+S\+A\+L\+\_\+\+M\+D5.\+c}!A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Compute@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Compute}}
+\index{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Compute@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Compute}!A\+R\+S\+A\+L\+\_\+\+M\+D5.\+c@{A\+R\+S\+A\+L\+\_\+\+M\+D5.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Compute()}{ARSAL\_MD5\_Compute()}}
+{\footnotesize\ttfamily e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Compute (\begin{DoxyParamCaption}\item[{void $\ast$}]{md5\+Object,  }\item[{const char $\ast$}]{file\+Path,  }\item[{uint8\+\_\+t $\ast$}]{md5,  }\item[{int}]{md5\+Len }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__MD5_8c_a443e90b1f40f908d9f6ce3e532a84dcd}{}\label{ARSAL__MD5_8c_a443e90b1f40f908d9f6ce3e532a84dcd} 
+\index{A\+R\+S\+A\+L\+\_\+\+M\+D5.\+c@{A\+R\+S\+A\+L\+\_\+\+M\+D5.\+c}!A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Get\+Md5\+As\+Txt@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Get\+Md5\+As\+Txt}}
+\index{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Get\+Md5\+As\+Txt@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Get\+Md5\+As\+Txt}!A\+R\+S\+A\+L\+\_\+\+M\+D5.\+c@{A\+R\+S\+A\+L\+\_\+\+M\+D5.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Get\+Md5\+As\+Txt()}{ARSAL\_MD5\_GetMd5AsTxt()}}
+{\footnotesize\ttfamily e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Get\+Md5\+As\+Txt (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{md5,  }\item[{int}]{md5\+Len,  }\item[{char $\ast$}]{md5\+Txt,  }\item[{int}]{md5\+Txt\+Len }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__MD5_8c_a8f4ef6da24327f4032e7d24c934dfc8d}{}\label{ARSAL__MD5_8c_a8f4ef6da24327f4032e7d24c934dfc8d} 
+\index{A\+R\+S\+A\+L\+\_\+\+M\+D5.\+c@{A\+R\+S\+A\+L\+\_\+\+M\+D5.\+c}!A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Close@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Close}}
+\index{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Close@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Close}!A\+R\+S\+A\+L\+\_\+\+M\+D5.\+c@{A\+R\+S\+A\+L\+\_\+\+M\+D5.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Close()}{ARSAL\_MD5\_Manager\_Close()}}
+{\footnotesize\ttfamily void A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Close (\begin{DoxyParamCaption}\item[{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+t $\ast$}]{manager }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__MD5_8c_ad1dfea64c506a9687561d4086e78570a}{}\label{ARSAL__MD5_8c_ad1dfea64c506a9687561d4086e78570a} 
+\index{A\+R\+S\+A\+L\+\_\+\+M\+D5.\+c@{A\+R\+S\+A\+L\+\_\+\+M\+D5.\+c}!A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Init@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Init}}
+\index{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Init@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Init}!A\+R\+S\+A\+L\+\_\+\+M\+D5.\+c@{A\+R\+S\+A\+L\+\_\+\+M\+D5.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Init()}{ARSAL\_MD5\_Manager\_Init()}}
+{\footnotesize\ttfamily e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Init (\begin{DoxyParamCaption}\item[{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+t $\ast$}]{manager }\end{DoxyParamCaption})}
+

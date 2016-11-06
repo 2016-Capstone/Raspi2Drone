@@ -1,0 +1,116 @@
+\hypertarget{ARSAL__Mutex_8c}{}\section{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c File Reference}
+\label{ARSAL__Mutex_8c}\index{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c@{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$config.\+h$>$}\newline
+{\ttfamily \#include $<$lib\+A\+R\+S\+A\+L/\+A\+R\+S\+A\+L\+\_\+\+Mutex.\+h$>$}\newline
+{\ttfamily \#include $<$lib\+A\+R\+S\+A\+L/\+A\+R\+S\+A\+L\+\_\+\+Time.\+h$>$}\newline
+{\ttfamily \#include $<$lib\+A\+R\+S\+A\+L/\+A\+R\+S\+A\+L\+\_\+\+Print.\+h$>$}\newline
+{\ttfamily \#include $<$errno.\+h$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{ARSAL__Mutex_8c_aff75f3234c05b7a9fa0f7a87b5917f4b}{A\+R\+S\+A\+L\+\_\+\+M\+U\+T\+E\+X\+\_\+\+T\+AG}~\char`\"{}A\+R\+S\+A\+L\+\_\+\+Mutex\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{ARSAL__Mutex_8c_a20102c2841bfd623ae82bfeff773aad8}{A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+\+Init} (A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+t $\ast$mutex)
+\item 
+int \hyperlink{ARSAL__Mutex_8c_a0ba14ee5d09fa1f94afb3cf2687054d3}{A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+\+Destroy} (A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+t $\ast$mutex)
+\item 
+int \hyperlink{ARSAL__Mutex_8c_a54f45e290c720122b8f03c031516331b}{A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+\+Lock} (A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+t $\ast$mutex)
+\item 
+int \hyperlink{ARSAL__Mutex_8c_a18184a834c1c8ff35d0cfaea3fb73306}{A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+\+Trylock} (A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+t $\ast$mutex)
+\item 
+int \hyperlink{ARSAL__Mutex_8c_aa795b083cf278b074cb384aec40d7418}{A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+\+Unlock} (A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+t $\ast$mutex)
+\item 
+int \hyperlink{ARSAL__Mutex_8c_ae3732c6f480579f909852cbca5ac9e24}{A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Init} (A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+t $\ast$cond)
+\item 
+int \hyperlink{ARSAL__Mutex_8c_a5f82deeb44dfed9003084f005c7887d2}{A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Destroy} (A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+t $\ast$cond)
+\item 
+int \hyperlink{ARSAL__Mutex_8c_a91528cdc3f4fe26e9964232ded2ad627}{A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Wait} (A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+t $\ast$cond, A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+t $\ast$mutex)
+\item 
+int \hyperlink{ARSAL__Mutex_8c_a36b5832f3fbd279d3f584f230dab8c49}{A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Timedwait} (A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+t $\ast$cond, A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+t $\ast$mutex, int timeout)
+\item 
+int \hyperlink{ARSAL__Mutex_8c_a2fdb9078301379ce852784db1e065025}{A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Signal} (A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+t $\ast$cond)
+\item 
+int \hyperlink{ARSAL__Mutex_8c_aabab4cabe677f1bcdbe19e1cc59130cc}{A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Broadcast} (A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+t $\ast$cond)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{ARSAL__Mutex_8c_aff75f3234c05b7a9fa0f7a87b5917f4b}{}\label{ARSAL__Mutex_8c_aff75f3234c05b7a9fa0f7a87b5917f4b} 
+\index{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c@{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c}!A\+R\+S\+A\+L\+\_\+\+M\+U\+T\+E\+X\+\_\+\+T\+AG@{A\+R\+S\+A\+L\+\_\+\+M\+U\+T\+E\+X\+\_\+\+T\+AG}}
+\index{A\+R\+S\+A\+L\+\_\+\+M\+U\+T\+E\+X\+\_\+\+T\+AG@{A\+R\+S\+A\+L\+\_\+\+M\+U\+T\+E\+X\+\_\+\+T\+AG}!A\+R\+S\+A\+L\+\_\+\+Mutex.\+c@{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+M\+U\+T\+E\+X\+\_\+\+T\+AG}{ARSAL\_MUTEX\_TAG}}
+{\footnotesize\ttfamily \#define A\+R\+S\+A\+L\+\_\+\+M\+U\+T\+E\+X\+\_\+\+T\+AG~\char`\"{}A\+R\+S\+A\+L\+\_\+\+Mutex\char`\"{}}
+
+Tag for A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+NT 
+
+\subsection{Function Documentation}
+\hypertarget{ARSAL__Mutex_8c_aabab4cabe677f1bcdbe19e1cc59130cc}{}\label{ARSAL__Mutex_8c_aabab4cabe677f1bcdbe19e1cc59130cc} 
+\index{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c@{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c}!A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Broadcast@{A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Broadcast}}
+\index{A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Broadcast@{A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Broadcast}!A\+R\+S\+A\+L\+\_\+\+Mutex.\+c@{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Broadcast()}{ARSAL\_Cond\_Broadcast()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Broadcast (\begin{DoxyParamCaption}\item[{A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+t $\ast$}]{cond }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Mutex_8c_a5f82deeb44dfed9003084f005c7887d2}{}\label{ARSAL__Mutex_8c_a5f82deeb44dfed9003084f005c7887d2} 
+\index{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c@{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c}!A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Destroy@{A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Destroy}}
+\index{A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Destroy@{A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Destroy}!A\+R\+S\+A\+L\+\_\+\+Mutex.\+c@{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Destroy()}{ARSAL\_Cond\_Destroy()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Destroy (\begin{DoxyParamCaption}\item[{A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+t $\ast$}]{cond }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Mutex_8c_ae3732c6f480579f909852cbca5ac9e24}{}\label{ARSAL__Mutex_8c_ae3732c6f480579f909852cbca5ac9e24} 
+\index{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c@{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c}!A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Init@{A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Init}}
+\index{A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Init@{A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Init}!A\+R\+S\+A\+L\+\_\+\+Mutex.\+c@{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Init()}{ARSAL\_Cond\_Init()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Init (\begin{DoxyParamCaption}\item[{A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+t $\ast$}]{cond }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Mutex_8c_a2fdb9078301379ce852784db1e065025}{}\label{ARSAL__Mutex_8c_a2fdb9078301379ce852784db1e065025} 
+\index{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c@{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c}!A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Signal@{A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Signal}}
+\index{A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Signal@{A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Signal}!A\+R\+S\+A\+L\+\_\+\+Mutex.\+c@{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Signal()}{ARSAL\_Cond\_Signal()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Signal (\begin{DoxyParamCaption}\item[{A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+t $\ast$}]{cond }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Mutex_8c_a36b5832f3fbd279d3f584f230dab8c49}{}\label{ARSAL__Mutex_8c_a36b5832f3fbd279d3f584f230dab8c49} 
+\index{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c@{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c}!A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Timedwait@{A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Timedwait}}
+\index{A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Timedwait@{A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Timedwait}!A\+R\+S\+A\+L\+\_\+\+Mutex.\+c@{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Timedwait()}{ARSAL\_Cond\_Timedwait()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Timedwait (\begin{DoxyParamCaption}\item[{A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+t $\ast$}]{cond,  }\item[{A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+t $\ast$}]{mutex,  }\item[{int}]{timeout }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Mutex_8c_a91528cdc3f4fe26e9964232ded2ad627}{}\label{ARSAL__Mutex_8c_a91528cdc3f4fe26e9964232ded2ad627} 
+\index{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c@{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c}!A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Wait@{A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Wait}}
+\index{A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Wait@{A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Wait}!A\+R\+S\+A\+L\+\_\+\+Mutex.\+c@{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Wait()}{ARSAL\_Cond\_Wait()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Wait (\begin{DoxyParamCaption}\item[{A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+t $\ast$}]{cond,  }\item[{A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+t $\ast$}]{mutex }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Mutex_8c_a0ba14ee5d09fa1f94afb3cf2687054d3}{}\label{ARSAL__Mutex_8c_a0ba14ee5d09fa1f94afb3cf2687054d3} 
+\index{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c@{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c}!A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+\+Destroy@{A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+\+Destroy}}
+\index{A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+\+Destroy@{A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+\+Destroy}!A\+R\+S\+A\+L\+\_\+\+Mutex.\+c@{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+\+Destroy()}{ARSAL\_Mutex\_Destroy()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+\+Destroy (\begin{DoxyParamCaption}\item[{A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+t $\ast$}]{mutex }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Mutex_8c_a20102c2841bfd623ae82bfeff773aad8}{}\label{ARSAL__Mutex_8c_a20102c2841bfd623ae82bfeff773aad8} 
+\index{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c@{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c}!A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+\+Init@{A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+\+Init}}
+\index{A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+\+Init@{A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+\+Init}!A\+R\+S\+A\+L\+\_\+\+Mutex.\+c@{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+\+Init()}{ARSAL\_Mutex\_Init()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+\+Init (\begin{DoxyParamCaption}\item[{A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+t $\ast$}]{mutex }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Mutex_8c_a54f45e290c720122b8f03c031516331b}{}\label{ARSAL__Mutex_8c_a54f45e290c720122b8f03c031516331b} 
+\index{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c@{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c}!A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+\+Lock@{A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+\+Lock}}
+\index{A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+\+Lock@{A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+\+Lock}!A\+R\+S\+A\+L\+\_\+\+Mutex.\+c@{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+\+Lock()}{ARSAL\_Mutex\_Lock()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+\+Lock (\begin{DoxyParamCaption}\item[{A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+t $\ast$}]{mutex }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Mutex_8c_a18184a834c1c8ff35d0cfaea3fb73306}{}\label{ARSAL__Mutex_8c_a18184a834c1c8ff35d0cfaea3fb73306} 
+\index{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c@{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c}!A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+\+Trylock@{A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+\+Trylock}}
+\index{A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+\+Trylock@{A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+\+Trylock}!A\+R\+S\+A\+L\+\_\+\+Mutex.\+c@{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+\+Trylock()}{ARSAL\_Mutex\_Trylock()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+\+Trylock (\begin{DoxyParamCaption}\item[{A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+t $\ast$}]{mutex }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Mutex_8c_aa795b083cf278b074cb384aec40d7418}{}\label{ARSAL__Mutex_8c_aa795b083cf278b074cb384aec40d7418} 
+\index{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c@{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c}!A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+\+Unlock@{A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+\+Unlock}}
+\index{A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+\+Unlock@{A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+\+Unlock}!A\+R\+S\+A\+L\+\_\+\+Mutex.\+c@{A\+R\+S\+A\+L\+\_\+\+Mutex.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+\+Unlock()}{ARSAL\_Mutex\_Unlock()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+\+Unlock (\begin{DoxyParamCaption}\item[{A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+t $\ast$}]{mutex }\end{DoxyParamCaption})}
+

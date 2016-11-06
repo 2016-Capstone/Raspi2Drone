@@ -1,0 +1,37 @@
+\hypertarget{ARSAL__Thread_8c}{}\section{A\+R\+S\+A\+L\+\_\+\+Thread.\+c File Reference}
+\label{ARSAL__Thread_8c}\index{A\+R\+S\+A\+L\+\_\+\+Thread.\+c@{A\+R\+S\+A\+L\+\_\+\+Thread.\+c}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$config.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$lib\+A\+R\+S\+A\+L/\+A\+R\+S\+A\+L\+\_\+\+Thread.\+h$>$}\newline
+{\ttfamily \#include $<$lib\+A\+R\+S\+A\+L/\+A\+R\+S\+A\+L\+\_\+\+Print.\+h$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{ARSAL__Thread_8c_a7e4f3762ab35c320f07749f90937eb2b}{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Create} (A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+t $\ast$thread, A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Routine\+\_\+t routine, void $\ast$arg)
+\item 
+int \hyperlink{ARSAL__Thread_8c_a29465be866d36a00974e9b890b782749}{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Join} (A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+t thread, void $\ast$$\ast$retval)
+\item 
+int \hyperlink{ARSAL__Thread_8c_af3f5228215c67354d58e6b5aa512771e}{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Destroy} (A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+t $\ast$thread)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{ARSAL__Thread_8c_a7e4f3762ab35c320f07749f90937eb2b}{}\label{ARSAL__Thread_8c_a7e4f3762ab35c320f07749f90937eb2b} 
+\index{A\+R\+S\+A\+L\+\_\+\+Thread.\+c@{A\+R\+S\+A\+L\+\_\+\+Thread.\+c}!A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Create@{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Create}}
+\index{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Create@{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Create}!A\+R\+S\+A\+L\+\_\+\+Thread.\+c@{A\+R\+S\+A\+L\+\_\+\+Thread.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Create()}{ARSAL\_Thread\_Create()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Create (\begin{DoxyParamCaption}\item[{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+t $\ast$}]{thread,  }\item[{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Routine\+\_\+t}]{routine,  }\item[{void $\ast$}]{arg }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Thread_8c_af3f5228215c67354d58e6b5aa512771e}{}\label{ARSAL__Thread_8c_af3f5228215c67354d58e6b5aa512771e} 
+\index{A\+R\+S\+A\+L\+\_\+\+Thread.\+c@{A\+R\+S\+A\+L\+\_\+\+Thread.\+c}!A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Destroy@{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Destroy}}
+\index{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Destroy@{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Destroy}!A\+R\+S\+A\+L\+\_\+\+Thread.\+c@{A\+R\+S\+A\+L\+\_\+\+Thread.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Destroy()}{ARSAL\_Thread\_Destroy()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Destroy (\begin{DoxyParamCaption}\item[{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+t $\ast$}]{thread }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Thread_8c_a29465be866d36a00974e9b890b782749}{}\label{ARSAL__Thread_8c_a29465be866d36a00974e9b890b782749} 
+\index{A\+R\+S\+A\+L\+\_\+\+Thread.\+c@{A\+R\+S\+A\+L\+\_\+\+Thread.\+c}!A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Join@{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Join}}
+\index{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Join@{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Join}!A\+R\+S\+A\+L\+\_\+\+Thread.\+c@{A\+R\+S\+A\+L\+\_\+\+Thread.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Join()}{ARSAL\_Thread\_Join()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Join (\begin{DoxyParamCaption}\item[{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+t}]{thread,  }\item[{void $\ast$$\ast$}]{retval }\end{DoxyParamCaption})}
+

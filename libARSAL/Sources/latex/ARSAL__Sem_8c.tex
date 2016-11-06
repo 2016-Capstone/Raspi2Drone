@@ -1,0 +1,111 @@
+\hypertarget{ARSAL__Sem_8c}{}\section{A\+R\+S\+A\+L\+\_\+\+Sem.\+c File Reference}
+\label{ARSAL__Sem_8c}\index{A\+R\+S\+A\+L\+\_\+\+Sem.\+c@{A\+R\+S\+A\+L\+\_\+\+Sem.\+c}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$config.\+h$>$}\newline
+{\ttfamily \#include $<$lib\+A\+R\+S\+A\+L/\+A\+R\+S\+A\+L\+\_\+\+Sem.\+h$>$}\newline
+{\ttfamily \#include $<$lib\+A\+R\+S\+A\+L/\+A\+R\+S\+A\+L\+\_\+\+Time.\+h$>$}\newline
+{\ttfamily \#include $<$errno.\+h$>$}\newline
+{\ttfamily \#include $<$lib\+A\+R\+S\+A\+L/\+A\+R\+S\+A\+L\+\_\+\+Mutex.\+h$>$}\newline
+{\ttfamily \#include $<$inttypes.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structARSAL__Sem__CustomImpl__t}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Custom\+Impl\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{ARSAL__Sem_8c_a35af973cd4d452f1d136e56fdb4c2ddf}{\+\_\+\+\_\+\+S\+A\+L\+\_\+\+U\+S\+E\+\_\+\+P\+O\+S\+I\+X\+\_\+\+S\+EM}~(0)
+\item 
+\#define \hyperlink{ARSAL__Sem_8c_a47a63a59db14eae13654da4375a98e5b}{A\+R\+S\+A\+L\+\_\+\+S\+E\+M\+\_\+\+E\+R\+R\+N\+O\+\_\+\+T\+R\+A\+N\+S\+F\+O\+RM}(R\+E\+S\+B\+UF)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{ARSAL__Sem_8c_a616218ffe9c315737e5c0208f0b3e4dc}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Init} (A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t $\ast$sem, int shared, int value)
+\item 
+int \hyperlink{ARSAL__Sem_8c_a6ce2d52ebdf31b0f18b719ee7ff37a97}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Destroy} (A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t $\ast$sem)
+\item 
+int \hyperlink{ARSAL__Sem_8c_a3990e2d59ff17a6d5ad6ddcbdd1fe572}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Wait} (A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t $\ast$sem)
+\item 
+int \hyperlink{ARSAL__Sem_8c_ae2db4fc74b17a888fb12af993a555014}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Trywait} (A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t $\ast$sem)
+\item 
+int \hyperlink{ARSAL__Sem_8c_a8c6049f3bd4329d13f3fd98cfcb069f4}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Timedwait} (A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t $\ast$sem, const struct timespec $\ast$timeout)
+\item 
+int \hyperlink{ARSAL__Sem_8c_ae8a433f4478098f6c75599a83ec646b0}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Post} (A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t $\ast$sem)
+\item 
+int \hyperlink{ARSAL__Sem_8c_a9da979bb317669a9d29f3e14cca806ef}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Getvalue} (A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t $\ast$sem, int $\ast$value)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{ARSAL__Sem_8c_a35af973cd4d452f1d136e56fdb4c2ddf}{}\label{ARSAL__Sem_8c_a35af973cd4d452f1d136e56fdb4c2ddf} 
+\index{A\+R\+S\+A\+L\+\_\+\+Sem.\+c@{A\+R\+S\+A\+L\+\_\+\+Sem.\+c}!\+\_\+\+\_\+\+S\+A\+L\+\_\+\+U\+S\+E\+\_\+\+P\+O\+S\+I\+X\+\_\+\+S\+EM@{\+\_\+\+\_\+\+S\+A\+L\+\_\+\+U\+S\+E\+\_\+\+P\+O\+S\+I\+X\+\_\+\+S\+EM}}
+\index{\+\_\+\+\_\+\+S\+A\+L\+\_\+\+U\+S\+E\+\_\+\+P\+O\+S\+I\+X\+\_\+\+S\+EM@{\+\_\+\+\_\+\+S\+A\+L\+\_\+\+U\+S\+E\+\_\+\+P\+O\+S\+I\+X\+\_\+\+S\+EM}!A\+R\+S\+A\+L\+\_\+\+Sem.\+c@{A\+R\+S\+A\+L\+\_\+\+Sem.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+S\+A\+L\+\_\+\+U\+S\+E\+\_\+\+P\+O\+S\+I\+X\+\_\+\+S\+EM}{\_\_SAL\_USE\_POSIX\_SEM}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+S\+A\+L\+\_\+\+U\+S\+E\+\_\+\+P\+O\+S\+I\+X\+\_\+\+S\+EM~(0)}
+
+\hypertarget{ARSAL__Sem_8c_a47a63a59db14eae13654da4375a98e5b}{}\label{ARSAL__Sem_8c_a47a63a59db14eae13654da4375a98e5b} 
+\index{A\+R\+S\+A\+L\+\_\+\+Sem.\+c@{A\+R\+S\+A\+L\+\_\+\+Sem.\+c}!A\+R\+S\+A\+L\+\_\+\+S\+E\+M\+\_\+\+E\+R\+R\+N\+O\+\_\+\+T\+R\+A\+N\+S\+F\+O\+RM@{A\+R\+S\+A\+L\+\_\+\+S\+E\+M\+\_\+\+E\+R\+R\+N\+O\+\_\+\+T\+R\+A\+N\+S\+F\+O\+RM}}
+\index{A\+R\+S\+A\+L\+\_\+\+S\+E\+M\+\_\+\+E\+R\+R\+N\+O\+\_\+\+T\+R\+A\+N\+S\+F\+O\+RM@{A\+R\+S\+A\+L\+\_\+\+S\+E\+M\+\_\+\+E\+R\+R\+N\+O\+\_\+\+T\+R\+A\+N\+S\+F\+O\+RM}!A\+R\+S\+A\+L\+\_\+\+Sem.\+c@{A\+R\+S\+A\+L\+\_\+\+Sem.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+S\+E\+M\+\_\+\+E\+R\+R\+N\+O\+\_\+\+T\+R\+A\+N\+S\+F\+O\+RM}{ARSAL\_SEM\_ERRNO\_TRANSFORM}}
+{\footnotesize\ttfamily \#define A\+R\+S\+A\+L\+\_\+\+S\+E\+M\+\_\+\+E\+R\+R\+N\+O\+\_\+\+T\+R\+A\+N\+S\+F\+O\+RM(\begin{DoxyParamCaption}\item[{}]{R\+E\+S\+B\+UF }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do}                                                      \(\backslash\)
+    \{                                                       \(\backslash\)
+        int \_\_res = (RESBUF);                               \(\backslash\)
+        if (0 < \_\_res)                                      \(\backslash\)
+        \{                                                   \(\backslash\)
+            errno = \_\_res;                                  \(\backslash\)
+            (RESBUF) = -1;                                  \(\backslash\)
+        \}                                                   \(\backslash\)
+        \textcolor{comment}{/* No else: no error so no need to set errno. */}    \(\backslash\)
+    \} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+
+
+\subsection{Function Documentation}
+\hypertarget{ARSAL__Sem_8c_a6ce2d52ebdf31b0f18b719ee7ff37a97}{}\label{ARSAL__Sem_8c_a6ce2d52ebdf31b0f18b719ee7ff37a97} 
+\index{A\+R\+S\+A\+L\+\_\+\+Sem.\+c@{A\+R\+S\+A\+L\+\_\+\+Sem.\+c}!A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Destroy@{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Destroy}}
+\index{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Destroy@{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Destroy}!A\+R\+S\+A\+L\+\_\+\+Sem.\+c@{A\+R\+S\+A\+L\+\_\+\+Sem.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Destroy()}{ARSAL\_Sem\_Destroy()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Destroy (\begin{DoxyParamCaption}\item[{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t $\ast$}]{sem }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Sem_8c_a9da979bb317669a9d29f3e14cca806ef}{}\label{ARSAL__Sem_8c_a9da979bb317669a9d29f3e14cca806ef} 
+\index{A\+R\+S\+A\+L\+\_\+\+Sem.\+c@{A\+R\+S\+A\+L\+\_\+\+Sem.\+c}!A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Getvalue@{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Getvalue}}
+\index{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Getvalue@{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Getvalue}!A\+R\+S\+A\+L\+\_\+\+Sem.\+c@{A\+R\+S\+A\+L\+\_\+\+Sem.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Getvalue()}{ARSAL\_Sem\_Getvalue()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Getvalue (\begin{DoxyParamCaption}\item[{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t $\ast$}]{sem,  }\item[{int $\ast$}]{value }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Sem_8c_a616218ffe9c315737e5c0208f0b3e4dc}{}\label{ARSAL__Sem_8c_a616218ffe9c315737e5c0208f0b3e4dc} 
+\index{A\+R\+S\+A\+L\+\_\+\+Sem.\+c@{A\+R\+S\+A\+L\+\_\+\+Sem.\+c}!A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Init@{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Init}}
+\index{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Init@{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Init}!A\+R\+S\+A\+L\+\_\+\+Sem.\+c@{A\+R\+S\+A\+L\+\_\+\+Sem.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Init()}{ARSAL\_Sem\_Init()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Init (\begin{DoxyParamCaption}\item[{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t $\ast$}]{sem,  }\item[{int}]{shared,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Sem_8c_ae8a433f4478098f6c75599a83ec646b0}{}\label{ARSAL__Sem_8c_ae8a433f4478098f6c75599a83ec646b0} 
+\index{A\+R\+S\+A\+L\+\_\+\+Sem.\+c@{A\+R\+S\+A\+L\+\_\+\+Sem.\+c}!A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Post@{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Post}}
+\index{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Post@{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Post}!A\+R\+S\+A\+L\+\_\+\+Sem.\+c@{A\+R\+S\+A\+L\+\_\+\+Sem.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Post()}{ARSAL\_Sem\_Post()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Post (\begin{DoxyParamCaption}\item[{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t $\ast$}]{sem }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Sem_8c_a8c6049f3bd4329d13f3fd98cfcb069f4}{}\label{ARSAL__Sem_8c_a8c6049f3bd4329d13f3fd98cfcb069f4} 
+\index{A\+R\+S\+A\+L\+\_\+\+Sem.\+c@{A\+R\+S\+A\+L\+\_\+\+Sem.\+c}!A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Timedwait@{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Timedwait}}
+\index{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Timedwait@{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Timedwait}!A\+R\+S\+A\+L\+\_\+\+Sem.\+c@{A\+R\+S\+A\+L\+\_\+\+Sem.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Timedwait()}{ARSAL\_Sem\_Timedwait()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Timedwait (\begin{DoxyParamCaption}\item[{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t $\ast$}]{sem,  }\item[{const struct timespec $\ast$}]{timeout }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Sem_8c_ae2db4fc74b17a888fb12af993a555014}{}\label{ARSAL__Sem_8c_ae2db4fc74b17a888fb12af993a555014} 
+\index{A\+R\+S\+A\+L\+\_\+\+Sem.\+c@{A\+R\+S\+A\+L\+\_\+\+Sem.\+c}!A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Trywait@{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Trywait}}
+\index{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Trywait@{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Trywait}!A\+R\+S\+A\+L\+\_\+\+Sem.\+c@{A\+R\+S\+A\+L\+\_\+\+Sem.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Trywait()}{ARSAL\_Sem\_Trywait()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Trywait (\begin{DoxyParamCaption}\item[{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t $\ast$}]{sem }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Sem_8c_a3990e2d59ff17a6d5ad6ddcbdd1fe572}{}\label{ARSAL__Sem_8c_a3990e2d59ff17a6d5ad6ddcbdd1fe572} 
+\index{A\+R\+S\+A\+L\+\_\+\+Sem.\+c@{A\+R\+S\+A\+L\+\_\+\+Sem.\+c}!A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Wait@{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Wait}}
+\index{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Wait@{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Wait}!A\+R\+S\+A\+L\+\_\+\+Sem.\+c@{A\+R\+S\+A\+L\+\_\+\+Sem.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Wait()}{ARSAL\_Sem\_Wait()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Wait (\begin{DoxyParamCaption}\item[{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t $\ast$}]{sem }\end{DoxyParamCaption})}
+

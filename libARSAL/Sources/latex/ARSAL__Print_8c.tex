@@ -1,0 +1,70 @@
+\hypertarget{ARSAL__Print_8c}{}\section{A\+R\+S\+A\+L\+\_\+\+Print.\+c File Reference}
+\label{ARSAL__Print_8c}\index{A\+R\+S\+A\+L\+\_\+\+Print.\+c@{A\+R\+S\+A\+L\+\_\+\+Print.\+c}}
+{\ttfamily \#include $<$config.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdarg.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$errno.\+h$>$}\newline
+{\ttfamily \#include $<$lib\+A\+R\+S\+A\+L/\+A\+R\+S\+A\+L\+\_\+\+Print.\+h$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{ARSAL__Print_8c_a7fb90a4574c3756eb0329679c459dfd3}{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Set\+Minimum\+Level} (e\+A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+L\+E\+V\+EL level)
+\item 
+e\+A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+L\+E\+V\+EL \hyperlink{ARSAL__Print_8c_a2c888ea761b4fe54113b0b79bee06580}{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Get\+Minimum\+Level} (void)
+\item 
+void \hyperlink{ARSAL__Print_8c_a90419690c4af56e8290190f8d5c43181}{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Set\+Callback} (A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Callback\+\_\+t callback)
+\item 
+const char $\ast$ \hyperlink{ARSAL__Print_8c_a0bd899e35b9e8f948d47e12bbc894d5e}{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Get\+Level\+Description} (e\+A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+L\+E\+V\+EL level)
+\item 
+int \hyperlink{ARSAL__Print_8c_af62fa8015a667e0da424af447a7d2ca6}{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Print\+Raw} (e\+A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+L\+E\+V\+EL level, const char $\ast$tag, const char $\ast$format,...)
+\item 
+void \hyperlink{ARSAL__Print_8c_a327ee5d53e4b42d2b4f080a344cdcf8b}{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Dump\+Data} (F\+I\+LE $\ast$file, uint8\+\_\+t tag, const void $\ast$data, size\+\_\+t size, size\+\_\+t size\+Dump, const struct timespec $\ast$ts)
+\item 
+void \hyperlink{ARSAL__Print_8c_afddac926b2cde0b6dda018ce8bf9afa6}{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Dump\+Rotate\+Files} (const char $\ast$base\+Path, int count)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{ARSAL__Print_8c_a327ee5d53e4b42d2b4f080a344cdcf8b}{}\label{ARSAL__Print_8c_a327ee5d53e4b42d2b4f080a344cdcf8b} 
+\index{A\+R\+S\+A\+L\+\_\+\+Print.\+c@{A\+R\+S\+A\+L\+\_\+\+Print.\+c}!A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Dump\+Data@{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Dump\+Data}}
+\index{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Dump\+Data@{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Dump\+Data}!A\+R\+S\+A\+L\+\_\+\+Print.\+c@{A\+R\+S\+A\+L\+\_\+\+Print.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Dump\+Data()}{ARSAL\_Print\_DumpData()}}
+{\footnotesize\ttfamily void A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Dump\+Data (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{file,  }\item[{uint8\+\_\+t}]{tag,  }\item[{const void $\ast$}]{data,  }\item[{size\+\_\+t}]{size,  }\item[{size\+\_\+t}]{size\+Dump,  }\item[{const struct timespec $\ast$}]{ts }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Print_8c_afddac926b2cde0b6dda018ce8bf9afa6}{}\label{ARSAL__Print_8c_afddac926b2cde0b6dda018ce8bf9afa6} 
+\index{A\+R\+S\+A\+L\+\_\+\+Print.\+c@{A\+R\+S\+A\+L\+\_\+\+Print.\+c}!A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Dump\+Rotate\+Files@{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Dump\+Rotate\+Files}}
+\index{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Dump\+Rotate\+Files@{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Dump\+Rotate\+Files}!A\+R\+S\+A\+L\+\_\+\+Print.\+c@{A\+R\+S\+A\+L\+\_\+\+Print.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Dump\+Rotate\+Files()}{ARSAL\_Print\_DumpRotateFiles()}}
+{\footnotesize\ttfamily void A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Dump\+Rotate\+Files (\begin{DoxyParamCaption}\item[{const char $\ast$}]{base\+Path,  }\item[{int}]{count }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Print_8c_a0bd899e35b9e8f948d47e12bbc894d5e}{}\label{ARSAL__Print_8c_a0bd899e35b9e8f948d47e12bbc894d5e} 
+\index{A\+R\+S\+A\+L\+\_\+\+Print.\+c@{A\+R\+S\+A\+L\+\_\+\+Print.\+c}!A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Get\+Level\+Description@{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Get\+Level\+Description}}
+\index{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Get\+Level\+Description@{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Get\+Level\+Description}!A\+R\+S\+A\+L\+\_\+\+Print.\+c@{A\+R\+S\+A\+L\+\_\+\+Print.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Get\+Level\+Description()}{ARSAL\_Print\_GetLevelDescription()}}
+{\footnotesize\ttfamily const char$\ast$ A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Get\+Level\+Description (\begin{DoxyParamCaption}\item[{e\+A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+L\+E\+V\+EL}]{level }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Print_8c_a2c888ea761b4fe54113b0b79bee06580}{}\label{ARSAL__Print_8c_a2c888ea761b4fe54113b0b79bee06580} 
+\index{A\+R\+S\+A\+L\+\_\+\+Print.\+c@{A\+R\+S\+A\+L\+\_\+\+Print.\+c}!A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Get\+Minimum\+Level@{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Get\+Minimum\+Level}}
+\index{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Get\+Minimum\+Level@{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Get\+Minimum\+Level}!A\+R\+S\+A\+L\+\_\+\+Print.\+c@{A\+R\+S\+A\+L\+\_\+\+Print.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Get\+Minimum\+Level()}{ARSAL\_Print\_GetMinimumLevel()}}
+{\footnotesize\ttfamily e\+A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+L\+E\+V\+EL A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Get\+Minimum\+Level (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Print_8c_af62fa8015a667e0da424af447a7d2ca6}{}\label{ARSAL__Print_8c_af62fa8015a667e0da424af447a7d2ca6} 
+\index{A\+R\+S\+A\+L\+\_\+\+Print.\+c@{A\+R\+S\+A\+L\+\_\+\+Print.\+c}!A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Print\+Raw@{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Print\+Raw}}
+\index{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Print\+Raw@{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Print\+Raw}!A\+R\+S\+A\+L\+\_\+\+Print.\+c@{A\+R\+S\+A\+L\+\_\+\+Print.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Print\+Raw()}{ARSAL\_Print\_PrintRaw()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Print\+Raw (\begin{DoxyParamCaption}\item[{e\+A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+L\+E\+V\+EL}]{level,  }\item[{const char $\ast$}]{tag,  }\item[{const char $\ast$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Print_8c_a90419690c4af56e8290190f8d5c43181}{}\label{ARSAL__Print_8c_a90419690c4af56e8290190f8d5c43181} 
+\index{A\+R\+S\+A\+L\+\_\+\+Print.\+c@{A\+R\+S\+A\+L\+\_\+\+Print.\+c}!A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Set\+Callback@{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Set\+Callback}}
+\index{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Set\+Callback@{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Set\+Callback}!A\+R\+S\+A\+L\+\_\+\+Print.\+c@{A\+R\+S\+A\+L\+\_\+\+Print.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Set\+Callback()}{ARSAL\_Print\_SetCallback()}}
+{\footnotesize\ttfamily void A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Set\+Callback (\begin{DoxyParamCaption}\item[{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Callback\+\_\+t}]{callback }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Print_8c_a7fb90a4574c3756eb0329679c459dfd3}{}\label{ARSAL__Print_8c_a7fb90a4574c3756eb0329679c459dfd3} 
+\index{A\+R\+S\+A\+L\+\_\+\+Print.\+c@{A\+R\+S\+A\+L\+\_\+\+Print.\+c}!A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Set\+Minimum\+Level@{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Set\+Minimum\+Level}}
+\index{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Set\+Minimum\+Level@{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Set\+Minimum\+Level}!A\+R\+S\+A\+L\+\_\+\+Print.\+c@{A\+R\+S\+A\+L\+\_\+\+Print.\+c}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Set\+Minimum\+Level()}{ARSAL\_Print\_SetMinimumLevel()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Set\+Minimum\+Level (\begin{DoxyParamCaption}\item[{e\+A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+L\+E\+V\+EL}]{level }\end{DoxyParamCaption})}
+

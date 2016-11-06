@@ -1,0 +1,115 @@
+\hypertarget{ARSAL__Ftw_8h}{}\section{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h File Reference}
+\label{ARSAL__Ftw_8h}\index{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}}
+
+
+lib\+A\+R\+S\+AL Ftw header file.  
+
+
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{ARSAL__Ftw_8h_a0b7606fe246b0ca2fa31ae93ba796f34}{e\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+R\+E\+S\+U\+LT} \{ \hyperlink{ARSAL__Ftw_8h_a0b7606fe246b0ca2fa31ae93ba796f34a26ecc27b14bdc0a312d718dee6833680}{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+F\+A\+IL} = 0, 
+\hyperlink{ARSAL__Ftw_8h_a0b7606fe246b0ca2fa31ae93ba796f34ac462bf82940791a2783cf6af36104229}{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+OK}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{ARSAL__Ftw_8h_a912a8e5f1e0943dbcbd0409f085f23d8}{A\+R\+S\+A\+L\+\_\+\+Ftw\+\_\+internal} (const char $\ast$dir\+Path, A\+R\+S\+A\+L\+\_\+\+Ftw\+Callback cb, int nopenfd)
+\begin{DoxyCompactList}\small\item\em ftw-\/like function legacy support implementation, Recursively descends the directory hierarchy \end{DoxyCompactList}\item 
+int \hyperlink{ARSAL__Ftw_8h_a63f832f62c5d379678db44ab81b601c3}{A\+R\+S\+A\+L\+\_\+\+Nftw\+\_\+internal} (const char $\ast$dir\+Path, A\+R\+S\+A\+L\+\_\+\+Nftw\+Callback cb, int nopenfd, e\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+F\+L\+AG flags, int current\+Level, int current\+Base)
+\begin{DoxyCompactList}\small\item\em nftw-\/like function legacy support implementation, recursively descends the directory hierarchy \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+lib\+A\+R\+S\+AL Ftw header file. 
+
+\begin{DoxyDate}{Date}
+19/12/2013 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\href{mailto:david.flattin.ext@parrot.com}{\tt david.\+flattin.\+ext@parrot.\+com} 
+\end{DoxyAuthor}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{ARSAL__Ftw_8h_a0b7606fe246b0ca2fa31ae93ba796f34}{}\label{ARSAL__Ftw_8h_a0b7606fe246b0ca2fa31ae93ba796f34} 
+\index{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}!e\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+R\+E\+S\+U\+LT@{e\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+R\+E\+S\+U\+LT}}
+\index{e\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+R\+E\+S\+U\+LT@{e\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+R\+E\+S\+U\+LT}!A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}}
+\subsubsection{\texorpdfstring{e\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+R\+E\+S\+U\+LT}{eARSAL\_FTW\_RESULT}}
+{\footnotesize\ttfamily enum \hyperlink{ARSAL__Ftw_8h_a0b7606fe246b0ca2fa31ae93ba796f34}{e\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+R\+E\+S\+U\+LT}}
+
+Custom incomplete ftw/nftw implementation for system without support (Android as of ndk r7, r8, r9) Internal result values get from A\+R\+S\+A\+L\+\_\+\+Nftw\+Callback return analyse \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+F\+A\+IL@{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+F\+A\+IL}!A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}}\index{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}!A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+F\+A\+IL@{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+F\+A\+IL}}}\hypertarget{ARSAL__Ftw_8h_a0b7606fe246b0ca2fa31ae93ba796f34a26ecc27b14bdc0a312d718dee6833680}{}\label{ARSAL__Ftw_8h_a0b7606fe246b0ca2fa31ae93ba796f34a26ecc27b14bdc0a312d718dee6833680} 
+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+F\+A\+IL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+OK@{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+OK}!A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}}\index{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}!A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+OK@{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+OK}}}\hypertarget{ARSAL__Ftw_8h_a0b7606fe246b0ca2fa31ae93ba796f34ac462bf82940791a2783cf6af36104229}{}\label{ARSAL__Ftw_8h_a0b7606fe246b0ca2fa31ae93ba796f34ac462bf82940791a2783cf6af36104229} 
+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+OK&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\hypertarget{ARSAL__Ftw_8h_a912a8e5f1e0943dbcbd0409f085f23d8}{}\label{ARSAL__Ftw_8h_a912a8e5f1e0943dbcbd0409f085f23d8} 
+\index{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}!A\+R\+S\+A\+L\+\_\+\+Ftw\+\_\+internal@{A\+R\+S\+A\+L\+\_\+\+Ftw\+\_\+internal}}
+\index{A\+R\+S\+A\+L\+\_\+\+Ftw\+\_\+internal@{A\+R\+S\+A\+L\+\_\+\+Ftw\+\_\+internal}!A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Ftw\+\_\+internal()}{ARSAL\_Ftw\_internal()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Ftw\+\_\+internal (\begin{DoxyParamCaption}\item[{const char $\ast$}]{dir\+Path,  }\item[{A\+R\+S\+A\+L\+\_\+\+Ftw\+Callback}]{cb,  }\item[{int}]{nopenfd }\end{DoxyParamCaption})}
+
+
+
+ftw-\/like function legacy support implementation, Recursively descends the directory hierarchy 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dirpath} & The directory to descend \\
+\hline
+{\em cb} & The callback recursively on each element of run through the directories \\
+\hline
+{\em nopenfd} & The maximum number of directories depth \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em On} & success, returns 0. Otherwise, it returns -\/1, or callack user value \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+ftw standard documentation
+\end{DoxySeeAlso}
+fwt-\/like function \hypertarget{ARSAL__Ftw_8h_a63f832f62c5d379678db44ab81b601c3}{}\label{ARSAL__Ftw_8h_a63f832f62c5d379678db44ab81b601c3} 
+\index{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}!A\+R\+S\+A\+L\+\_\+\+Nftw\+\_\+internal@{A\+R\+S\+A\+L\+\_\+\+Nftw\+\_\+internal}}
+\index{A\+R\+S\+A\+L\+\_\+\+Nftw\+\_\+internal@{A\+R\+S\+A\+L\+\_\+\+Nftw\+\_\+internal}!A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Nftw\+\_\+internal()}{ARSAL\_Nftw\_internal()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Nftw\+\_\+internal (\begin{DoxyParamCaption}\item[{const char $\ast$}]{dir\+Path,  }\item[{A\+R\+S\+A\+L\+\_\+\+Nftw\+Callback}]{cb,  }\item[{int}]{nopenfd,  }\item[{e\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+F\+L\+AG}]{flags,  }\item[{int}]{current\+Level,  }\item[{int}]{current\+Base }\end{DoxyParamCaption})}
+
+
+
+nftw-\/like function legacy support implementation, recursively descends the directory hierarchy 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dirpath} & The directory to descend \\
+\hline
+{\em cb} & The callback recursively on each element of run through the directories \\
+\hline
+{\em nopenfd} & The maximum number of directories depth \\
+\hline
+{\em flags} & The flag of the type of tree explore \\
+\hline
+{\em current\+Level} & The current depth level, should be 0 \\
+\hline
+{\em current\+Base} & The base depth level, should be 0 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em On} & success, returns 0. Otherwise, it returns -\/1, or callack user value \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+nftw standard documentation
+\end{DoxySeeAlso}
+nftw-\/like function 
