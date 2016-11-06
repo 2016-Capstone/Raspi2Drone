@@ -1,0 +1,56 @@
+\hypertarget{index_SAL_intro_sec}{}\section{Introduction}\label{index_SAL_intro_sec}
+The A\+R\+S\+AL library in an abstraction layer use by almost all others A\+R\+S\+DK libraries.
+
+It provides abstraction of multiple common functions.\hypertarget{index_SAL_modules_sec}{}\section{Submodules}\label{index_SAL_modules_sec}
+Here is a list and a short description of all lib\+A\+R\+S\+AL submodules\+:\hypertarget{index_SAL_endianness_subsec}{}\subsection{Endianness conversion}\label{index_SAL_endianness_subsec}
+\hyperlink{}{Header file }
+
+This submodule defines different functions used to convert endianness. The reference endian is the A\+R\+M-\/\+Little endian, as it is the endian used on all products developped around the A\+R\+S\+DK.
+
+The function are named in a way similar to the htons/htonl/ntohs/ntohl, but use the letter \textquotesingle{}d\textquotesingle{} (for device) instead of \textquotesingle{}n\textquotesingle{} (for network).
+
+This submodule includes functions to convert short int (htods, dtohs), long int (htodl, dtohl), long long int (htodll, dtohll), float (htodf, dtohf) and double (htodd, dtohd)\hypertarget{index_SAL_mutex_subsec}{}\subsection{Mutexes and Conditionnal variables}\label{index_SAL_mutex_subsec}
+\hyperlink{}{Header file }
+
+This submodule defines mutexes and conditionnal variables structures.
+
+Synchronization structures are created using an init function (A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+\+Init, A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Init), and must be destroyed using their destroy functions (A\+R\+S\+A\+L\+\_\+\+Mutex\+\_\+\+Destroy, A\+R\+S\+A\+L\+\_\+\+Cond\+\_\+\+Destroy) when no longer used.
+
+The mutexes and conditionnal variables A\+PI is based on the P\+O\+S\+IX A\+PI.\hypertarget{index_SAL_print_subsec}{}\subsection{Printing and Logging}\label{index_SAL_print_subsec}
+\hyperlink{}{Header file }
+
+This submodule provides the A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+NT macro, which is a simple log function. This function prints the message in an easy to parse way, including a timestamp, a user defined T\+AG, and a log level.
+
+Debug (A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+D\+E\+B\+UG) and Warning (A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+W\+A\+R\+N\+I\+NG) logs are added to the standard output (stdout), while Error (A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+E\+R\+R\+OR) logs are added to the error outptut (stderr). Debug messages are not shown on release builds.
+
+This behavior can change on specific operating systems. (On Android, all A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+NT calls outputs the messages to the Logcat)\hypertarget{index_SAL_sem_subsec}{}\subsection{Semaphores}\label{index_SAL_sem_subsec}
+\hyperlink{}{Header file }
+
+This submodule defines semaphores structures.
+
+The semaphores are created using the A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Init function, and must be destroyed using A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Destroy function when no longer used.
+
+The semaphore A\+PI is based on the P\+O\+S\+IX semaphore A\+PI, and can be found in the file A\+R\+S\+A\+L\+\_\+\+Sem.\+h\hypertarget{index_SAL_socket_subsec}{}\subsection{Sockets}\label{index_SAL_socket_subsec}
+\hyperlink{}{Header file }
+
+This submodule defines wrapper functions around the P\+O\+S\+IX Socket A\+PI.
+
+Sockets are created using A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Create and destroyed using A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Close.\hypertarget{index_SAL_thread_subsec}{}\subsection{Threads}\label{index_SAL_thread_subsec}
+\hyperlink{}{Header file }
+
+This submodule defines a thread A\+PI based on the P\+O\+S\+I\+X-\/\+Pthread A\+PI.\hypertarget{index_SAL_time_subsec}{}\subsection{Time related functions}\label{index_SAL_time_subsec}
+\hyperlink{}{Header file }
+
+This submodule defines many time related functions.
+
+The T\+I\+M\+E\+V\+A\+L\+\_\+\+T\+O\+\_\+\+T\+I\+M\+E\+S\+P\+EC and T\+I\+M\+E\+S\+P\+E\+C\+\_\+\+T\+O\+\_\+\+T\+I\+M\+E\+V\+AL macros are used to convert time holding structures from one to another.
+
+The others functions are helpers around time comparaison and delta calculations.\hypertarget{index_SAL_ftw_subsec}{}\subsection{Ftw related functions}\label{index_SAL_ftw_subsec}
+\hyperlink{}{Header file }
+
+This submodule defines ftw/nftw like functions to recursively descends the directory hierarchy\hypertarget{index_SAL_posix_sec}{}\section{P\+O\+S\+I\+X Compliance warnings}\label{index_SAL_posix_sec}
+While this library is merely a P\+O\+S\+IX wrapper on most platforms, its internal data types should N\+OT be used directly with P\+O\+S\+IX functions. The same restriction apply to P\+O\+S\+IX data types used as A\+R\+S\+AL parameters.
+
+The P\+O\+S\+IX $<$-\/$>$ A\+R\+S\+AL binary compatibility is N\+OT guaranteed, and may change on any platform, even on a Unix-\/like, full P\+O\+S\+I\+X-\/compliant platform.
+
+One such example of P\+O\+S\+IX $<$-\/$>$ A\+R\+S\+AL incompatibility is the i\+OS implementation of the A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t semaphores. As the i\+OS P\+O\+S\+IX implementation is not complete, the A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t semaphore had to be coded using other A\+P\+Is to create the same features as the original P\+O\+S\+IX semaphores. 
