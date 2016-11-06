@@ -1,0 +1,170 @@
+\hypertarget{ARSAL__Endianness_8h}{}\section{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h File Reference}
+\label{ARSAL__Endianness_8h}\index{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h@{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h}}
+
+
+This file contains headers about endianness abstraction layer.  
+
+
+{\ttfamily \#include $<$inttypes.\+h$>$}\newline
+{\ttfamily \#include $<$endian.\+h$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{ARSAL__Endianness_8h_aca23385fbed0ac1f92bf63a4544befc8}{\+\_\+\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+E\+N\+D\+I\+AN}~\+\_\+\+\_\+\+L\+I\+T\+T\+L\+E\+\_\+\+E\+N\+D\+I\+AN
+\begin{DoxyCompactList}\small\item\em Device endianness. \end{DoxyCompactList}\item 
+\#define \hyperlink{ARSAL__Endianness_8h_a1265df7506488840c3347884bf8fa123}{\+\_\+\+\_\+\+I\+N\+V\+E\+R\+\_\+\+E\+N\+D\+I\+AN}~\+\_\+\+\_\+\+B\+I\+G\+\_\+\+E\+N\+D\+I\+AN
+\begin{DoxyCompactList}\small\item\em Opposite endiannes. \end{DoxyCompactList}\item 
+\#define \hyperlink{ARSAL__Endianness_8h_ac7beb99d5071e786fb91b66757f60c92}{htods}(v)~(v)
+\begin{DoxyCompactList}\small\item\em Convert a short int (2 bytes) to device endianness. \end{DoxyCompactList}\item 
+\#define \hyperlink{ARSAL__Endianness_8h_a79d4095664c7e26e6d1ae7d3d5194307}{htodl}(v)~(v)
+\begin{DoxyCompactList}\small\item\em Convert a long int (4 bytes) to device endianness. \end{DoxyCompactList}\item 
+\#define \hyperlink{ARSAL__Endianness_8h_a922c50637fb9e840d292918b621f7689}{htodll}(v)~(v)
+\begin{DoxyCompactList}\small\item\em Convert a long long int (8 bytes) to device endianness. \end{DoxyCompactList}\item 
+\#define \hyperlink{ARSAL__Endianness_8h_aa86df99d3d413929f8528a342abe9c53}{htodf}(v)~(v)
+\begin{DoxyCompactList}\small\item\em Convert a I\+E\+E\+E-\/754 float (4 bytes) to device endianness. \end{DoxyCompactList}\item 
+\#define \hyperlink{ARSAL__Endianness_8h_a01fe3a5f9b60e15145ab5c532851f261}{htodd}(v)~(v)
+\begin{DoxyCompactList}\small\item\em Convert a I\+E\+E\+E-\/754 double (8 bytes) to device endianness. \end{DoxyCompactList}\item 
+\#define \hyperlink{ARSAL__Endianness_8h_a39f53995baa8b852f10c5e3973581243}{dtohs}(v)~(v)
+\begin{DoxyCompactList}\small\item\em Convert a short int (2 bytes) from device endianness. \end{DoxyCompactList}\item 
+\#define \hyperlink{ARSAL__Endianness_8h_a6e12bca84d66e29901b1a672d11053d5}{dtohl}(v)~(v)
+\begin{DoxyCompactList}\small\item\em Convert a long int (4 bytes) from device endianness. \end{DoxyCompactList}\item 
+\#define \hyperlink{ARSAL__Endianness_8h_a76b447fd9e6707ffd8e1190715cf9c7b}{dtohll}(v)~(v)
+\begin{DoxyCompactList}\small\item\em Convert a long long int (8 bytes) from device endianness. \end{DoxyCompactList}\item 
+\#define \hyperlink{ARSAL__Endianness_8h_aebdd3a8aee39b9451de41dc2900d4b71}{dtohf}(v)~(v)
+\begin{DoxyCompactList}\small\item\em Convert a I\+E\+E\+E-\/754 float (4 bytes) from device endianness. \end{DoxyCompactList}\item 
+\#define \hyperlink{ARSAL__Endianness_8h_a4662a6ec29eab9aa3b2b7513e86b42ee}{dtohd}(v)~(v)
+\begin{DoxyCompactList}\small\item\em Convert a I\+E\+E\+E-\/754 double (8 bytes) from device endianness. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file contains headers about endianness abstraction layer. 
+
+\begin{DoxyDate}{Date}
+11/14/2012 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\href{mailto:nicolas.brulez@parrot.com}{\tt nicolas.\+brulez@parrot.\+com} 
+\end{DoxyAuthor}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{ARSAL__Endianness_8h_aca23385fbed0ac1f92bf63a4544befc8}{}\label{ARSAL__Endianness_8h_aca23385fbed0ac1f92bf63a4544befc8} 
+\index{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h@{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h}!\+\_\+\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+E\+N\+D\+I\+AN@{\+\_\+\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+E\+N\+D\+I\+AN}}
+\index{\+\_\+\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+E\+N\+D\+I\+AN@{\+\_\+\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+E\+N\+D\+I\+AN}!A\+R\+S\+A\+L\+\_\+\+Endianness.\+h@{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+E\+N\+D\+I\+AN}{\_\_DEVICE\_ENDIAN}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+E\+N\+D\+I\+AN~\+\_\+\+\_\+\+L\+I\+T\+T\+L\+E\+\_\+\+E\+N\+D\+I\+AN}
+
+
+
+Device endianness. 
+
+\hypertarget{ARSAL__Endianness_8h_a1265df7506488840c3347884bf8fa123}{}\label{ARSAL__Endianness_8h_a1265df7506488840c3347884bf8fa123} 
+\index{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h@{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h}!\+\_\+\+\_\+\+I\+N\+V\+E\+R\+\_\+\+E\+N\+D\+I\+AN@{\+\_\+\+\_\+\+I\+N\+V\+E\+R\+\_\+\+E\+N\+D\+I\+AN}}
+\index{\+\_\+\+\_\+\+I\+N\+V\+E\+R\+\_\+\+E\+N\+D\+I\+AN@{\+\_\+\+\_\+\+I\+N\+V\+E\+R\+\_\+\+E\+N\+D\+I\+AN}!A\+R\+S\+A\+L\+\_\+\+Endianness.\+h@{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+I\+N\+V\+E\+R\+\_\+\+E\+N\+D\+I\+AN}{\_\_INVER\_ENDIAN}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+I\+N\+V\+E\+R\+\_\+\+E\+N\+D\+I\+AN~\+\_\+\+\_\+\+B\+I\+G\+\_\+\+E\+N\+D\+I\+AN}
+
+
+
+Opposite endiannes. 
+
+\hypertarget{ARSAL__Endianness_8h_a4662a6ec29eab9aa3b2b7513e86b42ee}{}\label{ARSAL__Endianness_8h_a4662a6ec29eab9aa3b2b7513e86b42ee} 
+\index{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h@{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h}!dtohd@{dtohd}}
+\index{dtohd@{dtohd}!A\+R\+S\+A\+L\+\_\+\+Endianness.\+h@{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h}}
+\subsubsection{\texorpdfstring{dtohd}{dtohd}}
+{\footnotesize\ttfamily \#define dtohd(\begin{DoxyParamCaption}\item[{}]{v }\end{DoxyParamCaption})~(v)}
+
+
+
+Convert a I\+E\+E\+E-\/754 double (8 bytes) from device endianness. 
+
+\hypertarget{ARSAL__Endianness_8h_aebdd3a8aee39b9451de41dc2900d4b71}{}\label{ARSAL__Endianness_8h_aebdd3a8aee39b9451de41dc2900d4b71} 
+\index{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h@{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h}!dtohf@{dtohf}}
+\index{dtohf@{dtohf}!A\+R\+S\+A\+L\+\_\+\+Endianness.\+h@{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h}}
+\subsubsection{\texorpdfstring{dtohf}{dtohf}}
+{\footnotesize\ttfamily \#define dtohf(\begin{DoxyParamCaption}\item[{}]{v }\end{DoxyParamCaption})~(v)}
+
+
+
+Convert a I\+E\+E\+E-\/754 float (4 bytes) from device endianness. 
+
+\hypertarget{ARSAL__Endianness_8h_a6e12bca84d66e29901b1a672d11053d5}{}\label{ARSAL__Endianness_8h_a6e12bca84d66e29901b1a672d11053d5} 
+\index{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h@{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h}!dtohl@{dtohl}}
+\index{dtohl@{dtohl}!A\+R\+S\+A\+L\+\_\+\+Endianness.\+h@{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h}}
+\subsubsection{\texorpdfstring{dtohl}{dtohl}}
+{\footnotesize\ttfamily \#define dtohl(\begin{DoxyParamCaption}\item[{}]{v }\end{DoxyParamCaption})~(v)}
+
+
+
+Convert a long int (4 bytes) from device endianness. 
+
+\hypertarget{ARSAL__Endianness_8h_a76b447fd9e6707ffd8e1190715cf9c7b}{}\label{ARSAL__Endianness_8h_a76b447fd9e6707ffd8e1190715cf9c7b} 
+\index{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h@{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h}!dtohll@{dtohll}}
+\index{dtohll@{dtohll}!A\+R\+S\+A\+L\+\_\+\+Endianness.\+h@{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h}}
+\subsubsection{\texorpdfstring{dtohll}{dtohll}}
+{\footnotesize\ttfamily \#define dtohll(\begin{DoxyParamCaption}\item[{}]{v }\end{DoxyParamCaption})~(v)}
+
+
+
+Convert a long long int (8 bytes) from device endianness. 
+
+\hypertarget{ARSAL__Endianness_8h_a39f53995baa8b852f10c5e3973581243}{}\label{ARSAL__Endianness_8h_a39f53995baa8b852f10c5e3973581243} 
+\index{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h@{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h}!dtohs@{dtohs}}
+\index{dtohs@{dtohs}!A\+R\+S\+A\+L\+\_\+\+Endianness.\+h@{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h}}
+\subsubsection{\texorpdfstring{dtohs}{dtohs}}
+{\footnotesize\ttfamily \#define dtohs(\begin{DoxyParamCaption}\item[{}]{v }\end{DoxyParamCaption})~(v)}
+
+
+
+Convert a short int (2 bytes) from device endianness. 
+
+\hypertarget{ARSAL__Endianness_8h_a01fe3a5f9b60e15145ab5c532851f261}{}\label{ARSAL__Endianness_8h_a01fe3a5f9b60e15145ab5c532851f261} 
+\index{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h@{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h}!htodd@{htodd}}
+\index{htodd@{htodd}!A\+R\+S\+A\+L\+\_\+\+Endianness.\+h@{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h}}
+\subsubsection{\texorpdfstring{htodd}{htodd}}
+{\footnotesize\ttfamily \#define htodd(\begin{DoxyParamCaption}\item[{}]{v }\end{DoxyParamCaption})~(v)}
+
+
+
+Convert a I\+E\+E\+E-\/754 double (8 bytes) to device endianness. 
+
+\hypertarget{ARSAL__Endianness_8h_aa86df99d3d413929f8528a342abe9c53}{}\label{ARSAL__Endianness_8h_aa86df99d3d413929f8528a342abe9c53} 
+\index{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h@{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h}!htodf@{htodf}}
+\index{htodf@{htodf}!A\+R\+S\+A\+L\+\_\+\+Endianness.\+h@{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h}}
+\subsubsection{\texorpdfstring{htodf}{htodf}}
+{\footnotesize\ttfamily \#define htodf(\begin{DoxyParamCaption}\item[{}]{v }\end{DoxyParamCaption})~(v)}
+
+
+
+Convert a I\+E\+E\+E-\/754 float (4 bytes) to device endianness. 
+
+\hypertarget{ARSAL__Endianness_8h_a79d4095664c7e26e6d1ae7d3d5194307}{}\label{ARSAL__Endianness_8h_a79d4095664c7e26e6d1ae7d3d5194307} 
+\index{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h@{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h}!htodl@{htodl}}
+\index{htodl@{htodl}!A\+R\+S\+A\+L\+\_\+\+Endianness.\+h@{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h}}
+\subsubsection{\texorpdfstring{htodl}{htodl}}
+{\footnotesize\ttfamily \#define htodl(\begin{DoxyParamCaption}\item[{}]{v }\end{DoxyParamCaption})~(v)}
+
+
+
+Convert a long int (4 bytes) to device endianness. 
+
+\hypertarget{ARSAL__Endianness_8h_a922c50637fb9e840d292918b621f7689}{}\label{ARSAL__Endianness_8h_a922c50637fb9e840d292918b621f7689} 
+\index{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h@{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h}!htodll@{htodll}}
+\index{htodll@{htodll}!A\+R\+S\+A\+L\+\_\+\+Endianness.\+h@{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h}}
+\subsubsection{\texorpdfstring{htodll}{htodll}}
+{\footnotesize\ttfamily \#define htodll(\begin{DoxyParamCaption}\item[{}]{v }\end{DoxyParamCaption})~(v)}
+
+
+
+Convert a long long int (8 bytes) to device endianness. 
+
+\hypertarget{ARSAL__Endianness_8h_ac7beb99d5071e786fb91b66757f60c92}{}\label{ARSAL__Endianness_8h_ac7beb99d5071e786fb91b66757f60c92} 
+\index{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h@{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h}!htods@{htods}}
+\index{htods@{htods}!A\+R\+S\+A\+L\+\_\+\+Endianness.\+h@{A\+R\+S\+A\+L\+\_\+\+Endianness.\+h}}
+\subsubsection{\texorpdfstring{htods}{htods}}
+{\footnotesize\ttfamily \#define htods(\begin{DoxyParamCaption}\item[{}]{v }\end{DoxyParamCaption})~(v)}
+
+
+
+Convert a short int (2 bytes) to device endianness. 
+

@@ -1,0 +1,270 @@
+\hypertarget{ARSAL__Ftw_8h}{}\section{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h File Reference}
+\label{ARSAL__Ftw_8h}\index{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}}
+
+
+lib\+A\+R\+S\+AL Ftw header file.  
+
+
+{\ttfamily \#include $<$sys/stat.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__ARSAL__FTW__t}{\+\_\+\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+t}
+\begin{DoxyCompactList}\small\item\em A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+t structure equal to \char`\"{}struct F\+T\+W\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct__ARSAL__FTW__t}{\+\_\+\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+t} \hyperlink{ARSAL__Ftw_8h_a5544ca0aeeb10285f97ef38661aca1f8}{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+t}
+\begin{DoxyCompactList}\small\item\em A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+t structure equal to \char`\"{}struct F\+T\+W\char`\"{}. \end{DoxyCompactList}\item 
+typedef int($\ast$ \hyperlink{ARSAL__Ftw_8h_aefac07f26d1f21f424471f558d068a43}{A\+R\+S\+A\+L\+\_\+\+Ftw\+Callback}) (const char $\ast$fpath, const struct stat $\ast$sb, \hyperlink{ARSAL__Ftw_8h_a63aa7306bf8dafd4d5901a6c18249710}{e\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+T\+Y\+PE} typeflag)
+\begin{DoxyCompactList}\small\item\em User Callback called for each file discover in the directory hierarchy. \end{DoxyCompactList}\item 
+typedef int($\ast$ \hyperlink{ARSAL__Ftw_8h_ad69ce339d2cd16baf23af40d5c5f132b}{A\+R\+S\+A\+L\+\_\+\+Nftw\+Callback}) (const char $\ast$fpath, const struct stat $\ast$sb, \hyperlink{ARSAL__Ftw_8h_a63aa7306bf8dafd4d5901a6c18249710}{e\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+T\+Y\+PE} typeflag, \hyperlink{ARSAL__Ftw_8h_a5544ca0aeeb10285f97ef38661aca1f8}{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+t} $\ast$ftwbuf)
+\begin{DoxyCompactList}\small\item\em User Callback called for each file discover in the directory hierarchy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{ARSAL__Ftw_8h_a63aa7306bf8dafd4d5901a6c18249710}{e\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+T\+Y\+PE} \{ \hyperlink{ARSAL__Ftw_8h_a63aa7306bf8dafd4d5901a6c18249710ac065d50a1aa538ec18232e31c116a54e}{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+F} = 0, 
+\hyperlink{ARSAL__Ftw_8h_a63aa7306bf8dafd4d5901a6c18249710a989b71ca97bab9d60928615d1d47b845}{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+D}
+ \}\begin{DoxyCompactList}\small\item\em F\+TW file type enum. \end{DoxyCompactList}
+\item 
+enum \hyperlink{ARSAL__Ftw_8h_a089554cadc933fb8c37c74f63a3abe9d}{e\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+F\+L\+AG} \{ \hyperlink{ARSAL__Ftw_8h_a089554cadc933fb8c37c74f63a3abe9daf21f3d52a94db106f1cc7cadebee2d1e}{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+N\+O\+F\+L\+A\+GS} = 0, 
+\hyperlink{ARSAL__Ftw_8h_a089554cadc933fb8c37c74f63a3abe9da2b4aa4c17c139f2c3e24913966da0133}{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+A\+C\+T\+I\+O\+N\+R\+E\+T\+V\+AL} = 16
+ \}\begin{DoxyCompactList}\small\item\em A\+R\+S\+A\+L\+\_\+\+Nftw enum flags. \end{DoxyCompactList}
+\item 
+enum \hyperlink{ARSAL__Ftw_8h_aa80cea6c4360c8efdc05b84ecb53038f}{e\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+R\+E\+T\+U\+RN} \{ \hyperlink{ARSAL__Ftw_8h_aa80cea6c4360c8efdc05b84ecb53038fa14ace810be06e465e7823f1176454583}{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+C\+O\+N\+T\+I\+N\+UE} = 0, 
+\hyperlink{ARSAL__Ftw_8h_aa80cea6c4360c8efdc05b84ecb53038faef1911776a798c8110a8f159b7d4a7f1}{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+S\+T\+OP} = 1, 
+\hyperlink{ARSAL__Ftw_8h_aa80cea6c4360c8efdc05b84ecb53038fabe619d9ab40e3c59384b2818be17d6b6}{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+S\+K\+I\+P\+\_\+\+S\+U\+B\+T\+R\+EE} = 2
+ \}\begin{DoxyCompactList}\small\item\em A\+R\+S\+A\+L\+\_\+\+Nftw enum callback return values. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{ARSAL__Ftw_8h_acb76ab9a45a78e45960d60c3112f8771}{A\+R\+S\+A\+L\+\_\+\+Ftw} (const char $\ast$dirpath, \hyperlink{ARSAL__Ftw_8h_aefac07f26d1f21f424471f558d068a43}{A\+R\+S\+A\+L\+\_\+\+Ftw\+Callback} cb, int nopenfd)
+\begin{DoxyCompactList}\small\item\em Recursively descends the directory hierarchy. \end{DoxyCompactList}\item 
+int \hyperlink{ARSAL__Ftw_8h_ac655e97ab59baa526ce37336fa5d47c7}{A\+R\+S\+A\+L\+\_\+\+Nftw} (const char $\ast$dirpath, \hyperlink{ARSAL__Ftw_8h_ad69ce339d2cd16baf23af40d5c5f132b}{A\+R\+S\+A\+L\+\_\+\+Nftw\+Callback} cb, int nopenfd, \hyperlink{ARSAL__Ftw_8h_a089554cadc933fb8c37c74f63a3abe9d}{e\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+F\+L\+AG} flags)
+\begin{DoxyCompactList}\small\item\em Recursively descends the directory hierarchy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+lib\+A\+R\+S\+AL Ftw header file. 
+
+\begin{DoxyDate}{Date}
+19/12/2013 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\href{mailto:david.flattin.ext@parrot.com}{\tt david.\+flattin.\+ext@parrot.\+com} 
+\end{DoxyAuthor}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{ARSAL__Ftw_8h_a5544ca0aeeb10285f97ef38661aca1f8}{}\label{ARSAL__Ftw_8h_a5544ca0aeeb10285f97ef38661aca1f8} 
+\index{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}!A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+t@{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+t}}
+\index{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+t@{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+t}!A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+t}{ARSAL\_FTW\_t}}
+{\footnotesize\ttfamily typedef struct \hyperlink{struct__ARSAL__FTW__t}{\+\_\+\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+t}  \hyperlink{ARSAL__Ftw_8h_a5544ca0aeeb10285f97ef38661aca1f8}{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+t}}
+
+
+
+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+t structure equal to \char`\"{}struct F\+T\+W\char`\"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base} & The base is the offset of the filename \\
+\hline
+{\em level} & The level of the file \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ARSAL__Ftw_8h_ac655e97ab59baa526ce37336fa5d47c7}{A\+R\+S\+A\+L\+\_\+\+Nftw} (), struct F\+TW 
+\end{DoxySeeAlso}
+\hypertarget{ARSAL__Ftw_8h_aefac07f26d1f21f424471f558d068a43}{}\label{ARSAL__Ftw_8h_aefac07f26d1f21f424471f558d068a43} 
+\index{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}!A\+R\+S\+A\+L\+\_\+\+Ftw\+Callback@{A\+R\+S\+A\+L\+\_\+\+Ftw\+Callback}}
+\index{A\+R\+S\+A\+L\+\_\+\+Ftw\+Callback@{A\+R\+S\+A\+L\+\_\+\+Ftw\+Callback}!A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Ftw\+Callback}{ARSAL\_FtwCallback}}
+{\footnotesize\ttfamily typedef int($\ast$ A\+R\+S\+A\+L\+\_\+\+Ftw\+Callback) (const char $\ast$fpath, const struct stat $\ast$sb, \hyperlink{ARSAL__Ftw_8h_a63aa7306bf8dafd4d5901a6c18249710}{e\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+T\+Y\+PE} typeflag)}
+
+
+
+User Callback called for each file discover in the directory hierarchy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fpath} & The path of the file \\
+\hline
+{\em sb} & The stat structure returned by a call to stat() \\
+\hline
+{\em typeflag} & The type of file found \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em On} & success, returns 0. Otherwise, it returns user value \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ARSAL__Ftw_8h_acb76ab9a45a78e45960d60c3112f8771}{A\+R\+S\+A\+L\+\_\+\+Ftw} (), ftw standard documentation 
+\end{DoxySeeAlso}
+\hypertarget{ARSAL__Ftw_8h_ad69ce339d2cd16baf23af40d5c5f132b}{}\label{ARSAL__Ftw_8h_ad69ce339d2cd16baf23af40d5c5f132b} 
+\index{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}!A\+R\+S\+A\+L\+\_\+\+Nftw\+Callback@{A\+R\+S\+A\+L\+\_\+\+Nftw\+Callback}}
+\index{A\+R\+S\+A\+L\+\_\+\+Nftw\+Callback@{A\+R\+S\+A\+L\+\_\+\+Nftw\+Callback}!A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Nftw\+Callback}{ARSAL\_NftwCallback}}
+{\footnotesize\ttfamily typedef int($\ast$ A\+R\+S\+A\+L\+\_\+\+Nftw\+Callback) (const char $\ast$fpath, const struct stat $\ast$sb, \hyperlink{ARSAL__Ftw_8h_a63aa7306bf8dafd4d5901a6c18249710}{e\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+T\+Y\+PE} typeflag, \hyperlink{ARSAL__Ftw_8h_a5544ca0aeeb10285f97ef38661aca1f8}{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+t} $\ast$ftwbuf)}
+
+
+
+User Callback called for each file discover in the directory hierarchy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fpath} & The path of the file \\
+\hline
+{\em sb} & The stat structure returned by a call to stat() \\
+\hline
+{\em typeflag} & The type of file found \\
+\hline
+{\em ftwbuf} & The \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em On} & success, returns 0. Otherwise, it returns user value \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ARSAL__Ftw_8h_ac655e97ab59baa526ce37336fa5d47c7}{A\+R\+S\+A\+L\+\_\+\+Nftw} (), nftw standard documentation 
+\end{DoxySeeAlso}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{ARSAL__Ftw_8h_a089554cadc933fb8c37c74f63a3abe9d}{}\label{ARSAL__Ftw_8h_a089554cadc933fb8c37c74f63a3abe9d} 
+\index{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}!e\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+F\+L\+AG@{e\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+F\+L\+AG}}
+\index{e\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+F\+L\+AG@{e\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+F\+L\+AG}!A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}}
+\subsubsection{\texorpdfstring{e\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+F\+L\+AG}{eARSAL\_FTW\_FLAG}}
+{\footnotesize\ttfamily enum \hyperlink{ARSAL__Ftw_8h_a089554cadc933fb8c37c74f63a3abe9d}{e\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+F\+L\+AG}}
+
+
+
+A\+R\+S\+A\+L\+\_\+\+Nftw enum flags. 
+
+\begin{DoxySeeAlso}{See also}
+nftw 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+N\+O\+F\+L\+A\+GS@{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+N\+O\+F\+L\+A\+GS}!A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}}\index{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}!A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+N\+O\+F\+L\+A\+GS@{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+N\+O\+F\+L\+A\+GS}}}\hypertarget{ARSAL__Ftw_8h_a089554cadc933fb8c37c74f63a3abe9daf21f3d52a94db106f1cc7cadebee2d1e}{}\label{ARSAL__Ftw_8h_a089554cadc933fb8c37c74f63a3abe9daf21f3d52a94db106f1cc7cadebee2d1e} 
+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+N\+O\+F\+L\+A\+GS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+A\+C\+T\+I\+O\+N\+R\+E\+T\+V\+AL@{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+A\+C\+T\+I\+O\+N\+R\+E\+T\+V\+AL}!A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}}\index{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}!A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+A\+C\+T\+I\+O\+N\+R\+E\+T\+V\+AL@{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+A\+C\+T\+I\+O\+N\+R\+E\+T\+V\+AL}}}\hypertarget{ARSAL__Ftw_8h_a089554cadc933fb8c37c74f63a3abe9da2b4aa4c17c139f2c3e24913966da0133}{}\label{ARSAL__Ftw_8h_a089554cadc933fb8c37c74f63a3abe9da2b4aa4c17c139f2c3e24913966da0133} 
+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+A\+C\+T\+I\+O\+N\+R\+E\+T\+V\+AL&\\
+\hline
+
+\end{DoxyEnumFields}
+\hypertarget{ARSAL__Ftw_8h_aa80cea6c4360c8efdc05b84ecb53038f}{}\label{ARSAL__Ftw_8h_aa80cea6c4360c8efdc05b84ecb53038f} 
+\index{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}!e\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+R\+E\+T\+U\+RN@{e\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+R\+E\+T\+U\+RN}}
+\index{e\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+R\+E\+T\+U\+RN@{e\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+R\+E\+T\+U\+RN}!A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}}
+\subsubsection{\texorpdfstring{e\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+R\+E\+T\+U\+RN}{eARSAL\_FTW\_RETURN}}
+{\footnotesize\ttfamily enum \hyperlink{ARSAL__Ftw_8h_aa80cea6c4360c8efdc05b84ecb53038f}{e\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+R\+E\+T\+U\+RN}}
+
+
+
+A\+R\+S\+A\+L\+\_\+\+Nftw enum callback return values. 
+
+\begin{DoxySeeAlso}{See also}
+nftw 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+C\+O\+N\+T\+I\+N\+UE@{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+C\+O\+N\+T\+I\+N\+UE}!A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}}\index{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}!A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+C\+O\+N\+T\+I\+N\+UE@{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+C\+O\+N\+T\+I\+N\+UE}}}\hypertarget{ARSAL__Ftw_8h_aa80cea6c4360c8efdc05b84ecb53038fa14ace810be06e465e7823f1176454583}{}\label{ARSAL__Ftw_8h_aa80cea6c4360c8efdc05b84ecb53038fa14ace810be06e465e7823f1176454583} 
+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+C\+O\+N\+T\+I\+N\+UE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+S\+T\+OP@{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+S\+T\+OP}!A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}}\index{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}!A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+S\+T\+OP@{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+S\+T\+OP}}}\hypertarget{ARSAL__Ftw_8h_aa80cea6c4360c8efdc05b84ecb53038faef1911776a798c8110a8f159b7d4a7f1}{}\label{ARSAL__Ftw_8h_aa80cea6c4360c8efdc05b84ecb53038faef1911776a798c8110a8f159b7d4a7f1} 
+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+S\+T\+OP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+S\+K\+I\+P\+\_\+\+S\+U\+B\+T\+R\+EE@{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+S\+K\+I\+P\+\_\+\+S\+U\+B\+T\+R\+EE}!A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}}\index{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}!A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+S\+K\+I\+P\+\_\+\+S\+U\+B\+T\+R\+EE@{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+S\+K\+I\+P\+\_\+\+S\+U\+B\+T\+R\+EE}}}\hypertarget{ARSAL__Ftw_8h_aa80cea6c4360c8efdc05b84ecb53038fabe619d9ab40e3c59384b2818be17d6b6}{}\label{ARSAL__Ftw_8h_aa80cea6c4360c8efdc05b84ecb53038fabe619d9ab40e3c59384b2818be17d6b6} 
+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+S\+K\+I\+P\+\_\+\+S\+U\+B\+T\+R\+EE&\\
+\hline
+
+\end{DoxyEnumFields}
+\hypertarget{ARSAL__Ftw_8h_a63aa7306bf8dafd4d5901a6c18249710}{}\label{ARSAL__Ftw_8h_a63aa7306bf8dafd4d5901a6c18249710} 
+\index{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}!e\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+T\+Y\+PE@{e\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+T\+Y\+PE}}
+\index{e\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+T\+Y\+PE@{e\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+T\+Y\+PE}!A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}}
+\subsubsection{\texorpdfstring{e\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+T\+Y\+PE}{eARSAL\_FTW\_TYPE}}
+{\footnotesize\ttfamily enum \hyperlink{ARSAL__Ftw_8h_a63aa7306bf8dafd4d5901a6c18249710}{e\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+T\+Y\+PE}}
+
+
+
+F\+TW file type enum. 
+
+\begin{DoxySeeAlso}{See also}
+ftw, nftw 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+F@{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+F}!A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}}\index{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}!A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+F@{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+F}}}\hypertarget{ARSAL__Ftw_8h_a63aa7306bf8dafd4d5901a6c18249710ac065d50a1aa538ec18232e31c116a54e}{}\label{ARSAL__Ftw_8h_a63aa7306bf8dafd4d5901a6c18249710ac065d50a1aa538ec18232e31c116a54e} 
+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+F&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+D@{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+D}!A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}}\index{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}!A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+D@{A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+D}}}\hypertarget{ARSAL__Ftw_8h_a63aa7306bf8dafd4d5901a6c18249710a989b71ca97bab9d60928615d1d47b845}{}\label{ARSAL__Ftw_8h_a63aa7306bf8dafd4d5901a6c18249710a989b71ca97bab9d60928615d1d47b845} 
+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+D&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\hypertarget{ARSAL__Ftw_8h_acb76ab9a45a78e45960d60c3112f8771}{}\label{ARSAL__Ftw_8h_acb76ab9a45a78e45960d60c3112f8771} 
+\index{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}!A\+R\+S\+A\+L\+\_\+\+Ftw@{A\+R\+S\+A\+L\+\_\+\+Ftw}}
+\index{A\+R\+S\+A\+L\+\_\+\+Ftw@{A\+R\+S\+A\+L\+\_\+\+Ftw}!A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Ftw()}{ARSAL\_Ftw()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Ftw (\begin{DoxyParamCaption}\item[{const char $\ast$}]{dirpath,  }\item[{\hyperlink{ARSAL__Ftw_8h_aefac07f26d1f21f424471f558d068a43}{A\+R\+S\+A\+L\+\_\+\+Ftw\+Callback}}]{cb,  }\item[{int}]{nopenfd }\end{DoxyParamCaption})}
+
+
+
+Recursively descends the directory hierarchy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dirpath} & The directory to descend \\
+\hline
+{\em cb} & The callback recursively on each element of run through the directories \\
+\hline
+{\em nopenfd} & The maximum number of directories depth \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em On} & success, returns 0. Otherwise, it returns -\/1, or callack user value \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+ftw standard documentation 
+\end{DoxySeeAlso}
+\hypertarget{ARSAL__Ftw_8h_ac655e97ab59baa526ce37336fa5d47c7}{}\label{ARSAL__Ftw_8h_ac655e97ab59baa526ce37336fa5d47c7} 
+\index{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}!A\+R\+S\+A\+L\+\_\+\+Nftw@{A\+R\+S\+A\+L\+\_\+\+Nftw}}
+\index{A\+R\+S\+A\+L\+\_\+\+Nftw@{A\+R\+S\+A\+L\+\_\+\+Nftw}!A\+R\+S\+A\+L\+\_\+\+Ftw.\+h@{A\+R\+S\+A\+L\+\_\+\+Ftw.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Nftw()}{ARSAL\_Nftw()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Nftw (\begin{DoxyParamCaption}\item[{const char $\ast$}]{dirpath,  }\item[{\hyperlink{ARSAL__Ftw_8h_ad69ce339d2cd16baf23af40d5c5f132b}{A\+R\+S\+A\+L\+\_\+\+Nftw\+Callback}}]{cb,  }\item[{int}]{nopenfd,  }\item[{\hyperlink{ARSAL__Ftw_8h_a089554cadc933fb8c37c74f63a3abe9d}{e\+A\+R\+S\+A\+L\+\_\+\+F\+T\+W\+\_\+\+F\+L\+AG}}]{flags }\end{DoxyParamCaption})}
+
+
+
+Recursively descends the directory hierarchy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dirpath} & The directory to descend \\
+\hline
+{\em cb} & The callback recursively on each element of run through the directories \\
+\hline
+{\em nopenfd} & The maximum number of directories depth \\
+\hline
+{\em flags} & The flag of the type of tree explore \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em On} & success, returns 0. Otherwise, it returns -\/1, or callack user value \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+nftw standard documentation 
+\end{DoxySeeAlso}

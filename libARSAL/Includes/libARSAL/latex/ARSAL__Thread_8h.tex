@@ -1,0 +1,126 @@
+\hypertarget{ARSAL__Thread_8h}{}\section{A\+R\+S\+A\+L\+\_\+\+Thread.\+h File Reference}
+\label{ARSAL__Thread_8h}\index{A\+R\+S\+A\+L\+\_\+\+Thread.\+h@{A\+R\+S\+A\+L\+\_\+\+Thread.\+h}}
+
+
+This file contains headers about thread abstraction layer.  
+
+
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void $\ast$ \hyperlink{ARSAL__Thread_8h_ad524f9877bf5529aa56381ceba82ec7c}{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Define a thread type. \end{DoxyCompactList}\item 
+typedef void $\ast$($\ast$ \hyperlink{ARSAL__Thread_8h_a24f93cc6d65249be67fbfbce3ef73f35}{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Routine\+\_\+t}) (void $\ast$)
+\begin{DoxyCompactList}\small\item\em Define a callback function type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{ARSAL__Thread_8h_a7e4f3762ab35c320f07749f90937eb2b}{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Create} (\hyperlink{ARSAL__Thread_8h_ad524f9877bf5529aa56381ceba82ec7c}{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+t} $\ast$thread, \hyperlink{ARSAL__Thread_8h_a24f93cc6d65249be67fbfbce3ef73f35}{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Routine\+\_\+t} routine, void $\ast$arg)
+\begin{DoxyCompactList}\small\item\em Create a new thread. \end{DoxyCompactList}\item 
+int \hyperlink{ARSAL__Thread_8h_a29465be866d36a00974e9b890b782749}{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Join} (\hyperlink{ARSAL__Thread_8h_ad524f9877bf5529aa56381ceba82ec7c}{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+t} thread, void $\ast$$\ast$retval)
+\begin{DoxyCompactList}\small\item\em Join a thread. \end{DoxyCompactList}\item 
+int \hyperlink{ARSAL__Thread_8h_af3f5228215c67354d58e6b5aa512771e}{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Destroy} (\hyperlink{ARSAL__Thread_8h_ad524f9877bf5529aa56381ceba82ec7c}{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+t} $\ast$thread)
+\begin{DoxyCompactList}\small\item\em Destroy a thread. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file contains headers about thread abstraction layer. 
+
+\begin{DoxyDate}{Date}
+05/18/2012 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\href{mailto:frederic.dhaeyer@parrot.com}{\tt frederic.\+dhaeyer@parrot.\+com} 
+\end{DoxyAuthor}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{ARSAL__Thread_8h_a24f93cc6d65249be67fbfbce3ef73f35}{}\label{ARSAL__Thread_8h_a24f93cc6d65249be67fbfbce3ef73f35} 
+\index{A\+R\+S\+A\+L\+\_\+\+Thread.\+h@{A\+R\+S\+A\+L\+\_\+\+Thread.\+h}!A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Routine\+\_\+t@{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Routine\+\_\+t}}
+\index{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Routine\+\_\+t@{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Routine\+\_\+t}!A\+R\+S\+A\+L\+\_\+\+Thread.\+h@{A\+R\+S\+A\+L\+\_\+\+Thread.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Routine\+\_\+t}{ARSAL\_Thread\_Routine\_t}}
+{\footnotesize\ttfamily typedef void$\ast$($\ast$ A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Routine\+\_\+t) (void $\ast$)}
+
+
+
+Define a callback function type. 
+
+\hypertarget{ARSAL__Thread_8h_ad524f9877bf5529aa56381ceba82ec7c}{}\label{ARSAL__Thread_8h_ad524f9877bf5529aa56381ceba82ec7c} 
+\index{A\+R\+S\+A\+L\+\_\+\+Thread.\+h@{A\+R\+S\+A\+L\+\_\+\+Thread.\+h}!A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+t@{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+t}}
+\index{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+t@{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+t}!A\+R\+S\+A\+L\+\_\+\+Thread.\+h@{A\+R\+S\+A\+L\+\_\+\+Thread.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+t}{ARSAL\_Thread\_t}}
+{\footnotesize\ttfamily typedef void$\ast$ \hyperlink{ARSAL__Thread_8h_ad524f9877bf5529aa56381ceba82ec7c}{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+t}}
+
+
+
+Define a thread type. 
+
+
+
+\subsection{Function Documentation}
+\hypertarget{ARSAL__Thread_8h_a7e4f3762ab35c320f07749f90937eb2b}{}\label{ARSAL__Thread_8h_a7e4f3762ab35c320f07749f90937eb2b} 
+\index{A\+R\+S\+A\+L\+\_\+\+Thread.\+h@{A\+R\+S\+A\+L\+\_\+\+Thread.\+h}!A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Create@{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Create}}
+\index{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Create@{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Create}!A\+R\+S\+A\+L\+\_\+\+Thread.\+h@{A\+R\+S\+A\+L\+\_\+\+Thread.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Create()}{ARSAL\_Thread\_Create()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Create (\begin{DoxyParamCaption}\item[{\hyperlink{ARSAL__Thread_8h_ad524f9877bf5529aa56381ceba82ec7c}{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+t} $\ast$}]{thread,  }\item[{\hyperlink{ARSAL__Thread_8h_a24f93cc6d65249be67fbfbce3ef73f35}{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Routine\+\_\+t}}]{routine,  }\item[{void $\ast$}]{arg }\end{DoxyParamCaption})}
+
+
+
+Create a new thread. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em thread} & The thread to create \\
+\hline
+{\em routine} & The routine to invoke by thread \\
+\hline
+{\em arg} & The argument passed to routine() \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em On} & success, A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+create() returns 0. Otherwise, it returns an error number (See errno.\+h) \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{ARSAL__Thread_8h_af3f5228215c67354d58e6b5aa512771e}{}\label{ARSAL__Thread_8h_af3f5228215c67354d58e6b5aa512771e} 
+\index{A\+R\+S\+A\+L\+\_\+\+Thread.\+h@{A\+R\+S\+A\+L\+\_\+\+Thread.\+h}!A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Destroy@{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Destroy}}
+\index{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Destroy@{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Destroy}!A\+R\+S\+A\+L\+\_\+\+Thread.\+h@{A\+R\+S\+A\+L\+\_\+\+Thread.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Destroy()}{ARSAL\_Thread\_Destroy()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Destroy (\begin{DoxyParamCaption}\item[{\hyperlink{ARSAL__Thread_8h_ad524f9877bf5529aa56381ceba82ec7c}{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+t} $\ast$}]{thread }\end{DoxyParamCaption})}
+
+
+
+Destroy a thread. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em thread} & The thread to destroy \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em On} & success, A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+create() returns 0. Otherwise, it returns an error number (See errno.\+h) \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{ARSAL__Thread_8h_a29465be866d36a00974e9b890b782749}{}\label{ARSAL__Thread_8h_a29465be866d36a00974e9b890b782749} 
+\index{A\+R\+S\+A\+L\+\_\+\+Thread.\+h@{A\+R\+S\+A\+L\+\_\+\+Thread.\+h}!A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Join@{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Join}}
+\index{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Join@{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Join}!A\+R\+S\+A\+L\+\_\+\+Thread.\+h@{A\+R\+S\+A\+L\+\_\+\+Thread.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Join()}{ARSAL\_Thread\_Join()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+\+Join (\begin{DoxyParamCaption}\item[{\hyperlink{ARSAL__Thread_8h_ad524f9877bf5529aa56381ceba82ec7c}{A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+t}}]{thread,  }\item[{void $\ast$$\ast$}]{retval }\end{DoxyParamCaption})}
+
+
+
+Join a thread. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em thread} & The thread to join \\
+\hline
+{\em retval} & If this pointer is not N\+U\+LL, the exit status is placed into $\ast$retval \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em On} & success, A\+R\+S\+A\+L\+\_\+\+Thread\+\_\+join() returns 0. Otherwise, it returns an error number (See errno.\+h) \\
+\hline
+\end{DoxyRetVals}

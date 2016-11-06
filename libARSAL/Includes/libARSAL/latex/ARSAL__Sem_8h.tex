@@ -1,0 +1,208 @@
+\hypertarget{ARSAL__Sem_8h}{}\section{A\+R\+S\+A\+L\+\_\+\+Sem.\+h File Reference}
+\label{ARSAL__Sem_8h}\index{A\+R\+S\+A\+L\+\_\+\+Sem.\+h@{A\+R\+S\+A\+L\+\_\+\+Sem.\+h}}
+
+
+This file contains headers about semaphore abstraction layer.  
+
+
+{\ttfamily \#include $<$time.\+h$>$}\newline
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void $\ast$ \hyperlink{ARSAL__Sem_8h_a74eaf25f9acaab7ff185cb3c30ffda1c}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Define a semaphore type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{ARSAL__Sem_8h_a616218ffe9c315737e5c0208f0b3e4dc}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Init} (\hyperlink{ARSAL__Sem_8h_a74eaf25f9acaab7ff185cb3c30ffda1c}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t} $\ast$sem, int shared, int value)
+\begin{DoxyCompactList}\small\item\em Initializes a semaphore. \end{DoxyCompactList}\item 
+int \hyperlink{ARSAL__Sem_8h_a6ce2d52ebdf31b0f18b719ee7ff37a97}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Destroy} (\hyperlink{ARSAL__Sem_8h_a74eaf25f9acaab7ff185cb3c30ffda1c}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t} $\ast$sem)
+\begin{DoxyCompactList}\small\item\em Destroys a semaphore. \end{DoxyCompactList}\item 
+int \hyperlink{ARSAL__Sem_8h_a3990e2d59ff17a6d5ad6ddcbdd1fe572}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Wait} (\hyperlink{ARSAL__Sem_8h_a74eaf25f9acaab7ff185cb3c30ffda1c}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t} $\ast$sem)
+\begin{DoxyCompactList}\small\item\em Wait for a semaphore. \end{DoxyCompactList}\item 
+int \hyperlink{ARSAL__Sem_8h_ae2db4fc74b17a888fb12af993a555014}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Trywait} (\hyperlink{ARSAL__Sem_8h_a74eaf25f9acaab7ff185cb3c30ffda1c}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t} $\ast$sem)
+\begin{DoxyCompactList}\small\item\em Non blocking wait for a semaphore. \end{DoxyCompactList}\item 
+int \hyperlink{ARSAL__Sem_8h_a8c6049f3bd4329d13f3fd98cfcb069f4}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Timedwait} (\hyperlink{ARSAL__Sem_8h_a74eaf25f9acaab7ff185cb3c30ffda1c}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t} $\ast$sem, const struct timespec $\ast$timeout)
+\begin{DoxyCompactList}\small\item\em Wait for a semaphore with a timeout. \end{DoxyCompactList}\item 
+int \hyperlink{ARSAL__Sem_8h_ae8a433f4478098f6c75599a83ec646b0}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Post} (\hyperlink{ARSAL__Sem_8h_a74eaf25f9acaab7ff185cb3c30ffda1c}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t} $\ast$sem)
+\begin{DoxyCompactList}\small\item\em Increment a semaphore. \end{DoxyCompactList}\item 
+int \hyperlink{ARSAL__Sem_8h_a9da979bb317669a9d29f3e14cca806ef}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Getvalue} (\hyperlink{ARSAL__Sem_8h_a74eaf25f9acaab7ff185cb3c30ffda1c}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t} $\ast$sem, int $\ast$value)
+\begin{DoxyCompactList}\small\item\em Get the current value of a semaphore. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file contains headers about semaphore abstraction layer. 
+
+\begin{DoxyDate}{Date}
+12/27/2012 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\href{mailto:nicolas.brulez@parrot.com}{\tt nicolas.\+brulez@parrot.\+com} 
+\end{DoxyAuthor}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{ARSAL__Sem_8h_a74eaf25f9acaab7ff185cb3c30ffda1c}{}\label{ARSAL__Sem_8h_a74eaf25f9acaab7ff185cb3c30ffda1c} 
+\index{A\+R\+S\+A\+L\+\_\+\+Sem.\+h@{A\+R\+S\+A\+L\+\_\+\+Sem.\+h}!A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t@{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t}}
+\index{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t@{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t}!A\+R\+S\+A\+L\+\_\+\+Sem.\+h@{A\+R\+S\+A\+L\+\_\+\+Sem.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t}{ARSAL\_Sem\_t}}
+{\footnotesize\ttfamily typedef void$\ast$ \hyperlink{ARSAL__Sem_8h_a74eaf25f9acaab7ff185cb3c30ffda1c}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t}}
+
+
+
+Define a semaphore type. 
+
+
+
+\subsection{Function Documentation}
+\hypertarget{ARSAL__Sem_8h_a6ce2d52ebdf31b0f18b719ee7ff37a97}{}\label{ARSAL__Sem_8h_a6ce2d52ebdf31b0f18b719ee7ff37a97} 
+\index{A\+R\+S\+A\+L\+\_\+\+Sem.\+h@{A\+R\+S\+A\+L\+\_\+\+Sem.\+h}!A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Destroy@{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Destroy}}
+\index{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Destroy@{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Destroy}!A\+R\+S\+A\+L\+\_\+\+Sem.\+h@{A\+R\+S\+A\+L\+\_\+\+Sem.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Destroy()}{ARSAL\_Sem\_Destroy()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Destroy (\begin{DoxyParamCaption}\item[{\hyperlink{ARSAL__Sem_8h_a74eaf25f9acaab7ff185cb3c30ffda1c}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t} $\ast$}]{sem }\end{DoxyParamCaption})}
+
+
+
+Destroys a semaphore. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sem} & The sem to destroy \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em On} & success, A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+destroy() returns 0. Otherwise, it returns -\/1 and set errno (See errno.\+h) \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{ARSAL__Sem_8h_a9da979bb317669a9d29f3e14cca806ef}{}\label{ARSAL__Sem_8h_a9da979bb317669a9d29f3e14cca806ef} 
+\index{A\+R\+S\+A\+L\+\_\+\+Sem.\+h@{A\+R\+S\+A\+L\+\_\+\+Sem.\+h}!A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Getvalue@{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Getvalue}}
+\index{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Getvalue@{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Getvalue}!A\+R\+S\+A\+L\+\_\+\+Sem.\+h@{A\+R\+S\+A\+L\+\_\+\+Sem.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Getvalue()}{ARSAL\_Sem\_Getvalue()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Getvalue (\begin{DoxyParamCaption}\item[{\hyperlink{ARSAL__Sem_8h_a74eaf25f9acaab7ff185cb3c30ffda1c}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t} $\ast$}]{sem,  }\item[{int $\ast$}]{value }\end{DoxyParamCaption})}
+
+
+
+Get the current value of a semaphore. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sem} & The semaphore to get value from \\
+\hline
+{\em value} & Pointer which will hold the current value of the semaphore \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em On} & success, A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+getvalue() returns 0. Otherwise, it returns -\/1 and set errno (See errno.\+h) \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{ARSAL__Sem_8h_a616218ffe9c315737e5c0208f0b3e4dc}{}\label{ARSAL__Sem_8h_a616218ffe9c315737e5c0208f0b3e4dc} 
+\index{A\+R\+S\+A\+L\+\_\+\+Sem.\+h@{A\+R\+S\+A\+L\+\_\+\+Sem.\+h}!A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Init@{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Init}}
+\index{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Init@{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Init}!A\+R\+S\+A\+L\+\_\+\+Sem.\+h@{A\+R\+S\+A\+L\+\_\+\+Sem.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Init()}{ARSAL\_Sem\_Init()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\hyperlink{ARSAL__Sem_8h_a74eaf25f9acaab7ff185cb3c30ffda1c}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t} $\ast$}]{sem,  }\item[{int}]{shared,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+Initializes a semaphore. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sem} & The semaphore to initialize \\
+\hline
+{\em shared} & Flag asking for a multi-\/process shared semaphore \\
+\hline
+{\em value} & Initial value of the semaphore \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em On} & success, A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+init() returns 0. Otherwise, it returns -\/1 and set errno (See errno.\+h) \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{ARSAL__Sem_8h_ae8a433f4478098f6c75599a83ec646b0}{}\label{ARSAL__Sem_8h_ae8a433f4478098f6c75599a83ec646b0} 
+\index{A\+R\+S\+A\+L\+\_\+\+Sem.\+h@{A\+R\+S\+A\+L\+\_\+\+Sem.\+h}!A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Post@{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Post}}
+\index{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Post@{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Post}!A\+R\+S\+A\+L\+\_\+\+Sem.\+h@{A\+R\+S\+A\+L\+\_\+\+Sem.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Post()}{ARSAL\_Sem\_Post()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Post (\begin{DoxyParamCaption}\item[{\hyperlink{ARSAL__Sem_8h_a74eaf25f9acaab7ff185cb3c30ffda1c}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t} $\ast$}]{sem }\end{DoxyParamCaption})}
+
+
+
+Increment a semaphore. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sem} & The semaphore to increment \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em On} & success, A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+post() returns 0. Otherwise, it returns -\/1 and set errno (See errno.\+h) \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{ARSAL__Sem_8h_a8c6049f3bd4329d13f3fd98cfcb069f4}{}\label{ARSAL__Sem_8h_a8c6049f3bd4329d13f3fd98cfcb069f4} 
+\index{A\+R\+S\+A\+L\+\_\+\+Sem.\+h@{A\+R\+S\+A\+L\+\_\+\+Sem.\+h}!A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Timedwait@{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Timedwait}}
+\index{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Timedwait@{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Timedwait}!A\+R\+S\+A\+L\+\_\+\+Sem.\+h@{A\+R\+S\+A\+L\+\_\+\+Sem.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Timedwait()}{ARSAL\_Sem\_Timedwait()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Timedwait (\begin{DoxyParamCaption}\item[{\hyperlink{ARSAL__Sem_8h_a74eaf25f9acaab7ff185cb3c30ffda1c}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t} $\ast$}]{sem,  }\item[{const struct timespec $\ast$}]{timeout }\end{DoxyParamCaption})}
+
+
+
+Wait for a semaphore with a timeout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sem} & The sem to wait for \\
+\hline
+{\em timeout} & Maximum time to wait \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+P\+O\+S\+I\+X.\+1-\/2001 semaphore use an absolute time as timeout. Instead, lib\+S\+AL use a relative time ! 
+\end{DoxyWarning}
+
+\begin{DoxyRetVals}{Return values}
+{\em If} & the semaphore was sucessfully decremented, A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+timedwait() returns 0. If the call has timed-\/out, it returns -\/1 and sets errno to \char`\"{}\+E\+T\+I\+M\+E\+D\+O\+U\+T\char`\"{}. On any other error, return -\/1 and set errno (See errno.\+h) \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{ARSAL__Sem_8h_ae2db4fc74b17a888fb12af993a555014}{}\label{ARSAL__Sem_8h_ae2db4fc74b17a888fb12af993a555014} 
+\index{A\+R\+S\+A\+L\+\_\+\+Sem.\+h@{A\+R\+S\+A\+L\+\_\+\+Sem.\+h}!A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Trywait@{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Trywait}}
+\index{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Trywait@{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Trywait}!A\+R\+S\+A\+L\+\_\+\+Sem.\+h@{A\+R\+S\+A\+L\+\_\+\+Sem.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Trywait()}{ARSAL\_Sem\_Trywait()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Trywait (\begin{DoxyParamCaption}\item[{\hyperlink{ARSAL__Sem_8h_a74eaf25f9acaab7ff185cb3c30ffda1c}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t} $\ast$}]{sem }\end{DoxyParamCaption})}
+
+
+
+Non blocking wait for a semaphore. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sem} & The sem to wait for \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em If} & the semaphore was successfully decremented, A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+trywait() returns 0. If the call would have blocked, it returns -\/1 and sets errno to \char`\"{}\+E\+A\+G\+A\+I\+N\char`\"{}. On any other error, return -\/1 and set errno (See errno.\+h) \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{ARSAL__Sem_8h_a3990e2d59ff17a6d5ad6ddcbdd1fe572}{}\label{ARSAL__Sem_8h_a3990e2d59ff17a6d5ad6ddcbdd1fe572} 
+\index{A\+R\+S\+A\+L\+\_\+\+Sem.\+h@{A\+R\+S\+A\+L\+\_\+\+Sem.\+h}!A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Wait@{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Wait}}
+\index{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Wait@{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Wait}!A\+R\+S\+A\+L\+\_\+\+Sem.\+h@{A\+R\+S\+A\+L\+\_\+\+Sem.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Wait()}{ARSAL\_Sem\_Wait()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+\+Wait (\begin{DoxyParamCaption}\item[{\hyperlink{ARSAL__Sem_8h_a74eaf25f9acaab7ff185cb3c30ffda1c}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t} $\ast$}]{sem }\end{DoxyParamCaption})}
+
+
+
+Wait for a semaphore. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sem} & The sem to wait for \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em On} & success, A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+wait() returns 0. Otherwise, it returns -\/1 and set errno (See errno.\+h) \\
+\hline
+\end{DoxyRetVals}

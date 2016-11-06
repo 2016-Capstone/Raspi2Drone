@@ -1,0 +1,111 @@
+\hypertarget{interfaceARSAL__CentralManager}{}\section{A\+R\+S\+A\+L\+\_\+\+Central\+Manager Class Reference}
+\label{interfaceARSAL__CentralManager}\index{A\+R\+S\+A\+L\+\_\+\+Central\+Manager@{A\+R\+S\+A\+L\+\_\+\+Central\+Manager}}
+
+
+{\ttfamily \#import $<$A\+R\+S\+A\+L\+\_\+\+Central\+Manager.\+h$>$}
+
+Inheritance diagram for A\+R\+S\+A\+L\+\_\+\+Central\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfaceARSAL__CentralManager}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interfaceARSAL__CentralManager_a33777e4ba7350c283985eb1543f66618}{init\+A\+R\+C\+B\+Central\+Manager\+:options\+:}
+\item 
+(id) -\/ \hyperlink{interfaceARSAL__CentralManager_a5f8453573494c372cf620f45a77aa3d4}{init\+With\+Queue\+:}
+\item 
+(id) -\/ \hyperlink{interfaceARSAL__CentralManager_a210798b430593e8dda10b720d05d0804}{init\+With\+Delegate\+:queue\+:options\+:}
+\item 
+(void) -\/ \hyperlink{interfaceARSAL__CentralManager_aa5f722e581a7b704675dacdca5f9bd5e}{add\+Delegate\+:}
+\item 
+(void) -\/ \hyperlink{interfaceARSAL__CentralManager_a8cf717c255f5228ced0c72c3b0c20ff9}{remove\+Delegate\+:}
+\item 
+(void) -\/ \hyperlink{interfaceARSAL__CentralManager_a4902ef59666d20f7964179a184435be8}{connect\+Peripheral\+:options\+:}
+\item 
+(void) -\/ \hyperlink{interfaceARSAL__CentralManager_a9e0a82a9de4683aab71c38aade16a2c2}{cancel\+Peripheral\+Connection\+:}
+\item 
+(void) -\/ \hyperlink{interfaceARSAL__CentralManager_a2db3036b3d65aee5d4d5c971685142ef}{scan\+For\+Peripherals\+With\+Services\+:options\+:}
+\item 
+(void) -\/ \hyperlink{interfaceARSAL__CentralManager_af249376b57f0da90f621e2218c649aa5}{stop\+Scan}
+\item 
+(N\+S\+Array $\ast$) -\/ \hyperlink{interfaceARSAL__CentralManager_ae7e88c2aefe924068d9930e560716559}{retrieve\+Connected\+Peripherals\+With\+Services\+:}
+\item 
+(N\+S\+Array $\ast$) -\/ \hyperlink{interfaceARSAL__CentralManager_a75908f30d71bc7cae87dbfdac97d1396}{retrieve\+Peripherals\+With\+Identifiers\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interfaceARSAL__CentralManager_aa5f722e581a7b704675dacdca5f9bd5e}{}\label{interfaceARSAL__CentralManager_aa5f722e581a7b704675dacdca5f9bd5e} 
+\index{A\+R\+S\+A\+L\+\_\+\+Central\+Manager@{A\+R\+S\+A\+L\+\_\+\+Central\+Manager}!add\+Delegate\+:@{add\+Delegate\+:}}
+\index{add\+Delegate\+:@{add\+Delegate\+:}!A\+R\+S\+A\+L\+\_\+\+Central\+Manager@{A\+R\+S\+A\+L\+\_\+\+Central\+Manager}}
+\subsubsection{\texorpdfstring{add\+Delegate\+:()}{addDelegate:()}}
+{\footnotesize\ttfamily -\/ (void) add\+Delegate\+: \begin{DoxyParamCaption}\item[{(id$<$ C\+B\+Central\+Manager\+Delegate $>$)}]{delegate }\end{DoxyParamCaption}}
+
+\hypertarget{interfaceARSAL__CentralManager_a9e0a82a9de4683aab71c38aade16a2c2}{}\label{interfaceARSAL__CentralManager_a9e0a82a9de4683aab71c38aade16a2c2} 
+\index{A\+R\+S\+A\+L\+\_\+\+Central\+Manager@{A\+R\+S\+A\+L\+\_\+\+Central\+Manager}!cancel\+Peripheral\+Connection\+:@{cancel\+Peripheral\+Connection\+:}}
+\index{cancel\+Peripheral\+Connection\+:@{cancel\+Peripheral\+Connection\+:}!A\+R\+S\+A\+L\+\_\+\+Central\+Manager@{A\+R\+S\+A\+L\+\_\+\+Central\+Manager}}
+\subsubsection{\texorpdfstring{cancel\+Peripheral\+Connection\+:()}{cancelPeripheralConnection:()}}
+{\footnotesize\ttfamily -\/ (void) cancel\+Peripheral\+Connection\+: \begin{DoxyParamCaption}\item[{(C\+B\+Peripheral $\ast$)}]{peripheral }\end{DoxyParamCaption}}
+
+\hypertarget{interfaceARSAL__CentralManager_a4902ef59666d20f7964179a184435be8}{}\label{interfaceARSAL__CentralManager_a4902ef59666d20f7964179a184435be8} 
+\index{A\+R\+S\+A\+L\+\_\+\+Central\+Manager@{A\+R\+S\+A\+L\+\_\+\+Central\+Manager}!connect\+Peripheral\+:options\+:@{connect\+Peripheral\+:options\+:}}
+\index{connect\+Peripheral\+:options\+:@{connect\+Peripheral\+:options\+:}!A\+R\+S\+A\+L\+\_\+\+Central\+Manager@{A\+R\+S\+A\+L\+\_\+\+Central\+Manager}}
+\subsubsection{\texorpdfstring{connect\+Peripheral\+:options\+:()}{connectPeripheral:options:()}}
+{\footnotesize\ttfamily -\/ (void) connect\+Peripheral\+: \begin{DoxyParamCaption}\item[{(C\+B\+Peripheral $\ast$)}]{peripheral }\item[{options:(N\+S\+Dictionary $\ast$)}]{options }\end{DoxyParamCaption}}
+
+\hypertarget{interfaceARSAL__CentralManager_a33777e4ba7350c283985eb1543f66618}{}\label{interfaceARSAL__CentralManager_a33777e4ba7350c283985eb1543f66618} 
+\index{A\+R\+S\+A\+L\+\_\+\+Central\+Manager@{A\+R\+S\+A\+L\+\_\+\+Central\+Manager}!init\+A\+R\+C\+B\+Central\+Manager\+:options\+:@{init\+A\+R\+C\+B\+Central\+Manager\+:options\+:}}
+\index{init\+A\+R\+C\+B\+Central\+Manager\+:options\+:@{init\+A\+R\+C\+B\+Central\+Manager\+:options\+:}!A\+R\+S\+A\+L\+\_\+\+Central\+Manager@{A\+R\+S\+A\+L\+\_\+\+Central\+Manager}}
+\subsubsection{\texorpdfstring{init\+A\+R\+C\+B\+Central\+Manager\+:options\+:()}{initARCBCentralManager:options:()}}
+{\footnotesize\ttfamily -\/ (void) init\+A\+R\+C\+B\+Central\+Manager\+: \begin{DoxyParamCaption}\item[{(dispatch\+\_\+queue\+\_\+t)}]{queue }\item[{options:(N\+S\+Dictionary $\ast$)}]{options }\end{DoxyParamCaption}}
+
+\hypertarget{interfaceARSAL__CentralManager_a210798b430593e8dda10b720d05d0804}{}\label{interfaceARSAL__CentralManager_a210798b430593e8dda10b720d05d0804} 
+\index{A\+R\+S\+A\+L\+\_\+\+Central\+Manager@{A\+R\+S\+A\+L\+\_\+\+Central\+Manager}!init\+With\+Delegate\+:queue\+:options\+:@{init\+With\+Delegate\+:queue\+:options\+:}}
+\index{init\+With\+Delegate\+:queue\+:options\+:@{init\+With\+Delegate\+:queue\+:options\+:}!A\+R\+S\+A\+L\+\_\+\+Central\+Manager@{A\+R\+S\+A\+L\+\_\+\+Central\+Manager}}
+\subsubsection{\texorpdfstring{init\+With\+Delegate\+:queue\+:options\+:()}{initWithDelegate:queue:options:()}}
+{\footnotesize\ttfamily -\/ (id) init\+With\+Delegate\+: \begin{DoxyParamCaption}\item[{(id$<$ C\+B\+Central\+Manager\+Delegate $>$)}]{delegate }\item[{queue:(dispatch\+\_\+queue\+\_\+t)}]{queue }\item[{options:(N\+S\+Dictionary $\ast$)}]{options }\end{DoxyParamCaption}}
+
+\hypertarget{interfaceARSAL__CentralManager_a5f8453573494c372cf620f45a77aa3d4}{}\label{interfaceARSAL__CentralManager_a5f8453573494c372cf620f45a77aa3d4} 
+\index{A\+R\+S\+A\+L\+\_\+\+Central\+Manager@{A\+R\+S\+A\+L\+\_\+\+Central\+Manager}!init\+With\+Queue\+:@{init\+With\+Queue\+:}}
+\index{init\+With\+Queue\+:@{init\+With\+Queue\+:}!A\+R\+S\+A\+L\+\_\+\+Central\+Manager@{A\+R\+S\+A\+L\+\_\+\+Central\+Manager}}
+\subsubsection{\texorpdfstring{init\+With\+Queue\+:()}{initWithQueue:()}}
+{\footnotesize\ttfamily -\/ (id) init\+With\+Queue\+: \begin{DoxyParamCaption}\item[{(dispatch\+\_\+queue\+\_\+t)}]{queue }\end{DoxyParamCaption}}
+
+\hypertarget{interfaceARSAL__CentralManager_a8cf717c255f5228ced0c72c3b0c20ff9}{}\label{interfaceARSAL__CentralManager_a8cf717c255f5228ced0c72c3b0c20ff9} 
+\index{A\+R\+S\+A\+L\+\_\+\+Central\+Manager@{A\+R\+S\+A\+L\+\_\+\+Central\+Manager}!remove\+Delegate\+:@{remove\+Delegate\+:}}
+\index{remove\+Delegate\+:@{remove\+Delegate\+:}!A\+R\+S\+A\+L\+\_\+\+Central\+Manager@{A\+R\+S\+A\+L\+\_\+\+Central\+Manager}}
+\subsubsection{\texorpdfstring{remove\+Delegate\+:()}{removeDelegate:()}}
+{\footnotesize\ttfamily -\/ (void) remove\+Delegate\+: \begin{DoxyParamCaption}\item[{(id$<$ C\+B\+Central\+Manager\+Delegate $>$)}]{delegate }\end{DoxyParamCaption}}
+
+\hypertarget{interfaceARSAL__CentralManager_ae7e88c2aefe924068d9930e560716559}{}\label{interfaceARSAL__CentralManager_ae7e88c2aefe924068d9930e560716559} 
+\index{A\+R\+S\+A\+L\+\_\+\+Central\+Manager@{A\+R\+S\+A\+L\+\_\+\+Central\+Manager}!retrieve\+Connected\+Peripherals\+With\+Services\+:@{retrieve\+Connected\+Peripherals\+With\+Services\+:}}
+\index{retrieve\+Connected\+Peripherals\+With\+Services\+:@{retrieve\+Connected\+Peripherals\+With\+Services\+:}!A\+R\+S\+A\+L\+\_\+\+Central\+Manager@{A\+R\+S\+A\+L\+\_\+\+Central\+Manager}}
+\subsubsection{\texorpdfstring{retrieve\+Connected\+Peripherals\+With\+Services\+:()}{retrieveConnectedPeripheralsWithServices:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+Array $\ast$) retrieve\+Connected\+Peripherals\+With\+Services\+: \begin{DoxyParamCaption}\item[{(N\+S\+Array $\ast$)}]{service\+U\+U\+I\+Ds }\end{DoxyParamCaption}}
+
+\hypertarget{interfaceARSAL__CentralManager_a75908f30d71bc7cae87dbfdac97d1396}{}\label{interfaceARSAL__CentralManager_a75908f30d71bc7cae87dbfdac97d1396} 
+\index{A\+R\+S\+A\+L\+\_\+\+Central\+Manager@{A\+R\+S\+A\+L\+\_\+\+Central\+Manager}!retrieve\+Peripherals\+With\+Identifiers\+:@{retrieve\+Peripherals\+With\+Identifiers\+:}}
+\index{retrieve\+Peripherals\+With\+Identifiers\+:@{retrieve\+Peripherals\+With\+Identifiers\+:}!A\+R\+S\+A\+L\+\_\+\+Central\+Manager@{A\+R\+S\+A\+L\+\_\+\+Central\+Manager}}
+\subsubsection{\texorpdfstring{retrieve\+Peripherals\+With\+Identifiers\+:()}{retrievePeripheralsWithIdentifiers:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+Array $\ast$) retrieve\+Peripherals\+With\+Identifiers\+: \begin{DoxyParamCaption}\item[{(N\+S\+Array $\ast$)}]{identifiers }\end{DoxyParamCaption}}
+
+\hypertarget{interfaceARSAL__CentralManager_a2db3036b3d65aee5d4d5c971685142ef}{}\label{interfaceARSAL__CentralManager_a2db3036b3d65aee5d4d5c971685142ef} 
+\index{A\+R\+S\+A\+L\+\_\+\+Central\+Manager@{A\+R\+S\+A\+L\+\_\+\+Central\+Manager}!scan\+For\+Peripherals\+With\+Services\+:options\+:@{scan\+For\+Peripherals\+With\+Services\+:options\+:}}
+\index{scan\+For\+Peripherals\+With\+Services\+:options\+:@{scan\+For\+Peripherals\+With\+Services\+:options\+:}!A\+R\+S\+A\+L\+\_\+\+Central\+Manager@{A\+R\+S\+A\+L\+\_\+\+Central\+Manager}}
+\subsubsection{\texorpdfstring{scan\+For\+Peripherals\+With\+Services\+:options\+:()}{scanForPeripheralsWithServices:options:()}}
+{\footnotesize\ttfamily -\/ (void) scan\+For\+Peripherals\+With\+Services\+: \begin{DoxyParamCaption}\item[{(N\+S\+Array $\ast$)}]{service\+U\+U\+I\+Ds }\item[{options:(N\+S\+Dictionary $\ast$)}]{options }\end{DoxyParamCaption}}
+
+\hypertarget{interfaceARSAL__CentralManager_af249376b57f0da90f621e2218c649aa5}{}\label{interfaceARSAL__CentralManager_af249376b57f0da90f621e2218c649aa5} 
+\index{A\+R\+S\+A\+L\+\_\+\+Central\+Manager@{A\+R\+S\+A\+L\+\_\+\+Central\+Manager}!stop\+Scan@{stop\+Scan}}
+\index{stop\+Scan@{stop\+Scan}!A\+R\+S\+A\+L\+\_\+\+Central\+Manager@{A\+R\+S\+A\+L\+\_\+\+Central\+Manager}}
+\subsubsection{\texorpdfstring{stop\+Scan()}{stopScan()}}
+{\footnotesize\ttfamily -\/ (void) stop\+Scan \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ARSAL__CentralManager_8h}{A\+R\+S\+A\+L\+\_\+\+Central\+Manager.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,246 @@
+\hypertarget{interfaceARSAL__BLEManager}{}\section{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager Class Reference}
+\label{interfaceARSAL__BLEManager}\index{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}}
+
+
+{\ttfamily \#import $<$A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager.\+h$>$}
+
+Inheritance diagram for A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.934370cm]{interfaceARSAL__BLEManager}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{ARSAL__Error_8h_a95978608019620b9d7e573ad874e5889}{e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR}) -\/ \hyperlink{interfaceARSAL__BLEManager_ad4f53997e9972a69ea5d33907f58a08c}{connect\+To\+Peripheral\+:with\+Central\+Manager\+:}
+\item 
+(void) -\/ \hyperlink{interfaceARSAL__BLEManager_a4bbebe90b27a85c42c2e24496b3ef87a}{disconnect\+Peripheral\+:with\+Central\+Manager\+:}
+\item 
+(\hyperlink{ARSAL__Error_8h_a95978608019620b9d7e573ad874e5889}{e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR}) -\/ \hyperlink{interfaceARSAL__BLEManager_afe64e431550c1a417f8c4bba8725e5cd}{discover\+Network\+Services\+:}
+\item 
+(\hyperlink{ARSAL__Error_8h_a95978608019620b9d7e573ad874e5889}{e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR}) -\/ \hyperlink{interfaceARSAL__BLEManager_ae0cdcbf690a6b37b5aa440338eedea3d}{discover\+Network\+Characteristics\+:for\+Service\+:}
+\item 
+(\hyperlink{ARSAL__Error_8h_a95978608019620b9d7e573ad874e5889}{e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR}) -\/ \hyperlink{interfaceARSAL__BLEManager_aff5bd57546b8e2e337d0d890749be942}{set\+Notification\+Characteristic\+:}
+\item 
+(B\+O\+OL) -\/ \hyperlink{interfaceARSAL__BLEManager_ae708dcfc73ba14001397bd7a9fabdef5}{write\+Data\+:to\+Characteristic\+:}
+\item 
+(\hyperlink{ARSAL__Error_8h_a95978608019620b9d7e573ad874e5889}{e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR}) -\/ \hyperlink{interfaceARSAL__BLEManager_a9215414f0744c885157a4f705469e482}{write\+Data\+With\+Response\+:to\+Characteristic\+:}
+\item 
+(B\+O\+OL) -\/ \hyperlink{interfaceARSAL__BLEManager_a456d597ceee1eb99c23ce9f8fe0b7fc1}{is\+Peripheral\+Connected}
+\item 
+(void) -\/ \hyperlink{interfaceARSAL__BLEManager_a2bfe42d81086019fc3f10c640a8ea14a}{register\+Notification\+Characteristics\+:to\+Key\+:}
+\item 
+(B\+O\+OL) -\/ \hyperlink{interfaceARSAL__BLEManager_a7ab976168376b677b14075f0d8f1d3cf}{unregister\+Notification\+Characteristics\+:}
+\item 
+(B\+O\+OL) -\/ \hyperlink{interfaceARSAL__BLEManager_ab9712e7ca6da641483664d1ebdfbc690}{cancel\+Read\+Notification\+:}
+\item 
+(B\+O\+OL) -\/ \hyperlink{interfaceARSAL__BLEManager_a35c00081083a3cf9716ebfc73adbaeec}{reset\+Read\+Notification\+:}
+\item 
+(\hyperlink{ARSAL__Error_8h_a95978608019620b9d7e573ad874e5889}{e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR}) -\/ \hyperlink{interfaceARSAL__BLEManager_a631ffa16a79854a57ebf744509038859}{read\+Notification\+Data\+:max\+Count\+:timeout\+:to\+Key\+:}
+\item 
+(void) -\/ \hyperlink{interfaceARSAL__BLEManager_aec8afef362675fb59e03aa2b81c39141}{read\+Data\+:}
+\item 
+(void) -\/ \hyperlink{interfaceARSAL__BLEManager_af90789b4d2eba4b84a886d689e9a0f56}{unlock}
+\item 
+(void) -\/ \hyperlink{interfaceARSAL__BLEManager_aa7bfd6655251871a975263ff249b2074}{reset}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+() -\/ \hyperlink{interfaceARSAL__BLEManager_aea5e1d03fac306f00ae920a87044020c}{D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+I\+N\+G\+L\+E\+T\+O\+N\+\_\+\+F\+O\+R\+\_\+\+C\+L\+A\+SS}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ARSAL__Sem_8h_a74eaf25f9acaab7ff185cb3c30ffda1c}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t} \hyperlink{interfaceARSAL__BLEManager_a48ce3c205ac6334199a7e0c264a2073d}{connection\+Sem}
+\item 
+\hyperlink{ARSAL__Sem_8h_a74eaf25f9acaab7ff185cb3c30ffda1c}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t} \hyperlink{interfaceARSAL__BLEManager_a57a0bed8439a2bac7c30f4ee3375daa4}{disconnection\+Sem}
+\item 
+\hyperlink{ARSAL__Sem_8h_a74eaf25f9acaab7ff185cb3c30ffda1c}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t} \hyperlink{interfaceARSAL__BLEManager_a088ad383094439d68a3c7b617f3e014b}{discover\+Services\+Sem}
+\item 
+\hyperlink{ARSAL__Sem_8h_a74eaf25f9acaab7ff185cb3c30ffda1c}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t} \hyperlink{interfaceARSAL__BLEManager_a5b4ed96218b90c022292e20047d90628}{discover\+Characteristics\+Sem}
+\item 
+\hyperlink{ARSAL__Sem_8h_a74eaf25f9acaab7ff185cb3c30ffda1c}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t} \hyperlink{interfaceARSAL__BLEManager_aa6c61e4bd4aba9777de160f538f28850}{write\+Characteristic\+Sem}
+\item 
+\hyperlink{ARSAL__Sem_8h_a74eaf25f9acaab7ff185cb3c30ffda1c}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t} \hyperlink{interfaceARSAL__BLEManager_ae3c5e30776574be97aa83842636f33f4}{configuration\+Sem}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+id$<$ A\+R\+S\+A\+L\+B\+L\+E\+Manager\+Delegate $>$ \hyperlink{interfaceARSAL__BLEManager_aead3a29e0e0fc9a1dff3bb3f9474dca3}{delegate}
+\item 
+C\+B\+Peripheral $\ast$ \hyperlink{interfaceARSAL__BLEManager_a2f71424c0b4e400656bdde9be78ad741}{active\+Peripheral}
+\item 
+N\+S\+Mutable\+Array $\ast$ \hyperlink{interfaceARSAL__BLEManager_ae326962fee96bf58f374fb7d4f3d2260}{characteristics\+Notifications}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interfaceARSAL__BLEManager_ab9712e7ca6da641483664d1ebdfbc690}{}\label{interfaceARSAL__BLEManager_ab9712e7ca6da641483664d1ebdfbc690} 
+\index{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}!cancel\+Read\+Notification\+:@{cancel\+Read\+Notification\+:}}
+\index{cancel\+Read\+Notification\+:@{cancel\+Read\+Notification\+:}!A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}}
+\subsubsection{\texorpdfstring{cancel\+Read\+Notification\+:()}{cancelReadNotification:()}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) cancel\+Read\+Notification\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{read\+Characteristics\+Key }\end{DoxyParamCaption}}
+
+\hypertarget{interfaceARSAL__BLEManager_ad4f53997e9972a69ea5d33907f58a08c}{}\label{interfaceARSAL__BLEManager_ad4f53997e9972a69ea5d33907f58a08c} 
+\index{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}!connect\+To\+Peripheral\+:with\+Central\+Manager\+:@{connect\+To\+Peripheral\+:with\+Central\+Manager\+:}}
+\index{connect\+To\+Peripheral\+:with\+Central\+Manager\+:@{connect\+To\+Peripheral\+:with\+Central\+Manager\+:}!A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}}
+\subsubsection{\texorpdfstring{connect\+To\+Peripheral\+:with\+Central\+Manager\+:()}{connectToPeripheral:withCentralManager:()}}
+{\footnotesize\ttfamily -\/ (\hyperlink{ARSAL__Error_8h_a95978608019620b9d7e573ad874e5889}{e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR}) connect\+To\+Peripheral\+: \begin{DoxyParamCaption}\item[{(C\+B\+Peripheral $\ast$)}]{peripheral }\item[{withCentralManager:(\hyperlink{interfaceARSAL__CentralManager}{A\+R\+S\+A\+L\+\_\+\+Central\+Manager} $\ast$)}]{central\+Manager }\end{DoxyParamCaption}}
+
+\hypertarget{interfaceARSAL__BLEManager_aea5e1d03fac306f00ae920a87044020c}{}\label{interfaceARSAL__BLEManager_aea5e1d03fac306f00ae920a87044020c} 
+\index{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}!D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+I\+N\+G\+L\+E\+T\+O\+N\+\_\+\+F\+O\+R\+\_\+\+C\+L\+A\+SS@{D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+I\+N\+G\+L\+E\+T\+O\+N\+\_\+\+F\+O\+R\+\_\+\+C\+L\+A\+SS}}
+\index{D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+I\+N\+G\+L\+E\+T\+O\+N\+\_\+\+F\+O\+R\+\_\+\+C\+L\+A\+SS@{D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+I\+N\+G\+L\+E\+T\+O\+N\+\_\+\+F\+O\+R\+\_\+\+C\+L\+A\+SS}!A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}}
+\subsubsection{\texorpdfstring{D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+I\+N\+G\+L\+E\+T\+O\+N\+\_\+\+F\+O\+R\+\_\+\+C\+L\+A\+S\+S()}{DECLARE\_SINGLETON\_FOR\_CLASS()}}
+{\footnotesize\ttfamily -\/ D\+E\+C\+L\+A\+R\+E\+\_\+\+S\+I\+N\+G\+L\+E\+T\+O\+N\+\_\+\+F\+O\+R\+\_\+\+C\+L\+A\+SS \begin{DoxyParamCaption}\item[{(\hyperlink{interfaceARSAL__BLEManager}{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager})}]{ }\end{DoxyParamCaption}}
+
+\hypertarget{interfaceARSAL__BLEManager_a4bbebe90b27a85c42c2e24496b3ef87a}{}\label{interfaceARSAL__BLEManager_a4bbebe90b27a85c42c2e24496b3ef87a} 
+\index{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}!disconnect\+Peripheral\+:with\+Central\+Manager\+:@{disconnect\+Peripheral\+:with\+Central\+Manager\+:}}
+\index{disconnect\+Peripheral\+:with\+Central\+Manager\+:@{disconnect\+Peripheral\+:with\+Central\+Manager\+:}!A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}}
+\subsubsection{\texorpdfstring{disconnect\+Peripheral\+:with\+Central\+Manager\+:()}{disconnectPeripheral:withCentralManager:()}}
+{\footnotesize\ttfamily -\/ (void) disconnect\+Peripheral\+: \begin{DoxyParamCaption}\item[{(C\+B\+Peripheral $\ast$)}]{peripheral }\item[{withCentralManager:(\hyperlink{interfaceARSAL__CentralManager}{A\+R\+S\+A\+L\+\_\+\+Central\+Manager} $\ast$)}]{central\+Manager }\end{DoxyParamCaption}}
+
+\hypertarget{interfaceARSAL__BLEManager_ae0cdcbf690a6b37b5aa440338eedea3d}{}\label{interfaceARSAL__BLEManager_ae0cdcbf690a6b37b5aa440338eedea3d} 
+\index{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}!discover\+Network\+Characteristics\+:for\+Service\+:@{discover\+Network\+Characteristics\+:for\+Service\+:}}
+\index{discover\+Network\+Characteristics\+:for\+Service\+:@{discover\+Network\+Characteristics\+:for\+Service\+:}!A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}}
+\subsubsection{\texorpdfstring{discover\+Network\+Characteristics\+:for\+Service\+:()}{discoverNetworkCharacteristics:forService:()}}
+{\footnotesize\ttfamily -\/ (\hyperlink{ARSAL__Error_8h_a95978608019620b9d7e573ad874e5889}{e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR}) discover\+Network\+Characteristics\+: \begin{DoxyParamCaption}\item[{(N\+S\+Array $\ast$)}]{characteristics\+U\+U\+I\+Ds }\item[{forService:(C\+B\+Service $\ast$)}]{service }\end{DoxyParamCaption}}
+
+\hypertarget{interfaceARSAL__BLEManager_afe64e431550c1a417f8c4bba8725e5cd}{}\label{interfaceARSAL__BLEManager_afe64e431550c1a417f8c4bba8725e5cd} 
+\index{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}!discover\+Network\+Services\+:@{discover\+Network\+Services\+:}}
+\index{discover\+Network\+Services\+:@{discover\+Network\+Services\+:}!A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}}
+\subsubsection{\texorpdfstring{discover\+Network\+Services\+:()}{discoverNetworkServices:()}}
+{\footnotesize\ttfamily -\/ (\hyperlink{ARSAL__Error_8h_a95978608019620b9d7e573ad874e5889}{e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR}) discover\+Network\+Services\+: \begin{DoxyParamCaption}\item[{(N\+S\+Array $\ast$)}]{services\+U\+U\+I\+Ds }\end{DoxyParamCaption}}
+
+\hypertarget{interfaceARSAL__BLEManager_a456d597ceee1eb99c23ce9f8fe0b7fc1}{}\label{interfaceARSAL__BLEManager_a456d597ceee1eb99c23ce9f8fe0b7fc1} 
+\index{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}!is\+Peripheral\+Connected@{is\+Peripheral\+Connected}}
+\index{is\+Peripheral\+Connected@{is\+Peripheral\+Connected}!A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}}
+\subsubsection{\texorpdfstring{is\+Peripheral\+Connected()}{isPeripheralConnected()}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) is\+Peripheral\+Connected \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\hypertarget{interfaceARSAL__BLEManager_aec8afef362675fb59e03aa2b81c39141}{}\label{interfaceARSAL__BLEManager_aec8afef362675fb59e03aa2b81c39141} 
+\index{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}!read\+Data\+:@{read\+Data\+:}}
+\index{read\+Data\+:@{read\+Data\+:}!A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}}
+\subsubsection{\texorpdfstring{read\+Data\+:()}{readData:()}}
+{\footnotesize\ttfamily -\/ (void) read\+Data\+: \begin{DoxyParamCaption}\item[{(C\+B\+Characteristic $\ast$)}]{characteristic }\end{DoxyParamCaption}}
+
+\hypertarget{interfaceARSAL__BLEManager_a631ffa16a79854a57ebf744509038859}{}\label{interfaceARSAL__BLEManager_a631ffa16a79854a57ebf744509038859} 
+\index{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}!read\+Notification\+Data\+:max\+Count\+:timeout\+:to\+Key\+:@{read\+Notification\+Data\+:max\+Count\+:timeout\+:to\+Key\+:}}
+\index{read\+Notification\+Data\+:max\+Count\+:timeout\+:to\+Key\+:@{read\+Notification\+Data\+:max\+Count\+:timeout\+:to\+Key\+:}!A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}}
+\subsubsection{\texorpdfstring{read\+Notification\+Data\+:max\+Count\+:timeout\+:to\+Key\+:()}{readNotificationData:maxCount:timeout:toKey:()}}
+{\footnotesize\ttfamily -\/ (\hyperlink{ARSAL__Error_8h_a95978608019620b9d7e573ad874e5889}{e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR}) read\+Notification\+Data\+: \begin{DoxyParamCaption}\item[{(N\+S\+Mutable\+Array $\ast$)}]{notification\+Array }\item[{maxCount:(int)}]{max\+Count }\item[{timeout:(N\+S\+Number $\ast$)}]{timeout }\item[{toKey:(N\+S\+String $\ast$)}]{read\+Characteristics\+Key }\end{DoxyParamCaption}}
+
+\hypertarget{interfaceARSAL__BLEManager_a2bfe42d81086019fc3f10c640a8ea14a}{}\label{interfaceARSAL__BLEManager_a2bfe42d81086019fc3f10c640a8ea14a} 
+\index{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}!register\+Notification\+Characteristics\+:to\+Key\+:@{register\+Notification\+Characteristics\+:to\+Key\+:}}
+\index{register\+Notification\+Characteristics\+:to\+Key\+:@{register\+Notification\+Characteristics\+:to\+Key\+:}!A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}}
+\subsubsection{\texorpdfstring{register\+Notification\+Characteristics\+:to\+Key\+:()}{registerNotificationCharacteristics:toKey:()}}
+{\footnotesize\ttfamily -\/ (void) register\+Notification\+Characteristics\+: \begin{DoxyParamCaption}\item[{(N\+S\+Array $\ast$)}]{characteristics\+Array }\item[{toKey:(N\+S\+String $\ast$)}]{read\+Characteristics\+Key }\end{DoxyParamCaption}}
+
+\hypertarget{interfaceARSAL__BLEManager_aa7bfd6655251871a975263ff249b2074}{}\label{interfaceARSAL__BLEManager_aa7bfd6655251871a975263ff249b2074} 
+\index{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}!reset@{reset}}
+\index{reset@{reset}!A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily -\/ (void) reset \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\hypertarget{interfaceARSAL__BLEManager_a35c00081083a3cf9716ebfc73adbaeec}{}\label{interfaceARSAL__BLEManager_a35c00081083a3cf9716ebfc73adbaeec} 
+\index{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}!reset\+Read\+Notification\+:@{reset\+Read\+Notification\+:}}
+\index{reset\+Read\+Notification\+:@{reset\+Read\+Notification\+:}!A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}}
+\subsubsection{\texorpdfstring{reset\+Read\+Notification\+:()}{resetReadNotification:()}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) reset\+Read\+Notification\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{read\+Characteristics\+Key }\end{DoxyParamCaption}}
+
+\hypertarget{interfaceARSAL__BLEManager_aff5bd57546b8e2e337d0d890749be942}{}\label{interfaceARSAL__BLEManager_aff5bd57546b8e2e337d0d890749be942} 
+\index{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}!set\+Notification\+Characteristic\+:@{set\+Notification\+Characteristic\+:}}
+\index{set\+Notification\+Characteristic\+:@{set\+Notification\+Characteristic\+:}!A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}}
+\subsubsection{\texorpdfstring{set\+Notification\+Characteristic\+:()}{setNotificationCharacteristic:()}}
+{\footnotesize\ttfamily -\/ (\hyperlink{ARSAL__Error_8h_a95978608019620b9d7e573ad874e5889}{e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR}) set\+Notification\+Characteristic\+: \begin{DoxyParamCaption}\item[{(C\+B\+Characteristic $\ast$)}]{characteristic }\end{DoxyParamCaption}}
+
+\hypertarget{interfaceARSAL__BLEManager_af90789b4d2eba4b84a886d689e9a0f56}{}\label{interfaceARSAL__BLEManager_af90789b4d2eba4b84a886d689e9a0f56} 
+\index{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}!unlock@{unlock}}
+\index{unlock@{unlock}!A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}}
+\subsubsection{\texorpdfstring{unlock()}{unlock()}}
+{\footnotesize\ttfamily -\/ (void) unlock \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\hypertarget{interfaceARSAL__BLEManager_a7ab976168376b677b14075f0d8f1d3cf}{}\label{interfaceARSAL__BLEManager_a7ab976168376b677b14075f0d8f1d3cf} 
+\index{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}!unregister\+Notification\+Characteristics\+:@{unregister\+Notification\+Characteristics\+:}}
+\index{unregister\+Notification\+Characteristics\+:@{unregister\+Notification\+Characteristics\+:}!A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}}
+\subsubsection{\texorpdfstring{unregister\+Notification\+Characteristics\+:()}{unregisterNotificationCharacteristics:()}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) unregister\+Notification\+Characteristics\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{read\+Characteristics\+Key }\end{DoxyParamCaption}}
+
+\hypertarget{interfaceARSAL__BLEManager_ae708dcfc73ba14001397bd7a9fabdef5}{}\label{interfaceARSAL__BLEManager_ae708dcfc73ba14001397bd7a9fabdef5} 
+\index{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}!write\+Data\+:to\+Characteristic\+:@{write\+Data\+:to\+Characteristic\+:}}
+\index{write\+Data\+:to\+Characteristic\+:@{write\+Data\+:to\+Characteristic\+:}!A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}}
+\subsubsection{\texorpdfstring{write\+Data\+:to\+Characteristic\+:()}{writeData:toCharacteristic:()}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) write\+Data\+: \begin{DoxyParamCaption}\item[{(N\+S\+Data $\ast$)}]{data }\item[{toCharacteristic:(C\+B\+Characteristic $\ast$)}]{characteristic }\end{DoxyParamCaption}}
+
+\hypertarget{interfaceARSAL__BLEManager_a9215414f0744c885157a4f705469e482}{}\label{interfaceARSAL__BLEManager_a9215414f0744c885157a4f705469e482} 
+\index{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}!write\+Data\+With\+Response\+:to\+Characteristic\+:@{write\+Data\+With\+Response\+:to\+Characteristic\+:}}
+\index{write\+Data\+With\+Response\+:to\+Characteristic\+:@{write\+Data\+With\+Response\+:to\+Characteristic\+:}!A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}}
+\subsubsection{\texorpdfstring{write\+Data\+With\+Response\+:to\+Characteristic\+:()}{writeDataWithResponse:toCharacteristic:()}}
+{\footnotesize\ttfamily -\/ (\hyperlink{ARSAL__Error_8h_a95978608019620b9d7e573ad874e5889}{e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR}) write\+Data\+With\+Response\+: \begin{DoxyParamCaption}\item[{(N\+S\+Data $\ast$)}]{data }\item[{toCharacteristic:(C\+B\+Characteristic $\ast$)}]{characteristic }\end{DoxyParamCaption}}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{interfaceARSAL__BLEManager_ae3c5e30776574be97aa83842636f33f4}{}\label{interfaceARSAL__BLEManager_ae3c5e30776574be97aa83842636f33f4} 
+\index{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}!configuration\+Sem@{configuration\+Sem}}
+\index{configuration\+Sem@{configuration\+Sem}!A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}}
+\subsubsection{\texorpdfstring{configuration\+Sem}{configurationSem}}
+{\footnotesize\ttfamily -\/ (\hyperlink{ARSAL__Sem_8h_a74eaf25f9acaab7ff185cb3c30ffda1c}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t}) configuration\+Sem\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{interfaceARSAL__BLEManager_a48ce3c205ac6334199a7e0c264a2073d}{}\label{interfaceARSAL__BLEManager_a48ce3c205ac6334199a7e0c264a2073d} 
+\index{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}!connection\+Sem@{connection\+Sem}}
+\index{connection\+Sem@{connection\+Sem}!A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}}
+\subsubsection{\texorpdfstring{connection\+Sem}{connectionSem}}
+{\footnotesize\ttfamily -\/ (\hyperlink{ARSAL__Sem_8h_a74eaf25f9acaab7ff185cb3c30ffda1c}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t}) connection\+Sem\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{interfaceARSAL__BLEManager_a57a0bed8439a2bac7c30f4ee3375daa4}{}\label{interfaceARSAL__BLEManager_a57a0bed8439a2bac7c30f4ee3375daa4} 
+\index{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}!disconnection\+Sem@{disconnection\+Sem}}
+\index{disconnection\+Sem@{disconnection\+Sem}!A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}}
+\subsubsection{\texorpdfstring{disconnection\+Sem}{disconnectionSem}}
+{\footnotesize\ttfamily -\/ (\hyperlink{ARSAL__Sem_8h_a74eaf25f9acaab7ff185cb3c30ffda1c}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t}) disconnection\+Sem\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{interfaceARSAL__BLEManager_a5b4ed96218b90c022292e20047d90628}{}\label{interfaceARSAL__BLEManager_a5b4ed96218b90c022292e20047d90628} 
+\index{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}!discover\+Characteristics\+Sem@{discover\+Characteristics\+Sem}}
+\index{discover\+Characteristics\+Sem@{discover\+Characteristics\+Sem}!A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}}
+\subsubsection{\texorpdfstring{discover\+Characteristics\+Sem}{discoverCharacteristicsSem}}
+{\footnotesize\ttfamily -\/ (\hyperlink{ARSAL__Sem_8h_a74eaf25f9acaab7ff185cb3c30ffda1c}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t}) discover\+Characteristics\+Sem\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{interfaceARSAL__BLEManager_a088ad383094439d68a3c7b617f3e014b}{}\label{interfaceARSAL__BLEManager_a088ad383094439d68a3c7b617f3e014b} 
+\index{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}!discover\+Services\+Sem@{discover\+Services\+Sem}}
+\index{discover\+Services\+Sem@{discover\+Services\+Sem}!A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}}
+\subsubsection{\texorpdfstring{discover\+Services\+Sem}{discoverServicesSem}}
+{\footnotesize\ttfamily -\/ (\hyperlink{ARSAL__Sem_8h_a74eaf25f9acaab7ff185cb3c30ffda1c}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t}) discover\+Services\+Sem\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{interfaceARSAL__BLEManager_aa6c61e4bd4aba9777de160f538f28850}{}\label{interfaceARSAL__BLEManager_aa6c61e4bd4aba9777de160f538f28850} 
+\index{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}!write\+Characteristic\+Sem@{write\+Characteristic\+Sem}}
+\index{write\+Characteristic\+Sem@{write\+Characteristic\+Sem}!A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}}
+\subsubsection{\texorpdfstring{write\+Characteristic\+Sem}{writeCharacteristicSem}}
+{\footnotesize\ttfamily -\/ (\hyperlink{ARSAL__Sem_8h_a74eaf25f9acaab7ff185cb3c30ffda1c}{A\+R\+S\+A\+L\+\_\+\+Sem\+\_\+t}) write\+Characteristic\+Sem\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\subsection{Property Documentation}
+\hypertarget{interfaceARSAL__BLEManager_a2f71424c0b4e400656bdde9be78ad741}{}\label{interfaceARSAL__BLEManager_a2f71424c0b4e400656bdde9be78ad741} 
+\index{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}!active\+Peripheral@{active\+Peripheral}}
+\index{active\+Peripheral@{active\+Peripheral}!A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}}
+\subsubsection{\texorpdfstring{active\+Peripheral}{activePeripheral}}
+{\footnotesize\ttfamily -\/ (C\+B\+Peripheral$\ast$) active\+Peripheral\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}
+
+\hypertarget{interfaceARSAL__BLEManager_ae326962fee96bf58f374fb7d4f3d2260}{}\label{interfaceARSAL__BLEManager_ae326962fee96bf58f374fb7d4f3d2260} 
+\index{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}!characteristics\+Notifications@{characteristics\+Notifications}}
+\index{characteristics\+Notifications@{characteristics\+Notifications}!A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}}
+\subsubsection{\texorpdfstring{characteristics\+Notifications}{characteristicsNotifications}}
+{\footnotesize\ttfamily -\/ (N\+S\+Mutable\+Array$\ast$) characteristics\+Notifications\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}
+
+\hypertarget{interfaceARSAL__BLEManager_aead3a29e0e0fc9a1dff3bb3f9474dca3}{}\label{interfaceARSAL__BLEManager_aead3a29e0e0fc9a1dff3bb3f9474dca3} 
+\index{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}!delegate@{delegate}}
+\index{delegate@{delegate}!A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager@{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager}}
+\subsubsection{\texorpdfstring{delegate}{delegate}}
+{\footnotesize\ttfamily -\/ (id$<$A\+R\+S\+A\+L\+B\+L\+E\+Manager\+Delegate$>$) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ARSAL__BLEManager_8h}{A\+R\+S\+A\+L\+\_\+\+B\+L\+E\+Manager.\+h}\end{DoxyCompactItemize}

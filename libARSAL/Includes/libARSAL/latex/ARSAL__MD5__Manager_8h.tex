@@ -1,0 +1,277 @@
+\hypertarget{ARSAL__MD5__Manager_8h}{}\section{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h File Reference}
+\label{ARSAL__MD5__Manager_8h}\index{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h}}
+{\ttfamily \#include \char`\"{}lib\+A\+R\+S\+A\+L/\+A\+R\+S\+A\+L\+\_\+\+Error.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__ARSAL__MD5__Manager__t}{\+\_\+\+A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+t}
+\begin{DoxyCompactList}\small\item\em M\+D5 Manager structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{ARSAL__MD5__Manager_8h_a20cd5e7cc3a4c909d31c1675f17d63c2}{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+L\+E\+N\+G\+TH}~16
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{ARSAL__Error_8h_a95978608019620b9d7e573ad874e5889}{e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR}($\ast$ \hyperlink{ARSAL__MD5__Manager_8h_a9d339be5253d570951ae10577a025ffb}{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Check\+\_\+t}) (void $\ast$md5\+Object, const char $\ast$file\+Path, const char $\ast$md5)
+\begin{DoxyCompactList}\small\item\em Check an M\+D5. \end{DoxyCompactList}\item 
+typedef \hyperlink{ARSAL__Error_8h_a95978608019620b9d7e573ad874e5889}{e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR}($\ast$ \hyperlink{ARSAL__MD5__Manager_8h_a00c03c049421c441ea68281f98638c15}{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Compute\+\_\+t}) (void $\ast$md5\+Object, const char $\ast$file\+Path, uint8\+\_\+t $\ast$md5, int md5\+Len)
+\begin{DoxyCompactList}\small\item\em Compute an M\+D5. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct__ARSAL__MD5__Manager__t}{\+\_\+\+A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+t} \hyperlink{ARSAL__MD5__Manager_8h_a016766b406c58d2b7f2d6eff4bbeb65c}{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+t}
+\begin{DoxyCompactList}\small\item\em M\+D5 Manager structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ARSAL__MD5__Manager_8h_a016766b406c58d2b7f2d6eff4bbeb65c}{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+t} $\ast$ \hyperlink{ARSAL__MD5__Manager_8h_a0655574844475019002ec7a10c0d68be}{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+New} (\hyperlink{ARSAL__Error_8h_a95978608019620b9d7e573ad874e5889}{e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR} $\ast$error)
+\begin{DoxyCompactList}\small\item\em Create a new A\+R\+S\+AL M\+D5 Manager. \end{DoxyCompactList}\item 
+void \hyperlink{ARSAL__MD5__Manager_8h_ac906a6578240163ff7db6c3a90d65814}{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Delete} (\hyperlink{ARSAL__MD5__Manager_8h_a016766b406c58d2b7f2d6eff4bbeb65c}{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+t} $\ast$$\ast$manager\+Addr)
+\begin{DoxyCompactList}\small\item\em Delete an A\+R\+S\+AL M\+D5 Manager. \end{DoxyCompactList}\item 
+\hyperlink{ARSAL__Error_8h_a95978608019620b9d7e573ad874e5889}{e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR} \hyperlink{ARSAL__MD5__Manager_8h_ad1dfea64c506a9687561d4086e78570a}{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Init} (\hyperlink{ARSAL__MD5__Manager_8h_a016766b406c58d2b7f2d6eff4bbeb65c}{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+t} $\ast$manager)
+\begin{DoxyCompactList}\small\item\em Initialize an A\+R\+S\+AL M\+D5 Manager. \end{DoxyCompactList}\item 
+void \hyperlink{ARSAL__MD5__Manager_8h_a8f4ef6da24327f4032e7d24c934dfc8d}{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Close} (\hyperlink{ARSAL__MD5__Manager_8h_a016766b406c58d2b7f2d6eff4bbeb65c}{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+t} $\ast$manager)
+\begin{DoxyCompactList}\small\item\em Close an A\+R\+S\+AL M\+D5 Manager. \end{DoxyCompactList}\item 
+\hyperlink{ARSAL__Error_8h_a95978608019620b9d7e573ad874e5889}{e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR} \hyperlink{ARSAL__MD5__Manager_8h_afe090d4e2a7a6a0fdb86fb983f10951e}{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Check} (\hyperlink{ARSAL__MD5__Manager_8h_a016766b406c58d2b7f2d6eff4bbeb65c}{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+t} $\ast$manager, const char $\ast$file\+Path, const char $\ast$md5\+Txt)
+\begin{DoxyCompactList}\small\item\em Check an M\+D5. \end{DoxyCompactList}\item 
+\hyperlink{ARSAL__Error_8h_a95978608019620b9d7e573ad874e5889}{e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR} \hyperlink{ARSAL__MD5__Manager_8h_aa1d1296941d28380f3c60d53ec5ef112}{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Compute} (\hyperlink{ARSAL__MD5__Manager_8h_a016766b406c58d2b7f2d6eff4bbeb65c}{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+t} $\ast$manager, const char $\ast$file\+Path, uint8\+\_\+t $\ast$md5, int md5\+Size)
+\begin{DoxyCompactList}\small\item\em Compute an M\+D5. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{ARSAL__MD5__Manager_8h_a20cd5e7cc3a4c909d31c1675f17d63c2}{}\label{ARSAL__MD5__Manager_8h_a20cd5e7cc3a4c909d31c1675f17d63c2} 
+\index{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h}!A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+L\+E\+N\+G\+TH@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+L\+E\+N\+G\+TH}}
+\index{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+L\+E\+N\+G\+TH@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+L\+E\+N\+G\+TH}!A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+L\+E\+N\+G\+TH}{ARSAL\_MD5\_LENGTH}}
+{\footnotesize\ttfamily \#define A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+L\+E\+N\+G\+TH~16}
+
+
+
+\subsection{Typedef Documentation}
+\hypertarget{ARSAL__MD5__Manager_8h_a9d339be5253d570951ae10577a025ffb}{}\label{ARSAL__MD5__Manager_8h_a9d339be5253d570951ae10577a025ffb} 
+\index{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h}!A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Check\+\_\+t@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Check\+\_\+t}}
+\index{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Check\+\_\+t@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Check\+\_\+t}!A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Check\+\_\+t}{ARSAL\_MD5\_Check\_t}}
+{\footnotesize\ttfamily typedef \hyperlink{ARSAL__Error_8h_a95978608019620b9d7e573ad874e5889}{e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR}($\ast$ A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Check\+\_\+t) (void $\ast$md5\+Object, const char $\ast$file\+Path, const char $\ast$md5)}
+
+
+
+Check an M\+D5. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & The file path onto check its md5 \\
+\hline
+{\em md5} & The md5 string \\
+\hline
+{\em md5\+Len} & md5 string length \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em On} & success, returns A\+R\+S\+A\+L\+\_\+\+OK. Otherwise, it returns an error number of e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ARSAL__MD5__Manager_8h_ad1dfea64c506a9687561d4086e78570a}{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Init} () 
+\end{DoxySeeAlso}
+\hypertarget{ARSAL__MD5__Manager_8h_a00c03c049421c441ea68281f98638c15}{}\label{ARSAL__MD5__Manager_8h_a00c03c049421c441ea68281f98638c15} 
+\index{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h}!A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Compute\+\_\+t@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Compute\+\_\+t}}
+\index{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Compute\+\_\+t@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Compute\+\_\+t}!A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Compute\+\_\+t}{ARSAL\_MD5\_Compute\_t}}
+{\footnotesize\ttfamily typedef \hyperlink{ARSAL__Error_8h_a95978608019620b9d7e573ad874e5889}{e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR}($\ast$ A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Compute\+\_\+t) (void $\ast$md5\+Object, const char $\ast$file\+Path, uint8\+\_\+t $\ast$md5, int md5\+Len)}
+
+
+
+Compute an M\+D5. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em file\+Path} & The file path onto check its md5 \\
+\hline
+\mbox{\tt out}  & {\em md5} & The md5 string to receive the md5 \\
+\hline
+ & {\em md5\+Len} & md5 string buffer length \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em On} & success, returns A\+R\+S\+A\+L\+\_\+\+OK. Otherwise, it returns an error number of e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ARSAL__MD5__Manager_8h_ad1dfea64c506a9687561d4086e78570a}{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Init} () 
+\end{DoxySeeAlso}
+\hypertarget{ARSAL__MD5__Manager_8h_a016766b406c58d2b7f2d6eff4bbeb65c}{}\label{ARSAL__MD5__Manager_8h_a016766b406c58d2b7f2d6eff4bbeb65c} 
+\index{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h}!A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+t@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+t}}
+\index{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+t@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+t}!A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+t}{ARSAL\_MD5\_Manager\_t}}
+{\footnotesize\ttfamily typedef struct \hyperlink{struct__ARSAL__MD5__Manager__t}{\+\_\+\+A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+t}  \hyperlink{ARSAL__MD5__Manager_8h_a016766b406c58d2b7f2d6eff4bbeb65c}{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+t}}
+
+
+
+M\+D5 Manager structure. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em md5\+Check} & The Check function \\
+\hline
+{\em md5\+Compute} & The Compute function \\
+\hline
+{\em md5\+Object} & The md5 object \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ARSAL__MD5__Manager_8h_a0655574844475019002ec7a10c0d68be}{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+New} 
+\end{DoxySeeAlso}
+
+
+\subsection{Function Documentation}
+\hypertarget{ARSAL__MD5__Manager_8h_afe090d4e2a7a6a0fdb86fb983f10951e}{}\label{ARSAL__MD5__Manager_8h_afe090d4e2a7a6a0fdb86fb983f10951e} 
+\index{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h}!A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Check@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Check}}
+\index{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Check@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Check}!A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Check()}{ARSAL\_MD5\_Manager\_Check()}}
+{\footnotesize\ttfamily \hyperlink{ARSAL__Error_8h_a95978608019620b9d7e573ad874e5889}{e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR} A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Check (\begin{DoxyParamCaption}\item[{\hyperlink{ARSAL__MD5__Manager_8h_a016766b406c58d2b7f2d6eff4bbeb65c}{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+t} $\ast$}]{manager,  }\item[{const char $\ast$}]{file\+Path,  }\item[{const char $\ast$}]{md5\+Txt }\end{DoxyParamCaption})}
+
+
+
+Check an M\+D5. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em manager} & The M\+D5 Manager \\
+\hline
+{\em file\+Path} & The file path onto check its md5 \\
+\hline
+{\em md5} & The md5 string \\
+\hline
+{\em md5\+Len} & md5 string length \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em On} & success, returns A\+R\+S\+A\+L\+\_\+\+OK. Otherwise, it returns an error number of e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ARSAL__MD5__Manager_8h_a0655574844475019002ec7a10c0d68be}{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+New} () 
+\end{DoxySeeAlso}
+\hypertarget{ARSAL__MD5__Manager_8h_a8f4ef6da24327f4032e7d24c934dfc8d}{}\label{ARSAL__MD5__Manager_8h_a8f4ef6da24327f4032e7d24c934dfc8d} 
+\index{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h}!A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Close@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Close}}
+\index{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Close@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Close}!A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Close()}{ARSAL\_MD5\_Manager\_Close()}}
+{\footnotesize\ttfamily void A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Close (\begin{DoxyParamCaption}\item[{\hyperlink{ARSAL__MD5__Manager_8h_a016766b406c58d2b7f2d6eff4bbeb65c}{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+t} $\ast$}]{manager }\end{DoxyParamCaption})}
+
+
+
+Close an A\+R\+S\+AL M\+D5 Manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em manager} & The M\+D5 Manager \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em On} & success, returns A\+R\+S\+A\+L\+\_\+\+OK. Otherwise, it returns an error number of e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ARSAL__MD5__Manager_8h_ad1dfea64c506a9687561d4086e78570a}{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Init} () 
+\end{DoxySeeAlso}
+\hypertarget{ARSAL__MD5__Manager_8h_aa1d1296941d28380f3c60d53ec5ef112}{}\label{ARSAL__MD5__Manager_8h_aa1d1296941d28380f3c60d53ec5ef112} 
+\index{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h}!A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Compute@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Compute}}
+\index{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Compute@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Compute}!A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Compute()}{ARSAL\_MD5\_Manager\_Compute()}}
+{\footnotesize\ttfamily \hyperlink{ARSAL__Error_8h_a95978608019620b9d7e573ad874e5889}{e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR} A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Compute (\begin{DoxyParamCaption}\item[{\hyperlink{ARSAL__MD5__Manager_8h_a016766b406c58d2b7f2d6eff4bbeb65c}{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+t} $\ast$}]{manager,  }\item[{const char $\ast$}]{file\+Path,  }\item[{uint8\+\_\+t $\ast$}]{md5,  }\item[{int}]{md5\+Size }\end{DoxyParamCaption})}
+
+
+
+Compute an M\+D5. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em manager} & The M\+D5 Manager \\
+\hline
+ & {\em file\+Path} & The file path onto check its md5 \\
+\hline
+\mbox{\tt out}  & {\em md5} & The md5 string to receive the md5 \\
+\hline
+ & {\em md5\+Len} & md5 string buffer length \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em On} & success, returns A\+R\+S\+A\+L\+\_\+\+OK. Otherwise, it returns an error number of e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ARSAL__MD5__Manager_8h_a0655574844475019002ec7a10c0d68be}{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+New} () 
+\end{DoxySeeAlso}
+\hypertarget{ARSAL__MD5__Manager_8h_ac906a6578240163ff7db6c3a90d65814}{}\label{ARSAL__MD5__Manager_8h_ac906a6578240163ff7db6c3a90d65814} 
+\index{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h}!A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Delete@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Delete}}
+\index{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Delete@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Delete}!A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Delete()}{ARSAL\_MD5\_Manager\_Delete()}}
+{\footnotesize\ttfamily void A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Delete (\begin{DoxyParamCaption}\item[{\hyperlink{ARSAL__MD5__Manager_8h_a016766b406c58d2b7f2d6eff4bbeb65c}{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+t} $\ast$$\ast$}]{manager\+Addr }\end{DoxyParamCaption})}
+
+
+
+Delete an A\+R\+S\+AL M\+D5 Manager. 
+
+\begin{DoxyWarning}{Warning}
+This function frees memory 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em manager} & The address of the pointer on the A\+R\+S\+AL M\+D5 Manager \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ARSAL__MD5__Manager_8h_a0655574844475019002ec7a10c0d68be}{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+New} () 
+\end{DoxySeeAlso}
+\hypertarget{ARSAL__MD5__Manager_8h_ad1dfea64c506a9687561d4086e78570a}{}\label{ARSAL__MD5__Manager_8h_ad1dfea64c506a9687561d4086e78570a} 
+\index{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h}!A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Init@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Init}}
+\index{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Init@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Init}!A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Init()}{ARSAL\_MD5\_Manager\_Init()}}
+{\footnotesize\ttfamily \hyperlink{ARSAL__Error_8h_a95978608019620b9d7e573ad874e5889}{e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR} A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\hyperlink{ARSAL__MD5__Manager_8h_a016766b406c58d2b7f2d6eff4bbeb65c}{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+t} $\ast$}]{manager }\end{DoxyParamCaption})}
+
+
+
+Initialize an A\+R\+S\+AL M\+D5 Manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em manager} & The M\+D5 Manager \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em On} & success, returns A\+R\+S\+A\+L\+\_\+\+OK. Otherwise, it returns an error number of e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ARSAL__MD5__Manager_8h_a8f4ef6da24327f4032e7d24c934dfc8d}{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Close} () 
+\end{DoxySeeAlso}
+\hypertarget{ARSAL__MD5__Manager_8h_a0655574844475019002ec7a10c0d68be}{}\label{ARSAL__MD5__Manager_8h_a0655574844475019002ec7a10c0d68be} 
+\index{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h}!A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+New@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+New}}
+\index{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+New@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+New}!A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h@{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+New()}{ARSAL\_MD5\_Manager\_New()}}
+{\footnotesize\ttfamily \hyperlink{ARSAL__MD5__Manager_8h_a016766b406c58d2b7f2d6eff4bbeb65c}{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+t}$\ast$ A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+New (\begin{DoxyParamCaption}\item[{\hyperlink{ARSAL__Error_8h_a95978608019620b9d7e573ad874e5889}{e\+A\+R\+S\+A\+L\+\_\+\+E\+R\+R\+OR} $\ast$}]{error }\end{DoxyParamCaption})}
+
+
+
+Create a new A\+R\+S\+AL M\+D5 Manager. 
+
+\begin{DoxyWarning}{Warning}
+This function allocates memory 
+\end{DoxyWarning}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em error} & A pointer on the error output \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer on the new A\+R\+S\+AL M\+D5 Manager 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ARSAL__MD5__Manager_8h_ac906a6578240163ff7db6c3a90d65814}{A\+R\+S\+A\+L\+\_\+\+M\+D5\+\_\+\+Manager\+\_\+\+Delete} () 
+\end{DoxySeeAlso}

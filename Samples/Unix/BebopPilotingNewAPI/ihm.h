@@ -41,7 +41,7 @@
 #include <libARSAL/ARSAL.h>
 
 /**
- * Types of event codes from console defined as enum
+ * Types of event codes from console defined as enum - 키보드로부터 입력에 대한 열거형
  * ==eIHM_INPUT_EVENT==
  * */
 typedef enum
@@ -61,8 +61,14 @@ typedef enum
     IHM_INPUT_EVENT_ROLL_RIGHT,
 }eIHM_INPUT_EVENT;
 
+/**
+ * @descript : Define '*IHM_onInputEvent_t' as a Finction pointer type, It can be used to variables for function taken same format
+ * @arg1 : [enum] keyboard input
+ * @arg2 : [void*] anything
+ * */
 typedef void (*IHM_onInputEvent_t) (eIHM_INPUT_EVENT event, void *customData);
 
+p
 /**
  *
  * */

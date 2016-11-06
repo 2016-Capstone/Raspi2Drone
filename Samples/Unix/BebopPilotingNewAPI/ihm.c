@@ -41,7 +41,7 @@
  *****************************************/
 
 #include <stdlib.h>
-#include <curses.h>
+#include <curses.h> //터미널 화면을 제어하는  시스템 라이브러리
 #include <string.h>
 
 #include <libARSAL/ARSAL.h>
@@ -50,7 +50,7 @@
 
 /*****************************************
  *
- *             define :
+ *             define : 터미널 상에 정보들이 출력될 포지션 설정
  *
  *****************************************/
 
@@ -71,7 +71,7 @@
  *             private header:
  *
  ****************************************/
-void *IHM_InputProcessing(void *data);
+void *IHM_InputProcessing(void *data);  // 키보드 입력을 처리하는 함수
 
 /*****************************************
  *
@@ -79,31 +79,35 @@ void *IHM_InputProcessing(void *data);
  *
  *****************************************/
 
+/**
+ * @brief : IHM_t 초기화, curses.h를 이용한 터미널 초기설정, 키보드 입력 스레드 실행, 파라미터나 메모리 할당 실패시 IHM_Delete 호출
+ * @arg : [from ihm.h] This is a function pointer, args is enum and customData
+ * */
 IHM_t *IHM_New (IHM_onInputEvent_t onInputEventCallback)
 {
-    int failed = 0;
-    IHM_t *newIHM = NULL;
+    int failed = 0;         // 초기화 실패시 1로 설정되어 모든 루틴 건너뛰게 됨
+    IHM_t *newIHM = NULL;   // 설정대상
     
     // check parameters
-    if (onInputEventCallback == NULL)
+    if (onInputEventCallback == NULL)   // onInputEventCallback = enum + customData
     {
-        failed = 1;
+        failed = 1;     // 모든 Routine을 건너뛰고 IHM_Delete 실행
     }
     
     if (!failed)
     {
         //  Initialize IHM
-        newIHM = malloc(sizeof(IHM_t));
-        if (newIHM != NULL)
+        newIHM = malloc(sizeof(IHM_t));     // 메모리 할당
+        if (newIHM != NULL)                 // 할당 성공
         {
             //  Initialize ncurses
-            newIHM->mainWindow = initscr();
-            newIHM->inputThread = NULL;
-            newIHM->run = 1;
-            newIHM->onInputEventCallback = onInputEventCallback;
+            newIHM->mainWindow = initscr();     // [from curses.h] curses mode로 전환
+            newIHM->inputThread = NULL;         // NULL로 초기화한 후  ARSAL_Thread_Create의 파라미터로 입력되어 할당
+            newIHM->run = 1;                    // IHM_InputProcessing의 Loop를 제어하는 플래그 1:true
+            newIHM->onInputEventCallback = onInputEventCallback;    // enum+customData
             newIHM->customData = NULL;
         }
-        else
+        else                                // 할당 실패
         {
             failed = 1;
         }
@@ -112,16 +116,20 @@ IHM_t *IHM_New (IHM_onInputEvent_t onInputEventCallback)
     if (!failed)
     {
         raw();                  // Line buffering disabled
-        keypad(stdscr, TRUE);
+        keypad(stdscr, TRUE);   // [from curses.h] Enables the keypad of the user's terminal
         noecho();               // Don't echo() while we do getch
-        timeout(100);
+        timeout(100);           // Start COMMAND, and kill it if still runnning after Duration
         
-        refresh();
+        refresh();              // [from curses.h]
     }
     
     if (!failed)
     {
-        //start input thread
+        // start input thread
+        // @arg1 : ARSAL_Thread_t
+        // @arg2 : keyboard input processing function with loop
+        // @arg3 : IHM_t
+        // @return : 0 == sucess
         if(ARSAL_Thread_Create(&(newIHM->inputThread), IHM_InputProcessing, newIHM) != 0)
         {
             failed = 1;
@@ -136,6 +144,9 @@ IHM_t *IHM_New (IHM_onInputEvent_t onInputEventCallback)
     return  newIHM;
 }
 
+/**
+ * @brief : IHM_t 를 제거
+ * */
 void IHM_Delete (IHM_t **ihm)
 {
     //  Clean up
@@ -146,24 +157,28 @@ void IHM_Delete (IHM_t **ihm)
         {
             (*ihm)->run = 0;
             
-            if ((*ihm)->inputThread != NULL)
+            if ((*ihm)->inputThread != NULL)    // 키보드 입력 스레드가 동작하고 있다면..
             {
+                // 스레드 파괴
                 ARSAL_Thread_Join((*ihm)->inputThread, NULL);
                 ARSAL_Thread_Destroy(&((*ihm)->inputThread));
                 (*ihm)->inputThread = NULL;
             }
             
-            delwin((*ihm)->mainWindow);
+            delwin((*ihm)->mainWindow); // initscr()의 반대
             (*ihm)->mainWindow = NULL;
-            endwin();
+            endwin();                   // [from curses.h] curses mode 종료
             refresh();
             
-            free (*ihm);
+            free (*ihm);                // 메모리 방출
             (*ihm) = NULL;
         }
     }
 }
 
+/**
+ * @brief : 생성된 IHM_t에 *customData 설정
+ * */
 void IHM_setCustomData(IHM_t *ihm, void *customData)
 {
     if (ihm != NULL)
@@ -172,6 +187,10 @@ void IHM_setCustomData(IHM_t *ihm, void *customData)
     }
 }
 
+/**
+ * @brief : Loop를 돌며 키보드 입력 처리
+ * @arg1 : IHM_t
+ * */
 void *IHM_InputProcessing(void *data)
 {
     IHM_t *ihm = (IHM_t *) data;
@@ -179,14 +198,18 @@ void *IHM_InputProcessing(void *data)
     
     if (ihm != NULL)
     {
+        // Loop start
         while (ihm->run)
         {
-            key = getch();
+            key = getch();  // 사용자 입력 대기
             
             if ((key == 27) || (key =='q'))
             {
-                if(ihm->onInputEventCallback != NULL)
+                if(ihm->onInputEventCallback != NULL)   // ihm에 함수가 붙어 있으면...
                 {
+                    // @brief : ihm에 설정된 함수에 본인이 가지고 있던 값들을 전달
+                    // @arg1 : enum의 값, 키보드 입력
+                    // @arg2 : ihm이 가지고 있던 customData
                     ihm->onInputEventCallback (IHM_INPUT_EVENT_EXIT, ihm->customData);
                 }
             }
@@ -275,23 +298,29 @@ void *IHM_InputProcessing(void *data)
                 }
             }
             
-            usleep(10);
-        }
+            usleep(10); // sleep every 10 micro sec
+        }// End of Loop
     }
     
     return NULL;
 }
 
+/**
+ * @brief : print label(header) on the terminal
+ * */
 void IHM_PrintHeader(IHM_t *ihm, char *headerStr)
 {
     if (ihm != NULL)
     {
         move(HEADER_Y, 0);   // move to begining of line
         clrtoeol();          // clear line
-        mvprintw(HEADER_Y, HEADER_X, headerStr);
+        mvprintw(HEADER_Y, HEADER_X, headerStr);    // just print at that point
     }
 }
 
+/**
+ * @brief : print payload after the header
+ * */
 void IHM_PrintInfo(IHM_t *ihm, char *infoStr)
 {
     if (ihm != NULL)
@@ -302,13 +331,17 @@ void IHM_PrintInfo(IHM_t *ihm, char *infoStr)
     }
 }
 
+
+/**
+ * @brief : print amount of remaining battery
+ * */
 void IHM_PrintBattery(IHM_t *ihm, uint8_t percent)
 {
     if (ihm != NULL)
     {
         move(BATTERY_Y, 0);     // move to begining of line
         clrtoeol();             // clear line
-        mvprintw(BATTERY_Y, BATTERY_X, "Battery: %d", percent);
+        mvprintw(BATTERY_Y, BATTERY_X, "Battery: %d", percent); // just print formatted string
     }
 }
 

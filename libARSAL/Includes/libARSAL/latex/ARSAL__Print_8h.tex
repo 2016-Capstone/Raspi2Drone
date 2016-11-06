@@ -1,0 +1,304 @@
+\hypertarget{ARSAL__Print_8h}{}\section{A\+R\+S\+A\+L\+\_\+\+Print.\+h File Reference}
+\label{ARSAL__Print_8h}\index{A\+R\+S\+A\+L\+\_\+\+Print.\+h@{A\+R\+S\+A\+L\+\_\+\+Print.\+h}}
+
+
+This file contains headers about debug print abstraction layer.  
+
+
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$lib\+A\+R\+S\+A\+L/\+A\+R\+S\+A\+L\+\_\+\+Time.\+h$>$}\newline
+{\ttfamily \#include $<$stdarg.\+h$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{ARSAL__Print_8h_ab62abe39c6871968c96be623ccc77115}{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+D\+A\+T\+E\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+L\+E\+N\+G\+TH}~9
+\item 
+\#define \hyperlink{ARSAL__Print_8h_a5d339bf42d3b1b0ebf1408922e7589a6}{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+NT}(level,  tag,  format, ...)
+\begin{DoxyCompactList}\small\item\em Prints a specific output. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef int($\ast$ \hyperlink{ARSAL__Print_8h_a38a0bb234aaee1cb734a8bbd281b0bbe}{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Callback\+\_\+t}) (\hyperlink{ARSAL__Print_8h_a76835f8946e9e2b870de3a5a41a84012}{e\+A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+L\+E\+V\+EL} level, const char $\ast$tag, const char $\ast$format, va\+\_\+list va)
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{ARSAL__Print_8h_a76835f8946e9e2b870de3a5a41a84012}{e\+A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+L\+E\+V\+EL} \{ \newline
+\hyperlink{ARSAL__Print_8h_a76835f8946e9e2b870de3a5a41a84012a954dd3284d9362ae4f06137e2c38f12f}{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+F\+A\+T\+AL}, 
+\hyperlink{ARSAL__Print_8h_a76835f8946e9e2b870de3a5a41a84012ad8956a741311c9e7e9916bc66cbd1847}{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+E\+R\+R\+OR}, 
+\hyperlink{ARSAL__Print_8h_a76835f8946e9e2b870de3a5a41a84012a935e4e46b95fe6a8b8192cf6938a88e1}{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+W\+A\+R\+N\+I\+NG}, 
+\hyperlink{ARSAL__Print_8h_a76835f8946e9e2b870de3a5a41a84012af66f3f778998747f30a142cd85df2190}{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+I\+N\+FO}, 
+\newline
+\hyperlink{ARSAL__Print_8h_a76835f8946e9e2b870de3a5a41a84012aeef033176573555fff3ebf3f57859e58}{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+D\+E\+B\+UG}, 
+\hyperlink{ARSAL__Print_8h_a76835f8946e9e2b870de3a5a41a84012a99d9519861ccff40a955ce46fab4007d}{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+V\+E\+R\+B\+O\+SE}, 
+\hyperlink{ARSAL__Print_8h_a76835f8946e9e2b870de3a5a41a84012af6ec229aa2174e9322fe114eeef694b9}{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+M\+AX}
+ \}\begin{DoxyCompactList}\small\item\em Output level. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{ARSAL__Print_8h_a7fb90a4574c3756eb0329679c459dfd3}{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Set\+Minimum\+Level} (\hyperlink{ARSAL__Print_8h_a76835f8946e9e2b870de3a5a41a84012}{e\+A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+L\+E\+V\+EL} level)
+\begin{DoxyCompactList}\small\item\em Sets the minimum level of verbosity for logs. Logs with a lower level won\textquotesingle{}t appear. Default is \char`\"{}\+A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+I\+N\+F\+O\char`\"{} for release builds, \char`\"{}\+A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+V\+E\+R\+B\+O\+S\+E\char`\"{} for debug builds. \end{DoxyCompactList}\item 
+\hyperlink{ARSAL__Print_8h_a76835f8946e9e2b870de3a5a41a84012}{e\+A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+L\+E\+V\+EL} \hyperlink{ARSAL__Print_8h_a2c888ea761b4fe54113b0b79bee06580}{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Get\+Minimum\+Level} (void)
+\begin{DoxyCompactList}\small\item\em Gets the minimum level of verbosity for logs. Logs with a level inferior to that will be ignored. \end{DoxyCompactList}\item 
+int \hyperlink{ARSAL__Print_8h_af62fa8015a667e0da424af447a7d2ca6}{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Print\+Raw} (\hyperlink{ARSAL__Print_8h_a76835f8946e9e2b870de3a5a41a84012}{e\+A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+L\+E\+V\+EL} level, const char $\ast$tag, const char $\ast$format,...)
+\begin{DoxyCompactList}\small\item\em Prints a formatted output. \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{ARSAL__Print_8h_a0bd899e35b9e8f948d47e12bbc894d5e}{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Get\+Level\+Description} (\hyperlink{ARSAL__Print_8h_a76835f8946e9e2b870de3a5a41a84012}{e\+A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+L\+E\+V\+EL} level)
+\begin{DoxyCompactList}\small\item\em Transform a level into an intelligible string. \end{DoxyCompactList}\item 
+void \hyperlink{ARSAL__Print_8h_a90419690c4af56e8290190f8d5c43181}{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Set\+Callback} (\hyperlink{ARSAL__Print_8h_a38a0bb234aaee1cb734a8bbd281b0bbe}{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Callback\+\_\+t} callback)
+\item 
+void \hyperlink{ARSAL__Print_8h_a327ee5d53e4b42d2b4f080a344cdcf8b}{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Dump\+Data} (F\+I\+LE $\ast$file, uint8\+\_\+t tag, const void $\ast$data, size\+\_\+t size, size\+\_\+t size\+Dump, const struct timespec $\ast$ts)
+\begin{DoxyCompactList}\small\item\em Dump data in a file. \end{DoxyCompactList}\item 
+void \hyperlink{ARSAL__Print_8h_afddac926b2cde0b6dda018ce8bf9afa6}{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Dump\+Rotate\+Files} (const char $\ast$base\+Path, int count)
+\begin{DoxyCompactList}\small\item\em Do a rotation on files used as data dump. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file contains headers about debug print abstraction layer. 
+
+\begin{DoxyDate}{Date}
+06/01/2012 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\href{mailto:frederic.dhaeyer@parrot.com}{\tt frederic.\+dhaeyer@parrot.\+com} 
+\end{DoxyAuthor}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{ARSAL__Print_8h_a5d339bf42d3b1b0ebf1408922e7589a6}{}\label{ARSAL__Print_8h_a5d339bf42d3b1b0ebf1408922e7589a6} 
+\index{A\+R\+S\+A\+L\+\_\+\+Print.\+h@{A\+R\+S\+A\+L\+\_\+\+Print.\+h}!A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+NT@{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+NT}}
+\index{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+NT@{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+NT}!A\+R\+S\+A\+L\+\_\+\+Print.\+h@{A\+R\+S\+A\+L\+\_\+\+Print.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+NT}{ARSAL\_PRINT}}
+{\footnotesize\ttfamily \#define A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+NT(\begin{DoxyParamCaption}\item[{}]{level,  }\item[{}]{tag,  }\item[{}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do}                                                                  \(\backslash\)
+    \{                                                                   \(\backslash\)
+        char \_\_nowTimeStr [\hyperlink{ARSAL__Print_8h_ab62abe39c6871968c96be623ccc77115}{ARSAL\_PRINT\_DATE\_STRING\_LENGTH}];             \(\backslash\)
+        struct timespec \_\_ts;                                           \(\backslash\)
+        struct tm \_\_tm;                                                 \(\backslash\)
+        ARSAL\_Time\_GetLocalTime(&\_\_ts, &\_\_tm);                          \(\backslash\)
+        strftime (\_\_nowTimeStr, \hyperlink{ARSAL__Print_8h_ab62abe39c6871968c96be623ccc77115}{ARSAL\_PRINT\_DATE\_STRING\_LENGTH}, \textcolor{stringliteral}{"%H:%M:%S"}, &
+      \_\_tm); \(\backslash\)
+        if (!strlen (format) || format[strlen (format)-1] != \textcolor{charliteral}{'\(\backslash\)n'})      \(\backslash\)
+        \{                                                               \(\backslash\)
+            ARSAL\_Print\_PrintRaw(level, tag, \textcolor{stringliteral}{"%s:%03d | %s:%d - "} format \textcolor{stringliteral}{"\(\backslash\)n"}, \_\_nowTimeStr, 
+      \hyperlink{ARSAL__Time_8h_add05066e87b1cbe46282cd83dd5da34d}{NSEC\_TO\_MSEC}(\_\_ts.tv\_nsec), \_\_FUNCTION\_\_, \_\_LINE\_\_, ##\_\_VA\_ARGS\_\_); \(\backslash\)
+        \}                                                               \(\backslash\)
+        else                                                            \(\backslash\)
+        \{                                                               \(\backslash\)
+            ARSAL\_Print\_PrintRaw(level, tag, \textcolor{stringliteral}{"%s:%03d | %s:%d - "} format, \_\_nowTimeStr, 
+      \hyperlink{ARSAL__Time_8h_add05066e87b1cbe46282cd83dd5da34d}{NSEC\_TO\_MSEC}(\_\_ts.tv\_nsec), \_\_FUNCTION\_\_, \_\_LINE\_\_, ##\_\_VA\_ARGS\_\_); \(\backslash\)
+        \}                                                               \(\backslash\)
+    \} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+
+
+Prints a specific output. 
+
+This is the default entry point for printing. This function outputs a string of the following format\+: {\ttfamily \mbox{[}L\+E\+V\+EL\mbox{]} T\+AG $\vert$ H\+H\+:\+M\+M\+:\+SS\+:mmm $\vert$ function\+:line -\/ F\+O\+R\+M\+AT}
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & The print level (e\+A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+L\+E\+V\+EL enum) \\
+\hline
+{\em tag} & A short tag which will prefix the log timestamp \\
+\hline
+{\em format} & The format string to print \\
+\hline
+{\em ...} & The format parameters \\
+\hline
+\end{DoxyParams}
+\hypertarget{ARSAL__Print_8h_ab62abe39c6871968c96be623ccc77115}{}\label{ARSAL__Print_8h_ab62abe39c6871968c96be623ccc77115} 
+\index{A\+R\+S\+A\+L\+\_\+\+Print.\+h@{A\+R\+S\+A\+L\+\_\+\+Print.\+h}!A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+D\+A\+T\+E\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+L\+E\+N\+G\+TH@{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+D\+A\+T\+E\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+L\+E\+N\+G\+TH}}
+\index{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+D\+A\+T\+E\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+L\+E\+N\+G\+TH@{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+D\+A\+T\+E\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+L\+E\+N\+G\+TH}!A\+R\+S\+A\+L\+\_\+\+Print.\+h@{A\+R\+S\+A\+L\+\_\+\+Print.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+D\+A\+T\+E\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+L\+E\+N\+G\+TH}{ARSAL\_PRINT\_DATE\_STRING\_LENGTH}}
+{\footnotesize\ttfamily \#define A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+D\+A\+T\+E\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+L\+E\+N\+G\+TH~9}
+
+
+
+\subsection{Typedef Documentation}
+\hypertarget{ARSAL__Print_8h_a38a0bb234aaee1cb734a8bbd281b0bbe}{}\label{ARSAL__Print_8h_a38a0bb234aaee1cb734a8bbd281b0bbe} 
+\index{A\+R\+S\+A\+L\+\_\+\+Print.\+h@{A\+R\+S\+A\+L\+\_\+\+Print.\+h}!A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Callback\+\_\+t@{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Callback\+\_\+t}}
+\index{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Callback\+\_\+t@{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Callback\+\_\+t}!A\+R\+S\+A\+L\+\_\+\+Print.\+h@{A\+R\+S\+A\+L\+\_\+\+Print.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Callback\+\_\+t}{ARSAL\_Print\_Callback\_t}}
+{\footnotesize\ttfamily typedef int($\ast$ A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Callback\+\_\+t) (\hyperlink{ARSAL__Print_8h_a76835f8946e9e2b870de3a5a41a84012}{e\+A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+L\+E\+V\+EL} level, const char $\ast$tag, const char $\ast$format, va\+\_\+list va)}
+
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{ARSAL__Print_8h_a76835f8946e9e2b870de3a5a41a84012}{}\label{ARSAL__Print_8h_a76835f8946e9e2b870de3a5a41a84012} 
+\index{A\+R\+S\+A\+L\+\_\+\+Print.\+h@{A\+R\+S\+A\+L\+\_\+\+Print.\+h}!e\+A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+L\+E\+V\+EL@{e\+A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+L\+E\+V\+EL}}
+\index{e\+A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+L\+E\+V\+EL@{e\+A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+L\+E\+V\+EL}!A\+R\+S\+A\+L\+\_\+\+Print.\+h@{A\+R\+S\+A\+L\+\_\+\+Print.\+h}}
+\subsubsection{\texorpdfstring{e\+A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+L\+E\+V\+EL}{eARSAL\_PRINT\_LEVEL}}
+{\footnotesize\ttfamily enum \hyperlink{ARSAL__Print_8h_a76835f8946e9e2b870de3a5a41a84012}{e\+A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+L\+E\+V\+EL}}
+
+
+
+Output level. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+F\+A\+T\+AL@{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+F\+A\+T\+AL}!A\+R\+S\+A\+L\+\_\+\+Print.\+h@{A\+R\+S\+A\+L\+\_\+\+Print.\+h}}\index{A\+R\+S\+A\+L\+\_\+\+Print.\+h@{A\+R\+S\+A\+L\+\_\+\+Print.\+h}!A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+F\+A\+T\+AL@{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+F\+A\+T\+AL}}}\hypertarget{ARSAL__Print_8h_a76835f8946e9e2b870de3a5a41a84012a954dd3284d9362ae4f06137e2c38f12f}{}\label{ARSAL__Print_8h_a76835f8946e9e2b870de3a5a41a84012a954dd3284d9362ae4f06137e2c38f12f} 
+A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+F\+A\+T\+AL&The fatal level. The highest level, always printed \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+E\+R\+R\+OR@{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+E\+R\+R\+OR}!A\+R\+S\+A\+L\+\_\+\+Print.\+h@{A\+R\+S\+A\+L\+\_\+\+Print.\+h}}\index{A\+R\+S\+A\+L\+\_\+\+Print.\+h@{A\+R\+S\+A\+L\+\_\+\+Print.\+h}!A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+E\+R\+R\+OR@{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+E\+R\+R\+OR}}}\hypertarget{ARSAL__Print_8h_a76835f8946e9e2b870de3a5a41a84012ad8956a741311c9e7e9916bc66cbd1847}{}\label{ARSAL__Print_8h_a76835f8946e9e2b870de3a5a41a84012ad8956a741311c9e7e9916bc66cbd1847} 
+A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+E\+R\+R\+OR&The error level. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+W\+A\+R\+N\+I\+NG@{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+W\+A\+R\+N\+I\+NG}!A\+R\+S\+A\+L\+\_\+\+Print.\+h@{A\+R\+S\+A\+L\+\_\+\+Print.\+h}}\index{A\+R\+S\+A\+L\+\_\+\+Print.\+h@{A\+R\+S\+A\+L\+\_\+\+Print.\+h}!A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+W\+A\+R\+N\+I\+NG@{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+W\+A\+R\+N\+I\+NG}}}\hypertarget{ARSAL__Print_8h_a76835f8946e9e2b870de3a5a41a84012a935e4e46b95fe6a8b8192cf6938a88e1}{}\label{ARSAL__Print_8h_a76835f8946e9e2b870de3a5a41a84012a935e4e46b95fe6a8b8192cf6938a88e1} 
+A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+W\+A\+R\+N\+I\+NG&The warning level. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+I\+N\+FO@{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+I\+N\+FO}!A\+R\+S\+A\+L\+\_\+\+Print.\+h@{A\+R\+S\+A\+L\+\_\+\+Print.\+h}}\index{A\+R\+S\+A\+L\+\_\+\+Print.\+h@{A\+R\+S\+A\+L\+\_\+\+Print.\+h}!A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+I\+N\+FO@{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+I\+N\+FO}}}\hypertarget{ARSAL__Print_8h_a76835f8946e9e2b870de3a5a41a84012af66f3f778998747f30a142cd85df2190}{}\label{ARSAL__Print_8h_a76835f8946e9e2b870de3a5a41a84012af66f3f778998747f30a142cd85df2190} 
+A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+I\+N\+FO&The info level. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+D\+E\+B\+UG@{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+D\+E\+B\+UG}!A\+R\+S\+A\+L\+\_\+\+Print.\+h@{A\+R\+S\+A\+L\+\_\+\+Print.\+h}}\index{A\+R\+S\+A\+L\+\_\+\+Print.\+h@{A\+R\+S\+A\+L\+\_\+\+Print.\+h}!A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+D\+E\+B\+UG@{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+D\+E\+B\+UG}}}\hypertarget{ARSAL__Print_8h_a76835f8946e9e2b870de3a5a41a84012aeef033176573555fff3ebf3f57859e58}{}\label{ARSAL__Print_8h_a76835f8946e9e2b870de3a5a41a84012aeef033176573555fff3ebf3f57859e58} 
+A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+D\+E\+B\+UG&The debug level. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+V\+E\+R\+B\+O\+SE@{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+V\+E\+R\+B\+O\+SE}!A\+R\+S\+A\+L\+\_\+\+Print.\+h@{A\+R\+S\+A\+L\+\_\+\+Print.\+h}}\index{A\+R\+S\+A\+L\+\_\+\+Print.\+h@{A\+R\+S\+A\+L\+\_\+\+Print.\+h}!A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+V\+E\+R\+B\+O\+SE@{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+V\+E\+R\+B\+O\+SE}}}\hypertarget{ARSAL__Print_8h_a76835f8946e9e2b870de3a5a41a84012a99d9519861ccff40a955ce46fab4007d}{}\label{ARSAL__Print_8h_a76835f8946e9e2b870de3a5a41a84012a99d9519861ccff40a955ce46fab4007d} 
+A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+V\+E\+R\+B\+O\+SE&The verbose level. The lowest usable level \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+M\+AX@{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+M\+AX}!A\+R\+S\+A\+L\+\_\+\+Print.\+h@{A\+R\+S\+A\+L\+\_\+\+Print.\+h}}\index{A\+R\+S\+A\+L\+\_\+\+Print.\+h@{A\+R\+S\+A\+L\+\_\+\+Print.\+h}!A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+M\+AX@{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+M\+AX}}}\hypertarget{ARSAL__Print_8h_a76835f8946e9e2b870de3a5a41a84012af6ec229aa2174e9322fe114eeef694b9}{}\label{ARSAL__Print_8h_a76835f8946e9e2b870de3a5a41a84012af6ec229aa2174e9322fe114eeef694b9} 
+A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+M\+AX&The maximum of enum, do not use ! \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\hypertarget{ARSAL__Print_8h_a327ee5d53e4b42d2b4f080a344cdcf8b}{}\label{ARSAL__Print_8h_a327ee5d53e4b42d2b4f080a344cdcf8b} 
+\index{A\+R\+S\+A\+L\+\_\+\+Print.\+h@{A\+R\+S\+A\+L\+\_\+\+Print.\+h}!A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Dump\+Data@{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Dump\+Data}}
+\index{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Dump\+Data@{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Dump\+Data}!A\+R\+S\+A\+L\+\_\+\+Print.\+h@{A\+R\+S\+A\+L\+\_\+\+Print.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Dump\+Data()}{ARSAL\_Print\_DumpData()}}
+{\footnotesize\ttfamily void A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Dump\+Data (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{file,  }\item[{uint8\+\_\+t}]{tag,  }\item[{const void $\ast$}]{data,  }\item[{size\+\_\+t}]{size,  }\item[{size\+\_\+t}]{size\+Dump,  }\item[{const struct timespec $\ast$}]{ts }\end{DoxyParamCaption})}
+
+
+
+Dump data in a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & output file \\
+\hline
+{\em tag} & 1-\/byte identifier of data. \\
+\hline
+{\em data} & data buffer. \\
+\hline
+{\em size} & size of data. \\
+\hline
+{\em size\+Dump} & size of data to actually dump. 0 to dump everything. \\
+\hline
+{\em ts} & timestamp of data. N\+U\+LL to use current time \\
+\hline
+\end{DoxyParams}
+\hypertarget{ARSAL__Print_8h_afddac926b2cde0b6dda018ce8bf9afa6}{}\label{ARSAL__Print_8h_afddac926b2cde0b6dda018ce8bf9afa6} 
+\index{A\+R\+S\+A\+L\+\_\+\+Print.\+h@{A\+R\+S\+A\+L\+\_\+\+Print.\+h}!A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Dump\+Rotate\+Files@{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Dump\+Rotate\+Files}}
+\index{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Dump\+Rotate\+Files@{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Dump\+Rotate\+Files}!A\+R\+S\+A\+L\+\_\+\+Print.\+h@{A\+R\+S\+A\+L\+\_\+\+Print.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Dump\+Rotate\+Files()}{ARSAL\_Print\_DumpRotateFiles()}}
+{\footnotesize\ttfamily void A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Dump\+Rotate\+Files (\begin{DoxyParamCaption}\item[{const char $\ast$}]{base\+Path,  }\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+
+Do a rotation on files used as data dump. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Path} & base path of the dump. $<$base\+Path$>$ will be renamed in $<$base\+Path$>$.1, $<$base\+Path$>$.1 in $<$base\+Path$>$.2 and so on \\
+\hline
+{\em count} & number of files to keep. \\
+\hline
+\end{DoxyParams}
+\hypertarget{ARSAL__Print_8h_a0bd899e35b9e8f948d47e12bbc894d5e}{}\label{ARSAL__Print_8h_a0bd899e35b9e8f948d47e12bbc894d5e} 
+\index{A\+R\+S\+A\+L\+\_\+\+Print.\+h@{A\+R\+S\+A\+L\+\_\+\+Print.\+h}!A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Get\+Level\+Description@{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Get\+Level\+Description}}
+\index{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Get\+Level\+Description@{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Get\+Level\+Description}!A\+R\+S\+A\+L\+\_\+\+Print.\+h@{A\+R\+S\+A\+L\+\_\+\+Print.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Get\+Level\+Description()}{ARSAL\_Print\_GetLevelDescription()}}
+{\footnotesize\ttfamily const char$\ast$ A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Get\+Level\+Description (\begin{DoxyParamCaption}\item[{\hyperlink{ARSAL__Print_8h_a76835f8946e9e2b870de3a5a41a84012}{e\+A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+L\+E\+V\+EL}}]{level }\end{DoxyParamCaption})}
+
+
+
+Transform a level into an intelligible string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & The level of output \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em A} & const string describing the level. If level is not known, returns the description of the F\+A\+T\+AL level \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{ARSAL__Print_8h_a2c888ea761b4fe54113b0b79bee06580}{}\label{ARSAL__Print_8h_a2c888ea761b4fe54113b0b79bee06580} 
+\index{A\+R\+S\+A\+L\+\_\+\+Print.\+h@{A\+R\+S\+A\+L\+\_\+\+Print.\+h}!A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Get\+Minimum\+Level@{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Get\+Minimum\+Level}}
+\index{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Get\+Minimum\+Level@{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Get\+Minimum\+Level}!A\+R\+S\+A\+L\+\_\+\+Print.\+h@{A\+R\+S\+A\+L\+\_\+\+Print.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Get\+Minimum\+Level()}{ARSAL\_Print\_GetMinimumLevel()}}
+{\footnotesize\ttfamily \hyperlink{ARSAL__Print_8h_a76835f8946e9e2b870de3a5a41a84012}{e\+A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+L\+E\+V\+EL} A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Get\+Minimum\+Level (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Gets the minimum level of verbosity for logs. Logs with a level inferior to that will be ignored. 
+
+\begin{DoxyReturn}{Returns}
+The current minimum level. 
+\end{DoxyReturn}
+\hypertarget{ARSAL__Print_8h_af62fa8015a667e0da424af447a7d2ca6}{}\label{ARSAL__Print_8h_af62fa8015a667e0da424af447a7d2ca6} 
+\index{A\+R\+S\+A\+L\+\_\+\+Print.\+h@{A\+R\+S\+A\+L\+\_\+\+Print.\+h}!A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Print\+Raw@{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Print\+Raw}}
+\index{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Print\+Raw@{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Print\+Raw}!A\+R\+S\+A\+L\+\_\+\+Print.\+h@{A\+R\+S\+A\+L\+\_\+\+Print.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Print\+Raw()}{ARSAL\_Print\_PrintRaw()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Print\+Raw (\begin{DoxyParamCaption}\item[{\hyperlink{ARSAL__Print_8h_a76835f8946e9e2b870de3a5a41a84012}{e\+A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+L\+E\+V\+EL}}]{level,  }\item[{const char $\ast$}]{tag,  }\item[{const char $\ast$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Prints a formatted output. 
+
+\begin{DoxyWarning}{Warning}
+This function should not be used directly 
+\end{DoxyWarning}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ARSAL__Print_8h_a5d339bf42d3b1b0ebf1408922e7589a6}{A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T()}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em level} & The level of output \\
+\hline
+{\em tag} & The tag of the output \\
+\hline
+{\em format} & output format \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em On} & success, \hyperlink{ARSAL__Print_8h_af62fa8015a667e0da424af447a7d2ca6}{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Print\+Raw()} returns the number of characters printed. Otherwise, it returns a negative value. \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{ARSAL__Print_8h_a90419690c4af56e8290190f8d5c43181}{}\label{ARSAL__Print_8h_a90419690c4af56e8290190f8d5c43181} 
+\index{A\+R\+S\+A\+L\+\_\+\+Print.\+h@{A\+R\+S\+A\+L\+\_\+\+Print.\+h}!A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Set\+Callback@{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Set\+Callback}}
+\index{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Set\+Callback@{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Set\+Callback}!A\+R\+S\+A\+L\+\_\+\+Print.\+h@{A\+R\+S\+A\+L\+\_\+\+Print.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Set\+Callback()}{ARSAL\_Print\_SetCallback()}}
+{\footnotesize\ttfamily void A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Set\+Callback (\begin{DoxyParamCaption}\item[{\hyperlink{ARSAL__Print_8h_a38a0bb234aaee1cb734a8bbd281b0bbe}{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Callback\+\_\+t}}]{callback }\end{DoxyParamCaption})}
+
+\hypertarget{ARSAL__Print_8h_a7fb90a4574c3756eb0329679c459dfd3}{}\label{ARSAL__Print_8h_a7fb90a4574c3756eb0329679c459dfd3} 
+\index{A\+R\+S\+A\+L\+\_\+\+Print.\+h@{A\+R\+S\+A\+L\+\_\+\+Print.\+h}!A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Set\+Minimum\+Level@{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Set\+Minimum\+Level}}
+\index{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Set\+Minimum\+Level@{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Set\+Minimum\+Level}!A\+R\+S\+A\+L\+\_\+\+Print.\+h@{A\+R\+S\+A\+L\+\_\+\+Print.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Set\+Minimum\+Level()}{ARSAL\_Print\_SetMinimumLevel()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Print\+\_\+\+Set\+Minimum\+Level (\begin{DoxyParamCaption}\item[{\hyperlink{ARSAL__Print_8h_a76835f8946e9e2b870de3a5a41a84012}{e\+A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+L\+E\+V\+EL}}]{level }\end{DoxyParamCaption})}
+
+
+
+Sets the minimum level of verbosity for logs. Logs with a lower level won\textquotesingle{}t appear. Default is \char`\"{}\+A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+I\+N\+F\+O\char`\"{} for release builds, \char`\"{}\+A\+R\+S\+A\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+V\+E\+R\+B\+O\+S\+E\char`\"{} for debug builds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & The minimum level for logs. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 If the minimum level was set, 1 Otherwise 
+\end{DoxyReturn}

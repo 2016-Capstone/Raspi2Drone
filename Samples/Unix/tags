@@ -1,0 +1,633 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ARCODECS_ERROR	BebopDroneDecodeStream/DecoderManager.h	/^    ARCODECS_ERROR = -1000,                     \/**< Unknown generic error *\/$/;"	e	enum:__anon12
+ARCODECS_ERROR_ALLOC	BebopDroneDecodeStream/DecoderManager.h	/^    ARCODECS_ERROR_ALLOC,                       \/**< Memory allocation error *\/$/;"	e	enum:__anon12
+ARCODECS_ERROR_BAD_PARAMETER	BebopDroneDecodeStream/DecoderManager.h	/^    ARCODECS_ERROR_BAD_PARAMETER,               \/**< Bad parameters *\/$/;"	e	enum:__anon12
+ARCODECS_ERROR_MANAGER	BebopDroneDecodeStream/DecoderManager.h	/^    ARCODECS_ERROR_MANAGER = -2000,             \/**< Unknown ARCODECS_Manager error *\/$/;"	e	enum:__anon12
+ARCODECS_ERROR_MANAGER_CODEC_OPENING	BebopDroneDecodeStream/DecoderManager.h	/^    ARCODECS_ERROR_MANAGER_CODEC_OPENING,       \/**< Opening error of the codec *\/$/;"	e	enum:__anon12
+ARCODECS_ERROR_MANAGER_DECODING	BebopDroneDecodeStream/DecoderManager.h	/^    ARCODECS_ERROR_MANAGER_DECODING,            \/**< Decoding error *\/$/;"	e	enum:__anon12
+ARCODECS_ERROR_MANAGER_UNKNOWN_TYPE	BebopDroneDecodeStream/DecoderManager.h	/^    ARCODECS_ERROR_MANAGER_UNKNOWN_TYPE,        \/**< Unknown Codec type *\/$/;"	e	enum:__anon12
+ARCODECS_ERROR_MANAGER_UNSUPPORTED_CODEC	BebopDroneDecodeStream/DecoderManager.h	/^    ARCODECS_ERROR_MANAGER_UNSUPPORTED_CODEC,   \/**< Unsupported Codec type *\/$/;"	e	enum:__anon12
+ARCODECS_FORMAT_RGBA	BebopDroneDecodeStream/DecoderManager.h	/^    ARCODECS_FORMAT_RGBA,$/;"	e	enum:__anon13
+ARCODECS_FORMAT_RGBA_COMPONENT	BebopDroneDecodeStream/DecoderManager.c	/^    ARCODECS_FORMAT_RGBA_COMPONENT = 0,$/;"	e	enum:__anon18	file:
+ARCODECS_FORMAT_RGBA_COMPONENT_MAX	BebopDroneDecodeStream/DecoderManager.c	/^    ARCODECS_FORMAT_RGBA_COMPONENT_MAX,$/;"	e	enum:__anon18	file:
+ARCODECS_FORMAT_YUV	BebopDroneDecodeStream/DecoderManager.h	/^    ARCODECS_FORMAT_YUV = 0,$/;"	e	enum:__anon13
+ARCODECS_FORMAT_YUV_COMPONENT_MAX	BebopDroneDecodeStream/DecoderManager.c	/^    ARCODECS_FORMAT_YUV_COMPONENT_MAX,$/;"	e	enum:__anon19	file:
+ARCODECS_FORMAT_YUV_COMPONENT_U	BebopDroneDecodeStream/DecoderManager.c	/^    ARCODECS_FORMAT_YUV_COMPONENT_U,$/;"	e	enum:__anon19	file:
+ARCODECS_FORMAT_YUV_COMPONENT_V	BebopDroneDecodeStream/DecoderManager.c	/^    ARCODECS_FORMAT_YUV_COMPONENT_V,$/;"	e	enum:__anon19	file:
+ARCODECS_FORMAT_YUV_COMPONENT_Y	BebopDroneDecodeStream/DecoderManager.c	/^    ARCODECS_FORMAT_YUV_COMPONENT_Y = 0,$/;"	e	enum:__anon19	file:
+ARCODECS_MANAGER_TAG	BebopDroneDecodeStream/DecoderManager.c	28;"	d	file:
+ARCODECS_Manager_Component_t	BebopDroneDecodeStream/DecoderManager.h	/^} ARCODECS_Manager_Component_t;$/;"	t	typeref:struct:_ARCODECS_Manager_Component_t_
+ARCODECS_Manager_Decode	BebopDroneDecodeStream/DecoderManager.c	/^ARCODECS_Manager_Frame_t* ARCODECS_Manager_Decode(ARCODECS_Manager_t *manager, eARCODECS_ERROR *error)$/;"	f
+ARCODECS_Manager_Delete	BebopDroneDecodeStream/DecoderManager.c	/^void ARCODECS_Manager_Delete(ARCODECS_Manager_t **manager)$/;"	f
+ARCODECS_Manager_DeleteFFMPEGDecoder	BebopDroneDecodeStream/DecoderManager.c	/^void ARCODECS_Manager_DeleteFFMPEGDecoder (ARCODECS_Manager_FFMPEGDecoder_t **ffmpegDecoder)$/;"	f
+ARCODECS_Manager_FFMPEGDecode	BebopDroneDecodeStream/DecoderManager.c	/^eARCODECS_ERROR ARCODECS_Manager_FFMPEGDecode (ARCODECS_Manager_FFMPEGDecoder_t *ffmpegDecoder, uint8_t *data , int size, ARCODECS_Manager_Frame_t *outputFrame)$/;"	f
+ARCODECS_Manager_FFMPEGDecoder_t	BebopDroneDecodeStream/DecoderManager.c	/^} ARCODECS_Manager_FFMPEGDecoder_t;$/;"	t	typeref:struct:_ARCODECS_Manager_FFMPEGDecoder_t_	file:
+ARCODECS_Manager_Frame_t	BebopDroneDecodeStream/DecoderManager.h	/^} ARCODECS_Manager_Frame_t;$/;"	t	typeref:struct:_ARCODECS_Manager_Frame_t_
+ARCODECS_Manager_GetNextDataCallback_t	BebopDroneDecodeStream/DecoderManager.h	/^typedef int (*ARCODECS_Manager_GetNextDataCallback_t)(uint8_t **data, void *customData);$/;"	t
+ARCODECS_Manager_InitOutputFrame	BebopDroneDecodeStream/DecoderManager.c	/^eARCODECS_ERROR ARCODECS_Manager_InitOutputFrame (ARCODECS_Manager_t *manager, uint32_t numberOfComponent)$/;"	f
+ARCODECS_Manager_New	BebopDroneDecodeStream/DecoderManager.c	/^ARCODECS_Manager_t* ARCODECS_Manager_New (ARCODECS_Manager_GetNextDataCallback_t callback, void *callbackCustomData, eARCODECS_ERROR *error)$/;"	f
+ARCODECS_Manager_NewFFMPEGDecoder	BebopDroneDecodeStream/DecoderManager.c	/^ARCODECS_Manager_FFMPEGDecoder_t *ARCODECS_Manager_NewFFMPEGDecoder (eARCODECS_ERROR *error)$/;"	f
+ARCODECS_Manager_t	BebopDroneDecodeStream/DecoderManager.c	/^struct ARCODECS_Manager_t$/;"	s	file:
+ARCODECS_Manager_t	BebopDroneDecodeStream/DecoderManager.h	/^typedef struct ARCODECS_Manager_t ARCODECS_Manager_t;$/;"	t	typeref:struct:ARCODECS_Manager_t
+ARCODECS_OK	BebopDroneDecodeStream/DecoderManager.h	/^    ARCODECS_OK = 0,                            \/**< No error *\/$/;"	e	enum:__anon12
+ARDISCOVERY_Connection_ReceiveJsonCallback	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^eARDISCOVERY_ERROR ARDISCOVERY_Connection_ReceiveJsonCallback (uint8_t *dataRx, uint32_t dataRxSize, char *ip, void *customData)$/;"	f
+ARDISCOVERY_Connection_ReceiveJsonCallback	BebopDroneReceiveStream/BebopDroneReceiveStream.c	/^eARDISCOVERY_ERROR ARDISCOVERY_Connection_ReceiveJsonCallback (uint8_t *dataRx, uint32_t dataRxSize, char *ip, void *customData)$/;"	f
+ARDISCOVERY_Connection_ReceiveJsonCallback	JumpingSumoChangePosture/JumpingSumoChangePosture.c	/^eARDISCOVERY_ERROR ARDISCOVERY_Connection_ReceiveJsonCallback (uint8_t *dataRx, uint32_t dataRxSize, char *ip, void *customData)$/;"	f
+ARDISCOVERY_Connection_ReceiveJsonCallback	JumpingSumoPiloting/JumpingSumoPiloting.c	/^eARDISCOVERY_ERROR ARDISCOVERY_Connection_ReceiveJsonCallback (uint8_t *dataRx, uint32_t dataRxSize, char *ip, void *customData)$/;"	f
+ARDISCOVERY_Connection_ReceiveJsonCallback	JumpingSumoReceiveStream/JumpingSumoReceiveStream.c	/^eARDISCOVERY_ERROR ARDISCOVERY_Connection_ReceiveJsonCallback (uint8_t *dataRx, uint32_t dataRxSize, char *ip, void *customData)$/;"	f
+ARDISCOVERY_Connection_SendJsonCallback	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^eARDISCOVERY_ERROR ARDISCOVERY_Connection_SendJsonCallback (uint8_t *dataTx, uint32_t *dataTxSize, void *customData)$/;"	f
+ARDISCOVERY_Connection_SendJsonCallback	BebopDroneReceiveStream/BebopDroneReceiveStream.c	/^eARDISCOVERY_ERROR ARDISCOVERY_Connection_SendJsonCallback (uint8_t *dataTx, uint32_t *dataTxSize, void *customData)$/;"	f
+ARDISCOVERY_Connection_SendJsonCallback	JumpingSumoChangePosture/JumpingSumoChangePosture.c	/^eARDISCOVERY_ERROR ARDISCOVERY_Connection_SendJsonCallback (uint8_t *dataTx, uint32_t *dataTxSize, void *customData)$/;"	f
+ARDISCOVERY_Connection_SendJsonCallback	JumpingSumoPiloting/JumpingSumoPiloting.c	/^eARDISCOVERY_ERROR ARDISCOVERY_Connection_SendJsonCallback (uint8_t *dataTx, uint32_t *dataTxSize, void *customData)$/;"	f
+ARDISCOVERY_Connection_SendJsonCallback	JumpingSumoReceiveStream/JumpingSumoReceiveStream.c	/^eARDISCOVERY_ERROR ARDISCOVERY_Connection_SendJsonCallback (uint8_t *dataTx, uint32_t *dataTxSize, void *customData)$/;"	f
+BATTERY_X	BebopDroneDecodeStream/ihm.c	63;"	d	file:
+BATTERY_X	BebopPilotingNewAPI/ihm.c	63;"	d	file:
+BATTERY_X	JSPilotingNewAPI/ihm.c	63;"	d	file:
+BATTERY_X	JumpingSumoPiloting/ihm.c	63;"	d	file:
+BATTERY_Y	BebopDroneDecodeStream/ihm.c	64;"	d	file:
+BATTERY_Y	BebopPilotingNewAPI/ihm.c	64;"	d	file:
+BATTERY_Y	JSPilotingNewAPI/ihm.c	64;"	d	file:
+BATTERY_Y	JumpingSumoPiloting/ihm.c	64;"	d	file:
+BD_C2D_PORT	BebopDroneDecodeStream/BebopDroneDecodeStream.c	70;"	d	file:
+BD_C2D_PORT	BebopDroneReceiveStream/BebopDroneReceiveStream.c	68;"	d	file:
+BD_Cam_t	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^} BD_Cam_t;$/;"	t	typeref:struct:_ARDrone3CameraData_t_
+BD_D2C_PORT	BebopDroneDecodeStream/BebopDroneDecodeStream.c	71;"	d	file:
+BD_D2C_PORT	BebopDroneReceiveStream/BebopDroneReceiveStream.c	69;"	d	file:
+BD_DISCOVERY_PORT	BebopDroneDecodeStream/BebopDroneDecodeStream.c	69;"	d	file:
+BD_DISCOVERY_PORT	BebopDroneReceiveStream/BebopDroneReceiveStream.c	67;"	d	file:
+BD_IP_ADDRESS	BebopDroneDecodeStream/BebopDroneDecodeStream.c	68;"	d	file:
+BD_IP_ADDRESS	BebopDroneReceiveStream/BebopDroneReceiveStream.c	66;"	d	file:
+BD_MANAGER_t	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^} BD_MANAGER_t;$/;"	t	typeref:struct:__anon17
+BD_MANAGER_t	BebopDroneReceiveStream/BebopDroneReceiveStream.h	/^} BD_MANAGER_t;$/;"	t	typeref:struct:__anon11
+BD_NET_CD_ACK_ID	BebopDroneDecodeStream/BebopDroneDecodeStream.c	74;"	d	file:
+BD_NET_CD_ACK_ID	BebopDroneReceiveStream/BebopDroneReceiveStream.c	72;"	d	file:
+BD_NET_CD_EMERGENCY_ID	BebopDroneDecodeStream/BebopDroneDecodeStream.c	75;"	d	file:
+BD_NET_CD_EMERGENCY_ID	BebopDroneReceiveStream/BebopDroneReceiveStream.c	73;"	d	file:
+BD_NET_CD_NONACK_ID	BebopDroneDecodeStream/BebopDroneDecodeStream.c	73;"	d	file:
+BD_NET_CD_NONACK_ID	BebopDroneReceiveStream/BebopDroneReceiveStream.c	71;"	d	file:
+BD_NET_CD_VIDEO_ACK_ID	BebopDroneDecodeStream/BebopDroneDecodeStream.c	76;"	d	file:
+BD_NET_CD_VIDEO_ACK_ID	BebopDroneReceiveStream/BebopDroneReceiveStream.c	74;"	d	file:
+BD_NET_DC_EVENT_ID	BebopDroneDecodeStream/BebopDroneDecodeStream.c	78;"	d	file:
+BD_NET_DC_EVENT_ID	BebopDroneReceiveStream/BebopDroneReceiveStream.c	76;"	d	file:
+BD_NET_DC_NAVDATA_ID	BebopDroneDecodeStream/BebopDroneDecodeStream.c	77;"	d	file:
+BD_NET_DC_NAVDATA_ID	BebopDroneReceiveStream/BebopDroneReceiveStream.c	75;"	d	file:
+BD_NET_DC_VIDEO_DATA_ID	BebopDroneDecodeStream/BebopDroneDecodeStream.c	79;"	d	file:
+BD_NET_DC_VIDEO_DATA_ID	BebopDroneReceiveStream/BebopDroneReceiveStream.c	77;"	d	file:
+BD_NET_DC_VIDEO_FRAG_SIZE	BebopDroneDecodeStream/BebopDroneDecodeStream.c	81;"	d	file:
+BD_NET_DC_VIDEO_FRAG_SIZE	BebopDroneReceiveStream/BebopDroneReceiveStream.c	79;"	d	file:
+BD_NET_DC_VIDEO_MAX_NUMBER_OF_FRAG	BebopDroneDecodeStream/BebopDroneDecodeStream.c	82;"	d	file:
+BD_NET_DC_VIDEO_MAX_NUMBER_OF_FRAG	BebopDroneReceiveStream/BebopDroneReceiveStream.c	80;"	d	file:
+BD_PCMD_t	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^}BD_PCMD_t;$/;"	t	typeref:struct:__anon16
+BD_RAW_FRAME_BUFFER_SIZE	BebopDroneDecodeStream/BebopDroneDecodeStream.c	84;"	d	file:
+BD_RAW_FRAME_POOL_SIZE	BebopDroneDecodeStream/BebopDroneDecodeStream.c	85;"	d	file:
+BEBOP_DISCOVERY_PORT	BebopPilotingNewAPI/BebopPiloting.c	67;"	d	file:
+BEBOP_IP_ADDRESS	BebopPilotingNewAPI/BebopPiloting.c	66;"	d	file:
+DEVICE_MANAGER_t	JumpingSumoPiloting/JumpingSumoPiloting.h	/^}DEVICE_MANAGER_t;$/;"	t	typeref:struct:__anon5
+DISPLAY_WITH_FFPLAY	JumpingSumoReceiveStream/JumpingSumoReceiveStream.c	78;"	d	file:
+DISPLAY_WITH_MPLAYER	BebopPilotingNewAPI/BebopPiloting.c	69;"	d	file:
+DISPLAY_WITH_MPLAYER	JSPilotingNewAPI/JumpingSumoPiloting.c	69;"	d	file:
+Decode_RunDataThread	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^void* Decode_RunDataThread(void *customData)$/;"	f
+ERROR_STR_LENGTH	BebopDroneDecodeStream/BebopDroneDecodeStream.c	87;"	d	file:
+ERROR_STR_LENGTH	BebopPilotingNewAPI/BebopPiloting.c	64;"	d	file:
+ERROR_STR_LENGTH	JSPilotingNewAPI/JumpingSumoPiloting.c	64;"	d	file:
+ERROR_STR_LENGTH	JumpingSumoPiloting/JumpingSumoPiloting.c	73;"	d	file:
+FIFO_DIR_PATTERN	BebopDroneDecodeStream/BebopDroneDecodeStream.c	89;"	d	file:
+FIFO_DIR_PATTERN	BebopDroneReceiveStream/BebopDroneReceiveStream.c	82;"	d	file:
+FIFO_DIR_PATTERN	BebopPilotingNewAPI/BebopPiloting.c	71;"	d	file:
+FIFO_DIR_PATTERN	JSPilotingNewAPI/JumpingSumoPiloting.c	71;"	d	file:
+FIFO_DIR_PATTERN	JumpingSumoReceiveStream/JumpingSumoReceiveStream.c	80;"	d	file:
+FIFO_NAME	BebopDroneDecodeStream/BebopDroneDecodeStream.c	90;"	d	file:
+FIFO_NAME	BebopDroneReceiveStream/BebopDroneReceiveStream.c	83;"	d	file:
+FIFO_NAME	BebopPilotingNewAPI/BebopPiloting.c	72;"	d	file:
+FIFO_NAME	JSPilotingNewAPI/JumpingSumoPiloting.c	72;"	d	file:
+FIFO_NAME	JumpingSumoReceiveStream/JumpingSumoReceiveStream.c	81;"	d	file:
+HEADER_X	BebopDroneDecodeStream/ihm.c	57;"	d	file:
+HEADER_X	BebopPilotingNewAPI/ihm.c	57;"	d	file:
+HEADER_X	JSPilotingNewAPI/ihm.c	57;"	d	file:
+HEADER_X	JumpingSumoPiloting/ihm.c	57;"	d	file:
+HEADER_Y	BebopDroneDecodeStream/ihm.c	58;"	d	file:
+HEADER_Y	BebopPilotingNewAPI/ihm.c	58;"	d	file:
+HEADER_Y	JSPilotingNewAPI/ihm.c	58;"	d	file:
+HEADER_Y	JumpingSumoPiloting/ihm.c	58;"	d	file:
+IHM	BebopPilotingNewAPI/BebopPiloting.c	74;"	d	file:
+IHM	JSPilotingNewAPI/JumpingSumoPiloting.c	74;"	d	file:
+IHM_Delete	BebopDroneDecodeStream/ihm.c	/^void IHM_Delete (IHM_t **ihm)$/;"	f
+IHM_Delete	BebopPilotingNewAPI/ihm.c	/^void IHM_Delete (IHM_t **ihm)$/;"	f
+IHM_Delete	JSPilotingNewAPI/ihm.c	/^void IHM_Delete (IHM_t **ihm)$/;"	f
+IHM_Delete	JumpingSumoPiloting/ihm.c	/^void IHM_Delete (IHM_t **ihm)$/;"	f
+IHM_INPUT_EVENT_BACK	BebopDroneDecodeStream/ihm.h	/^    IHM_INPUT_EVENT_BACK,$/;"	e	enum:__anon14
+IHM_INPUT_EVENT_BACK	BebopPilotingNewAPI/ihm.h	/^    IHM_INPUT_EVENT_BACK,$/;"	e	enum:__anon7
+IHM_INPUT_EVENT_BACK	JSPilotingNewAPI/ihm.h	/^    IHM_INPUT_EVENT_BACK,$/;"	e	enum:__anon9
+IHM_INPUT_EVENT_BACK	JumpingSumoPiloting/ihm.h	/^    IHM_INPUT_EVENT_BACK,$/;"	e	enum:__anon2
+IHM_INPUT_EVENT_CAM_DOWN	BebopDroneDecodeStream/ihm.h	/^    IHM_INPUT_EVENT_CAM_DOWN,$/;"	e	enum:__anon14
+IHM_INPUT_EVENT_CAM_LEFT	BebopDroneDecodeStream/ihm.h	/^    IHM_INPUT_EVENT_CAM_LEFT,$/;"	e	enum:__anon14
+IHM_INPUT_EVENT_CAM_RIGHT	BebopDroneDecodeStream/ihm.h	/^    IHM_INPUT_EVENT_CAM_RIGHT,$/;"	e	enum:__anon14
+IHM_INPUT_EVENT_CAM_UP	BebopDroneDecodeStream/ihm.h	/^    IHM_INPUT_EVENT_CAM_UP,$/;"	e	enum:__anon14
+IHM_INPUT_EVENT_DOWN	BebopDroneDecodeStream/ihm.h	/^    IHM_INPUT_EVENT_DOWN,$/;"	e	enum:__anon14
+IHM_INPUT_EVENT_DOWN	BebopPilotingNewAPI/ihm.h	/^    IHM_INPUT_EVENT_DOWN,$/;"	e	enum:__anon7
+IHM_INPUT_EVENT_EMERGENCY	BebopDroneDecodeStream/ihm.h	/^    IHM_INPUT_EVENT_EMERGENCY,$/;"	e	enum:__anon14
+IHM_INPUT_EVENT_EMERGENCY	BebopPilotingNewAPI/ihm.h	/^    IHM_INPUT_EVENT_EMERGENCY,$/;"	e	enum:__anon7
+IHM_INPUT_EVENT_EXIT	BebopDroneDecodeStream/ihm.h	/^    IHM_INPUT_EVENT_EXIT,$/;"	e	enum:__anon14
+IHM_INPUT_EVENT_EXIT	BebopPilotingNewAPI/ihm.h	/^    IHM_INPUT_EVENT_EXIT,$/;"	e	enum:__anon7
+IHM_INPUT_EVENT_EXIT	JSPilotingNewAPI/ihm.h	/^    IHM_INPUT_EVENT_EXIT,$/;"	e	enum:__anon9
+IHM_INPUT_EVENT_EXIT	JumpingSumoPiloting/ihm.h	/^    IHM_INPUT_EVENT_EXIT,$/;"	e	enum:__anon2
+IHM_INPUT_EVENT_FORWARD	BebopDroneDecodeStream/ihm.h	/^    IHM_INPUT_EVENT_FORWARD,$/;"	e	enum:__anon14
+IHM_INPUT_EVENT_FORWARD	BebopPilotingNewAPI/ihm.h	/^    IHM_INPUT_EVENT_FORWARD,$/;"	e	enum:__anon7
+IHM_INPUT_EVENT_FORWARD	JSPilotingNewAPI/ihm.h	/^    IHM_INPUT_EVENT_FORWARD,$/;"	e	enum:__anon9
+IHM_INPUT_EVENT_FORWARD	JumpingSumoPiloting/ihm.h	/^    IHM_INPUT_EVENT_FORWARD,$/;"	e	enum:__anon2
+IHM_INPUT_EVENT_JUMP	JSPilotingNewAPI/ihm.h	/^    IHM_INPUT_EVENT_JUMP,$/;"	e	enum:__anon9
+IHM_INPUT_EVENT_JUMP	JumpingSumoPiloting/ihm.h	/^    IHM_INPUT_EVENT_JUMP,$/;"	e	enum:__anon2
+IHM_INPUT_EVENT_LAND	BebopPilotingNewAPI/ihm.h	/^    IHM_INPUT_EVENT_LAND,   \/\/  Keyboard : spacebar$/;"	e	enum:__anon7
+IHM_INPUT_EVENT_LEFT	BebopDroneDecodeStream/ihm.h	/^    IHM_INPUT_EVENT_LEFT,$/;"	e	enum:__anon14
+IHM_INPUT_EVENT_LEFT	BebopPilotingNewAPI/ihm.h	/^    IHM_INPUT_EVENT_LEFT,$/;"	e	enum:__anon7
+IHM_INPUT_EVENT_LEFT	JSPilotingNewAPI/ihm.h	/^    IHM_INPUT_EVENT_LEFT,$/;"	e	enum:__anon9
+IHM_INPUT_EVENT_LEFT	JumpingSumoPiloting/ihm.h	/^    IHM_INPUT_EVENT_LEFT,$/;"	e	enum:__anon2
+IHM_INPUT_EVENT_NONE	BebopDroneDecodeStream/ihm.h	/^    IHM_INPUT_EVENT_NONE,$/;"	e	enum:__anon14
+IHM_INPUT_EVENT_NONE	BebopPilotingNewAPI/ihm.h	/^    IHM_INPUT_EVENT_NONE,$/;"	e	enum:__anon7
+IHM_INPUT_EVENT_NONE	JSPilotingNewAPI/ihm.h	/^    IHM_INPUT_EVENT_NONE,$/;"	e	enum:__anon9
+IHM_INPUT_EVENT_NONE	JumpingSumoPiloting/ihm.h	/^    IHM_INPUT_EVENT_NONE,$/;"	e	enum:__anon2
+IHM_INPUT_EVENT_RIGHT	BebopDroneDecodeStream/ihm.h	/^    IHM_INPUT_EVENT_RIGHT,$/;"	e	enum:__anon14
+IHM_INPUT_EVENT_RIGHT	BebopPilotingNewAPI/ihm.h	/^    IHM_INPUT_EVENT_RIGHT,$/;"	e	enum:__anon7
+IHM_INPUT_EVENT_RIGHT	JSPilotingNewAPI/ihm.h	/^    IHM_INPUT_EVENT_RIGHT,$/;"	e	enum:__anon9
+IHM_INPUT_EVENT_RIGHT	JumpingSumoPiloting/ihm.h	/^    IHM_INPUT_EVENT_RIGHT,$/;"	e	enum:__anon2
+IHM_INPUT_EVENT_ROLL_LEFT	BebopPilotingNewAPI/ihm.h	/^    IHM_INPUT_EVENT_ROLL_LEFT,$/;"	e	enum:__anon7
+IHM_INPUT_EVENT_ROLL_RIGHT	BebopPilotingNewAPI/ihm.h	/^    IHM_INPUT_EVENT_ROLL_RIGHT,$/;"	e	enum:__anon7
+IHM_INPUT_EVENT_TAKEOFF	BebopPilotingNewAPI/ihm.h	/^    IHM_INPUT_EVENT_TAKEOFF,    \/\/  Keyboard : t$/;"	e	enum:__anon7
+IHM_INPUT_EVENT_TAKEOFF_LANDING	BebopDroneDecodeStream/ihm.h	/^    IHM_INPUT_EVENT_TAKEOFF_LANDING,$/;"	e	enum:__anon14
+IHM_INPUT_EVENT_UP	BebopDroneDecodeStream/ihm.h	/^    IHM_INPUT_EVENT_UP,$/;"	e	enum:__anon14
+IHM_INPUT_EVENT_UP	BebopPilotingNewAPI/ihm.h	/^    IHM_INPUT_EVENT_UP,$/;"	e	enum:__anon7
+IHM_INPUT_EVENT_YAW_LEFT	BebopDroneDecodeStream/ihm.h	/^    IHM_INPUT_EVENT_YAW_LEFT,$/;"	e	enum:__anon14
+IHM_INPUT_EVENT_YAW_RIGHT	BebopDroneDecodeStream/ihm.h	/^    IHM_INPUT_EVENT_YAW_RIGHT,$/;"	e	enum:__anon14
+IHM_InputProcessing	BebopDroneDecodeStream/ihm.c	/^void *IHM_InputProcessing(void *data)$/;"	f
+IHM_InputProcessing	BebopPilotingNewAPI/ihm.c	/^void *IHM_InputProcessing(void *data)$/;"	f
+IHM_InputProcessing	JSPilotingNewAPI/ihm.c	/^void *IHM_InputProcessing(void *data)$/;"	f
+IHM_InputProcessing	JumpingSumoPiloting/ihm.c	/^void *IHM_InputProcessing(void *data)$/;"	f
+IHM_New	BebopDroneDecodeStream/ihm.c	/^IHM_t *IHM_New (IHM_onInputEvent_t onInputEventCallback)$/;"	f
+IHM_New	BebopPilotingNewAPI/ihm.c	/^IHM_t *IHM_New (IHM_onInputEvent_t onInputEventCallback)$/;"	f
+IHM_New	JSPilotingNewAPI/ihm.c	/^IHM_t *IHM_New (IHM_onInputEvent_t onInputEventCallback)$/;"	f
+IHM_New	JumpingSumoPiloting/ihm.c	/^IHM_t *IHM_New (IHM_onInputEvent_t onInputEventCallback)$/;"	f
+IHM_PrintBattery	BebopDroneDecodeStream/ihm.c	/^void IHM_PrintBattery(IHM_t *ihm, uint8_t percent)$/;"	f
+IHM_PrintBattery	BebopPilotingNewAPI/ihm.c	/^void IHM_PrintBattery(IHM_t *ihm, uint8_t percent)$/;"	f
+IHM_PrintBattery	JSPilotingNewAPI/ihm.c	/^void IHM_PrintBattery(IHM_t *ihm, uint8_t percent)$/;"	f
+IHM_PrintBattery	JumpingSumoPiloting/ihm.c	/^void IHM_PrintBattery(IHM_t *ihm, uint8_t percent)$/;"	f
+IHM_PrintHeader	BebopDroneDecodeStream/ihm.c	/^void IHM_PrintHeader(IHM_t *ihm, char *headerStr)$/;"	f
+IHM_PrintHeader	BebopPilotingNewAPI/ihm.c	/^void IHM_PrintHeader(IHM_t *ihm, char *headerStr)$/;"	f
+IHM_PrintHeader	JSPilotingNewAPI/ihm.c	/^void IHM_PrintHeader(IHM_t *ihm, char *headerStr)$/;"	f
+IHM_PrintHeader	JumpingSumoPiloting/ihm.c	/^void IHM_PrintHeader(IHM_t *ihm, char *headerStr)$/;"	f
+IHM_PrintInfo	BebopDroneDecodeStream/ihm.c	/^void IHM_PrintInfo(IHM_t *ihm, char *infoStr)$/;"	f
+IHM_PrintInfo	BebopPilotingNewAPI/ihm.c	/^void IHM_PrintInfo(IHM_t *ihm, char *infoStr)$/;"	f
+IHM_PrintInfo	JSPilotingNewAPI/ihm.c	/^void IHM_PrintInfo(IHM_t *ihm, char *infoStr)$/;"	f
+IHM_PrintInfo	JumpingSumoPiloting/ihm.c	/^void IHM_PrintInfo(IHM_t *ihm, char *infoStr)$/;"	f
+IHM_PrintInstruction	BebopDroneDecodeStream/ihm.c	/^void IHM_PrintInstruction(IHM_t *ihm, char *instructionStr)$/;"	f
+IHM_PrintValue	BebopPilotingNewAPI/ihm.c	/^void IHM_PrintValue(IHM_t *ihm, char* TAG, uint8_t value)$/;"	f
+IHM_onInputEvent_t	BebopDroneDecodeStream/ihm.h	/^typedef void (*IHM_onInputEvent_t) (eIHM_INPUT_EVENT event, void *customData);$/;"	t
+IHM_onInputEvent_t	BebopPilotingNewAPI/ihm.h	/^typedef void (*IHM_onInputEvent_t) (eIHM_INPUT_EVENT event, void *customData);$/;"	t
+IHM_onInputEvent_t	JSPilotingNewAPI/ihm.h	/^typedef void (*IHM_onInputEvent_t) (eIHM_INPUT_EVENT event, void *customData);$/;"	t
+IHM_onInputEvent_t	JumpingSumoPiloting/ihm.h	/^typedef void (*IHM_onInputEvent_t) (eIHM_INPUT_EVENT event, void *customData);$/;"	t
+IHM_setCustomData	BebopDroneDecodeStream/ihm.c	/^void IHM_setCustomData(IHM_t *ihm, void *customData)$/;"	f
+IHM_setCustomData	BebopPilotingNewAPI/ihm.c	/^void IHM_setCustomData(IHM_t *ihm, void *customData)$/;"	f
+IHM_setCustomData	JSPilotingNewAPI/ihm.c	/^void IHM_setCustomData(IHM_t *ihm, void *customData)$/;"	f
+IHM_setCustomData	JumpingSumoPiloting/ihm.c	/^void IHM_setCustomData(IHM_t *ihm, void *customData)$/;"	f
+IHM_t	BebopDroneDecodeStream/ihm.h	/^}IHM_t;$/;"	t	typeref:struct:__anon15
+IHM_t	BebopPilotingNewAPI/ihm.h	/^}IHM_t;$/;"	t	typeref:struct:__anon8
+IHM_t	JSPilotingNewAPI/ihm.h	/^}IHM_t;$/;"	t	typeref:struct:__anon10
+IHM_t	JumpingSumoPiloting/ihm.h	/^}IHM_t;$/;"	t	typeref:struct:__anon3
+INFO_X	BebopDroneDecodeStream/ihm.c	66;"	d	file:
+INFO_X	BebopPilotingNewAPI/ihm.c	60;"	d	file:
+INFO_X	JSPilotingNewAPI/ihm.c	60;"	d	file:
+INFO_X	JumpingSumoPiloting/ihm.c	60;"	d	file:
+INFO_Y	BebopDroneDecodeStream/ihm.c	67;"	d	file:
+INFO_Y	BebopPilotingNewAPI/ihm.c	61;"	d	file:
+INFO_Y	JSPilotingNewAPI/ihm.c	61;"	d	file:
+INFO_Y	JumpingSumoPiloting/ihm.c	61;"	d	file:
+INSTRUCTION_X	BebopDroneDecodeStream/ihm.c	60;"	d	file:
+INSTRUCTION_Y	BebopDroneDecodeStream/ihm.c	61;"	d	file:
+JS_C2D_PORT	JumpingSumoChangePosture/JumpingSumoChangePosture.c	64;"	d	file:
+JS_C2D_PORT	JumpingSumoPiloting/JumpingSumoPiloting.c	65;"	d	file:
+JS_C2D_PORT	JumpingSumoReceiveStream/JumpingSumoReceiveStream.c	68;"	d	file:
+JS_D2C_PORT	JumpingSumoChangePosture/JumpingSumoChangePosture.c	65;"	d	file:
+JS_D2C_PORT	JumpingSumoPiloting/JumpingSumoPiloting.c	66;"	d	file:
+JS_D2C_PORT	JumpingSumoReceiveStream/JumpingSumoReceiveStream.c	69;"	d	file:
+JS_DISCOVERY_PORT	JSPilotingNewAPI/JumpingSumoPiloting.c	67;"	d	file:
+JS_DISCOVERY_PORT	JumpingSumoChangePosture/JumpingSumoChangePosture.c	63;"	d	file:
+JS_DISCOVERY_PORT	JumpingSumoPiloting/JumpingSumoPiloting.c	64;"	d	file:
+JS_DISCOVERY_PORT	JumpingSumoReceiveStream/JumpingSumoReceiveStream.c	67;"	d	file:
+JS_IP_ADDRESS	JSPilotingNewAPI/JumpingSumoPiloting.c	66;"	d	file:
+JS_IP_ADDRESS	JumpingSumoChangePosture/JumpingSumoChangePosture.c	62;"	d	file:
+JS_IP_ADDRESS	JumpingSumoPiloting/JumpingSumoPiloting.c	63;"	d	file:
+JS_IP_ADDRESS	JumpingSumoReceiveStream/JumpingSumoReceiveStream.c	66;"	d	file:
+JS_MANAGER_t	JumpingSumoChangePosture/JumpingSumoChangePosture.h	/^}JS_MANAGER_t;$/;"	t	typeref:struct:__anon1
+JS_MANAGER_t	JumpingSumoReceiveStream/JumpingSumoReceiveStream.h	/^} JS_MANAGER_t;$/;"	t	typeref:struct:__anon6
+JS_NET_CD_ACK_ID	JumpingSumoChangePosture/JumpingSumoChangePosture.c	68;"	d	file:
+JS_NET_CD_ACK_ID	JumpingSumoPiloting/JumpingSumoPiloting.c	69;"	d	file:
+JS_NET_CD_ACK_ID	JumpingSumoReceiveStream/JumpingSumoReceiveStream.c	72;"	d	file:
+JS_NET_CD_NONACK_ID	JumpingSumoChangePosture/JumpingSumoChangePosture.c	67;"	d	file:
+JS_NET_CD_NONACK_ID	JumpingSumoPiloting/JumpingSumoPiloting.c	68;"	d	file:
+JS_NET_CD_NONACK_ID	JumpingSumoReceiveStream/JumpingSumoReceiveStream.c	71;"	d	file:
+JS_NET_CD_VIDEO_ACK_ID	JumpingSumoChangePosture/JumpingSumoChangePosture.c	69;"	d	file:
+JS_NET_CD_VIDEO_ACK_ID	JumpingSumoReceiveStream/JumpingSumoReceiveStream.c	73;"	d	file:
+JS_NET_DC_ACK_ID	JumpingSumoChangePosture/JumpingSumoChangePosture.c	71;"	d	file:
+JS_NET_DC_ACK_ID	JumpingSumoPiloting/JumpingSumoPiloting.c	71;"	d	file:
+JS_NET_DC_ACK_ID	JumpingSumoReceiveStream/JumpingSumoReceiveStream.c	75;"	d	file:
+JS_NET_DC_NONACK_ID	JumpingSumoChangePosture/JumpingSumoChangePosture.c	70;"	d	file:
+JS_NET_DC_NONACK_ID	JumpingSumoPiloting/JumpingSumoPiloting.c	70;"	d	file:
+JS_NET_DC_NONACK_ID	JumpingSumoReceiveStream/JumpingSumoReceiveStream.c	74;"	d	file:
+JS_NET_DC_VIDEO_ID	JumpingSumoReceiveStream/JumpingSumoReceiveStream.c	76;"	d	file:
+JS_PCMD_t	JumpingSumoPiloting/JumpingSumoPiloting.h	/^}JS_PCMD_t;$/;"	t	typeref:struct:__anon4
+LOCAL_CATEGORY_PATH	BebopDroneDecodeStream/atom.mk	/^LOCAL_CATEGORY_PATH := samples$/;"	m
+LOCAL_CATEGORY_PATH	BebopDroneReceiveStream/atom.mk	/^LOCAL_CATEGORY_PATH := samples$/;"	m
+LOCAL_CATEGORY_PATH	BebopPilotingNewAPI/atom.mk	/^LOCAL_CATEGORY_PATH := samples$/;"	m
+LOCAL_CATEGORY_PATH	JSPilotingNewAPI/atom.mk	/^LOCAL_CATEGORY_PATH := samples$/;"	m
+LOCAL_CATEGORY_PATH	JumpingSumoChangePosture/atom.mk	/^LOCAL_CATEGORY_PATH := samples$/;"	m
+LOCAL_CATEGORY_PATH	JumpingSumoPiloting/atom.mk	/^LOCAL_CATEGORY_PATH := samples$/;"	m
+LOCAL_CATEGORY_PATH	JumpingSumoReceiveStream/atom.mk	/^LOCAL_CATEGORY_PATH := samples$/;"	m
+LOCAL_DESCRIPTION	BebopDroneDecodeStream/atom.mk	/^LOCAL_DESCRIPTION := Bebop Drone Decode Stream$/;"	m
+LOCAL_DESCRIPTION	BebopDroneReceiveStream/atom.mk	/^LOCAL_DESCRIPTION := Bebop Drone Receive Stream$/;"	m
+LOCAL_DESCRIPTION	BebopPilotingNewAPI/atom.mk	/^LOCAL_DESCRIPTION := Bebop Piloting Using ARDeviceController$/;"	m
+LOCAL_DESCRIPTION	JSPilotingNewAPI/atom.mk	/^LOCAL_DESCRIPTION := Jumping Sumo Piloting$/;"	m
+LOCAL_DESCRIPTION	JumpingSumoChangePosture/atom.mk	/^LOCAL_DESCRIPTION := Jumping Sumo Change Posture$/;"	m
+LOCAL_DESCRIPTION	JumpingSumoPiloting/atom.mk	/^LOCAL_DESCRIPTION := Jumping Sumo Piloting$/;"	m
+LOCAL_DESCRIPTION	JumpingSumoReceiveStream/atom.mk	/^LOCAL_DESCRIPTION := Jumping Sumo Receive Stream$/;"	m
+LOCAL_EXPORT_C_INCLUDES	Dependencies/atom.mk	/^LOCAL_EXPORT_C_INCLUDES := $(shell pkg-config --cflags libavcodec libavformat libswscale libavutil)$/;"	m
+LOCAL_EXPORT_LDLIBS	Dependencies/atom.mk	/^LOCAL_EXPORT_LDLIBS := $(shell pkg-config --libs libavcodec libavformat libswscale libavutil)$/;"	m
+LOCAL_EXPORT_LDLIBS	Dependencies/atom.mk	/^LOCAL_EXPORT_LDLIBS := -lncurses$/;"	m
+LOCAL_LIBRARIES	BebopDroneDecodeStream/atom.mk	/^LOCAL_LIBRARIES := \\$/;"	m
+LOCAL_LIBRARIES	BebopDroneReceiveStream/atom.mk	/^LOCAL_LIBRARIES := \\$/;"	m
+LOCAL_LIBRARIES	BebopPilotingNewAPI/atom.mk	/^LOCAL_LIBRARIES := \\$/;"	m
+LOCAL_LIBRARIES	JSPilotingNewAPI/atom.mk	/^LOCAL_LIBRARIES := \\$/;"	m
+LOCAL_LIBRARIES	JumpingSumoChangePosture/atom.mk	/^LOCAL_LIBRARIES := \\$/;"	m
+LOCAL_LIBRARIES	JumpingSumoPiloting/atom.mk	/^LOCAL_LIBRARIES := \\$/;"	m
+LOCAL_LIBRARIES	JumpingSumoReceiveStream/atom.mk	/^LOCAL_LIBRARIES := \\$/;"	m
+LOCAL_MODULE	BebopDroneDecodeStream/atom.mk	/^LOCAL_MODULE := BebopDroneDecodeStream$/;"	m
+LOCAL_MODULE	BebopDroneReceiveStream/atom.mk	/^LOCAL_MODULE := BebopDroneReceiveStream$/;"	m
+LOCAL_MODULE	BebopPilotingNewAPI/atom.mk	/^LOCAL_MODULE := BebopPilotingNewAPI$/;"	m
+LOCAL_MODULE	Dependencies/atom.mk	/^LOCAL_MODULE := ffmpeg$/;"	m
+LOCAL_MODULE	Dependencies/atom.mk	/^LOCAL_MODULE := ncurses$/;"	m
+LOCAL_MODULE	JSPilotingNewAPI/atom.mk	/^LOCAL_MODULE := JumpingSumoPilotingNewAPI$/;"	m
+LOCAL_MODULE	JumpingSumoChangePosture/atom.mk	/^LOCAL_MODULE := JumpingSumoChangePosture$/;"	m
+LOCAL_MODULE	JumpingSumoPiloting/atom.mk	/^LOCAL_MODULE := JumpingSumoPiloting$/;"	m
+LOCAL_MODULE	JumpingSumoReceiveStream/atom.mk	/^LOCAL_MODULE := JumpingSumoReceiveStream$/;"	m
+LOCAL_PATH	BebopDroneDecodeStream/atom.mk	/^LOCAL_PATH := $(call my-dir)$/;"	m
+LOCAL_PATH	BebopDroneReceiveStream/atom.mk	/^LOCAL_PATH := $(call my-dir)$/;"	m
+LOCAL_PATH	BebopPilotingNewAPI/atom.mk	/^LOCAL_PATH := $(call my-dir)$/;"	m
+LOCAL_PATH	Dependencies/atom.mk	/^LOCAL_PATH := $(call my-dir)$/;"	m
+LOCAL_PATH	JSPilotingNewAPI/atom.mk	/^LOCAL_PATH := $(call my-dir)$/;"	m
+LOCAL_PATH	JumpingSumoChangePosture/atom.mk	/^LOCAL_PATH := $(call my-dir)$/;"	m
+LOCAL_PATH	JumpingSumoPiloting/atom.mk	/^LOCAL_PATH := $(call my-dir)$/;"	m
+LOCAL_PATH	JumpingSumoReceiveStream/atom.mk	/^LOCAL_PATH := $(call my-dir)$/;"	m
+LOCAL_SRC_FILES	BebopDroneDecodeStream/atom.mk	/^LOCAL_SRC_FILES := \\$/;"	m
+LOCAL_SRC_FILES	BebopDroneReceiveStream/atom.mk	/^LOCAL_SRC_FILES := \\$/;"	m
+LOCAL_SRC_FILES	BebopPilotingNewAPI/atom.mk	/^LOCAL_SRC_FILES := \\$/;"	m
+LOCAL_SRC_FILES	JSPilotingNewAPI/atom.mk	/^LOCAL_SRC_FILES := \\$/;"	m
+LOCAL_SRC_FILES	JumpingSumoChangePosture/atom.mk	/^LOCAL_SRC_FILES := \\$/;"	m
+LOCAL_SRC_FILES	JumpingSumoPiloting/atom.mk	/^LOCAL_SRC_FILES := \\$/;"	m
+LOCAL_SRC_FILES	JumpingSumoReceiveStream/atom.mk	/^LOCAL_SRC_FILES := \\$/;"	m
+READER_THREAD_DATA_t	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^struct READER_THREAD_DATA_t$/;"	s
+READER_THREAD_DATA_t	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^typedef struct READER_THREAD_DATA_t READER_THREAD_DATA_t;$/;"	t	typeref:struct:READER_THREAD_DATA_t
+READER_THREAD_DATA_t	BebopDroneReceiveStream/BebopDroneReceiveStream.h	/^struct READER_THREAD_DATA_t$/;"	s
+READER_THREAD_DATA_t	BebopDroneReceiveStream/BebopDroneReceiveStream.h	/^typedef struct READER_THREAD_DATA_t READER_THREAD_DATA_t;$/;"	t	typeref:struct:READER_THREAD_DATA_t
+READER_THREAD_DATA_t	JumpingSumoPiloting/JumpingSumoPiloting.h	/^struct READER_THREAD_DATA_t$/;"	s
+READER_THREAD_DATA_t	JumpingSumoPiloting/JumpingSumoPiloting.h	/^typedef struct READER_THREAD_DATA_t READER_THREAD_DATA_t;$/;"	t	typeref:struct:READER_THREAD_DATA_t
+RawFrame_t	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^struct RawFrame_t$/;"	s	file:
+RawFrame_t	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^typedef struct RawFrame_t RawFrame_t;$/;"	t	typeref:struct:RawFrame_t
+TAG	BebopDroneDecodeStream/BebopDroneDecodeStream.c	67;"	d	file:
+TAG	BebopDroneReceiveStream/BebopDroneReceiveStream.c	65;"	d	file:
+TAG	BebopPilotingNewAPI/BebopPiloting.c	62;"	d	file:
+TAG	JSPilotingNewAPI/JumpingSumoPiloting.c	62;"	d	file:
+TAG	JumpingSumoChangePosture/JumpingSumoChangePosture.c	61;"	d	file:
+TAG	JumpingSumoPiloting/JumpingSumoPiloting.c	62;"	d	file:
+TAG	JumpingSumoReceiveStream/JumpingSumoReceiveStream.c	65;"	d	file:
+VALUE_X	BebopPilotingNewAPI/ihm.c	66;"	d	file:
+VALUE_Y	BebopPilotingNewAPI/ihm.c	67;"	d	file:
+_ARCODECS_Manager_Component_t_	BebopDroneDecodeStream/DecoderManager.h	/^typedef struct _ARCODECS_Manager_Component_t_$/;"	s
+_ARCODECS_Manager_FFMPEGDecoder_t_	BebopDroneDecodeStream/DecoderManager.c	/^typedef struct _ARCODECS_Manager_FFMPEGDecoder_t_$/;"	s	file:
+_ARCODECS_Manager_Frame_t_	BebopDroneDecodeStream/DecoderManager.h	/^typedef struct _ARCODECS_Manager_Frame_t_$/;"	s
+_ARDrone3CameraData_t_	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^typedef struct _ARDrone3CameraData_t_$/;"	s
+_BEBOPDRONE_DECODE_IHM_H_	BebopDroneDecodeStream/ihm.h	33;"	d
+_BEBOP_PILOTING_IHM_H_	BebopPilotingNewAPI/ihm.h	38;"	d
+_JUMPINGSUMO_PILOTING_H_	BebopPilotingNewAPI/BebopPiloting.h	33;"	d
+_JUMPINGSUMO_PILOTING_H_	JSPilotingNewAPI/JumpingSumoPiloting.h	33;"	d
+_JUMPINGSUMO_PILOTING_H_	JumpingSumoPiloting/JumpingSumoPiloting.h	33;"	d
+_JUMPINGSUMO_PILOTING_IHM_H_	JSPilotingNewAPI/ihm.h	33;"	d
+_JUMPINGSUMO_PILOTING_IHM_H_	JumpingSumoPiloting/ihm.h	33;"	d
+_SDK_EXAMPLE_BD_H_	BebopDroneDecodeStream/BebopDroneDecodeStream.h	32;"	d
+_SDK_EXAMPLE_BD_H_	BebopDroneReceiveStream/BebopDroneReceiveStream.h	32;"	d
+_SDK_EXAMPLE_JS_H_	JumpingSumoChangePosture/JumpingSumoChangePosture.h	32;"	d
+_SDK_EXAMPLE_JS_H_	JumpingSumoReceiveStream/JumpingSumoReceiveStream.h	32;"	d
+____Decoder_Manager__	BebopDroneDecodeStream/DecoderManager.h	10;"	d
+addFreeRawFrameToFifo	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^void addFreeRawFrameToFifo(BD_MANAGER_t *deviceManager, RawFrame_t *rawFrame)$/;"	f
+alManager	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    ARNETWORKAL_Manager_t *alManager;$/;"	m	struct:__anon17
+alManager	BebopDroneReceiveStream/BebopDroneReceiveStream.h	/^    ARNETWORKAL_Manager_t *alManager;$/;"	m	struct:__anon11
+alManager	JumpingSumoChangePosture/JumpingSumoChangePosture.h	/^    ARNETWORKAL_Manager_t *alManager;$/;"	m	struct:__anon1
+alManager	JumpingSumoPiloting/JumpingSumoPiloting.h	/^    ARNETWORKAL_Manager_t *alManager;$/;"	m	struct:__anon5
+alManager	JumpingSumoReceiveStream/JumpingSumoReceiveStream.h	/^    ARNETWORKAL_Manager_t *alManager;$/;"	m	struct:__anon6
+ardiscoveryConnect	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^int ardiscoveryConnect (BD_MANAGER_t *deviceManager)$/;"	f
+ardiscoveryConnect	BebopDroneReceiveStream/BebopDroneReceiveStream.c	/^int ardiscoveryConnect (BD_MANAGER_t *deviceManager)$/;"	f
+ardiscoveryConnect	JumpingSumoChangePosture/JumpingSumoChangePosture.c	/^int ardiscoveryConnect (JS_MANAGER_t *jsManager)$/;"	f
+ardiscoveryConnect	JumpingSumoPiloting/JumpingSumoPiloting.c	/^int ardiscoveryConnect (DEVICE_MANAGER_t *deviceManager)$/;"	f
+ardiscoveryConnect	JumpingSumoReceiveStream/JumpingSumoReceiveStream.c	/^int ardiscoveryConnect (JS_MANAGER_t *jsManager)$/;"	f
+arnetworkCmdCallback	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^eARNETWORK_MANAGER_CALLBACK_RETURN arnetworkCmdCallback(int buffer_id, uint8_t *data, void *custom, eARNETWORK_MANAGER_CALLBACK_STATUS cause)$/;"	f
+arnetworkCmdCallback	BebopDroneReceiveStream/BebopDroneReceiveStream.c	/^eARNETWORK_MANAGER_CALLBACK_RETURN arnetworkCmdCallback(int buffer_id, uint8_t *data, void *custom, eARNETWORK_MANAGER_CALLBACK_STATUS cause)$/;"	f
+arnetworkCmdCallback	JumpingSumoChangePosture/JumpingSumoChangePosture.c	/^eARNETWORK_MANAGER_CALLBACK_RETURN arnetworkCmdCallback(int buffer_id, uint8_t *data, void *custom, eARNETWORK_MANAGER_CALLBACK_STATUS cause)$/;"	f
+arnetworkCmdCallback	JumpingSumoPiloting/JumpingSumoPiloting.c	/^eARNETWORK_MANAGER_CALLBACK_RETURN arnetworkCmdCallback(int buffer_id, uint8_t *data, void *custom, eARNETWORK_MANAGER_CALLBACK_STATUS cause)$/;"	f
+arnetworkCmdCallback	JumpingSumoReceiveStream/JumpingSumoReceiveStream.c	/^eARNETWORK_MANAGER_CALLBACK_RETURN arnetworkCmdCallback(int buffer_id, uint8_t *data, void *custom, eARNETWORK_MANAGER_CALLBACK_STATUS cause)$/;"	f
+arstreamAckDelay	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    int arstreamAckDelay;$/;"	m	struct:__anon17
+arstreamAckDelay	BebopDroneReceiveStream/BebopDroneReceiveStream.h	/^    int arstreamAckDelay;$/;"	m	struct:__anon11
+arstreamAckDelay	JumpingSumoReceiveStream/JumpingSumoReceiveStream.h	/^    int arstreamAckDelay;$/;"	m	struct:__anon6
+arstreamFragNb	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    int arstreamFragNb;$/;"	m	struct:__anon17
+arstreamFragNb	BebopDroneReceiveStream/BebopDroneReceiveStream.h	/^    int arstreamFragNb;$/;"	m	struct:__anon11
+arstreamFragNb	JumpingSumoReceiveStream/JumpingSumoReceiveStream.h	/^    int arstreamFragNb;$/;"	m	struct:__anon6
+arstreamFragSize	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    int arstreamFragSize;$/;"	m	struct:__anon17
+arstreamFragSize	BebopDroneReceiveStream/BebopDroneReceiveStream.h	/^    int arstreamFragSize;$/;"	m	struct:__anon11
+arstreamFragSize	JumpingSumoReceiveStream/JumpingSumoReceiveStream.h	/^    int arstreamFragSize;$/;"	m	struct:__anon6
+av_frame_alloc	BebopDroneDecodeStream/BebopDroneDecodeStream.c	97;"	d	file:
+av_frame_alloc	BebopDroneDecodeStream/DecoderManager.c	17;"	d	file:
+av_frame_free	BebopDroneDecodeStream/BebopDroneDecodeStream.c	98;"	d	file:
+av_frame_free	BebopDroneDecodeStream/DecoderManager.c	18;"	d	file:
+avpkt	BebopDroneDecodeStream/DecoderManager.c	/^    AVPacket avpkt;$/;"	m	struct:_ARCODECS_Manager_FFMPEGDecoder_t_	file:
+batteryStateChanged	BebopPilotingNewAPI/BebopPiloting.c	/^void batteryStateChanged (uint8_t percent)$/;"	f
+batteryStateChanged	JSPilotingNewAPI/JumpingSumoPiloting.c	/^void batteryStateChanged (uint8_t percent)$/;"	f
+batteryStateChangedCallback	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^void batteryStateChangedCallback (uint8_t percent, void *custom)$/;"	f
+batteryStateChangedCallback	JumpingSumoPiloting/JumpingSumoPiloting.c	/^void batteryStateChangedCallback (uint8_t percent, void *custom)$/;"	f
+c2dParams	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^static ARNETWORK_IOBufferParam_t c2dParams[] = {$/;"	v	file:
+c2dParams	BebopDroneReceiveStream/BebopDroneReceiveStream.c	/^static ARNETWORK_IOBufferParam_t c2dParams[] = {$/;"	v	file:
+c2dParams	JumpingSumoChangePosture/JumpingSumoChangePosture.c	/^static ARNETWORK_IOBufferParam_t c2dParams[] = {$/;"	v	file:
+c2dParams	JumpingSumoPiloting/JumpingSumoPiloting.c	/^static ARNETWORK_IOBufferParam_t c2dParams[] = {$/;"	v	file:
+c2dParams	JumpingSumoReceiveStream/JumpingSumoReceiveStream.c	/^static ARNETWORK_IOBufferParam_t c2dParams[] = {$/;"	v	file:
+c2dPort	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    int c2dPort;$/;"	m	struct:__anon17
+c2dPort	BebopDroneReceiveStream/BebopDroneReceiveStream.h	/^    int c2dPort;$/;"	m	struct:__anon11
+c2dPort	JumpingSumoChangePosture/JumpingSumoChangePosture.h	/^    int c2dPort;$/;"	m	struct:__anon1
+c2dPort	JumpingSumoPiloting/JumpingSumoPiloting.h	/^    int c2dPort;$/;"	m	struct:__anon5
+c2dPort	JumpingSumoReceiveStream/JumpingSumoReceiveStream.h	/^    int c2dPort;$/;"	m	struct:__anon6
+callback	BebopDroneDecodeStream/DecoderManager.c	/^    ARCODECS_Manager_GetNextDataCallback_t callback;$/;"	m	struct:ARCODECS_Manager_t	file:
+callbackCustomData	BebopDroneDecodeStream/DecoderManager.c	/^    void *callbackCustomData;$/;"	m	struct:ARCODECS_Manager_t	file:
+codec	BebopDroneDecodeStream/DecoderManager.c	/^    AVCodec *codec;$/;"	m	struct:_ARCODECS_Manager_FFMPEGDecoder_t_	file:
+codecCtx	BebopDroneDecodeStream/DecoderManager.c	/^    AVCodecContext *codecCtx;$/;"	m	struct:_ARCODECS_Manager_FFMPEGDecoder_t_	file:
+commandBufferIds	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^static int commandBufferIds[] = {$/;"	v	file:
+commandBufferIds	BebopDroneReceiveStream/BebopDroneReceiveStream.c	/^static int commandBufferIds[] = {$/;"	v	file:
+commandBufferIds	JumpingSumoPiloting/JumpingSumoPiloting.c	/^static int commandBufferIds[] = {$/;"	v	file:
+commandReceived	BebopPilotingNewAPI/BebopPiloting.c	/^void commandReceived (eARCONTROLLER_DICTIONARY_KEY commandKey, ARCONTROLLER_DICTIONARY_ELEMENT_t *elementDictionary, void *customData)$/;"	f
+commandReceived	JSPilotingNewAPI/JumpingSumoPiloting.c	/^void commandReceived (eARCONTROLLER_DICTIONARY_KEY commandKey, ARCONTROLLER_DICTIONARY_ELEMENT_t *elementDictionary, void *customData)$/;"	f
+componentArray	BebopDroneDecodeStream/DecoderManager.h	/^    ARCODECS_Manager_Component_t *componentArray;$/;"	m	struct:_ARCODECS_Manager_Frame_t_
+customData	BebopDroneDecodeStream/ihm.h	/^    void *customData;$/;"	m	struct:__anon15
+customData	BebopPilotingNewAPI/ihm.h	/^    void *customData;$/;"	m	struct:__anon8
+customData	JSPilotingNewAPI/ihm.h	/^    void *customData;$/;"	m	struct:__anon10
+customData	JumpingSumoPiloting/ihm.h	/^    void *customData;$/;"	m	struct:__anon3
+customPrintCallback	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^int customPrintCallback (eARSAL_PRINT_LEVEL level, const char *tag, const char *format, va_list va)$/;"	f
+customPrintCallback	BebopPilotingNewAPI/BebopPiloting.c	/^int customPrintCallback (eARSAL_PRINT_LEVEL level, const char *tag, const char *format, va_list va)$/;"	f
+customPrintCallback	JSPilotingNewAPI/JumpingSumoPiloting.c	/^int customPrintCallback (eARSAL_PRINT_LEVEL level, const char *tag, const char *format, va_list va)$/;"	f
+customPrintCallback	JumpingSumoPiloting/JumpingSumoPiloting.c	/^int customPrintCallback (eARSAL_PRINT_LEVEL level, const char *tag, const char *format, va_list va)$/;"	f
+d2cParams	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^static ARNETWORK_IOBufferParam_t d2cParams[] = {$/;"	v	file:
+d2cParams	BebopDroneReceiveStream/BebopDroneReceiveStream.c	/^static ARNETWORK_IOBufferParam_t d2cParams[] = {$/;"	v	file:
+d2cParams	JumpingSumoChangePosture/JumpingSumoChangePosture.c	/^static ARNETWORK_IOBufferParam_t d2cParams[] = {$/;"	v	file:
+d2cParams	JumpingSumoPiloting/JumpingSumoPiloting.c	/^static ARNETWORK_IOBufferParam_t d2cParams[] = {$/;"	v	file:
+d2cParams	JumpingSumoReceiveStream/JumpingSumoReceiveStream.c	/^static ARNETWORK_IOBufferParam_t d2cParams[] = {$/;"	v	file:
+d2cPort	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    int d2cPort;$/;"	m	struct:__anon17
+d2cPort	BebopDroneReceiveStream/BebopDroneReceiveStream.h	/^    int d2cPort;$/;"	m	struct:__anon11
+d2cPort	JumpingSumoChangePosture/JumpingSumoChangePosture.h	/^    int d2cPort;$/;"	m	struct:__anon1
+d2cPort	JumpingSumoPiloting/JumpingSumoPiloting.h	/^    int d2cPort;$/;"	m	struct:__anon5
+d2cPort	JumpingSumoReceiveStream/JumpingSumoReceiveStream.h	/^    int d2cPort;$/;"	m	struct:__anon6
+data	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^    uint8_t *data; \/**< data buffer*\/$/;"	m	struct:RawFrame_t	file:
+data	BebopDroneDecodeStream/DecoderManager.h	/^    uint8_t *data; \/**< data buffer*\/$/;"	m	struct:_ARCODECS_Manager_Component_t_
+dataCam	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    BD_Cam_t dataCam;$/;"	m	struct:__anon17
+dataPCMD	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    BD_PCMD_t dataPCMD;$/;"	m	struct:__anon17
+dataPCMD	JumpingSumoPiloting/JumpingSumoPiloting.h	/^    JS_PCMD_t dataPCMD;$/;"	m	struct:__anon5
+decodedFrame	BebopDroneDecodeStream/DecoderManager.c	/^    AVFrame *decodedFrame;$/;"	m	struct:_ARCODECS_Manager_FFMPEGDecoder_t_	file:
+decoder	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    ARCODECS_Manager_t *decoder;$/;"	m	struct:__anon17
+decoder	BebopDroneDecodeStream/DecoderManager.c	/^    ARCODECS_Manager_FFMPEGDecoder_t *decoder;$/;"	m	struct:ARCODECS_Manager_t	file:
+decoder	JumpingSumoPiloting/JumpingSumoPiloting.h	/^    ARCOMMANDS_Decoder_t* decoder;$/;"	m	struct:__anon5
+decoderConfigCallback	BebopPilotingNewAPI/BebopPiloting.c	/^eARCONTROLLER_ERROR decoderConfigCallback (ARCONTROLLER_Stream_Codec_t codec, void *customData)$/;"	f
+decoderConfigCallback	JSPilotingNewAPI/JumpingSumoPiloting.c	/^eARCONTROLLER_ERROR decoderConfigCallback (ARCONTROLLER_Stream_Codec_t codec, void *customData)$/;"	f
+decodingCanceled	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    int decodingCanceled;$/;"	m	struct:__anon17
+decodingThread	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    ARSAL_Thread_t decodingThread;$/;"	m	struct:__anon17
+deviceManager	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    BD_MANAGER_t *deviceManager;$/;"	m	struct:READER_THREAD_DATA_t
+deviceManager	BebopDroneReceiveStream/BebopDroneReceiveStream.h	/^    BD_MANAGER_t *deviceManager;$/;"	m	struct:READER_THREAD_DATA_t
+deviceManager	JumpingSumoPiloting/JumpingSumoPiloting.h	/^    DEVICE_MANAGER_t *deviceManager;$/;"	m	struct:READER_THREAD_DATA_t
+didReceiveFrameCallback	BebopPilotingNewAPI/BebopPiloting.c	/^eARCONTROLLER_ERROR didReceiveFrameCallback (ARCONTROLLER_Frame_t *frame, void *customData)$/;"	f
+didReceiveFrameCallback	JSPilotingNewAPI/JumpingSumoPiloting.c	/^eARCONTROLLER_ERROR didReceiveFrameCallback (ARCONTROLLER_Frame_t *frame, void *customData)$/;"	f
+eARCODECS_ERROR	BebopDroneDecodeStream/DecoderManager.h	/^} eARCODECS_ERROR;$/;"	t	typeref:enum:__anon12
+eARCODECS_FORMAT	BebopDroneDecodeStream/DecoderManager.h	/^} eARCODECS_FORMAT;$/;"	t	typeref:enum:__anon13
+eARCODECS_FORMAT_RGBA_COMPONENT	BebopDroneDecodeStream/DecoderManager.c	/^} eARCODECS_FORMAT_RGBA_COMPONENT;$/;"	t	typeref:enum:__anon18	file:
+eARCODECS_FORMAT_YUV_COMPONENT	BebopDroneDecodeStream/DecoderManager.c	/^} eARCODECS_FORMAT_YUV_COMPONENT;$/;"	t	typeref:enum:__anon19	file:
+eIHM_INPUT_EVENT	BebopDroneDecodeStream/ihm.h	/^}eIHM_INPUT_EVENT;$/;"	t	typeref:enum:__anon14
+eIHM_INPUT_EVENT	BebopPilotingNewAPI/ihm.h	/^}eIHM_INPUT_EVENT;$/;"	t	typeref:enum:__anon7
+eIHM_INPUT_EVENT	JSPilotingNewAPI/ihm.h	/^}eIHM_INPUT_EVENT;$/;"	t	typeref:enum:__anon9
+eIHM_INPUT_EVENT	JumpingSumoPiloting/ihm.h	/^}eIHM_INPUT_EVENT;$/;"	t	typeref:enum:__anon2
+fifoReadIdx	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    int fifoReadIdx;$/;"	m	struct:__anon17
+fifoWriteIdx	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    int fifoWriteIdx;$/;"	m	struct:__anon17
+fifo_dir	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^static char fifo_dir[] = FIFO_DIR_PATTERN;$/;"	v	file:
+fifo_dir	BebopDroneReceiveStream/BebopDroneReceiveStream.c	/^static char fifo_dir[] = FIFO_DIR_PATTERN;$/;"	v	file:
+fifo_dir	BebopPilotingNewAPI/BebopPiloting.c	/^static char fifo_dir[] = FIFO_DIR_PATTERN;$/;"	v	file:
+fifo_dir	JSPilotingNewAPI/JumpingSumoPiloting.c	/^static char fifo_dir[] = FIFO_DIR_PATTERN;$/;"	v	file:
+fifo_dir	JumpingSumoReceiveStream/JumpingSumoReceiveStream.c	/^static char fifo_dir[] = FIFO_DIR_PATTERN;$/;"	v	file:
+fifo_name	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^static char fifo_name[128] = "";$/;"	v	file:
+fifo_name	BebopDroneReceiveStream/BebopDroneReceiveStream.c	/^static char fifo_name[128] = "";$/;"	v	file:
+fifo_name	BebopPilotingNewAPI/BebopPiloting.c	/^static char fifo_name[128] = "";$/;"	v	file:
+fifo_name	JSPilotingNewAPI/JumpingSumoPiloting.c	/^static char fifo_name[128] = "";$/;"	v	file:
+fifo_name	JumpingSumoReceiveStream/JumpingSumoReceiveStream.c	/^static char fifo_name[128] = "";$/;"	v	file:
+flag	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    int flag;$/;"	m	struct:__anon16
+flag	JumpingSumoPiloting/JumpingSumoPiloting.h	/^    uint8_t flag;$/;"	m	struct:__anon4
+flushFifo	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^void flushFifo(BD_MANAGER_t *deviceManager)$/;"	f
+flyingState	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    eARCOMMANDS_ARDRONE3_PILOTINGSTATE_FLYINGSTATECHANGED_STATE flyingState;$/;"	m	struct:__anon17
+flyingStateChangedCallback	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^void flyingStateChangedCallback (eARCOMMANDS_ARDRONE3_PILOTINGSTATE_FLYINGSTATECHANGED_STATE state, void *custom)$/;"	f
+format	BebopDroneDecodeStream/DecoderManager.h	/^    eARCODECS_FORMAT format;$/;"	m	struct:_ARCODECS_Manager_Frame_t_
+frameCompleteCallback	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^uint8_t *frameCompleteCallback (eARSTREAM_READER_CAUSE cause, uint8_t *frame, uint32_t frameSize, int numberOfSkippedFrames, int isFlushFrame, uint32_t *newBufferCapacity, void *custom)$/;"	f
+frameCompleteCallback	BebopDroneReceiveStream/BebopDroneReceiveStream.c	/^uint8_t *frameCompleteCallback (eARSTREAM_READER_CAUSE cause, uint8_t *frame, uint32_t frameSize, int numberOfSkippedFrames, int isFlushFrame, uint32_t *newBufferCapacity, void *custom)$/;"	f
+frameCompleteCallback	JumpingSumoReceiveStream/JumpingSumoReceiveStream.c	/^uint8_t *frameCompleteCallback (eARSTREAM_READER_CAUSE cause, uint8_t *frame, uint32_t frameSize, int numberOfSkippedFrames, int isFlushFrame, uint32_t *newBufferCapacity, void *custom)$/;"	f
+frameNb	BebopPilotingNewAPI/BebopPiloting.c	/^int frameNb = 0;$/;"	v
+frameNb	JSPilotingNewAPI/JumpingSumoPiloting.c	/^int frameNb = 0;$/;"	v
+frameNb	JumpingSumoReceiveStream/JumpingSumoReceiveStream.h	/^    int frameNb;$/;"	m	struct:__anon6
+freeRawFramePool	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    RawFrame_t **freeRawFramePool;$/;"	m	struct:__anon17
+gErrorStr	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^char gErrorStr[ERROR_STR_LENGTH];$/;"	v
+gErrorStr	BebopPilotingNewAPI/BebopPiloting.c	/^char gErrorStr[ERROR_STR_LENGTH];$/;"	v
+gErrorStr	JSPilotingNewAPI/JumpingSumoPiloting.c	/^char gErrorStr[ERROR_STR_LENGTH];$/;"	v
+gErrorStr	JumpingSumoPiloting/JumpingSumoPiloting.c	/^char gErrorStr[ERROR_STR_LENGTH];$/;"	v
+gIHMRun	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^int gIHMRun = 0;$/;"	v
+gIHMRun	BebopPilotingNewAPI/BebopPiloting.c	/^int gIHMRun = 1;$/;"	v
+gIHMRun	JSPilotingNewAPI/JumpingSumoPiloting.c	/^int gIHMRun = 1;$/;"	v
+gIHMRun	JumpingSumoPiloting/JumpingSumoPiloting.c	/^int gIHMRun = 1;$/;"	v
+g_exit	BebopDroneReceiveStream/BebopDroneReceiveStream.c	/^static int g_exit = 0;$/;"	v	file:
+g_exit	JumpingSumoReceiveStream/JumpingSumoReceiveStream.c	/^int g_exit = 0;$/;"	v
+gaz	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    int gaz;$/;"	m	struct:__anon16
+getFrameFromData	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^RawFrame_t *getFrameFromData(BD_MANAGER_t *deviceManager, uint8_t *data)$/;"	f
+getFreeRawFrame	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^RawFrame_t *getFreeRawFrame(BD_MANAGER_t *deviceManager)$/;"	f
+getNextDataCallback	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^int getNextDataCallback(uint8_t **data, void *customData)$/;"	f
+hasReceivedFirstIFrame	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    int hasReceivedFirstIFrame;$/;"	m	struct:__anon17
+height	BebopDroneDecodeStream/DecoderManager.h	/^    uint32_t height;$/;"	m	struct:_ARCODECS_Manager_Frame_t_
+idToIndex	JumpingSumoPiloting/JumpingSumoPiloting.c	/^static int idToIndex(ARNETWORK_IOBufferParam_t* params, size_t num_params, int id)$/;"	f	file:
+ihm	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    IHM_t *ihm;$/;"	m	struct:__anon17
+ihm	BebopPilotingNewAPI/BebopPiloting.c	/^IHM_t *ihm = NULL;$/;"	v
+ihm	JSPilotingNewAPI/JumpingSumoPiloting.c	/^IHM_t *ihm = NULL;$/;"	v
+inputThread	BebopDroneDecodeStream/ihm.h	/^    ARSAL_Thread_t inputThread;$/;"	m	struct:__anon15
+inputThread	BebopPilotingNewAPI/ihm.h	/^    ARSAL_Thread_t inputThread;$/;"	m	struct:__anon8
+inputThread	JSPilotingNewAPI/ihm.h	/^    ARSAL_Thread_t inputThread;$/;"	m	struct:__anon10
+inputThread	JumpingSumoPiloting/ihm.h	/^    ARSAL_Thread_t inputThread;$/;"	m	struct:__anon3
+isBebop2	BebopPilotingNewAPI/BebopPiloting.c	/^int isBebop2 = 0;$/;"	v
+isIframe	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^    uint8_t isIframe;$/;"	m	struct:RawFrame_t	file:
+lastRawFrameFreeIdx	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    int lastRawFrameFreeIdx;$/;"	m	struct:__anon17
+lineSize	BebopDroneDecodeStream/DecoderManager.h	/^    uint32_t lineSize; \/**< size of each line of the component *\/$/;"	m	struct:_ARCODECS_Manager_Component_t_
+looperRun	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^static void *looperRun (void* data)$/;"	f	file:
+looperRun	JumpingSumoPiloting/JumpingSumoPiloting.c	/^void *looperRun (void* data)$/;"	f
+looperThread	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    ARSAL_Thread_t looperThread;$/;"	m	struct:__anon17
+looperThread	JumpingSumoPiloting/JumpingSumoPiloting.h	/^    ARSAL_Thread_t looperThread;$/;"	m	struct:__anon5
+main	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^int main (int argc, char *argv[])$/;"	f
+main	BebopDroneReceiveStream/BebopDroneReceiveStream.c	/^int main (int argc, char *argv[])$/;"	f
+main	BebopPilotingNewAPI/BebopPiloting.c	/^int main (int argc, char *argv[])$/;"	f
+main	JSPilotingNewAPI/JumpingSumoPiloting.c	/^int main (int argc, char *argv[])$/;"	f
+main	JumpingSumoChangePosture/JumpingSumoChangePosture.c	/^int main (int argc, char *argv[])$/;"	f
+main	JumpingSumoPiloting/JumpingSumoPiloting.c	/^int main (int argc, char *argv[])$/;"	f
+main	JumpingSumoReceiveStream/JumpingSumoReceiveStream.c	/^int main (int argc, char *argv[])$/;"	f
+mainWindow	BebopDroneDecodeStream/ihm.h	/^    WINDOW *mainWindow;$/;"	m	struct:__anon15
+mainWindow	BebopPilotingNewAPI/ihm.h	/^    WINDOW *mainWindow;$/;"	m	struct:__anon8
+mainWindow	JSPilotingNewAPI/ihm.h	/^    WINDOW *mainWindow;$/;"	m	struct:__anon10
+mainWindow	JumpingSumoPiloting/ihm.h	/^    WINDOW *mainWindow;$/;"	m	struct:__anon3
+mutex	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    ARSAL_Mutex_t mutex;$/;"	m	struct:__anon17
+netManager	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    ARNETWORK_Manager_t *netManager;$/;"	m	struct:__anon17
+netManager	BebopDroneReceiveStream/BebopDroneReceiveStream.h	/^    ARNETWORK_Manager_t *netManager;$/;"	m	struct:__anon11
+netManager	JumpingSumoChangePosture/JumpingSumoChangePosture.h	/^    ARNETWORK_Manager_t *netManager;$/;"	m	struct:__anon1
+netManager	JumpingSumoPiloting/JumpingSumoPiloting.h	/^    ARNETWORK_Manager_t *netManager;$/;"	m	struct:__anon5
+netManager	JumpingSumoReceiveStream/JumpingSumoReceiveStream.h	/^    ARNETWORK_Manager_t *netManager;$/;"	m	struct:__anon6
+numC2dParams	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^static const size_t numC2dParams = sizeof(c2dParams) \/ sizeof(ARNETWORK_IOBufferParam_t);$/;"	v	file:
+numC2dParams	BebopDroneReceiveStream/BebopDroneReceiveStream.c	/^static const size_t numC2dParams = sizeof(c2dParams) \/ sizeof(ARNETWORK_IOBufferParam_t);$/;"	v	file:
+numC2dParams	JumpingSumoChangePosture/JumpingSumoChangePosture.c	/^static const size_t numC2dParams = sizeof(c2dParams) \/ sizeof(ARNETWORK_IOBufferParam_t);$/;"	v	file:
+numC2dParams	JumpingSumoPiloting/JumpingSumoPiloting.c	/^static const size_t numC2dParams = sizeof(c2dParams) \/ sizeof(ARNETWORK_IOBufferParam_t);$/;"	v	file:
+numC2dParams	JumpingSumoReceiveStream/JumpingSumoReceiveStream.c	/^static const size_t numC2dParams = sizeof(c2dParams) \/ sizeof(ARNETWORK_IOBufferParam_t);$/;"	v	file:
+numD2cParams	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^static const size_t numD2cParams = sizeof(d2cParams) \/ sizeof(ARNETWORK_IOBufferParam_t);$/;"	v	file:
+numD2cParams	BebopDroneReceiveStream/BebopDroneReceiveStream.c	/^static const size_t numD2cParams = sizeof(d2cParams) \/ sizeof(ARNETWORK_IOBufferParam_t);$/;"	v	file:
+numD2cParams	JumpingSumoChangePosture/JumpingSumoChangePosture.c	/^static const size_t numD2cParams = sizeof(d2cParams) \/ sizeof(ARNETWORK_IOBufferParam_t);$/;"	v	file:
+numD2cParams	JumpingSumoPiloting/JumpingSumoPiloting.c	/^static const size_t numD2cParams = sizeof(d2cParams) \/ sizeof(ARNETWORK_IOBufferParam_t);$/;"	v	file:
+numD2cParams	JumpingSumoReceiveStream/JumpingSumoReceiveStream.c	/^static const size_t numD2cParams = sizeof(d2cParams) \/ sizeof(ARNETWORK_IOBufferParam_t);$/;"	v	file:
+numOfCommandBufferIds	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^static const size_t numOfCommandBufferIds = sizeof(commandBufferIds) \/ sizeof(int);$/;"	v	file:
+numOfCommandBufferIds	BebopDroneReceiveStream/BebopDroneReceiveStream.c	/^static const size_t numOfCommandBufferIds = sizeof(commandBufferIds) \/ sizeof(int);$/;"	v	file:
+numOfCommandBufferIds	JumpingSumoPiloting/JumpingSumoPiloting.c	/^static const size_t numOfCommandBufferIds = sizeof(commandBufferIds) \/ sizeof(int);$/;"	v	file:
+numberOfComponent	BebopDroneDecodeStream/DecoderManager.h	/^    uint32_t numberOfComponent;$/;"	m	struct:_ARCODECS_Manager_Frame_t_
+onDisconnectNetwork	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^void onDisconnectNetwork (ARNETWORK_Manager_t *manager, ARNETWORKAL_Manager_t *alManager, void *customData)$/;"	f
+onDisconnectNetwork	BebopDroneReceiveStream/BebopDroneReceiveStream.c	/^void onDisconnectNetwork (ARNETWORK_Manager_t *manager, ARNETWORKAL_Manager_t *alManager, void *customData)$/;"	f
+onDisconnectNetwork	JumpingSumoChangePosture/JumpingSumoChangePosture.c	/^void onDisconnectNetwork (ARNETWORK_Manager_t *manager, ARNETWORKAL_Manager_t *alManager, void *customData)$/;"	f
+onDisconnectNetwork	JumpingSumoPiloting/JumpingSumoPiloting.c	/^void onDisconnectNetwork (ARNETWORK_Manager_t *manager, ARNETWORKAL_Manager_t *alManager, void *customData)$/;"	f
+onDisconnectNetwork	JumpingSumoReceiveStream/JumpingSumoReceiveStream.c	/^void onDisconnectNetwork (ARNETWORK_Manager_t *manager, ARNETWORKAL_Manager_t *alManager, void *customData)$/;"	f
+onInputEvent	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^void onInputEvent (eIHM_INPUT_EVENT event, void *customData)$/;"	f
+onInputEvent	BebopPilotingNewAPI/BebopPiloting.c	/^void onInputEvent (eIHM_INPUT_EVENT event, void *customData)$/;"	f
+onInputEvent	JSPilotingNewAPI/JumpingSumoPiloting.c	/^void onInputEvent (eIHM_INPUT_EVENT event, void *customData)$/;"	f
+onInputEvent	JumpingSumoPiloting/JumpingSumoPiloting.c	/^void onInputEvent (eIHM_INPUT_EVENT event, void *customData)$/;"	f
+onInputEventCallback	BebopDroneDecodeStream/ihm.h	/^    IHM_onInputEvent_t onInputEventCallback;$/;"	m	struct:__anon15
+onInputEventCallback	BebopPilotingNewAPI/ihm.h	/^    IHM_onInputEvent_t onInputEventCallback;$/;"	m	struct:__anon8
+onInputEventCallback	JSPilotingNewAPI/ihm.h	/^    IHM_onInputEvent_t onInputEventCallback;$/;"	m	struct:__anon10
+onInputEventCallback	JumpingSumoPiloting/ihm.h	/^    IHM_onInputEvent_t onInputEventCallback;$/;"	m	struct:__anon3
+outputData	BebopDroneDecodeStream/DecoderManager.c	/^    uint8_t *outputData;$/;"	m	struct:_ARCODECS_Manager_FFMPEGDecoder_t_	file:
+outputDataSize	BebopDroneDecodeStream/DecoderManager.c	/^    int outputDataSize;$/;"	m	struct:_ARCODECS_Manager_FFMPEGDecoder_t_	file:
+outputFrame	BebopDroneDecodeStream/DecoderManager.c	/^    ARCODECS_Manager_Frame_t outputFrame;$/;"	m	struct:ARCODECS_Manager_t	file:
+pan	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    int pan;$/;"	m	struct:_ARDrone3CameraData_t_
+pitch	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    int pitch;$/;"	m	struct:__anon16
+putRawFrameBackToPool	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^void putRawFrameBackToPool(BD_MANAGER_t *deviceManager, int fifoIdx)$/;"	f
+rawFrameFifo	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    RawFrame_t **rawFrameFifo;$/;"	m	struct:__anon17
+rawFramePoolCapacity	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    int rawFramePoolCapacity;$/;"	m	struct:__anon17
+readerBufferId	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    int readerBufferId;$/;"	m	struct:READER_THREAD_DATA_t
+readerBufferId	BebopDroneReceiveStream/BebopDroneReceiveStream.h	/^    int readerBufferId;$/;"	m	struct:READER_THREAD_DATA_t
+readerBufferId	JumpingSumoPiloting/JumpingSumoPiloting.h	/^    int readerBufferId;$/;"	m	struct:READER_THREAD_DATA_t
+readerRun	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^static void *readerRun (void* data)$/;"	f	file:
+readerRun	BebopDroneReceiveStream/BebopDroneReceiveStream.c	/^static void *readerRun (void* data)$/;"	f	file:
+readerRun	JumpingSumoPiloting/JumpingSumoPiloting.c	/^void *readerRun (void* data)$/;"	f
+readerThreads	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    ARSAL_Thread_t *readerThreads;$/;"	m	struct:__anon17
+readerThreads	BebopDroneReceiveStream/BebopDroneReceiveStream.h	/^    ARSAL_Thread_t *readerThreads;$/;"	m	struct:__anon11
+readerThreads	JumpingSumoPiloting/JumpingSumoPiloting.h	/^    ARSAL_Thread_t *readerThreads;$/;"	m	struct:__anon5
+readerThreadsData	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    READER_THREAD_DATA_t *readerThreadsData;$/;"	m	struct:__anon17
+readerThreadsData	BebopDroneReceiveStream/BebopDroneReceiveStream.h	/^    READER_THREAD_DATA_t *readerThreadsData;$/;"	m	struct:__anon11
+readerThreadsData	JumpingSumoPiloting/JumpingSumoPiloting.h	/^    READER_THREAD_DATA_t *readerThreadsData;$/;"	m	struct:__anon5
+registerARCommandsCallbacks	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^void registerARCommandsCallbacks (BD_MANAGER_t *deviceManager)$/;"	f
+registerARCommandsCallbacks	JumpingSumoPiloting/JumpingSumoPiloting.c	/^void registerARCommandsCallbacks (DEVICE_MANAGER_t *deviceManager, IHM_t *ihm)$/;"	f
+roll	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    int roll;$/;"	m	struct:__anon16
+run	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    int run;$/;"	m	struct:__anon17
+run	BebopDroneDecodeStream/ihm.h	/^    int run;$/;"	m	struct:__anon15
+run	BebopDroneReceiveStream/BebopDroneReceiveStream.h	/^    int run;$/;"	m	struct:__anon11
+run	BebopPilotingNewAPI/ihm.h	/^    int run;$/;"	m	struct:__anon8
+run	JSPilotingNewAPI/ihm.h	/^    int run;$/;"	m	struct:__anon10
+run	JumpingSumoPiloting/JumpingSumoPiloting.h	/^    int run;$/;"	m	struct:__anon5
+run	JumpingSumoPiloting/ihm.h	/^    int run;$/;"	m	struct:__anon3
+rxThread	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    ARSAL_Thread_t rxThread;$/;"	m	struct:__anon17
+rxThread	BebopDroneReceiveStream/BebopDroneReceiveStream.h	/^    ARSAL_Thread_t rxThread;$/;"	m	struct:__anon11
+rxThread	JumpingSumoChangePosture/JumpingSumoChangePosture.h	/^    ARSAL_Thread_t rxThread;$/;"	m	struct:__anon1
+rxThread	JumpingSumoPiloting/JumpingSumoPiloting.h	/^    ARSAL_Thread_t rxThread;$/;"	m	struct:__anon5
+rxThread	JumpingSumoReceiveStream/JumpingSumoReceiveStream.h	/^    ARSAL_Thread_t rxThread;$/;"	m	struct:__anon6
+sendAllSettings	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^int sendAllSettings(BD_MANAGER_t *deviceManager)$/;"	f
+sendAllStates	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^int sendAllStates(BD_MANAGER_t *deviceManager)$/;"	f
+sendBeginStream	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^int sendBeginStream(BD_MANAGER_t *deviceManager)$/;"	f
+sendBeginStream	BebopDroneReceiveStream/BebopDroneReceiveStream.c	/^int sendBeginStream(BD_MANAGER_t *deviceManager)$/;"	f
+sendBeginStream	JumpingSumoReceiveStream/JumpingSumoReceiveStream.c	/^int sendBeginStream(JS_MANAGER_t *jsManager)$/;"	f
+sendCameraOrientation	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^int sendCameraOrientation(BD_MANAGER_t *deviceManager)$/;"	f
+sendDate	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^int sendDate(BD_MANAGER_t *deviceManager)$/;"	f
+sendEmergency	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^int sendEmergency(BD_MANAGER_t *deviceManager)$/;"	f
+sendJump	JumpingSumoPiloting/JumpingSumoPiloting.c	/^int sendJump(DEVICE_MANAGER_t *deviceManager)$/;"	f
+sendLanding	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^int sendLanding(BD_MANAGER_t *deviceManager)$/;"	f
+sendPCMD	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^int sendPCMD(BD_MANAGER_t *deviceManager)$/;"	f
+sendPCMD	JumpingSumoPiloting/JumpingSumoPiloting.c	/^int sendPCMD(DEVICE_MANAGER_t *deviceManager)$/;"	f
+sendPilotingPosture	JumpingSumoChangePosture/JumpingSumoChangePosture.c	/^int sendPilotingPosture(JS_MANAGER_t *jsManager, eARCOMMANDS_JUMPINGSUMO_PILOTING_POSTURE_TYPE type)$/;"	f
+sendTakeoff	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^int sendTakeoff(BD_MANAGER_t *deviceManager)$/;"	f
+signal_handler	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^static void signal_handler(int signal)$/;"	f	file:
+signal_handler	BebopDroneReceiveStream/BebopDroneReceiveStream.c	/^static void signal_handler(int signal)$/;"	f	file:
+signal_handler	BebopPilotingNewAPI/BebopPiloting.c	/^static void signal_handler(int signal)$/;"	f	file:
+signal_handler	JSPilotingNewAPI/JumpingSumoPiloting.c	/^static void signal_handler(int signal)$/;"	f	file:
+signal_handler	JumpingSumoReceiveStream/JumpingSumoReceiveStream.c	/^static void signal_handler(int signal)$/;"	f	file:
+size	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^    uint32_t size; \/**< size of the buffer *\/$/;"	m	struct:RawFrame_t	file:
+size	BebopDroneDecodeStream/DecoderManager.h	/^    uint32_t size; \/**< size of the buffer *\/$/;"	m	struct:_ARCODECS_Manager_Component_t_
+speed	JumpingSumoPiloting/JumpingSumoPiloting.h	/^    int8_t  speed;$/;"	m	struct:__anon4
+startDecoder	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^int startDecoder(BD_MANAGER_t *deviceManager)$/;"	f
+startNetwork	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^int startNetwork (BD_MANAGER_t *deviceManager)$/;"	f
+startNetwork	BebopDroneReceiveStream/BebopDroneReceiveStream.c	/^int startNetwork (BD_MANAGER_t *deviceManager)$/;"	f
+startNetwork	JumpingSumoChangePosture/JumpingSumoChangePosture.c	/^int startNetwork (JS_MANAGER_t *jsManager)$/;"	f
+startNetwork	JumpingSumoPiloting/JumpingSumoPiloting.c	/^int startNetwork (DEVICE_MANAGER_t *deviceManager)$/;"	f
+startNetwork	JumpingSumoReceiveStream/JumpingSumoReceiveStream.c	/^int startNetwork (JS_MANAGER_t *jsManager)$/;"	f
+startVideo	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^int startVideo(BD_MANAGER_t *deviceManager)$/;"	f
+startVideo	BebopDroneReceiveStream/BebopDroneReceiveStream.c	/^int startVideo(BD_MANAGER_t *deviceManager)$/;"	f
+startVideo	JumpingSumoReceiveStream/JumpingSumoReceiveStream.c	/^int startVideo(JS_MANAGER_t *jsManager)$/;"	f
+stateChanged	BebopPilotingNewAPI/BebopPiloting.c	/^void stateChanged (eARCONTROLLER_DEVICE_STATE newState, eARCONTROLLER_ERROR error, void *customData)$/;"	f
+stateChanged	JSPilotingNewAPI/JumpingSumoPiloting.c	/^void stateChanged (eARCONTROLLER_DEVICE_STATE newState, eARCONTROLLER_ERROR error, void *customData)$/;"	f
+stateSem	BebopPilotingNewAPI/BebopPiloting.c	/^ARSAL_Sem_t stateSem;$/;"	v
+stateSem	JSPilotingNewAPI/JumpingSumoPiloting.c	/^ARSAL_Sem_t stateSem;$/;"	v
+stopDecoder	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^void stopDecoder(BD_MANAGER_t *deviceManager)$/;"	f
+stopNetwork	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^void stopNetwork (BD_MANAGER_t *deviceManager)$/;"	f
+stopNetwork	BebopDroneReceiveStream/BebopDroneReceiveStream.c	/^void stopNetwork (BD_MANAGER_t *deviceManager)$/;"	f
+stopNetwork	JumpingSumoChangePosture/JumpingSumoChangePosture.c	/^void stopNetwork (JS_MANAGER_t *jsManager)$/;"	f
+stopNetwork	JumpingSumoPiloting/JumpingSumoPiloting.c	/^void stopNetwork (DEVICE_MANAGER_t *deviceManager)$/;"	f
+stopNetwork	JumpingSumoReceiveStream/JumpingSumoReceiveStream.c	/^void stopNetwork (JS_MANAGER_t *jsManager)$/;"	f
+stopVideo	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^void stopVideo(BD_MANAGER_t *deviceManager)$/;"	f
+stopVideo	BebopDroneReceiveStream/BebopDroneReceiveStream.c	/^void stopVideo(BD_MANAGER_t *deviceManager)$/;"	f
+stopVideo	JumpingSumoReceiveStream/JumpingSumoReceiveStream.c	/^void stopVideo(JS_MANAGER_t *jsManager)$/;"	f
+streamReader	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    ARSTREAM_Reader_t *streamReader;$/;"	m	struct:__anon17
+streamReader	BebopDroneReceiveStream/BebopDroneReceiveStream.h	/^    ARSTREAM_Reader_t *streamReader;$/;"	m	struct:__anon11
+streamReader	JumpingSumoReceiveStream/JumpingSumoReceiveStream.h	/^    ARSTREAM_Reader_t *streamReader;$/;"	m	struct:__anon6
+tilt	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    int tilt;$/;"	m	struct:_ARDrone3CameraData_t_
+turn	JumpingSumoPiloting/JumpingSumoPiloting.h	/^    int8_t  turn;$/;"	m	struct:__anon4
+txThread	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    ARSAL_Thread_t txThread;$/;"	m	struct:__anon17
+txThread	BebopDroneReceiveStream/BebopDroneReceiveStream.h	/^    ARSAL_Thread_t txThread;$/;"	m	struct:__anon11
+txThread	JumpingSumoChangePosture/JumpingSumoChangePosture.h	/^    ARSAL_Thread_t txThread;$/;"	m	struct:__anon1
+txThread	JumpingSumoPiloting/JumpingSumoPiloting.h	/^    ARSAL_Thread_t txThread;$/;"	m	struct:__anon5
+txThread	JumpingSumoReceiveStream/JumpingSumoReceiveStream.h	/^    ARSAL_Thread_t txThread;$/;"	m	struct:__anon6
+unregisterARCommandsCallbacks	BebopDroneDecodeStream/BebopDroneDecodeStream.c	/^void unregisterARCommandsCallbacks (void)$/;"	f
+unregisterARCommandsCallbacks	JumpingSumoPiloting/JumpingSumoPiloting.c	/^void unregisterARCommandsCallbacks (DEVICE_MANAGER_t *deviceManager)$/;"	f
+videoFrame	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    uint8_t *videoFrame;$/;"	m	struct:__anon17
+videoFrame	BebopDroneReceiveStream/BebopDroneReceiveStream.h	/^    uint8_t *videoFrame;$/;"	m	struct:__anon11
+videoFrame	JumpingSumoReceiveStream/JumpingSumoReceiveStream.h	/^    uint8_t *videoFrame;$/;"	m	struct:__anon6
+videoFrameSize	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    uint32_t videoFrameSize;$/;"	m	struct:__anon17
+videoFrameSize	BebopDroneReceiveStream/BebopDroneReceiveStream.h	/^    uint32_t videoFrameSize;$/;"	m	struct:__anon11
+videoFrameSize	JumpingSumoReceiveStream/JumpingSumoReceiveStream.h	/^    uint32_t videoFrameSize;$/;"	m	struct:__anon6
+videoOut	BebopPilotingNewAPI/BebopPiloting.c	/^FILE *videoOut = NULL;$/;"	v
+videoOut	JSPilotingNewAPI/JumpingSumoPiloting.c	/^FILE *videoOut = NULL;$/;"	v
+videoRxThread	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    ARSAL_Thread_t videoRxThread;$/;"	m	struct:__anon17
+videoRxThread	BebopDroneReceiveStream/BebopDroneReceiveStream.h	/^    ARSAL_Thread_t videoRxThread;$/;"	m	struct:__anon11
+videoRxThread	JumpingSumoReceiveStream/JumpingSumoReceiveStream.h	/^    ARSAL_Thread_t videoRxThread;$/;"	m	struct:__anon6
+videoTxThread	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    ARSAL_Thread_t videoTxThread;$/;"	m	struct:__anon17
+videoTxThread	BebopDroneReceiveStream/BebopDroneReceiveStream.h	/^    ARSAL_Thread_t videoTxThread;$/;"	m	struct:__anon11
+videoTxThread	JumpingSumoReceiveStream/JumpingSumoReceiveStream.h	/^    ARSAL_Thread_t videoTxThread;$/;"	m	struct:__anon6
+video_out	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    FILE *video_out;$/;"	m	struct:__anon17
+video_out	BebopDroneReceiveStream/BebopDroneReceiveStream.h	/^    FILE *video_out;$/;"	m	struct:__anon11
+video_out	JumpingSumoReceiveStream/JumpingSumoReceiveStream.h	/^    FILE *video_out;$/;"	m	struct:__anon6
+width	BebopDroneDecodeStream/DecoderManager.h	/^    uint32_t width;$/;"	m	struct:_ARCODECS_Manager_Frame_t_
+writeImgs	JSPilotingNewAPI/JumpingSumoPiloting.c	/^int writeImgs = 0;$/;"	v
+writeImgs	JumpingSumoReceiveStream/JumpingSumoReceiveStream.h	/^    int writeImgs;$/;"	m	struct:__anon6
+yaw	BebopDroneDecodeStream/BebopDroneDecodeStream.h	/^    int yaw;$/;"	m	struct:__anon16

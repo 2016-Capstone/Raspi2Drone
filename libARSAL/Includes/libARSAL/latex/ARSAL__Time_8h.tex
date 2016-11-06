@@ -1,0 +1,368 @@
+\hypertarget{ARSAL__Time_8h}{}\section{A\+R\+S\+A\+L\+\_\+\+Time.\+h File Reference}
+\label{ARSAL__Time_8h}\index{A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}}
+
+
+This file contains headers about time abstraction layer.  
+
+
+{\ttfamily \#include $<$inttypes.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$sys/time.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{ARSAL__Time_8h_ae74892147bd331be31e297310d8a226d}{S\+E\+C\+\_\+\+T\+O\+\_\+\+M\+S\+EC}(sec)~((sec) $\ast$ 1000)
+\begin{DoxyCompactList}\small\item\em Convert second to millisecond. \end{DoxyCompactList}\item 
+\#define \hyperlink{ARSAL__Time_8h_ae2bd25a37cd245d00430ffdd63c68afd}{S\+E\+C\+\_\+\+T\+O\+\_\+\+U\+S\+EC}(sec)~((sec) $\ast$ 1000000)
+\begin{DoxyCompactList}\small\item\em Convert second to microsecond. \end{DoxyCompactList}\item 
+\#define \hyperlink{ARSAL__Time_8h_a82daf02ca6a7280bb1a05080e3d3e16b}{S\+E\+C\+\_\+\+T\+O\+\_\+\+N\+S\+EC}(sec)~((sec) $\ast$ 1000000000)
+\begin{DoxyCompactList}\small\item\em Convert second to nanosecond. \end{DoxyCompactList}\item 
+\#define \hyperlink{ARSAL__Time_8h_a19288131d1f83e9e35b269efc44ed974}{M\+S\+E\+C\+\_\+\+T\+O\+\_\+\+S\+EC}(msec)~((msec) / 1000)
+\begin{DoxyCompactList}\small\item\em Convert millisecond to second. \end{DoxyCompactList}\item 
+\#define \hyperlink{ARSAL__Time_8h_a01b2e5ace2bc824059927003a96b29a8}{M\+S\+E\+C\+\_\+\+T\+O\+\_\+\+U\+S\+EC}(msec)~((msec) $\ast$ 1000)
+\begin{DoxyCompactList}\small\item\em Convert millisecond to microsecond. \end{DoxyCompactList}\item 
+\#define \hyperlink{ARSAL__Time_8h_aa38812c49d8b3aed518c15837c6a0f27}{M\+S\+E\+C\+\_\+\+T\+O\+\_\+\+N\+S\+EC}(msec)~((msec) $\ast$ 1000000)
+\begin{DoxyCompactList}\small\item\em Convert millisecond to nanosecond. \end{DoxyCompactList}\item 
+\#define \hyperlink{ARSAL__Time_8h_a45e1ddd2e7ffd3a95051181311b449b7}{U\+S\+E\+C\+\_\+\+T\+O\+\_\+\+S\+EC}(usec)~((usec) / 1000000)
+\begin{DoxyCompactList}\small\item\em Convert microsecond to second. \end{DoxyCompactList}\item 
+\#define \hyperlink{ARSAL__Time_8h_a86505459f306210fad0d4ecdce6f7146}{U\+S\+E\+C\+\_\+\+T\+O\+\_\+\+M\+S\+EC}(usec)~((usec) / 1000)
+\begin{DoxyCompactList}\small\item\em Convert microsecond to millisecond. \end{DoxyCompactList}\item 
+\#define \hyperlink{ARSAL__Time_8h_a2e0ba345ecfb51c3b119512c7e56dcdc}{U\+S\+E\+C\+\_\+\+T\+O\+\_\+\+N\+S\+EC}(usec)~((usec) $\ast$ 1000)
+\begin{DoxyCompactList}\small\item\em Convert microsecond to nanosecond. \end{DoxyCompactList}\item 
+\#define \hyperlink{ARSAL__Time_8h_a328474d0cf98a5db4f115fdc4afbc7da}{N\+S\+E\+C\+\_\+\+T\+O\+\_\+\+S\+EC}(nsec)~((nsec) / 1000000000)
+\begin{DoxyCompactList}\small\item\em Convert nanosecond to second. \end{DoxyCompactList}\item 
+\#define \hyperlink{ARSAL__Time_8h_add05066e87b1cbe46282cd83dd5da34d}{N\+S\+E\+C\+\_\+\+T\+O\+\_\+\+M\+S\+EC}(nsec)~((nsec) / 1000000)
+\begin{DoxyCompactList}\small\item\em Convert nanosecond to millisecond. \end{DoxyCompactList}\item 
+\#define \hyperlink{ARSAL__Time_8h_afaddfb5c433631e3488307b3fcfd8f24}{N\+S\+E\+C\+\_\+\+T\+O\+\_\+\+U\+S\+EC}(nsec)~((nsec) / 1000)
+\begin{DoxyCompactList}\small\item\em Convert nanosecond to microsecond. \end{DoxyCompactList}\item 
+\#define \hyperlink{ARSAL__Time_8h_a584277e2b3df9a5db0e93000b09df811}{T\+I\+M\+E\+V\+A\+L\+\_\+\+T\+O\+\_\+\+T\+I\+M\+E\+S\+P\+EC}(tv,  ts)
+\begin{DoxyCompactList}\small\item\em Convert timeval structure to timespec structure. \end{DoxyCompactList}\item 
+\#define \hyperlink{ARSAL__Time_8h_afc92eb02ef4fa20e3b1f1ecc1acc1349}{T\+I\+M\+E\+S\+P\+E\+C\+\_\+\+T\+O\+\_\+\+T\+I\+M\+E\+V\+AL}(ts,  tv)
+\begin{DoxyCompactList}\small\item\em Convert timespec structure to timeval structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{ARSAL__Time_8h_a5b4bfc3cd791b1a878d971638e3dbe3a}{A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Get\+Time} (struct timespec $\ast$res)
+\begin{DoxyCompactList}\small\item\em Gets the current system time as a timespec. \end{DoxyCompactList}\item 
+int \hyperlink{ARSAL__Time_8h_a5ccc8b762bf0433cfd0b419451d0a7ae}{A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Get\+Local\+Time} (struct timespec $\ast$res, struct tm $\ast$local\+Time)
+\begin{DoxyCompactList}\small\item\em Gets the current local time both as a struct timespec and as a struct tm. This function is typically used for displaying a date to the user, where A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Get\+Time\} may yield a non meaningful date. \end{DoxyCompactList}\item 
+int \hyperlink{ARSAL__Time_8h_a57d1d89d659fe8f604e17a38695a51f7}{A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Timeval\+Equals} (struct timeval $\ast$t1, struct timeval $\ast$t2)
+\begin{DoxyCompactList}\small\item\em Checks the equality of two timeval. \end{DoxyCompactList}\item 
+int \hyperlink{ARSAL__Time_8h_a3508965d94a31d19c3481f4b165abe42}{A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Timespec\+Equals} (struct timespec $\ast$t1, struct timespec $\ast$t2)
+\begin{DoxyCompactList}\small\item\em Checks the equality of two timespec. \end{DoxyCompactList}\item 
+int32\+\_\+t \hyperlink{ARSAL__Time_8h_a8254cd724b199c20c6b2cf2f516bf06d}{A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Compute\+Timeval\+Ms\+Time\+Diff} (struct timeval $\ast$start, struct timeval $\ast$end)
+\begin{DoxyCompactList}\small\item\em Computes the difference between two timeval. \end{DoxyCompactList}\item 
+int32\+\_\+t \hyperlink{ARSAL__Time_8h_add8418b17bb2f2e441479b704c7fe18a}{A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Compute\+Timespec\+Ms\+Time\+Diff} (struct timespec $\ast$start, struct timespec $\ast$end)
+\begin{DoxyCompactList}\small\item\em Computes the difference between two timespec. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file contains headers about time abstraction layer. 
+
+\begin{DoxyDate}{Date}
+05/18/2012 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\href{mailto:frederic.dhaeyer@parrot.com}{\tt frederic.\+dhaeyer@parrot.\+com} 
+\end{DoxyAuthor}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{ARSAL__Time_8h_aa38812c49d8b3aed518c15837c6a0f27}{}\label{ARSAL__Time_8h_aa38812c49d8b3aed518c15837c6a0f27} 
+\index{A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}!M\+S\+E\+C\+\_\+\+T\+O\+\_\+\+N\+S\+EC@{M\+S\+E\+C\+\_\+\+T\+O\+\_\+\+N\+S\+EC}}
+\index{M\+S\+E\+C\+\_\+\+T\+O\+\_\+\+N\+S\+EC@{M\+S\+E\+C\+\_\+\+T\+O\+\_\+\+N\+S\+EC}!A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}}
+\subsubsection{\texorpdfstring{M\+S\+E\+C\+\_\+\+T\+O\+\_\+\+N\+S\+EC}{MSEC\_TO\_NSEC}}
+{\footnotesize\ttfamily \#define M\+S\+E\+C\+\_\+\+T\+O\+\_\+\+N\+S\+EC(\begin{DoxyParamCaption}\item[{}]{msec }\end{DoxyParamCaption})~((msec) $\ast$ 1000000)}
+
+
+
+Convert millisecond to nanosecond. 
+
+\hypertarget{ARSAL__Time_8h_a19288131d1f83e9e35b269efc44ed974}{}\label{ARSAL__Time_8h_a19288131d1f83e9e35b269efc44ed974} 
+\index{A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}!M\+S\+E\+C\+\_\+\+T\+O\+\_\+\+S\+EC@{M\+S\+E\+C\+\_\+\+T\+O\+\_\+\+S\+EC}}
+\index{M\+S\+E\+C\+\_\+\+T\+O\+\_\+\+S\+EC@{M\+S\+E\+C\+\_\+\+T\+O\+\_\+\+S\+EC}!A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}}
+\subsubsection{\texorpdfstring{M\+S\+E\+C\+\_\+\+T\+O\+\_\+\+S\+EC}{MSEC\_TO\_SEC}}
+{\footnotesize\ttfamily \#define M\+S\+E\+C\+\_\+\+T\+O\+\_\+\+S\+EC(\begin{DoxyParamCaption}\item[{}]{msec }\end{DoxyParamCaption})~((msec) / 1000)}
+
+
+
+Convert millisecond to second. 
+
+\hypertarget{ARSAL__Time_8h_a01b2e5ace2bc824059927003a96b29a8}{}\label{ARSAL__Time_8h_a01b2e5ace2bc824059927003a96b29a8} 
+\index{A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}!M\+S\+E\+C\+\_\+\+T\+O\+\_\+\+U\+S\+EC@{M\+S\+E\+C\+\_\+\+T\+O\+\_\+\+U\+S\+EC}}
+\index{M\+S\+E\+C\+\_\+\+T\+O\+\_\+\+U\+S\+EC@{M\+S\+E\+C\+\_\+\+T\+O\+\_\+\+U\+S\+EC}!A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}}
+\subsubsection{\texorpdfstring{M\+S\+E\+C\+\_\+\+T\+O\+\_\+\+U\+S\+EC}{MSEC\_TO\_USEC}}
+{\footnotesize\ttfamily \#define M\+S\+E\+C\+\_\+\+T\+O\+\_\+\+U\+S\+EC(\begin{DoxyParamCaption}\item[{}]{msec }\end{DoxyParamCaption})~((msec) $\ast$ 1000)}
+
+
+
+Convert millisecond to microsecond. 
+
+\hypertarget{ARSAL__Time_8h_add05066e87b1cbe46282cd83dd5da34d}{}\label{ARSAL__Time_8h_add05066e87b1cbe46282cd83dd5da34d} 
+\index{A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}!N\+S\+E\+C\+\_\+\+T\+O\+\_\+\+M\+S\+EC@{N\+S\+E\+C\+\_\+\+T\+O\+\_\+\+M\+S\+EC}}
+\index{N\+S\+E\+C\+\_\+\+T\+O\+\_\+\+M\+S\+EC@{N\+S\+E\+C\+\_\+\+T\+O\+\_\+\+M\+S\+EC}!A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}}
+\subsubsection{\texorpdfstring{N\+S\+E\+C\+\_\+\+T\+O\+\_\+\+M\+S\+EC}{NSEC\_TO\_MSEC}}
+{\footnotesize\ttfamily \#define N\+S\+E\+C\+\_\+\+T\+O\+\_\+\+M\+S\+EC(\begin{DoxyParamCaption}\item[{}]{nsec }\end{DoxyParamCaption})~((nsec) / 1000000)}
+
+
+
+Convert nanosecond to millisecond. 
+
+\hypertarget{ARSAL__Time_8h_a328474d0cf98a5db4f115fdc4afbc7da}{}\label{ARSAL__Time_8h_a328474d0cf98a5db4f115fdc4afbc7da} 
+\index{A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}!N\+S\+E\+C\+\_\+\+T\+O\+\_\+\+S\+EC@{N\+S\+E\+C\+\_\+\+T\+O\+\_\+\+S\+EC}}
+\index{N\+S\+E\+C\+\_\+\+T\+O\+\_\+\+S\+EC@{N\+S\+E\+C\+\_\+\+T\+O\+\_\+\+S\+EC}!A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}}
+\subsubsection{\texorpdfstring{N\+S\+E\+C\+\_\+\+T\+O\+\_\+\+S\+EC}{NSEC\_TO\_SEC}}
+{\footnotesize\ttfamily \#define N\+S\+E\+C\+\_\+\+T\+O\+\_\+\+S\+EC(\begin{DoxyParamCaption}\item[{}]{nsec }\end{DoxyParamCaption})~((nsec) / 1000000000)}
+
+
+
+Convert nanosecond to second. 
+
+\hypertarget{ARSAL__Time_8h_afaddfb5c433631e3488307b3fcfd8f24}{}\label{ARSAL__Time_8h_afaddfb5c433631e3488307b3fcfd8f24} 
+\index{A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}!N\+S\+E\+C\+\_\+\+T\+O\+\_\+\+U\+S\+EC@{N\+S\+E\+C\+\_\+\+T\+O\+\_\+\+U\+S\+EC}}
+\index{N\+S\+E\+C\+\_\+\+T\+O\+\_\+\+U\+S\+EC@{N\+S\+E\+C\+\_\+\+T\+O\+\_\+\+U\+S\+EC}!A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}}
+\subsubsection{\texorpdfstring{N\+S\+E\+C\+\_\+\+T\+O\+\_\+\+U\+S\+EC}{NSEC\_TO\_USEC}}
+{\footnotesize\ttfamily \#define N\+S\+E\+C\+\_\+\+T\+O\+\_\+\+U\+S\+EC(\begin{DoxyParamCaption}\item[{}]{nsec }\end{DoxyParamCaption})~((nsec) / 1000)}
+
+
+
+Convert nanosecond to microsecond. 
+
+\hypertarget{ARSAL__Time_8h_ae74892147bd331be31e297310d8a226d}{}\label{ARSAL__Time_8h_ae74892147bd331be31e297310d8a226d} 
+\index{A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}!S\+E\+C\+\_\+\+T\+O\+\_\+\+M\+S\+EC@{S\+E\+C\+\_\+\+T\+O\+\_\+\+M\+S\+EC}}
+\index{S\+E\+C\+\_\+\+T\+O\+\_\+\+M\+S\+EC@{S\+E\+C\+\_\+\+T\+O\+\_\+\+M\+S\+EC}!A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}}
+\subsubsection{\texorpdfstring{S\+E\+C\+\_\+\+T\+O\+\_\+\+M\+S\+EC}{SEC\_TO\_MSEC}}
+{\footnotesize\ttfamily \#define S\+E\+C\+\_\+\+T\+O\+\_\+\+M\+S\+EC(\begin{DoxyParamCaption}\item[{}]{sec }\end{DoxyParamCaption})~((sec) $\ast$ 1000)}
+
+
+
+Convert second to millisecond. 
+
+\hypertarget{ARSAL__Time_8h_a82daf02ca6a7280bb1a05080e3d3e16b}{}\label{ARSAL__Time_8h_a82daf02ca6a7280bb1a05080e3d3e16b} 
+\index{A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}!S\+E\+C\+\_\+\+T\+O\+\_\+\+N\+S\+EC@{S\+E\+C\+\_\+\+T\+O\+\_\+\+N\+S\+EC}}
+\index{S\+E\+C\+\_\+\+T\+O\+\_\+\+N\+S\+EC@{S\+E\+C\+\_\+\+T\+O\+\_\+\+N\+S\+EC}!A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}}
+\subsubsection{\texorpdfstring{S\+E\+C\+\_\+\+T\+O\+\_\+\+N\+S\+EC}{SEC\_TO\_NSEC}}
+{\footnotesize\ttfamily \#define S\+E\+C\+\_\+\+T\+O\+\_\+\+N\+S\+EC(\begin{DoxyParamCaption}\item[{}]{sec }\end{DoxyParamCaption})~((sec) $\ast$ 1000000000)}
+
+
+
+Convert second to nanosecond. 
+
+\hypertarget{ARSAL__Time_8h_ae2bd25a37cd245d00430ffdd63c68afd}{}\label{ARSAL__Time_8h_ae2bd25a37cd245d00430ffdd63c68afd} 
+\index{A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}!S\+E\+C\+\_\+\+T\+O\+\_\+\+U\+S\+EC@{S\+E\+C\+\_\+\+T\+O\+\_\+\+U\+S\+EC}}
+\index{S\+E\+C\+\_\+\+T\+O\+\_\+\+U\+S\+EC@{S\+E\+C\+\_\+\+T\+O\+\_\+\+U\+S\+EC}!A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}}
+\subsubsection{\texorpdfstring{S\+E\+C\+\_\+\+T\+O\+\_\+\+U\+S\+EC}{SEC\_TO\_USEC}}
+{\footnotesize\ttfamily \#define S\+E\+C\+\_\+\+T\+O\+\_\+\+U\+S\+EC(\begin{DoxyParamCaption}\item[{}]{sec }\end{DoxyParamCaption})~((sec) $\ast$ 1000000)}
+
+
+
+Convert second to microsecond. 
+
+\hypertarget{ARSAL__Time_8h_afc92eb02ef4fa20e3b1f1ecc1acc1349}{}\label{ARSAL__Time_8h_afc92eb02ef4fa20e3b1f1ecc1acc1349} 
+\index{A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}!T\+I\+M\+E\+S\+P\+E\+C\+\_\+\+T\+O\+\_\+\+T\+I\+M\+E\+V\+AL@{T\+I\+M\+E\+S\+P\+E\+C\+\_\+\+T\+O\+\_\+\+T\+I\+M\+E\+V\+AL}}
+\index{T\+I\+M\+E\+S\+P\+E\+C\+\_\+\+T\+O\+\_\+\+T\+I\+M\+E\+V\+AL@{T\+I\+M\+E\+S\+P\+E\+C\+\_\+\+T\+O\+\_\+\+T\+I\+M\+E\+V\+AL}!A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}}
+\subsubsection{\texorpdfstring{T\+I\+M\+E\+S\+P\+E\+C\+\_\+\+T\+O\+\_\+\+T\+I\+M\+E\+V\+AL}{TIMESPEC\_TO\_TIMEVAL}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+S\+P\+E\+C\+\_\+\+T\+O\+\_\+\+T\+I\+M\+E\+V\+AL(\begin{DoxyParamCaption}\item[{}]{ts,  }\item[{}]{tv }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do}                                              \(\backslash\)
+    \{                                               \(\backslash\)
+        (tv)->tv\_sec = (ts)->tv\_sec;                \(\backslash\)
+        (tv)->tv\_usec = \hyperlink{ARSAL__Time_8h_afaddfb5c433631e3488307b3fcfd8f24}{NSEC\_TO\_USEC}((ts)->tv\_nsec);\(\backslash\)
+    \} \textcolor{keywordflow}{while}(0)
+\end{DoxyCode}
+
+
+Convert timespec structure to timeval structure. 
+
+\hypertarget{ARSAL__Time_8h_a584277e2b3df9a5db0e93000b09df811}{}\label{ARSAL__Time_8h_a584277e2b3df9a5db0e93000b09df811} 
+\index{A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}!T\+I\+M\+E\+V\+A\+L\+\_\+\+T\+O\+\_\+\+T\+I\+M\+E\+S\+P\+EC@{T\+I\+M\+E\+V\+A\+L\+\_\+\+T\+O\+\_\+\+T\+I\+M\+E\+S\+P\+EC}}
+\index{T\+I\+M\+E\+V\+A\+L\+\_\+\+T\+O\+\_\+\+T\+I\+M\+E\+S\+P\+EC@{T\+I\+M\+E\+V\+A\+L\+\_\+\+T\+O\+\_\+\+T\+I\+M\+E\+S\+P\+EC}!A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}}
+\subsubsection{\texorpdfstring{T\+I\+M\+E\+V\+A\+L\+\_\+\+T\+O\+\_\+\+T\+I\+M\+E\+S\+P\+EC}{TIMEVAL\_TO\_TIMESPEC}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+V\+A\+L\+\_\+\+T\+O\+\_\+\+T\+I\+M\+E\+S\+P\+EC(\begin{DoxyParamCaption}\item[{}]{tv,  }\item[{}]{ts }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do}                                              \(\backslash\)
+    \{                                               \(\backslash\)
+        (ts)->tv\_sec = (tv)->tv\_sec;                \(\backslash\)
+        (ts)->tv\_nsec = \hyperlink{ARSAL__Time_8h_a2e0ba345ecfb51c3b119512c7e56dcdc}{USEC\_TO\_NSEC}((tv)->tv\_usec);\(\backslash\)
+    \} \textcolor{keywordflow}{while}(0)
+\end{DoxyCode}
+
+
+Convert timeval structure to timespec structure. 
+
+\hypertarget{ARSAL__Time_8h_a86505459f306210fad0d4ecdce6f7146}{}\label{ARSAL__Time_8h_a86505459f306210fad0d4ecdce6f7146} 
+\index{A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}!U\+S\+E\+C\+\_\+\+T\+O\+\_\+\+M\+S\+EC@{U\+S\+E\+C\+\_\+\+T\+O\+\_\+\+M\+S\+EC}}
+\index{U\+S\+E\+C\+\_\+\+T\+O\+\_\+\+M\+S\+EC@{U\+S\+E\+C\+\_\+\+T\+O\+\_\+\+M\+S\+EC}!A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+E\+C\+\_\+\+T\+O\+\_\+\+M\+S\+EC}{USEC\_TO\_MSEC}}
+{\footnotesize\ttfamily \#define U\+S\+E\+C\+\_\+\+T\+O\+\_\+\+M\+S\+EC(\begin{DoxyParamCaption}\item[{}]{usec }\end{DoxyParamCaption})~((usec) / 1000)}
+
+
+
+Convert microsecond to millisecond. 
+
+\hypertarget{ARSAL__Time_8h_a2e0ba345ecfb51c3b119512c7e56dcdc}{}\label{ARSAL__Time_8h_a2e0ba345ecfb51c3b119512c7e56dcdc} 
+\index{A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}!U\+S\+E\+C\+\_\+\+T\+O\+\_\+\+N\+S\+EC@{U\+S\+E\+C\+\_\+\+T\+O\+\_\+\+N\+S\+EC}}
+\index{U\+S\+E\+C\+\_\+\+T\+O\+\_\+\+N\+S\+EC@{U\+S\+E\+C\+\_\+\+T\+O\+\_\+\+N\+S\+EC}!A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+E\+C\+\_\+\+T\+O\+\_\+\+N\+S\+EC}{USEC\_TO\_NSEC}}
+{\footnotesize\ttfamily \#define U\+S\+E\+C\+\_\+\+T\+O\+\_\+\+N\+S\+EC(\begin{DoxyParamCaption}\item[{}]{usec }\end{DoxyParamCaption})~((usec) $\ast$ 1000)}
+
+
+
+Convert microsecond to nanosecond. 
+
+\hypertarget{ARSAL__Time_8h_a45e1ddd2e7ffd3a95051181311b449b7}{}\label{ARSAL__Time_8h_a45e1ddd2e7ffd3a95051181311b449b7} 
+\index{A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}!U\+S\+E\+C\+\_\+\+T\+O\+\_\+\+S\+EC@{U\+S\+E\+C\+\_\+\+T\+O\+\_\+\+S\+EC}}
+\index{U\+S\+E\+C\+\_\+\+T\+O\+\_\+\+S\+EC@{U\+S\+E\+C\+\_\+\+T\+O\+\_\+\+S\+EC}!A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+E\+C\+\_\+\+T\+O\+\_\+\+S\+EC}{USEC\_TO\_SEC}}
+{\footnotesize\ttfamily \#define U\+S\+E\+C\+\_\+\+T\+O\+\_\+\+S\+EC(\begin{DoxyParamCaption}\item[{}]{usec }\end{DoxyParamCaption})~((usec) / 1000000)}
+
+
+
+Convert microsecond to second. 
+
+
+
+\subsection{Function Documentation}
+\hypertarget{ARSAL__Time_8h_add8418b17bb2f2e441479b704c7fe18a}{}\label{ARSAL__Time_8h_add8418b17bb2f2e441479b704c7fe18a} 
+\index{A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}!A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Compute\+Timespec\+Ms\+Time\+Diff@{A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Compute\+Timespec\+Ms\+Time\+Diff}}
+\index{A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Compute\+Timespec\+Ms\+Time\+Diff@{A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Compute\+Timespec\+Ms\+Time\+Diff}!A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Compute\+Timespec\+Ms\+Time\+Diff()}{ARSAL\_Time\_ComputeTimespecMsTimeDiff()}}
+{\footnotesize\ttfamily int32\+\_\+t A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Compute\+Timespec\+Ms\+Time\+Diff (\begin{DoxyParamCaption}\item[{struct timespec $\ast$}]{start,  }\item[{struct timespec $\ast$}]{end }\end{DoxyParamCaption})}
+
+
+
+Computes the difference between two timespec. 
+
+This function returns the time, in miliseconds, between the two given timespecs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & Start of the time interval to compute \\
+\hline
+{\em end} & End of the time interval to compute \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of ms between the two timespec. A negative number is an error 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+Make sure that \char`\"{}end\char`\"{} is after \char`\"{}start\char`\"{} 
+\end{DoxyWarning}
+\hypertarget{ARSAL__Time_8h_a8254cd724b199c20c6b2cf2f516bf06d}{}\label{ARSAL__Time_8h_a8254cd724b199c20c6b2cf2f516bf06d} 
+\index{A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}!A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Compute\+Timeval\+Ms\+Time\+Diff@{A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Compute\+Timeval\+Ms\+Time\+Diff}}
+\index{A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Compute\+Timeval\+Ms\+Time\+Diff@{A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Compute\+Timeval\+Ms\+Time\+Diff}!A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Compute\+Timeval\+Ms\+Time\+Diff()}{ARSAL\_Time\_ComputeTimevalMsTimeDiff()}}
+{\footnotesize\ttfamily int32\+\_\+t A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Compute\+Timeval\+Ms\+Time\+Diff (\begin{DoxyParamCaption}\item[{struct timeval $\ast$}]{start,  }\item[{struct timeval $\ast$}]{end }\end{DoxyParamCaption})}
+
+
+
+Computes the difference between two timeval. 
+
+This function returns the time, in miliseconds, between the two given timevals.
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & Start of the time interval to compute \\
+\hline
+{\em end} & End of the time interval to compute \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of ms between the two timeval. A negative number is an error 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+Make sure that \char`\"{}end\char`\"{} is after \char`\"{}start\char`\"{} 
+\end{DoxyWarning}
+\hypertarget{ARSAL__Time_8h_a5ccc8b762bf0433cfd0b419451d0a7ae}{}\label{ARSAL__Time_8h_a5ccc8b762bf0433cfd0b419451d0a7ae} 
+\index{A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}!A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Get\+Local\+Time@{A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Get\+Local\+Time}}
+\index{A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Get\+Local\+Time@{A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Get\+Local\+Time}!A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Get\+Local\+Time()}{ARSAL\_Time\_GetLocalTime()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Get\+Local\+Time (\begin{DoxyParamCaption}\item[{struct timespec $\ast$}]{res,  }\item[{struct tm $\ast$}]{local\+Time }\end{DoxyParamCaption})}
+
+
+
+Gets the current local time both as a struct timespec and as a struct tm. This function is typically used for displaying a date to the user, where A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Get\+Time\} may yield a non meaningful date. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em res} & Pointer to a timespec struct which will hold the local time (optionnal, may be N\+U\+LL) \\
+\hline
+{\em local\+Time} & Pointer to a tm struct which will hold the local time (optionnal, may be N\+U\+LL) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+The returned value is affected by discontinuous jumps in the system time (e.\+g., if the system administrator manually changes the clock), and by the incremental adjustments performed by adjtime(3) and N\+TP. 
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+0 if no error occures, -\/1 if any error occured 
+\end{DoxyReturn}
+\hypertarget{ARSAL__Time_8h_a5b4bfc3cd791b1a878d971638e3dbe3a}{}\label{ARSAL__Time_8h_a5b4bfc3cd791b1a878d971638e3dbe3a} 
+\index{A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}!A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Get\+Time@{A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Get\+Time}}
+\index{A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Get\+Time@{A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Get\+Time}!A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Get\+Time()}{ARSAL\_Time\_GetTime()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Get\+Time (\begin{DoxyParamCaption}\item[{struct timespec $\ast$}]{res }\end{DoxyParamCaption})}
+
+
+
+Gets the current system time as a timespec. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em res} & Pointer to a timespec struct which will be filled with the current time\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function may return a non meaningful date, but is suitable for time interval calculations
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+0 if no error occured, -\/1 if any error occured 
+\end{DoxyReturn}
+\hypertarget{ARSAL__Time_8h_a3508965d94a31d19c3481f4b165abe42}{}\label{ARSAL__Time_8h_a3508965d94a31d19c3481f4b165abe42} 
+\index{A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}!A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Timespec\+Equals@{A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Timespec\+Equals}}
+\index{A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Timespec\+Equals@{A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Timespec\+Equals}!A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Timespec\+Equals()}{ARSAL\_Time\_TimespecEquals()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Timespec\+Equals (\begin{DoxyParamCaption}\item[{struct timespec $\ast$}]{t1,  }\item[{struct timespec $\ast$}]{t2 }\end{DoxyParamCaption})}
+
+
+
+Checks the equality of two timespec. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t1} & First time to compare \\
+\hline
+{\em t2} & Second time to compare\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if t1 and t2 represent the same value 
+
+0 in all other cases 
+\end{DoxyReturn}
+\hypertarget{ARSAL__Time_8h_a57d1d89d659fe8f604e17a38695a51f7}{}\label{ARSAL__Time_8h_a57d1d89d659fe8f604e17a38695a51f7} 
+\index{A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}!A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Timeval\+Equals@{A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Timeval\+Equals}}
+\index{A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Timeval\+Equals@{A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Timeval\+Equals}!A\+R\+S\+A\+L\+\_\+\+Time.\+h@{A\+R\+S\+A\+L\+\_\+\+Time.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Timeval\+Equals()}{ARSAL\_Time\_TimevalEquals()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Time\+\_\+\+Timeval\+Equals (\begin{DoxyParamCaption}\item[{struct timeval $\ast$}]{t1,  }\item[{struct timeval $\ast$}]{t2 }\end{DoxyParamCaption})}
+
+
+
+Checks the equality of two timeval. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t1} & First time to compare \\
+\hline
+{\em t2} & Second time to compare\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if t1 and t2 represent the same value 
+
+0 in all other cases 
+\end{DoxyReturn}

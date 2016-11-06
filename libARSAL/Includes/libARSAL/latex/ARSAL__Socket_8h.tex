@@ -1,0 +1,500 @@
+\hypertarget{ARSAL__Socket_8h}{}\section{A\+R\+S\+A\+L\+\_\+\+Socket.\+h File Reference}
+\label{ARSAL__Socket_8h}\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}}
+
+
+This file contains headers about socket abstraction layer.  
+
+
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+{\ttfamily \#include $<$sys/socket.\+h$>$}\newline
+{\ttfamily \#include $<$netinet/in.\+h$>$}\newline
+{\ttfamily \#include $<$arpa/inet.\+h$>$}\newline
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{ARSAL__Socket_8h_a384a22e08e042073bccebf450786749b}{e\+A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+OR} \{ \newline
+\hyperlink{ARSAL__Socket_8h_a384a22e08e042073bccebf450786749ba4f9673ec52e02030c9820d46bc6c912b}{A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S0} = 0, 
+\hyperlink{ARSAL__Socket_8h_a384a22e08e042073bccebf450786749bac73bc63cab455f3f65c9aab75d744750}{A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+U\+N\+S\+P\+E\+C\+I\+F\+I\+ED} = A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S0, 
+\hyperlink{ARSAL__Socket_8h_a384a22e08e042073bccebf450786749ba04c499dc187968b0293e04df709e80fc}{A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S1} = 32, 
+\hyperlink{ARSAL__Socket_8h_a384a22e08e042073bccebf450786749baceb967deb6b3739b36015982301dcf88}{A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S2} = 64, 
+\newline
+\hyperlink{ARSAL__Socket_8h_a384a22e08e042073bccebf450786749baa6cb205b36b4a68246e2449bd7fc8866}{A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S3} = 96, 
+\hyperlink{ARSAL__Socket_8h_a384a22e08e042073bccebf450786749bac53b119d3aacb9b0e2f584e411dc149e}{A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S4} = 128, 
+\hyperlink{ARSAL__Socket_8h_a384a22e08e042073bccebf450786749bace6d540e9722396edd5f03f6a17e63a3}{A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S5} = 160, 
+\hyperlink{ARSAL__Socket_8h_a384a22e08e042073bccebf450786749ba99b60174b9d5672676f5776b25c7530e}{A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S6} = 192, 
+\newline
+\hyperlink{ARSAL__Socket_8h_a384a22e08e042073bccebf450786749ba0a9f82efa57d87e2c7085ac2b1b10b03}{A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S7} = 224
+ \}\begin{DoxyCompactList}\small\item\em Type of Service class selector. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{ARSAL__Socket_8h_ad9532f98f64eaec58788a6a37675cb0c}{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Create} (int domain, int type, int protocol)
+\begin{DoxyCompactList}\small\item\em Creates an endpoint for communication and returns a descriptor. \end{DoxyCompactList}\item 
+int \hyperlink{ARSAL__Socket_8h_a8d5f5fa26d0ee0cf59dc47fdb4065fdd}{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Connect} (int sockfd, const struct sockaddr $\ast$addr, socklen\+\_\+t addrlen)
+\begin{DoxyCompactList}\small\item\em Initiate a connection on a socket, If the socket sock is of type S\+O\+C\+K\+\_\+\+D\+G\+R\+AM then addr is the address to which datagrams are sent by default, and the only address from which datagrams are received. If the socket is of type S\+O\+C\+K\+\_\+\+S\+T\+R\+E\+AM, this call attempts to make a connection to the socket that is bound to the address specified by addr. \end{DoxyCompactList}\item 
+ssize\+\_\+t \hyperlink{ARSAL__Socket_8h_a3fc7ef7d25487cdbc6fe81f9d0431a33}{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Sendto} (int sockfd, const void $\ast$buf, size\+\_\+t buflen, int flags, const struct sockaddr $\ast$dest\+\_\+addr, socklen\+\_\+t addrlen)
+\begin{DoxyCompactList}\small\item\em Transmit a message on a socket If sal\+\_\+sendto() is used on a connection-\/mode (S\+O\+C\+K\+\_\+\+S\+T\+R\+E\+AM) socket, the arguments dest\+\_\+addr and addrlen are ignored (and the error E\+I\+S\+C\+O\+NN may be returned when they are not N\+U\+LL and 0) Otherwise, the target address is given by dest\+\_\+addr with addrlen specifying its size. \end{DoxyCompactList}\item 
+ssize\+\_\+t \hyperlink{ARSAL__Socket_8h_a35293aeb26644ca5f885a665728a7594}{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Send} (int sockfd, const void $\ast$buf, size\+\_\+t buflen, int flags)
+\begin{DoxyCompactList}\small\item\em Transmit a message on a socket. \end{DoxyCompactList}\item 
+ssize\+\_\+t \hyperlink{ARSAL__Socket_8h_a9bb477759e8ce12778c397946cde6b76}{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Recvfrom} (int sockfd, void $\ast$buf, size\+\_\+t buflen, int flags, struct sockaddr $\ast$src\+\_\+addr, socklen\+\_\+t $\ast$addrlen)
+\begin{DoxyCompactList}\small\item\em Receive a message on a socket. \end{DoxyCompactList}\item 
+ssize\+\_\+t \hyperlink{ARSAL__Socket_8h_a163ef85a39b5459e316f8168f6810119}{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Recv} (int sockfd, void $\ast$buf, size\+\_\+t buflen, int flags)
+\begin{DoxyCompactList}\small\item\em Receive a message on a socket. \end{DoxyCompactList}\item 
+ssize\+\_\+t \hyperlink{ARSAL__Socket_8h_a33c3d27532e01aa5c156c0a2565a313d}{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Writev} (int sockfd, const struct iovec $\ast$iov, int iovcnt)
+\begin{DoxyCompactList}\small\item\em Send multiple data on a socket. \end{DoxyCompactList}\item 
+ssize\+\_\+t \hyperlink{ARSAL__Socket_8h_a0cc7d31885dd325552d2745d1d660afd}{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Readv} (int sockfd, const struct iovec $\ast$iov, int iovcnt)
+\begin{DoxyCompactList}\small\item\em Read multiple data from a socket. \end{DoxyCompactList}\item 
+int \hyperlink{ARSAL__Socket_8h_ab4228ffc2dc06c8c31bf1af55ec8bd67}{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Bind} (int sockfd, const struct sockaddr $\ast$addr, socklen\+\_\+t addrlen)
+\begin{DoxyCompactList}\small\item\em Bind a name to a socket. \end{DoxyCompactList}\item 
+int \hyperlink{ARSAL__Socket_8h_abff47f50470ffa31bee8e9215b7d45a9}{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Listen} (int sockfd, int backlog)
+\begin{DoxyCompactList}\small\item\em Listen for connections on a socket. \end{DoxyCompactList}\item 
+int \hyperlink{ARSAL__Socket_8h_a312cec6c5c18c7b6bf4b60188dc6e372}{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Accept} (int sockfd, struct sockaddr $\ast$addr, socklen\+\_\+t $\ast$addrlen)
+\begin{DoxyCompactList}\small\item\em Accept a connection on a socket. \end{DoxyCompactList}\item 
+int \hyperlink{ARSAL__Socket_8h_aa6a5622aaa72a57a1a89f4f259b9d8ca}{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Close} (int sockfd)
+\begin{DoxyCompactList}\small\item\em Close a socket. \end{DoxyCompactList}\item 
+int \hyperlink{ARSAL__Socket_8h_a9bbace0fc8cfab34f989863da05f9809}{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Setsockopt} (int sockfd, int level, int optname, const void $\ast$optval, socklen\+\_\+t optlen)
+\begin{DoxyCompactList}\small\item\em Set the socket options. \end{DoxyCompactList}\item 
+int \hyperlink{ARSAL__Socket_8h_a810778d5d5b1e90dec948eba2096de95}{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Getsockopt} (int sockfd, int level, int optname, void $\ast$optval, socklen\+\_\+t $\ast$optlen)
+\begin{DoxyCompactList}\small\item\em Get the socket options. \end{DoxyCompactList}\item 
+int \hyperlink{ARSAL__Socket_8h_a2658c4a68ff90d76a81aaec41bdcad7c}{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Getsockname} (int sockfd, struct sockaddr $\ast$addr, socklen\+\_\+t $\ast$addrlen)
+\begin{DoxyCompactList}\small\item\em Get the socket name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file contains headers about socket abstraction layer. 
+
+\begin{DoxyDate}{Date}
+06/06/2012 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\href{mailto:frederic.dhaeyer@parrot.com}{\tt frederic.\+dhaeyer@parrot.\+com} 
+\end{DoxyAuthor}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{ARSAL__Socket_8h_a384a22e08e042073bccebf450786749b}{}\label{ARSAL__Socket_8h_a384a22e08e042073bccebf450786749b} 
+\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}!e\+A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+OR@{e\+A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+OR}}
+\index{e\+A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+OR@{e\+A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+OR}!A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}}
+\subsubsection{\texorpdfstring{e\+A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+OR}{eARSAL\_SOCKET\_CLASS\_SELECTOR}}
+{\footnotesize\ttfamily enum \hyperlink{ARSAL__Socket_8h_a384a22e08e042073bccebf450786749b}{e\+A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+OR}}
+
+
+
+Type of Service class selector. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S0@{A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S0}!A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}}\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}!A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S0@{A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S0}}}\hypertarget{ARSAL__Socket_8h_a384a22e08e042073bccebf450786749ba4f9673ec52e02030c9820d46bc6c912b}{}\label{ARSAL__Socket_8h_a384a22e08e042073bccebf450786749ba4f9673ec52e02030c9820d46bc6c912b} 
+A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S0&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+U\+N\+S\+P\+E\+C\+I\+F\+I\+ED@{A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+U\+N\+S\+P\+E\+C\+I\+F\+I\+ED}!A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}}\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}!A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+U\+N\+S\+P\+E\+C\+I\+F\+I\+ED@{A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+U\+N\+S\+P\+E\+C\+I\+F\+I\+ED}}}\hypertarget{ARSAL__Socket_8h_a384a22e08e042073bccebf450786749bac73bc63cab455f3f65c9aab75d744750}{}\label{ARSAL__Socket_8h_a384a22e08e042073bccebf450786749bac73bc63cab455f3f65c9aab75d744750} 
+A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+U\+N\+S\+P\+E\+C\+I\+F\+I\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S1@{A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S1}!A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}}\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}!A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S1@{A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S1}}}\hypertarget{ARSAL__Socket_8h_a384a22e08e042073bccebf450786749ba04c499dc187968b0293e04df709e80fc}{}\label{ARSAL__Socket_8h_a384a22e08e042073bccebf450786749ba04c499dc187968b0293e04df709e80fc} 
+A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S2@{A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S2}!A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}}\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}!A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S2@{A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S2}}}\hypertarget{ARSAL__Socket_8h_a384a22e08e042073bccebf450786749baceb967deb6b3739b36015982301dcf88}{}\label{ARSAL__Socket_8h_a384a22e08e042073bccebf450786749baceb967deb6b3739b36015982301dcf88} 
+A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S3@{A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S3}!A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}}\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}!A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S3@{A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S3}}}\hypertarget{ARSAL__Socket_8h_a384a22e08e042073bccebf450786749baa6cb205b36b4a68246e2449bd7fc8866}{}\label{ARSAL__Socket_8h_a384a22e08e042073bccebf450786749baa6cb205b36b4a68246e2449bd7fc8866} 
+A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S4@{A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S4}!A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}}\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}!A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S4@{A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S4}}}\hypertarget{ARSAL__Socket_8h_a384a22e08e042073bccebf450786749bac53b119d3aacb9b0e2f584e411dc149e}{}\label{ARSAL__Socket_8h_a384a22e08e042073bccebf450786749bac53b119d3aacb9b0e2f584e411dc149e} 
+A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S4&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S5@{A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S5}!A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}}\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}!A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S5@{A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S5}}}\hypertarget{ARSAL__Socket_8h_a384a22e08e042073bccebf450786749bace6d540e9722396edd5f03f6a17e63a3}{}\label{ARSAL__Socket_8h_a384a22e08e042073bccebf450786749bace6d540e9722396edd5f03f6a17e63a3} 
+A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S5&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S6@{A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S6}!A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}}\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}!A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S6@{A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S6}}}\hypertarget{ARSAL__Socket_8h_a384a22e08e042073bccebf450786749ba99b60174b9d5672676f5776b25c7530e}{}\label{ARSAL__Socket_8h_a384a22e08e042073bccebf450786749ba99b60174b9d5672676f5776b25c7530e} 
+A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S6&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S7@{A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S7}!A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}}\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}!A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S7@{A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S7}}}\hypertarget{ARSAL__Socket_8h_a384a22e08e042073bccebf450786749ba0a9f82efa57d87e2c7085ac2b1b10b03}{}\label{ARSAL__Socket_8h_a384a22e08e042073bccebf450786749ba0a9f82efa57d87e2c7085ac2b1b10b03} 
+A\+R\+S\+A\+L\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+C\+S7&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\hypertarget{ARSAL__Socket_8h_a312cec6c5c18c7b6bf4b60188dc6e372}{}\label{ARSAL__Socket_8h_a312cec6c5c18c7b6bf4b60188dc6e372} 
+\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}!A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Accept@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Accept}}
+\index{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Accept@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Accept}!A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Accept()}{ARSAL\_Socket\_Accept()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Accept (\begin{DoxyParamCaption}\item[{int}]{sockfd,  }\item[{struct sockaddr $\ast$}]{addr,  }\item[{socklen\+\_\+t $\ast$}]{addrlen }\end{DoxyParamCaption})}
+
+
+
+Accept a connection on a socket. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sockfd} & The socket descriptor used to send \\
+\hline
+{\em addr} & The address \\
+\hline
+{\em addrlen} & The size of address\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em On} & succes, a nonnegative integer is returned. Otherwise -\/1 is returned if an error occurred and errno is set appropriately. (See errno.\+h). \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{ARSAL__Socket_8h_ab4228ffc2dc06c8c31bf1af55ec8bd67}{}\label{ARSAL__Socket_8h_ab4228ffc2dc06c8c31bf1af55ec8bd67} 
+\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}!A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Bind@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Bind}}
+\index{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Bind@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Bind}!A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Bind()}{ARSAL\_Socket\_Bind()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Bind (\begin{DoxyParamCaption}\item[{int}]{sockfd,  }\item[{const struct sockaddr $\ast$}]{addr,  }\item[{socklen\+\_\+t}]{addrlen }\end{DoxyParamCaption})}
+
+
+
+Bind a name to a socket. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sockfd} & The socket descriptor used to send \\
+\hline
+{\em addr} & The address \\
+\hline
+{\em addrlen} & The size of the address\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em On} & succes, 0 is returned. Otherwise -\/1 is returned if an error occurred and errno is set appropriately. (See errno.\+h). \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{ARSAL__Socket_8h_aa6a5622aaa72a57a1a89f4f259b9d8ca}{}\label{ARSAL__Socket_8h_aa6a5622aaa72a57a1a89f4f259b9d8ca} 
+\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}!A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Close@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Close}}
+\index{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Close@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Close}!A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Close()}{ARSAL\_Socket\_Close()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Close (\begin{DoxyParamCaption}\item[{int}]{sockfd }\end{DoxyParamCaption})}
+
+
+
+Close a socket. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sockfd} & The socket to close \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em On} & success, 0 is returned. Otherwise, -\/1 is returned, and errno is set appropriately. (See errno.\+h) \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{ARSAL__Socket_8h_a8d5f5fa26d0ee0cf59dc47fdb4065fdd}{}\label{ARSAL__Socket_8h_a8d5f5fa26d0ee0cf59dc47fdb4065fdd} 
+\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}!A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Connect@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Connect}}
+\index{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Connect@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Connect}!A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Connect()}{ARSAL\_Socket\_Connect()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Connect (\begin{DoxyParamCaption}\item[{int}]{sockfd,  }\item[{const struct sockaddr $\ast$}]{addr,  }\item[{socklen\+\_\+t}]{addrlen }\end{DoxyParamCaption})}
+
+
+
+Initiate a connection on a socket, If the socket sock is of type S\+O\+C\+K\+\_\+\+D\+G\+R\+AM then addr is the address to which datagrams are sent by default, and the only address from which datagrams are received. If the socket is of type S\+O\+C\+K\+\_\+\+S\+T\+R\+E\+AM, this call attempts to make a connection to the socket that is bound to the address specified by addr. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sockfd} & The socket descriptor used to connect \\
+\hline
+{\em addr} & The address to connect. \\
+\hline
+{\em addrlen} & The size of the addr \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em On} & success, 0 is returned. Otherwise, -\/1 is returned and errno is set appropriately. (See errno.\+h) \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{ARSAL__Socket_8h_ad9532f98f64eaec58788a6a37675cb0c}{}\label{ARSAL__Socket_8h_ad9532f98f64eaec58788a6a37675cb0c} 
+\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}!A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Create@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Create}}
+\index{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Create@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Create}!A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Create()}{ARSAL\_Socket\_Create()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Create (\begin{DoxyParamCaption}\item[{int}]{domain,  }\item[{int}]{type,  }\item[{int}]{protocol }\end{DoxyParamCaption})}
+
+
+
+Creates an endpoint for communication and returns a descriptor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em domain} & The communication domain \\
+\hline
+{\em type} & The communication semantics. \\
+\hline
+{\em protocol} & A protocol to be used with the socket \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em On} & success, a file descriptor for the new socket is returned. On error, -\/1 is returned, and errno is set appropriately. (See errno.\+h) \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{ARSAL__Socket_8h_a2658c4a68ff90d76a81aaec41bdcad7c}{}\label{ARSAL__Socket_8h_a2658c4a68ff90d76a81aaec41bdcad7c} 
+\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}!A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Getsockname@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Getsockname}}
+\index{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Getsockname@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Getsockname}!A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Getsockname()}{ARSAL\_Socket\_Getsockname()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Getsockname (\begin{DoxyParamCaption}\item[{int}]{sockfd,  }\item[{struct sockaddr $\ast$}]{addr,  }\item[{socklen\+\_\+t $\ast$}]{addrlen }\end{DoxyParamCaption})}
+
+
+
+Get the socket name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sockfd} & The socket to get options \\
+\hline
+{\em addr} & current address to which the socket sockfd is bound, \\
+\hline
+{\em addrlen} & size of addr buffer \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em On} & success, 0 is returned. Otherwise, -\/1 is returned, and errno is set appropriately. (See errno.\+h) \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{ARSAL__Socket_8h_a810778d5d5b1e90dec948eba2096de95}{}\label{ARSAL__Socket_8h_a810778d5d5b1e90dec948eba2096de95} 
+\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}!A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Getsockopt@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Getsockopt}}
+\index{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Getsockopt@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Getsockopt}!A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Getsockopt()}{ARSAL\_Socket\_Getsockopt()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Getsockopt (\begin{DoxyParamCaption}\item[{int}]{sockfd,  }\item[{int}]{level,  }\item[{int}]{optname,  }\item[{void $\ast$}]{optval,  }\item[{socklen\+\_\+t $\ast$}]{optlen }\end{DoxyParamCaption})}
+
+
+
+Get the socket options. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sockfd} & The socket to get options \\
+\hline
+{\em level} & the protocol level \\
+\hline
+{\em optname} & the option name \\
+\hline
+{\em optval} & the option value \\
+\hline
+{\em optlen} & the length of the option value \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em On} & success, 0 is returned. Otherwise, -\/1 is returned, and errno is set appropriately. (See errno.\+h) \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{ARSAL__Socket_8h_abff47f50470ffa31bee8e9215b7d45a9}{}\label{ARSAL__Socket_8h_abff47f50470ffa31bee8e9215b7d45a9} 
+\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}!A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Listen@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Listen}}
+\index{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Listen@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Listen}!A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Listen()}{ARSAL\_Socket\_Listen()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Listen (\begin{DoxyParamCaption}\item[{int}]{sockfd,  }\item[{int}]{backlog }\end{DoxyParamCaption})}
+
+
+
+Listen for connections on a socket. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sockfd} & The socket descriptor used to send \\
+\hline
+{\em backlog} & The maximum length to which the queue of pending connections for sockfd may grow\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em On} & succes, 0 is returned. Otherwise -\/1 is returned if an error occurred and errno is set appropriately. (See errno.\+h). \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{ARSAL__Socket_8h_a0cc7d31885dd325552d2745d1d660afd}{}\label{ARSAL__Socket_8h_a0cc7d31885dd325552d2745d1d660afd} 
+\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}!A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Readv@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Readv}}
+\index{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Readv@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Readv}!A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Readv()}{ARSAL\_Socket\_Readv()}}
+{\footnotesize\ttfamily ssize\+\_\+t A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Readv (\begin{DoxyParamCaption}\item[{int}]{sockfd,  }\item[{const struct iovec $\ast$}]{iov,  }\item[{int}]{iovcnt }\end{DoxyParamCaption})}
+
+
+
+Read multiple data from a socket. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sockfd} & The socket descriptor used to read \\
+\hline
+{\em iov} & An array of struct iovec, which describes the data buffers \\
+\hline
+{\em iovcnt} & The number of data buffers in iov\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+On success, the number of bytes read is returned. On error, -\/1 is returned, and errno is set 
+\end{DoxyReturn}
+\hypertarget{ARSAL__Socket_8h_a163ef85a39b5459e316f8168f6810119}{}\label{ARSAL__Socket_8h_a163ef85a39b5459e316f8168f6810119} 
+\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}!A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Recv@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Recv}}
+\index{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Recv@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Recv}!A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Recv()}{ARSAL\_Socket\_Recv()}}
+{\footnotesize\ttfamily ssize\+\_\+t A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Recv (\begin{DoxyParamCaption}\item[{int}]{sockfd,  }\item[{void $\ast$}]{buf,  }\item[{size\+\_\+t}]{buflen,  }\item[{int}]{flags }\end{DoxyParamCaption})}
+
+
+
+Receive a message on a socket. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sockfd} & The socket descriptor used to send \\
+\hline
+{\em buf} & The buffer to fill with data received \\
+\hline
+{\em buflen} & The buffer size \\
+\hline
+{\em flags} & The bitwise OR of zero or more of the socket flags\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em On} & success, the number of bytes received is returned. 0 is returned when the peer has performed an orderly shutdow. Otherwise -\/1 is returned if an error occurred and errno is set appropriately. (See errno.\+h). \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{ARSAL__Socket_8h_a9bb477759e8ce12778c397946cde6b76}{}\label{ARSAL__Socket_8h_a9bb477759e8ce12778c397946cde6b76} 
+\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}!A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Recvfrom@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Recvfrom}}
+\index{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Recvfrom@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Recvfrom}!A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Recvfrom()}{ARSAL\_Socket\_Recvfrom()}}
+{\footnotesize\ttfamily ssize\+\_\+t A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Recvfrom (\begin{DoxyParamCaption}\item[{int}]{sockfd,  }\item[{void $\ast$}]{buf,  }\item[{size\+\_\+t}]{buflen,  }\item[{int}]{flags,  }\item[{struct sockaddr $\ast$}]{src\+\_\+addr,  }\item[{socklen\+\_\+t $\ast$}]{addrlen }\end{DoxyParamCaption})}
+
+
+
+Receive a message on a socket. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sockfd} & The socket descriptor used to send \\
+\hline
+{\em buf} & The buffer to fill with data received \\
+\hline
+{\em buflen} & The buffer size \\
+\hline
+{\em flags} & The bitwise OR of zero or more of the socket flags \\
+\hline
+{\em src\+\_\+addr} & The source address \\
+\hline
+{\em addrlen} & The size of the source address\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em On} & success, the number of bytes received is returned. 0 is returned when the peer has performed an orderly shutdown. Otherwise -\/1 is returned if an error occurred and errno is set appropriately. (See errno.\+h). \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{ARSAL__Socket_8h_a35293aeb26644ca5f885a665728a7594}{}\label{ARSAL__Socket_8h_a35293aeb26644ca5f885a665728a7594} 
+\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}!A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Send@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Send}}
+\index{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Send@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Send}!A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Send()}{ARSAL\_Socket\_Send()}}
+{\footnotesize\ttfamily ssize\+\_\+t A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Send (\begin{DoxyParamCaption}\item[{int}]{sockfd,  }\item[{const void $\ast$}]{buf,  }\item[{size\+\_\+t}]{buflen,  }\item[{int}]{flags }\end{DoxyParamCaption})}
+
+
+
+Transmit a message on a socket. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sockfd} & The socket descriptor used to send \\
+\hline
+{\em buf} & The buffer to send \\
+\hline
+{\em buflen} & The buffer size \\
+\hline
+{\em flags} & The bitwise OR of zero or more of the socket flags\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em On} & success, 0 is returned. Otherwise, -\/1 is returned and errno is set appropriately. (See errno.\+h) \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{ARSAL__Socket_8h_a3fc7ef7d25487cdbc6fe81f9d0431a33}{}\label{ARSAL__Socket_8h_a3fc7ef7d25487cdbc6fe81f9d0431a33} 
+\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}!A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Sendto@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Sendto}}
+\index{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Sendto@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Sendto}!A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Sendto()}{ARSAL\_Socket\_Sendto()}}
+{\footnotesize\ttfamily ssize\+\_\+t A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Sendto (\begin{DoxyParamCaption}\item[{int}]{sockfd,  }\item[{const void $\ast$}]{buf,  }\item[{size\+\_\+t}]{buflen,  }\item[{int}]{flags,  }\item[{const struct sockaddr $\ast$}]{dest\+\_\+addr,  }\item[{socklen\+\_\+t}]{addrlen }\end{DoxyParamCaption})}
+
+
+
+Transmit a message on a socket If sal\+\_\+sendto() is used on a connection-\/mode (S\+O\+C\+K\+\_\+\+S\+T\+R\+E\+AM) socket, the arguments dest\+\_\+addr and addrlen are ignored (and the error E\+I\+S\+C\+O\+NN may be returned when they are not N\+U\+LL and 0) Otherwise, the target address is given by dest\+\_\+addr with addrlen specifying its size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sockfd} & The socket descriptor used to send \\
+\hline
+{\em buf} & The buffer to send \\
+\hline
+{\em buflen} & The buffer size \\
+\hline
+{\em flags} & The bitwise OR of zero or more of the socket flags. \\
+\hline
+{\em dest\+\_\+addr} & The target address \\
+\hline
+{\em addrlen} & The size of the target address\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em On} & success, 0 is returned. Otherwise, -\/1 is returned and errno is set appropriately. (See errno.\+h) \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{ARSAL__Socket_8h_a9bbace0fc8cfab34f989863da05f9809}{}\label{ARSAL__Socket_8h_a9bbace0fc8cfab34f989863da05f9809} 
+\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}!A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Setsockopt@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Setsockopt}}
+\index{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Setsockopt@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Setsockopt}!A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Setsockopt()}{ARSAL\_Socket\_Setsockopt()}}
+{\footnotesize\ttfamily int A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Setsockopt (\begin{DoxyParamCaption}\item[{int}]{sockfd,  }\item[{int}]{level,  }\item[{int}]{optname,  }\item[{const void $\ast$}]{optval,  }\item[{socklen\+\_\+t}]{optlen }\end{DoxyParamCaption})}
+
+
+
+Set the socket options. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sockfd} & The socket to set options \\
+\hline
+{\em level} & the protocol level \\
+\hline
+{\em optname} & the option name \\
+\hline
+{\em optval} & the option value \\
+\hline
+{\em optlen} & the length of the option value \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em On} & success, 0 is returned. Otherwise, -\/1 is returned, and errno is set appropriately. (See errno.\+h) \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{ARSAL__Socket_8h_a33c3d27532e01aa5c156c0a2565a313d}{}\label{ARSAL__Socket_8h_a33c3d27532e01aa5c156c0a2565a313d} 
+\index{A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}!A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Writev@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Writev}}
+\index{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Writev@{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Writev}!A\+R\+S\+A\+L\+\_\+\+Socket.\+h@{A\+R\+S\+A\+L\+\_\+\+Socket.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Writev()}{ARSAL\_Socket\_Writev()}}
+{\footnotesize\ttfamily ssize\+\_\+t A\+R\+S\+A\+L\+\_\+\+Socket\+\_\+\+Writev (\begin{DoxyParamCaption}\item[{int}]{sockfd,  }\item[{const struct iovec $\ast$}]{iov,  }\item[{int}]{iovcnt }\end{DoxyParamCaption})}
+
+
+
+Send multiple data on a socket. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sockfd} & The socket descriptor used to send \\
+\hline
+{\em iov} & An array of struct iovec, which describes the data buffers \\
+\hline
+{\em iovcnt} & The number of data buffers in iov\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+On success, the number of written bytes is returned. On error, -\/1 is returned, and errno is set 
+\end{DoxyReturn}
