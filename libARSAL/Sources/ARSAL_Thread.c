@@ -51,20 +51,20 @@ int ARSAL_Thread_Create(ARSAL_Thread_t *thread, ARSAL_Thread_Routine_t routine, 
     int result = 0;
 
 #if defined(HAVE_PTHREAD_H)
-    pthread_t *pthread = (pthread_t *)calloc(1, sizeof(pthread_t));
-    if (!pthread) {
+    pthread_t *pthread = (pthread_t *)calloc(1, sizeof(pthread_t)); // 메모리 할당 후 0으로 클리어 (malloc은 가비지 값)
+    if (!pthread) { // 할당 실패
         result = -1;
-    } else {
-        result = pthread_create(pthread, NULL, routine, arg);
-        if (result != 0) {
+    } else {        // 할당 성공
+        result = pthread_create(pthread, NULL, routine, arg);       // [from pthread.h] create a new thread
+        if (result != 0) {  // error
             free(pthread);
-        } else {
-            *thread = (ARSAL_Thread_t)pthread;
+        } else {            // sucess
+            *thread = (ARSAL_Thread_t)pthread;                      // IHM_t의 inputThread 설정
         }
     }
 #endif
 
-    return result;
+    return result;  // 0 == error
 }
 
 int ARSAL_Thread_Join(ARSAL_Thread_t thread, void **retval)
