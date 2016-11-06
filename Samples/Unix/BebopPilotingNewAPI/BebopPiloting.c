@@ -416,7 +416,7 @@ int main (int argc, char *argv[])
         * IF IHM did not work
         */
         int i = 20;
-        ARSAL_PRINT(ARSAL_PRINT_INFO, TAG, "- sleep 20 ... ");  //  only sleep in 20sec
+        ARSAL_PRINT(ARSAL_PRINT_INFO, TAG, "- sleep 20sec ... ");  //  only sleep in 20sec
         while (gIHMRun && i--)
             sleep(1);
 #endif
@@ -605,6 +605,7 @@ void commandReceived (eARCONTROLLER_DICTIONARY_KEY commandKey, ARCONTROLLER_DICT
                     uint8_t outdoor = arg->value.U8;
                     if(outdoor != 1){
                         deviceController->common->sendWifiSettingsOutdoorSetting(deviceController->common, (uint8_t)outdoor);
+                        IHM_PrintValue(ihm, "INDOOR", outdoor);
                     }
                     IHM_PrintValue(ihm, "OUTDOOR", outdoor);
                 }

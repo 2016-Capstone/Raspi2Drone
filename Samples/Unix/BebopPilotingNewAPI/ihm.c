@@ -81,7 +81,7 @@ void *IHM_InputProcessing(void *data);  // 키보드 입력을 처리하는 함수
 
 /**
  * @brief : IHM_t 초기화, curses.h를 이용한 터미널 초기설정, 키보드 입력 스레드 실행, 파라미터나 메모리 할당 실패시 IHM_Delete 호출
- * @arg : [from ihm.h] This is a function pointer, args is enum and customData
+ * @arg : [from ihm.h] This is a function pointer, args is enum and customData ==> BebopPiloting.c 하단에 구현
  * */
 IHM_t *IHM_New (IHM_onInputEvent_t onInputEventCallback)
 {

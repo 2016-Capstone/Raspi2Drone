@@ -68,7 +68,6 @@ typedef enum
  * */
 typedef void (*IHM_onInputEvent_t) (eIHM_INPUT_EVENT event, void *customData);
 
-p
 /**
  *
  * */
