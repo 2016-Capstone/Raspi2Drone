@@ -1,4 +1,22 @@
 ==================
+FIFO KeyMap
+==================
+| key | number |
+| --------- | :--------: |
+| q | 113 |   
+| up | 65 |  
+| down | 66 |   
+| right | 67 |   
+| left | 68 |   
+| e | 101 |   
+| t | 116 |   
+| _ | 32 |   
+| r | 114 |   
+| f | 102 |   
+| d | 100 |   
+| g | 103 |   
+
+==================
 Purpose of BebopPilotingNewAPI
 ==================
 
@@ -39,22 +57,5 @@ To clean the compilation of BebopPilotingNewAPI
 On Linux and MacOS X platform :
 &make clean
 
-==================
-FIFO KeyMap
-==================
-| key | number |
-| --------- | :--------: |
-| q | 113 |   
-| up | 65 |  
-| down | 66 |   
-| right | 67 |   
-| left | 68 |   
-| e | 101 |   
-| t | 116 |   
-| _ | 32 |   
-| r | 114 |   
-| f | 102 |   
-| d | 100 |   
-| g | 103 |   
 
 
