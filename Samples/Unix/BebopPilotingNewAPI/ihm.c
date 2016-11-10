@@ -48,6 +48,20 @@
 
 #include "ihm.h"
 
+/****************************************
+ *
+ *             FIFO degined by JUMPSNACK :D
+ *
+ * **************************************/
+
+#include <fcntl.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+
+#define SIZE 3
+#define FIFO "cmd_fifo"
+
+
 /*****************************************
  *
  *             define : 터미널 상에 정보들이 출력될 포지션 설정
@@ -194,14 +208,17 @@ void IHM_setCustomData(IHM_t *ihm, void *customData)
 void *IHM_InputProcessing(void *data)
 {
     IHM_t *ihm = (IHM_t *) data;
+    int fd;
     int key = 0;
     
     if (ihm != NULL)
     {
+        fd = open_fifo(ihm);
         // Loop start
         while (ihm->run)
         {
-            key = getch();  // 사용자 입력 대기
+//            key = getch();  // 사용자 입력 대기
+               key = get_key_from_fifo(ihm, fd);
             
             if ((key == 27) || (key =='q'))
             {
@@ -357,4 +374,30 @@ void IHM_PrintValue(IHM_t *ihm, char* TAG, uint8_t value)
 		clrtoeol();
 		mvprintw(VALUE_Y, VALUE_X, "[VALUE] %s :: %d", TAG, value);
 	}
+}
+
+int open_fifo(IHM_t *ihm){
+    int fd=-1;
+
+    if((fd=open(FIFO, O_RDWR)) == -1){
+        IHM_PrintValue(ihm, "ERROR: open failed", fd);
+        return -1;
+    }
+
+    return fd;
+}
+
+int get_key_from_fifo(IHM_t *ihm, int fd){
+    char buff[SIZE];
+    int key = -1;
+   
+    if(fd != -1){
+        if(read(fd, buff, SIZE) == -1){
+            IHM_PrintValue(ihm, "ERROR: read failed", fd);
+            return -1;
+        }
+        key = atoi(buff);
+    }
+
+    return key;
 }
