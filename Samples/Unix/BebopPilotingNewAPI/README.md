@@ -42,6 +42,8 @@ On Linux and MacOS X platform :
 ==================
 FIFO KeyMap
 ==================
+| key | number |
+| --------- | :--------: |
 | q | 113 |   
 | up | 65 |  
 | down | 66 |   
