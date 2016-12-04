@@ -218,8 +218,8 @@ void *IHM_InputProcessing(void *data)
         // Loop start
         while (ihm->run)
         {
-    //        key = getch();  // 사용자 입력 대기
-               key = get_key_from_fifo(ihm, fd);
+            key = getch();  // 사용자 입력 대기
+               key1 = get_key_from_fifo(ihm, fd);
             if ((key == 27) || (key =='q'))
             {
                 if(ihm->onInputEventCallback != NULL)   // ihm에 함수가 붙어 있으면...
